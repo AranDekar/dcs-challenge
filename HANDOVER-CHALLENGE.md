@@ -136,6 +136,16 @@ The output should be expressed in a JSON package. For example:
 
 Once you have completed this endpoint, could you please send it the codebase back explaining how to use it? We will test it at the docker-compose level.
 
+#### STEPS:
+
+1. a new folder created called `fib` with the same style as the others in transformers
+2. the result is returned in json format
+3. if postition is invalid an error is returned
+4. the fibonachi calc func is run when it hits the server
+5. if a request is hit once, I suppose the result is cached in sorounding systems, so I don't cache the result in controller.
+6. the curl is as below:
+   `curl -X GET \ 'http://localhost:3000/fib/v1/position/0?t_product=DailyTelegraph&t_output=json' \ -H 'Accept: */*' \ -H 'Cache-Control: no-cache' \ -H 'Connection: keep-alive' \ -H 'Content-Type: application/json' \ -H 'Host: localhost:3000' \ -H 'Postman-Token: d34249eb-b68c-4713-b254-dab0a8e3e898,048de0f9-524e-499f-b477-2dd92787cb9c' \ -H 'User-Agent: PostmanRuntime/7.15.0' \ -H 'accept-encoding: gzip, deflate' \ -H 'cache-control: no-cache' \ -H 'content-length: 12'`
+
 ## Existing Documentation
 
 There is a logical architecture diagram that may be helpful in pp-services/docs/api-docs/build/images/dcs.png.

@@ -1,0 +1,17 @@
+include mixin/esi
+include mixin/list
+
+- var domain = query.domain || display.domain || query.site || display.site
+
+if data.results.length
+
+    - var templateParam = 't_template=../video/list-header'
+    - var productParam = 't_product=' + product.name
+    - var domainParam = ( domain ? 'td_domain=' + domain : '' )
+    - var pathParam = ( display.path ? 'td_path=' + display.path : '')
+    - var titleParam = ( display.title ? 'td_title=' + display.title : '')
+    - var rootParam = ( display.root ? 'td_root=' + display.root : '' )
+    - var params = [templateParam, productParam, domainParam, pathParam, titleParam, rootParam].filter(i => i).join('&')
+    +esi('/news/video/categories?' + params)
+
+    +list( data.results, ( display.listStyle || 'line' ), 'vms-playlist-module' )

@@ -1,0 +1,10 @@
+{
+  "name": "Image Block, 316w",
+  "description": "Medium feature image block",
+  "config": {
+    "imagewidth": 316,
+    "imageheight": 237,
+    "timestamp": true,
+    "style": "imageblock"
+  }
+}

@@ -1,0 +1,480 @@
+<h1> Newsgraph URLs </h1>
+<p>
+	Newsgraph is a pre-production GraphQL service that talks to CAPI via an equally new caching service called Tabula. 
+</p>
+
+<p>
+	If you wish, you can use Newsgraph via Tabula to search for CAPI data for DevFoundry. Please be aware that these are services are in the process of being integration and load tested for production use, so problems may occur. 
+	However, we will act swiftly to fix any problems.
+</p>
+
+<p> GraphQL documentation is available <a target="_blank" href="http://graphql.org/learn/">here</a>.</p>
+<p> Early use also allows us to field feedback from you!</p>
+<p>
+We have provided five sample queries for you:
+<p>
+<ol>
+	<li> Content Type queries - this is a query that can bring back individual CAPI resources for you, depending on the ID you choose to use. We've supplied sample NEWS_STORY, IMAGE, VIDEO and IMAGE_GALLERY queries. PROMO, IFRAME, CATEGORY, IMAGE_GALLERY and BLOB are also available</li>
+
+	<li> Collection query - this is a query that can bring back a CAPI Collection via ID. </li>
+
+	<li> Search query - this is a query that will returna v2 search in CAPI. </li>
+</ol>
+
+
+<p>
+	Beneath the sample queries you will find our V2 Schema, so you can use whichever fields you prefer.
+</p>
+</p>
+
+<p>
+<h2> The GraphIQL Interface </h2>
+
+GraphQL Apollo server comes with a nifty UI for experimenting with queries called <a href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2">GraphIQL</a>.
+</p>
+
+Note how at the bottom of the left hand side there is a Query variables pane.
+
+
+
+<h3> 1. Content Type Query. </h3> 
+<p>
+
+<a _target="_blank" href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2?query=query%20(%24host%3A%20String!%2C%20%24id%3A%20String!%2C%20%24apiKey%3A%20String!)%20%7B%0A%20%20getV2(host%3A%20%24host%2C%20id%3A%20%24id%2C%20apiKey%3A%20%24apiKey)%20%7B%0A%20%20%20%20...%20on%20V2NewsStory%20%7B%0A%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20link%0A%20%20%20%20%20%20channel%0A%20%20%20%20%20%20version%0A%20%20%20%20%20%20origin%0A%20%20%20%20%20%20originId%0A%20%20%20%20%20%20status%0A%20%20%20%20%20%20paidStatus%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20altTitle%0A%20%20%20%20%20%20subtitle%0A%20%20%20%20%20%20description%0A%20%20%20%20%20%20kicker%0A%20%20%20%20%20%20altKicker%0A%20%20%20%20%20%20standFirst%0A%20%20%20%20%20%20seoHeadline%0A%20%20%20%20%20%20socialTitle%0A%20%20%20%20%20%20subscriptionSummary%0A%20%20%20%20%20%20dateLive%0A%20%20%20%20%20%20dateUpdated%0A%20%20%20%20%20%20dateCreated%0A%20%20%20%20%20%20customDate%0A%20%20%20%20%20%20references%20%7B%0A%20%20%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20origin%0A%20%20%20%20%20%20%20%20originId%0A%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20keywords%0A%20%20%20%20%20%20authors%0A%20%20%20%20%20%20domains%0A%20%20%20%20%20%20bylineNames%0A%20%20%20%20%20%20commentsAllowed%0A%20%20%20%20%20%20creditedSource%0A%20%20%20%20%20%20originalSource%0A%20%20%20%20%20%20bulletList%0A%20%20%20%20%20%20bylineTitles%0A%20%20%20%20%20%20domainLinks%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20categories%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20primaryCategory%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20related%20%7B%0A%20%20%20%20%20%20%20%20...%20on%20V2Image%20%7B%0A%20%20%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%20%20%20%20%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22host%22%3A%20%22cdn.newsapi.com.au%22%2C%0A%20%20%22apiKey%22%3A%20%22dvae65bt88b6n8gpttv4ervt%22%2C%0A%20%20%22id%22%3A%20%22cdeeadf3e9a9299ae0d453e95a4b6a61%22%0A%7D">NEWS_STORY Query</a> <br/>
+<a _target="_blank" href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2?query=query%20(%24host%3A%20String!%2C%20%24id%3A%20String!%2C%20%24apiKey%3A%20String!)%20%7B%0A%20%20getV2(host%3A%20%24host%2C%20id%3A%20%24id%2C%20apiKey%3A%20%24apiKey)%20%7B%0A%20%20%20%20...%20on%20V2Image%20%7B%0A%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20origin%0A%20%20%20%20%20%20originId%0A%20%20%20%20%20%20originalSource%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20subtitle%0A%20%20%20%20%20%20description%0A%20%20%20%20%20%20link%0A%20%20%20%20%20%20paidStatus%0A%20%20%20%20%20%20version%0A%20%20%20%20%20%20dateUpdated%0A%20%20%20%20%20%20dateLive%0A%20%20%20%20%20%20dateCreated%0A%20%20%20%20%20%20status%0A%20%20%20%20%20%20related%20%7B%0A%20%20%20%20%20%20%20%20...%20on%20V2Image%20%7B%0A%20%20%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20domainLinks%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20primaryCategory%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20categories%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20keywords%0A%20%20%20%20%20%20authors%0A%20%20%20%20%20%20domains%0A%20%20%20%20%20%20userOriginUpdated%0A%20%20%20%20%20%20systemOriginUpdated%0A%20%20%20%20%20%20domainOriginUpdated%0A%20%20%20%20%20%20urlTitle%0A%20%20%20%20%20%20revision%0A%20%20%20%20%20%20format%0A%20%20%20%20%20%20width%0A%20%20%20%20%20%20height%0A%20%20%20%20%20%20imageName%0A%20%20%20%20%20%20imageType%0A%20%20%20%20%20%20sourceImageId%0A%20%20%20%20%20%20cropName%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22host%22%3A%20%22cdn.newsapi.com.au%22%2C%0A%20%20%22apiKey%22%3A%20%22dvae65bt88b6n8gpttv4ervt%22%2C%0A%20%20%22id%22%3A%20%22113ffef4dc4d91b4a77c46a7d1176ed2%22%0A%7D">IMAGE query</a><br>
+<a _target="_blank" href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2?query=query%20(%24host%3A%20String!%2C%20%24id%3A%20String!%2C%20%24apiKey%3A%20String!)%20%7B%0A%20%20getV2(host%3A%20%24host%2C%20id%3A%20%24id%2C%20apiKey%3A%20%24apiKey)%20%7B%0A%20%20%20%20...%20on%20V2Video%20%7B%0A%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20origin%0A%20%20%20%20%20%20originId%0A%20%20%20%20%20%20originalSource%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20subtitle%0A%20%20%20%20%20%20description%0A%20%20%20%20%20%20version%0A%20%20%20%20%20%20dateUpdated%0A%20%20%20%20%20%20dateLive%0A%20%20%20%20%20%20dateCreated%0A%20%20%20%20%20%20status%0A%20%20%20%20%20%20related%20%7B%0A%20%20%20%20%20%20%20%20...%20on%20V2Image%20%7B%0A%20%20%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20domainLinks%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20primaryCategory%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20categories%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20keywords%0A%20%20%20%20%20%20domains%0A%09%09%09duration%0A%20%20%20%20%20%20subtitle%0A%20%20%20%20%20%20urlTitle%0A%20%20%20%20%20%20videoFiles%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22host%22%3A%20%22cdn.newsapi.com.au%22%2C%0A%20%20%22apiKey%22%3A%20%22dvae65bt88b6n8gpttv4ervt%22%2C%0A%20%20%22id%22%3A%20%22e7324605771097d5a1bce45c75e0ef32%22%0A%7D">VIDEO query</a><br>
+<a _target="_blank" href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2?query=query%20(%24host%3A%20String!%2C%20%24id%3A%20String!%2C%20%24apiKey%3A%20String!)%20%7B%0A%20%20getV2(host%3A%20%24host%2C%20id%3A%20%24id%2C%20apiKey%3A%20%24apiKey)%20%7B%0A%20%20%20%20...%20on%20V2ImageGallery%20%7B%0A%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20origin%0A%20%20%20%20%20%20originId%0A%20%20%20%20%20%20channel%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20subtitle%0A%20%20%20%20%20%20description%0A%20%20%20%20%20%20link%0A%20%20%20%20%20%20paidStatus%0A%20%20%20%20%20%20creditedSource%0A%20%20%20%20%20%20version%0A%20%20%20%20%20%20dateUpdated%0A%20%20%20%20%20%20dateLive%0A%20%20%20%20%20%20customDate%0A%20%20%20%20%20%20dateCreated%0A%20%20%20%20%20%20status%0A%20%20%20%20%20%20related%20%7B%0A%20%20%20%20%20%20%20%20...%20on%20V2Image%20%7B%0A%20%20%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20domainLinks%20%7B%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20primaryCategory%20%7B%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20categories%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20keywords%0A%20%20%20%20%20%20authors%0A%20%20%20%20%20%20domains%0A%20%20%20%20%20%20%20%20%20%20%20%20references%20%7B%0A%20%20%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20origin%0A%20%20%20%20%20%20%20%20originId%0A%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20socialTitle%0A%20%20%20%20%20%20seoHeadline%0A%20%20%20%20%20%20userOriginUpdated%0A%20%20%20%20%20%20domainOriginUpdated%0A%20%20%20%20%20%20urlTitle%0A%20%20%20%20%20%20revision%0A%20%20%20%20%20%20kicker%0A%20%20%20%20%20%20galleryDescription%0A%20%20%20%20%20%20bylineNames%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22host%22%3A%20%22cdn.newsapi.com.au%22%2C%0A%20%20%22apiKey%22%3A%20%22dvae65bt88b6n8gpttv4ervt%22%2C%0A%20%20%22id%22%3A%20%220658c268f9288fcba727157fcb0ca011%22%0A%7D">IMAGE_GALLERY Query</a><br>
+
+<p>
+Hint - look at the bottom of the graphIQL interface for the Variables pane. You can change the ID there.
+
+<p>
+
+<h3> 2. Collection Query. </h3>
+<p>
+<a _target="_blank" href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2?query=query%20(%24host%3A%20String!%2C%20%24id%3A%20String!%2C%20%24apiKey%3A%20String!)%20%7B%0A%20%20getV2Collection(host%3A%20%24host%2C%20id%3A%20%24id%2C%20apiKey%3A%20%24apiKey)%20%7B%0A%20%20%20%20content%20%7B%0A%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20categories%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20dateCreated%0A%20%20%20%20%20%20dateLive%0A%20%20%20%20%20%20dateUpdated%0A%20%20%20%20%20%20%23description%0A%20%20%20%20%20%20domainLinks%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20domains%0A%20%20%20%20%20%20keywords%0A%20%20%20%20%20%20origin%0A%20%20%20%20%20%20%23originalSource%0A%20%20%20%20%20%20originId%0A%20%20%20%20%20%20revision%0A%20%20%20%20%20%20status%0A%20%20%20%20%20%20%23subtitle%0A%20%20%20%20%20%20%23systemOriginUpdated%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20%23userOriginUpdated%0A%20%20%20%20%20%20version%0A%20%20%20%20%20%20references%20%7B%0A%20%20%20%20%20%20...%20on%20V2NewsStory%20%7B%0A%20%20%20%20%20%20%20%20id%20%7B%20value%20link%20%7D%0A%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20offset%0A%20%20%20%20pageSize%0A%20%20%20%20totalHits%0A%20%20%20%20warnings%0A%20%20%20%20results%20%7B%0A%20%20%20%20%20%20...%20on%20V2Image%20%7B%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22host%22%3A%20%22cdn.newsapi.com.au%22%2C%0A%20%20%22apiKey%22%3A%20%22dvae65bt88b6n8gpttv4ervt%22%2C%0A%20%20%22id%22%3A%20%224d2cca2ccdb9187205750fb1ca5025c7%22%0A%7D">Collection by ID Query</a><br>
+
+<p>
+</p>
+
+<h3> 3. Search Query. </h3>
+<p>
+	<a _target="_blank" href="http://http://newsgraph-sit.dcs.diguat.cp1.news.com.au/graphql/v2?query=query%20(%24host%3A%20String!%2C%20%24query%3A%20String!%2C%20%24includeRelated%3A%20String!%2C%20%24apiKey%3A%20String!)%20%7B%0A%20%20getV2Search(host%3A%20%24host%2C%20query%3A%20%24query%2C%20includeRelated%3A%20%24includeRelated%2C%20apiKey%3A%20%24apiKey)%20%7B%0A%20%20%20%20content%20%7B%0A%20%20%20%20%20%20id%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20value%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20categories%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20dateCreated%0A%20%20%20%20%20%20dateLive%0A%20%20%20%20%20%20dateUpdated%0A%20%20%20%20%20%20domainLinks%20%7B%0A%20%20%20%20%20%20%20%20link%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20domains%0A%20%20%20%20%20%20keywords%0A%20%20%20%20%20%20origin%0A%20%20%20%20%20%20originId%0A%20%20%20%20%20%20revision%0A%20%20%20%20%20%20status%0A%20%20%20%20%20%20title%0A%20%20%20%20%20%20version%0A%20%20%20%20%20%20references%20%7B%0A%20%20%20%20%20%20...%20on%20V2NewsStory%20%7B%0A%20%20%20%20%20%20%20%20id%20%7B%20value%20link%20%7D%0A%20%20%20%20%20%20%20%20contentType%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20offset%0A%20%20%20%20pageSize%0A%20%20%20%20totalHits%0A%20%20%20%20warnings%0A%20%20%20%20results%20%7B%0A%20%20%20%20%20%20...%20on%20V2NewsStory%20%7B%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22host%22%3A%20%22cdn.newsapi.com.au%22%2C%0A%20%20%22query%22%3A%20%22contentType%3Anews_story%2520AND%2520categories.value%3A%2522%2Fdisplay%2Fnewscorpaustralia.com%2FWeb%2FNewsNetwork%2FGeelong%2BAdvertiser%2FGeelong%2BNews%2Band%2BGalleries%2F%2522%2520AND%2520domains%3Ddailytelegraph.com.au%22%2C%0A%09%22includeRelated%22%3A%20%22true%22%2C%0A%20%20%22apiKey%22%3A%20%22dvae65bt88b6n8gpttv4ervt%22%0A%7D">Search Query</a>
+</p>
+
+
+<h3> v2 Schema</h3>
+
+Please note - V2Resource and V2Item are internal types that you would not need to think about when crafting a query.
+
+<pre>
+	type V2Id {
+		value: String
+		link: String
+	  }
+	  enum V2ContentType {
+		BLOB
+		CATEGORY
+		COLLECTION
+		COMPONENT
+		IFRAME
+		IMAGE_GALLERY
+		IMAGE
+		NEWS_STORY
+		PROMO
+		VIDEO
+	  }
+	  enum V2Version {
+		DRAFT
+		PUBLISHED
+	  }
+	  enum V2Status {
+		ACTIVE
+		INACTIVE
+		DELETED
+		KILLED
+	  }
+	  enum V2PaidStatus {
+		NON_PREMIUM
+		PREMIUM
+	  }
+	  type V2Reference {
+		contentType: V2ContentType
+		id: V2Id
+		origin: String
+		originId: String
+	  }
+	  type V2DomainLink {
+		name: String
+		link: String
+	  }
+	  type V2Category {
+		value: String
+		link: String
+	  }
+	  enum V2Channel {
+		NONE
+		PRINT
+		WEB
+		TABLET
+		none
+		print
+		web
+		tablet
+	  }
+	  
+	  type V2PromoLink {
+		altText: String
+		otherPromoLinks: [V2PromoLink]
+		text: String
+		url: String
+	  }
+	  
+	  interface V2Resource {
+		id: V2Id
+		categories: [V2Category]
+		contentType: V2ContentType
+		dateCreated: String
+		dateLive: String
+		dateUpdated: String
+		domainLinks: [V2DomainLink]
+		domains: [String]
+		keywords: [String]
+		origin: String
+		originId: String
+		related: [V2Item]
+		revision: Int
+		status: V2Status
+		title: String
+		version: V2Version
+	  }
+	  
+	  type V2Blob implements V2Resource {
+		id: V2Id!
+		authors: [String]
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		link: String
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		description: String
+		domainOriginUpdated: String
+		format: String
+		originalSource: String
+		subtitle: String
+		systemOriginUpdated: String
+		urlTitle: String
+		userOriginUpdated: String
+	  }
+	  
+	  type V2Component implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version
+	  
+		authors: [String]
+		domainOriginUpdated: String
+		originalSource: String
+		paidStatus: V2PaidStatus
+		subtitle: String
+		systemOriginUpdated: String
+		urlTitle: String
+		userOriginUpdated: String
+	  }
+	  
+	  type V2Iframe implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		caption: String
+		height: String
+		markupHeight: Int
+		markupWidth: Int
+		subtitle: String!
+		systemOriginUpdated: String!
+		type: String
+		urlTitle: String
+		userOriginUpdated: String!
+		width: String
+	  }
+	  
+	  type V2Image implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		authors: [String]
+		containerTypes: [String]
+		cropName: String
+		domainOriginUpdated: String
+		format: String
+		height: Int
+		imageName: String
+		imageType: String
+		link: String
+		originalSource: String
+		paidStatus: V2PaidStatus
+		primaryCategory: V2Category
+		sourceImageId: String
+		subtitle: String
+		systemOriginUpdated: String
+		urlTitle: String
+		userOriginUpdated: String
+		width: Int
+	  }
+	  
+	  type V2ImageGallery implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		authors: [String]
+		bylineNames: [String]
+		channel: V2Channel
+		creditedSource: String
+		cropName: String
+		customDate: String
+		domainOriginUpdated: String
+		format: String
+		galleryDescription: String
+		height: Int
+		imageType: String
+		kicker: String
+		link: String
+		originalSource: String
+		paidStatus: V2PaidStatus
+		primaryCategory: V2Category
+		references: [V2Reference]
+		seoHeadline: String
+		socialTitle: String
+		sourceImageId: String
+		subtitle: String
+		systemOriginUpdated: String
+		urlTitle: String
+		userOriginUpdated: String
+		width: Int
+	  }
+	  
+	  type V2NewsStory implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		altKicker: String
+		altTitle: String
+		authors: [String]
+		body: String
+		bulletList: [String]
+		byline: String
+		bylineNames: [String]
+		bylineTitles: [String]
+		channel: V2Channel
+		commentsAllowed: Boolean
+		creditedSource: String
+		customDate: String
+		kicker: String
+		link: String
+		originalAssetId: String
+		originalSource: String
+		paidStatus: V2PaidStatus
+		primaryCategory: V2Category!
+		references: [V2Reference]
+		seoHeadline: String
+		socialTitle: String
+		standFirst: String
+		subscriptionSummary: String
+		subtitle: String
+		systemOriginUpdated: String
+		thumbnailImage: V2Image
+		userOriginUpdated: String
+	  }
+	  
+	  type V2Promo implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		authors: [String]
+		channel: V2Channel
+		displayStyle: String
+		domainOriginUpdated: String
+		originalAssetId: String
+		paidStatus: V2PaidStatus
+		primaryCategory: V2Category
+		promoLink: V2PromoLink
+		promoText: String
+		references: [V2Reference]
+		subtitle: String!
+		systemOriginUpdated: String
+		urlTitle: String
+		userOriginUpdated: String
+	  }
+	  
+	  type V2Video implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		description: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		title: String!
+		version: V2Version!
+	  
+		duration: Int
+		images: [V2Image]
+		primaryCategory: V2Category!
+		originalSource: String
+		systemOriginUpdated: String
+		userOriginUpdated: String
+		subtitle: String
+		urlTitle: String
+		videoFiles: [String]
+	  }
+	  
+	  type V2Collection {
+		content: V2Content
+		offset: Int
+		pageSize: Int
+		results: [V2Item]
+		totalHits: Int
+		warnings: [String]
+	  }
+	  
+	  type V2Content implements V2Resource {
+		id: V2Id!
+		categories: [V2Category]!
+		contentType: V2ContentType!
+		dateCreated: String!
+		dateLive: String!
+		dateUpdated: String!
+		domainLinks: [V2DomainLink]!
+		domains: [String]!
+		keywords: [String]!
+		origin: String!
+		originId: String!
+		related: [V2Item]!
+		revision: Int!
+		status: V2Status!
+		systemOriginUpdated: String!
+		title: String!
+		userOriginUpdated: String!
+		version: V2Version!
+		references: [V2Item]!
+	  }
+	  
+	  union V2Item = V2NewsStory | V2Image | V2Blob | V2Component | V2Iframe | V2ImageGallery | V2Promo | V2Video | V2Collection
+	  
+	  type Query {
+		getV2(host: String!, id: String!, apiKey: String!, product: String, channel: String): V2Item
+		getV2Collection(host: String!, id: String!, apiKey: String!): V2Collection
+	  }
+	  schema {
+		query: Query
+	  }
+</pre>

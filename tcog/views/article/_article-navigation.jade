@@ -1,0 +1,9 @@
+mixin navigation(list, depth)
+    -depth = depth || 1;
+    if (list && list.length)
+        ul(class="tier-" + depth)
+            for menuItem, index in list
+                li
+                    a(href=menuItem.link)= menuItem.text
+                    if (menuItem.children)
+                        +navigation(menuItem.children, depth+1)

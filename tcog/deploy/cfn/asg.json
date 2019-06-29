@@ -1,0 +1,1267 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Template for TCOG cold deploy with ELB health check",
+    "Mappings": {
+        "ELBSecurityGroup": {
+            "dev": {
+                "877800914193back": [ "sg-80b351ef", "sg-62b0520d", "sg-ae729ccb" ],
+                "877800914193front": [ "sg-80b351ef", "sg-9db351f2", "sg-ae729ccb" ],
+                "787828630462back": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "787828630462front": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "168146562322back": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "168146562322front": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "479845013837back": [ "sg-43fa9426", "sg-6e7e6a09" ],
+                "479845013837front": [ "sg-43fa9426", "sg-6e7e6a09" ]
+            },
+            "uat": {
+                "877800914193back": [ "sg-80b351ef", "sg-69b05206", "sg-ae729ccb" ],
+                "877800914193front": [ "sg-80b351ef", "sg-9cb351f3", "sg-ae729ccb" ],
+                "787828630462back": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "787828630462front": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "168146562322back": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "168146562322front": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "479845013837back": [ "sg-43fa9426", "sg-6e7e6a09" ],
+                "479845013837front": [ "sg-43fa9426", "sg-6e7e6a09" ]
+            },
+            "prod": {
+                "877800914193back": [ "sg-80b351ef", "sg-6db05202", "sg-ae729ccb" ],
+                "877800914193front": [ "sg-80b351ef", "sg-9eb351f1", "sg-ae729ccb" ],
+                "787828630462back": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "787828630462front": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "168146562322back": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "168146562322front": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "479845013837back": [ "sg-43fa9426", "sg-6e7e6a09" ],
+                "479845013837front": [ "sg-43fa9426", "sg-6e7e6a09" ]
+            }
+        },
+        "ELBSubnet": {
+            "dev": {
+                "877800914193back": [ "subnet-67d0190f", "subnet-c7d118af" ],
+                "877800914193front": [ "subnet-68d01900", "subnet-aad118c2" ],
+                "787828630462back": [ "subnet-eb13a88e", "subnet-0892327f" ],
+                "787828630462front": [ "subnet-e913a88c", "subnet-0c92327b" ],
+                "168146562322back": [ "subnet-9fd07ce8", "subnet-e074f385" ],
+                "168146562322front": [ "subnet-90d07ce7", "subnet-e674f383" ],
+                "479845013837back": [ "subnet-1c0d8a79", "subnet-c0b814b7" ],
+                "479845013837front": [ "subnet-1e0d8a7b", "subnet-cfb814b8" ]
+            },
+            "uat": {
+                "877800914193back": [ "subnet-7ed01916", "subnet-97d118ff" ],
+                "877800914193front": [ "subnet-45d0192d", "subnet-bfd118d7" ],
+                "787828630462back": [ "subnet-eb13a88e", "subnet-0892327f" ],
+                "787828630462front": [ "subnet-e913a88c", "subnet-0c92327b" ],
+                "168146562322back": [ "subnet-9fd07ce8", "subnet-e074f385" ],
+                "168146562322front": [ "subnet-90d07ce7", "subnet-e674f383" ],
+                "479845013837back": [ "subnet-1c0d8a79", "subnet-c0b814b7" ],
+                "479845013837front": [ "subnet-1e0d8a7b", "subnet-cfb814b8" ]
+            },
+            "prod": {
+                "877800914193back": [ "subnet-b8d118d0", "subnet-86d118ee" ],
+                "877800914193front": [ "subnet-87d118ef", "subnet-6fd01907" ],
+                "787828630462back": [ "subnet-eb13a88e", "subnet-0892327f" ],
+                "787828630462front": [ "subnet-e913a88c", "subnet-0c92327b" ],
+                "168146562322back": [ "subnet-9fd07ce8", "subnet-e074f385" ],
+                "168146562322front": [ "subnet-90d07ce7", "subnet-e674f383" ],
+                "479845013837back": [ "subnet-1c0d8a79", "subnet-c0b814b7" ],
+                "479845013837front": [ "subnet-1e0d8a7b", "subnet-cfb814b8" ]
+            }
+        },
+        "InstanceSecurityGroup": {
+            "dev": {
+                "877800914193back": [ "sg-80b351ef", "sg-7db05212", "sg-ae729ccb" ],
+                "877800914193front": [ "sg-80b351ef", "sg-6ab05205", "sg-ae729ccb" ],
+                "787828630462back": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "787828630462front": [ "sg-ed7d1e88", "sg-7f171e1b"],
+                "168146562322back": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "168146562322front": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "479845013837back": [ "sg-43fa9426", "sg-6e7e6a09" ],
+                "479845013837front": [ "sg-43fa9426", "sg-6e7e6a09" ]
+            },
+            "uat": {
+                "877800914193back": [ "sg-80b351ef", "sg-61b0520e", "sg-ae729ccb" ],
+                "877800914193front": [ "sg-80b351ef", "sg-91b351fe", "sg-ae729ccb" ],
+                "787828630462back": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "787828630462front": [ "sg-ed7d1e88", "sg-7f171e1b"],
+                "168146562322back": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "168146562322front": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "479845013837back": [ "sg-43fa9426", "sg-6e7e6a09" ],
+                "479845013837front": [ "sg-43fa9426", "sg-6e7e6a09" ]
+            },
+            "prod": {
+                "877800914193back": [ "sg-80b351ef", "sg-65b0520a", "sg-ae729ccb" ],
+                "877800914193front": [ "sg-80b351ef", "sg-96b351f9", "sg-ae729ccb" ],
+                "787828630462back": [ "sg-ed7d1e88", "sg-7f171e1b" ],
+                "787828630462front": [ "sg-ed7d1e88", "sg-7f171e1b"],
+                "168146562322back": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "168146562322front": [ "sg-e99ff18c", "sg-0c7c686b" ],
+                "479845013837back": [ "sg-43fa9426", "sg-6e7e6a09" ],
+                "479845013837front": [ "sg-43fa9426", "sg-6e7e6a09" ]
+            }
+        },
+        "InstanceSubnet": {
+            "dev": {
+                "877800914193back": [ "subnet-72d0191a", "subnet-bbd118d3" ],
+                "877800914193front": [ "subnet-84d118ec", "subnet-73d0191b" ],
+                "787828630462back": [ "subnet-e813a88d", "subnet-0b92327c" ],
+                "787828630462front": [ "subnet-ea13a88f", "subnet-0a92327d" ],
+                "168146562322back": [ "subnet-94d07ce3", "subnet-e574f380" ],
+                "168146562322front": [ "subnet-92d07ce5", "subnet-e774f382" ],
+                "479845013837back": [ "subnet-1b0d8a7e", "subnet-ceb814b9" ],
+                "479845013837front": [ "subnet-1a0d8a7f", "subnet-cdb814ba" ]
+            },
+            "uat": {
+                "877800914193back": [ "subnet-42d0192a", "subnet-d9d118b1" ],
+                "877800914193front": [ "subnet-6cd01904", "subnet-b3d118db" ],
+                "787828630462back": [ "subnet-e813a88d", "subnet-0b92327c" ],
+                "787828630462front": [ "subnet-ea13a88f", "subnet-0a92327d" ],
+                "168146562322back": [ "subnet-94d07ce3", "subnet-e574f380" ],
+                "168146562322front": [ "subnet-92d07ce5", "subnet-e774f382" ],
+                "479845013837back": [ "subnet-1b0d8a7e", "subnet-ceb814b9" ],
+                "479845013837front": [ "subnet-1a0d8a7f", "subnet-cdb814ba" ]
+            },
+            "prod": {
+                "877800914193back": [ "subnet-bed118d6", "subnet-b5d118dd" ],
+                "877800914193front": [ "subnet-d5d118bd", "subnet-ced118a6" ],
+                "787828630462back": [ "subnet-e813a88d", "subnet-0b92327c" ],
+                "787828630462front": [ "subnet-ea13a88f", "subnet-0a92327d" ],
+                "168146562322back": [ "subnet-94d07ce3", "subnet-e574f380" ],
+                "168146562322front": [ "subnet-92d07ce5", "subnet-e774f382" ],
+                "479845013837back": [ "subnet-1b0d8a7e", "subnet-ceb814b9" ],
+                "479845013837front": [ "subnet-1a0d8a7f", "subnet-cdb814ba" ]
+            }
+        },
+        "ResourceSize": {
+            "Instance": {
+                "dev": "t2.medium",
+                "uat": "c4.large",
+                "prod": "c4.large"
+            }
+        },
+        "ScaleCapacity": {
+            "DesiredCapacity": {
+                "awsdev": "0",
+                "dt": "6",
+                "hs": "3",
+                "nca": "15",
+                "perf": "2",
+                "pn": "2",
+                "prd2": "2",
+                "prd3": "2",
+                "prd4": "2",
+                "production": "8",
+                "sit": "1",
+                "sit2": "1",
+                "ssl": "2",
+                "uat": "1",
+                "taus": "2"
+            },
+            "MaxSize": {
+                "awsdev": "10",
+                "dt": "20",
+                "hs": "10",
+                "nca": "50",
+                "perf": "10",
+                "pn": "10",
+                "prd2": "10",
+                "prd3": "10",
+                "prd4": "10",
+                "production": "18",
+                "sit": "10",
+                "sit2": "10",
+                "ssl": "10",
+                "uat": "10",
+                "taus": "10"
+            },
+            "MinSize": {
+                "awsdev": "0",
+                "dt": "4",
+                "hs": "2",
+                "nca": "8",
+                "perf": "4",
+                "pn": "2",
+                "prd2": "2",
+                "prd3": "2",
+                "prd4": "2",
+                "production": "4",
+                "sit": "1",
+                "sit2": "1",
+                "ssl": "1",
+                "uat": "1",
+                "taus": "2"
+            }
+        }
+    },
+    "Parameters": {
+        "TCOGArtifactS3Bucket": {
+            "Description": "The S3 bucket where the TCOG application artifacts are stored.",
+            "Type": "String"
+        },
+        "AlertARN": {
+            "Description": "ARN of the SNS list to publish critical scale alerts, e.g. arn:aws:sns:ap-southeast-2:877800914193:tcog-prod-1-core",
+            "Type": "String"
+        },
+        "Application": {
+            "Description": "Name of application for naming and DNS.",
+            "Type": "String"
+        },
+        "Branch": {
+            "Description": "Environment",
+            "Type": "String"
+        },
+        "Release": {
+            "Description": "Release identifier.",
+            "Type": "String"
+        },
+        "NodeENV": {
+            "Description": "Node environmet",
+            "Type": "String"
+        },
+        "NSolidConsoleHostPort": {
+            "Description": "NSolid Console host and port",
+            "Type": "String"
+        },
+        "ELBHealthyThreshold": {
+            "Default": "2",
+            "Description": "Specifies the number of consecutive health probe successes required before moving the instance to the Healthy state.",
+            "Type": "String"
+        },
+        "ELBInstancePort": {
+            "Default": "3000",
+            "Description": "Specifies the TCP port on which the instance server is listening.",
+            "Type": "String"
+        },
+        "ELBInterval": {
+            "Default": "10",
+            "Description": "Specifies the approximate interval, in seconds, between health checks of an individual instance.",
+            "Type": "String"
+        },
+        "ELBLoadBalancerPort": {
+            "Default": "80",
+            "Description": "Specifies the external load balancer port number.",
+            "Type": "String"
+        },
+        "ELBProtocol": {
+            "Default": "HTTP",
+            "Description": "Specifies the load balancer transport protocol to use for routing \u2014 HTTP, HTTPS, TCP or SSL.",
+            "Type": "String"
+        },
+        "ELBTarget": {
+            "Default": "HTTP:3000/healthcheck",
+            "Description": "Specifies the instance being checked. The protocol is either TCP or HTTP. The range of valid ports is 1 through 65535.",
+            "Type": "String"
+        },
+        "ELBTimeout": {
+            "Default": "5",
+            "Description": "Specifies the amount of time, in seconds, during which no response means a failed health probe. This value must be less than the value for Interval.",
+            "Type": "String"
+        },
+        "ELBUnhealthyThreshold": {
+            "Default": "10",
+            "Description": "Specifies the number of consecutive health probe failures required before moving the instance to the Unhealthy state.",
+            "Type": "String"
+        },
+        "HostedZone": {
+            "Description": "Route53 hosted zone.",
+            "Type": "String"
+        },
+        "ImageId": {
+            "Description": "AMI ID to launch.",
+            "Type": "AWS::EC2::Image::Id"
+        },
+        "KeyName": {
+            "Default": "ec2-syd-tcog",
+            "Description": "Name of an existing EC2 KeyPair to enable SSH access to the instances.",
+            "Type": "AWS::EC2::KeyPair::KeyName"
+        },
+        "MetricName": {
+            "Default": "CPUUtilization",
+            "Description": "The name for the alarm's associated metric.",
+            "Type": "String"
+        },
+        "NetworkSecurityEnv": {
+            "Default": "dev",
+            "Description": "Network & Security environment, e.g. dev, uat, prod etc.",
+            "Type": "String"
+        },
+        "Product": {
+            "Description": "Tag for Product",
+            "Type": "String"
+        },
+        "ScaleDownCooldown": {
+            "Default": "600",
+            "Description": "The amount of time, in seconds, after a scaling activity completes before any further trigger-related scaling activities can start.",
+            "Type": "String"
+        },
+        "ScaleDownEvaluationPeriods": {
+            "Default": "5",
+            "Description": "The number of periods over which data is compared to the specified threshold.",
+            "Type": "String"
+        },
+        "ScaleDownPeriod": {
+            "Default": "120",
+            "Description": "The period in seconds over which the specified statistic is applied.",
+            "Type": "String"
+        },
+        "ScaleDownScalingAdjustment": {
+            "Default": "-1",
+            "Description": "The number of instances by which to scale.",
+            "Type": "String"
+        },
+        "ScaleDownStatistic": {
+            "Default": "Average",
+            "Description": "The statistic to apply to the alarm's associated metric.",
+            "Type": "String"
+        },
+        "ScaleDownThreshold": {
+            "Default": "40",
+            "Description": "The value against which the specified statistic is compared.",
+            "Type": "String"
+        },
+        "ScaleUpCooldown": {
+            "Default": "120",
+            "Description": "The amount of time, in seconds, after a scaling activity completes before any further trigger-related scaling activities can start.",
+            "Type": "String"
+        },
+        "ScaleUpEvaluationPeriods": {
+            "Default": "2",
+            "Description": "The number of periods over which data is compared to the specified threshold.",
+            "Type": "String"
+        },
+        "ScaleUpPeriod": {
+            "Default": "60",
+            "Description": "The period in seconds over which the specified statistic is applied.",
+            "Type": "String"
+        },
+        "ScaleUpScalingAdjustment": {
+            "Default": "2",
+            "Description": "The number of instances by which to scale.",
+            "Type": "String"
+        },
+        "ScaleUpStatistic": {
+            "Default": "Average",
+            "Description": "The statistic to apply to the alarm's associated metric.",
+            "Type": "String"
+        },
+        "ScaleUpThreshold": {
+            "Default": "70",
+            "Description": "The value against which the specified statistic is compared.",
+            "Type": "String"
+        },
+        "Subnet": {
+            "Description": "Subnet category.",
+            "Type": "String"
+        },
+        "TagBusinessUnit": {
+            "Description": "Tag for Business Unit.",
+            "Type": "String"
+        },
+        "TagCostCenter": {
+            "Description": "Tag for cost center ID",
+            "Type": "String"
+        },
+        "TagOwner": {
+            "Description": "Tag for Owner",
+            "Type": "String"
+        },
+        "ExistingAlarmTopic": {
+            "Default": "arn:aws:sns:ap-southeast-2:877800914193:tcog-alerts",
+            "Type": "String"
+        },
+        "AlarmEmail": {
+            "Type": "String",
+            "Default": "dl-tcog+alerts@news.com.au"
+        },
+        "LatencyAlarmThreshold": {
+            "Type": "String",
+            "Default": 0.6
+        }
+    },
+    "Conditions": {
+        "CreateAlarmTopic": {
+            "Fn::Equals": [
+                {
+                    "Ref": "ExistingAlarmTopic"
+                },
+                "NONE"
+            ]
+        }
+    },
+    "Resources": {
+        "AlarmHigh": {
+            "Properties": {
+                "AlarmActions": [
+                    {
+                        "Ref": "ScaleUpPolicy"
+                    }
+                ],
+                "AlarmDescription": "Autoscale Scale Up Alarm",
+                "ComparisonOperator": "GreaterThanThreshold",
+                "Dimensions": [
+                    {
+                        "Name": "AutoScalingGroupName",
+                        "Value": {
+                            "Ref": "AutoScaleGroup"
+                        }
+                    }
+                ],
+                "EvaluationPeriods": {
+                    "Ref": "ScaleUpEvaluationPeriods"
+                },
+                "MetricName": {
+                    "Ref": "MetricName"
+                },
+                "Namespace": "AWS/EC2",
+                "Period": {
+                    "Ref": "ScaleUpPeriod"
+                },
+                "Statistic": {
+                    "Ref": "ScaleUpStatistic"
+                },
+                "Threshold": {
+                    "Ref": "ScaleUpThreshold"
+                }
+            },
+            "Type": "AWS::CloudWatch::Alarm"
+        },
+        "AlarmLow": {
+            "Properties": {
+                "AlarmActions": [
+                    {
+                        "Ref": "ScaleDownPolicy"
+                    }
+                ],
+                "AlarmDescription": "Autoscale Scale Down Alarm",
+                "ComparisonOperator": "LessThanThreshold",
+                "Dimensions": [
+                    {
+                        "Name": "AutoScalingGroupName",
+                        "Value": {
+                            "Ref": "AutoScaleGroup"
+                        }
+                    }
+                ],
+                "EvaluationPeriods": {
+                    "Ref": "ScaleDownEvaluationPeriods"
+                },
+                "MetricName": {
+                    "Ref": "MetricName"
+                },
+                "Namespace": "AWS/EC2",
+                "Period": {
+                    "Ref": "ScaleUpPeriod"
+                },
+                "Statistic": {
+                    "Ref": "ScaleDownStatistic"
+                },
+                "Threshold": {
+                    "Ref": "ScaleDownThreshold"
+                }
+            },
+            "Type": "AWS::CloudWatch::Alarm"
+        },
+        "AutoScaleGroup": {
+              "CreationPolicy" : {
+              "ResourceSignal" : {
+                "Timeout" : "PT15M",
+                "Count"   : {
+                  "Fn::FindInMap": [
+                    "ScaleCapacity",
+                    "DesiredCapacity",
+                    {
+                      "Ref": "NodeENV"
+                    }
+                  ]
+                }
+             }
+            },
+            "Properties": {
+                "AvailabilityZones": [ "ap-southeast-2a", "ap-southeast-2b" ],
+                "HealthCheckGracePeriod": "250",
+                "HealthCheckType": "ELB",
+                "LaunchConfigurationName": {
+                    "Ref": "LaunchConfig"
+                },
+                "LoadBalancerNames": [
+                    {
+                        "Ref": "ElasticLoadBalancer"
+                    }
+                ],
+                "DesiredCapacity": {
+                    "Fn::FindInMap": [
+                        "ScaleCapacity",
+                        "DesiredCapacity",
+                        {
+                            "Ref": "NodeENV"
+                        }
+                    ]
+                },
+                "MaxSize": {
+                    "Fn::FindInMap": [
+                        "ScaleCapacity",
+                        "MaxSize",
+                        {
+                            "Ref": "NodeENV"
+                        }
+                    ]
+                },
+                "MetricsCollection": [{
+                    "Granularity" : "1Minute"
+                }],
+                "MinSize": {
+                    "Fn::FindInMap": [
+                        "ScaleCapacity",
+                        "MinSize",
+                        {
+                            "Ref": "NodeENV"
+                        }
+                    ]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Fn::Join": [
+                                "",
+                                [
+                                    {
+                                        "Ref": "Product"
+                                    },
+                                    "-",
+                                    {
+                                        "Ref": "Branch"
+                                    },
+                                    "-",
+                                    {
+                                        "Ref": "Release"
+                                    },
+                                    "-",
+                                    {
+                                        "Ref": "Application"
+                                    }
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        "Key": "Bu",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Ref": "TagBusinessUnit"
+                        }
+                    },
+                    {
+                        "Key": "Cc",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Ref": "TagCostCenter"
+                        }
+                    },
+                    {
+                        "Key": "Environment",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Ref": "NetworkSecurityEnv"
+                        }
+                    },
+                    {
+                        "Key": "NodeENV",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Ref": "NodeENV"
+                        }
+                    },
+                    {
+                        "Key": "Owner",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Ref": "TagOwner"
+                        }
+                    },
+                    {
+                        "Key": "Product",
+                        "PropagateAtLaunch": true,
+                        "Value": {
+                            "Ref": "Product"
+                        }
+                    }
+                ],
+                "VPCZoneIdentifier": {
+                    "Fn::FindInMap": [
+                        "InstanceSubnet",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        },
+                        {
+                            "Ref": "Subnet"
+                        }
+                    ]
+                }
+            },
+            "Type": "AWS::AutoScaling::AutoScalingGroup"
+        },
+        "DNSRecord": {
+            "Properties": {
+                "Comment": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            {
+                                "Ref": "NetworkSecurityEnv"
+                            },
+                            "-",
+                            {
+                                "Ref": "Release"
+                            },
+                            ".",
+                            {
+                                "Ref": "Application"
+                            },
+                            ".",
+                            {
+                                "Ref": "HostedZone"
+                            },
+                            "."
+                        ]
+                    ]
+                },
+                "HostedZoneName": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            {
+                                "Ref": "HostedZone"
+                            },
+                            "."
+                        ]
+                    ]
+                },
+                "Name": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            {
+                                "Ref": "NetworkSecurityEnv"
+                            },
+                            "-",
+                            {
+                                "Ref": "Release"
+                            },
+                            ".",
+                            {
+                                "Ref": "Application"
+                            },
+                            ".",
+                            {
+                                "Ref": "HostedZone"
+                            },
+                            "."
+                        ]
+                    ]
+                },
+                "AliasTarget": {
+                  "DNSName": {
+                    "Fn::GetAtt": [
+                      "ElasticLoadBalancer",
+                      "DNSName"
+                    ]
+                  },
+                  "HostedZoneId": {
+                    "Fn::GetAtt": [
+                      "ElasticLoadBalancer",
+                      "CanonicalHostedZoneNameID"
+                    ]
+                  }
+                },
+                "Type": "A"
+            },
+            "Type": "AWS::Route53::RecordSet"
+        },
+        "ElasticLoadBalancer": {
+            "Properties": {
+                "CrossZone": "true",
+                "HealthCheck": {
+                    "HealthyThreshold": {
+                        "Ref": "ELBHealthyThreshold"
+                    },
+                    "Interval": {
+                        "Ref": "ELBInterval"
+                    },
+                    "Target": {
+                        "Ref": "ELBTarget"
+                    },
+                    "Timeout": {
+                        "Ref": "ELBTimeout"
+                    },
+                    "UnhealthyThreshold": {
+                        "Ref": "ELBUnhealthyThreshold"
+                    }
+                },
+                "Listeners": [
+                    {
+                        "InstancePort": {
+                            "Ref": "ELBInstancePort"
+                        },
+                        "LoadBalancerPort": {
+                            "Ref": "ELBLoadBalancerPort"
+                        },
+                        "Protocol": {
+                            "Ref": "ELBProtocol"
+                        }
+                    }
+                ],
+                "Scheme": "internal",
+                "SecurityGroups": {
+                    "Fn::FindInMap": [
+                        "ELBSecurityGroup",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        },
+                        {
+                            "Ref": "Subnet"
+                        }
+                    ]
+                },
+                "Subnets": {
+                    "Fn::FindInMap": [
+                        "ELBSubnet",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        },
+                        {
+                            "Ref": "Subnet"
+                        }
+                    ]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Fn::Join": [
+                                "",
+                                [
+                                    {
+                                        "Ref": "Product"
+                                    },
+                                    "-",
+                                    {
+                                        "Ref": "Branch"
+                                    },
+                                    "-",
+                                    {
+                                        "Ref": "Release"
+                                    },
+                                    "-",
+                                    {
+                                        "Ref": "Application"
+                                    }
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        "Key": "Bu",
+                        "Value": {
+                            "Ref": "TagBusinessUnit"
+                        }
+                    },
+                    {
+                        "Key": "Cc",
+                        "Value": {
+                            "Ref": "TagCostCenter"
+                        }
+                    },
+                    {
+                        "Key": "Environment",
+                        "Value": {
+                            "Ref": "NetworkSecurityEnv"
+                        }
+                    },
+                    {
+                        "Key": "NodeENV",
+                        "Value": {
+                            "Ref": "NodeENV"
+                        }
+                    },
+                    {
+                        "Key": "Owner",
+                        "Value": {
+                            "Ref": "TagOwner"
+                        }
+                    },
+                    {
+                        "Key": "Product",
+                        "Value": {
+                            "Ref": "Product"
+                        }
+                    }
+                ]
+            },
+            "Type": "AWS::ElasticLoadBalancing::LoadBalancer"
+        },
+        "InstanceProfile": {
+            "Properties": {
+                "Path": "/",
+                "Roles": [
+                    {
+                        "Ref": "InstanceRole"
+                    }
+                ]
+            },
+            "Type": "AWS::IAM::InstanceProfile"
+        },
+        "InstanceRole": {
+            "Properties": {
+                "AssumeRolePolicyDocument": {
+                    "Statement": [
+                        {
+                            "Action": [
+                                "sts:AssumeRole"
+                            ],
+                            "Effect": "Allow",
+                            "Principal": {
+                                "Service": [
+                                    "ec2.amazonaws.com"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "ManagedPolicyArns": [
+                    "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM",
+                    "arn:aws:iam::aws:policy/service-role/AmazonSSMAutomationRole"
+                ],
+                "Path": "/",
+                "Policies": [
+                    {
+                        "PolicyDocument": {
+                            "Statement": [
+                                {
+                                    "Action": [
+                                        "s3:ListBucket"
+                                    ],
+                                    "Condition": {
+                                        "StringEquals": {
+                                            "s3:delimiter": [
+                                                "/"
+                                            ],
+                                            "s3:prefix": [
+                                                "deployments/"
+                                            ]
+                                        }
+                                    },
+                                    "Effect": "Allow",
+                                    "Resource": [
+                                        { "Fn::Join": [ "", [
+                                            "arn:aws:s3:::",
+                                            { "Ref": "TCOGArtifactS3Bucket" }
+                                        ]]}
+                                    ],
+                                    "Sid": "Allow1stPrefixListing"
+                                },
+                                {
+                                    "Action": [
+                                        "s3:ListBucket"
+                                    ],
+                                    "Condition": {
+                                        "StringLike": {
+                                            "s3:prefix": [
+                                                "deployments/*"
+                                            ]
+                                        }
+                                    },
+                                    "Effect": "Allow",
+                                    "Resource": [
+                                        { "Fn::Join": [ "", [
+                                            "arn:aws:s3:::",
+                                            { "Ref": "TCOGArtifactS3Bucket" }
+                                        ]]}
+                                    ],
+                                    "Sid": "AllowPureprofileListing"
+                                },
+                                {
+                                    "Action": [
+                                        "s3:Get*",
+                                        "s3:List*"
+                                    ],
+                                    "Effect": "Allow",
+                                    "Resource": [
+                                        { "Fn::Join": [ "", [
+                                            "arn:aws:s3:::",
+                                            { "Ref": "TCOGArtifactS3Bucket" },
+                                            "/deployments/*"
+                                        ]]}
+                                    ],
+                                    "Sid": "AllowAllS3ActionsInUserFolder"
+                                },
+                                {
+                                    "Action": [
+                                        "ec2:DescribeTags"
+                                    ],
+                                    "Effect": "Allow",
+                                    "Resource": [
+                                        "*"
+                                    ],
+                                    "Sid": "Stmt1421715385000"
+                                }
+                            ]
+                        },
+                        "PolicyName": "TcogS3Access"
+                    },
+                    {
+                        "PolicyName": "describe-instance-health-policy",
+                        "PolicyDocument": {
+                          "Statement": [{
+                                  "Effect": "Allow",
+                                  "Action": [ "elasticloadbalancing:DescribeInstanceHealth" ],
+                                  "Resource": "*"
+                              }]
+                        }
+                    },
+                    {
+                        "PolicyName": "tcogSQSAccess",
+                        "PolicyDocument": {
+                          "Statement": [
+                            {
+                                "Action": [
+                                    "sqs:*"
+                                ],
+                                "Resource": [
+                                    { "Fn::Join" : [ "", [
+                                      "arn:aws:sqs:",
+                                      { "Ref" : "AWS::Region" },
+                                      ":",
+                                      { "Ref" : "AWS::AccountId" },
+                                      ":TCOG-*"]
+                                    ]},
+                                    { "Fn::Join" : [ "", [
+                                      "arn:aws:sqs:",
+                                      { "Ref" : "AWS::Region" },
+                                      ":",
+                                      { "Ref" : "AWS::AccountId" },
+                                      ":tcog-*"]
+                                    ]}
+                                ],
+                                "Effect": "Allow"
+                            }
+                          ]
+                        }
+                    }
+                ]
+            },
+            "Type": "AWS::IAM::Role"
+        },
+        "LaunchConfig": {
+            "DependsOn" : [ "ElasticLoadBalancer" ],
+             "Metadata" : {
+              "AWS::CloudFormation::Init" : {
+              "configSets" : {
+              "full_install" : [ "verify_instance_health" ]
+               },
+               "verify_instance_health" : {
+                "commands" : {
+                  "ELBHealthCheck" : {
+                    "command" : { "Fn::Join" : ["", [
+                      "source /etc/profile; ",
+                      "until [[ $(echo $state | grep -c InService) -eq 1 ]]; do ",
+                      "  state=$(aws --region ", { "Ref" : "AWS::Region" }, " elb describe-instance-health ",
+                      "              --load-balancer-name ", { "Ref" : "ElasticLoadBalancer" },
+                      "              --instances $(curl -s http://169.254.169.254/latest/meta-data/instance-id) ",
+                      "              --query InstanceStates[0].State); ",
+                      "  sleep 2; ",
+                      "done"
+                    ]]}
+                  }
+                }
+              }
+            }
+          },
+            "Properties": {
+                "IamInstanceProfile": {
+                    "Ref": "InstanceProfile"
+                },
+                "ImageId": {
+                    "Ref": "ImageId"
+                },
+                "InstanceType": {
+                    "Fn::FindInMap": [
+                        "ResourceSize",
+                        "Instance",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        }
+                    ]
+                },
+                "KeyName": {
+                    "Ref": "KeyName"
+                },
+                "SecurityGroups": {
+                    "Fn::FindInMap": [
+                        "InstanceSecurityGroup",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        },
+                        {
+                            "Ref": "Subnet"
+                        }
+                    ]
+                },
+                "UserData": {
+                    "Fn::Base64": {
+                        "Fn::Join": [ "", [
+                                "#!/bin/bash -ex\n",
+                                "echo \"export NetworkSecurityEnv='", {"Ref": "NetworkSecurityEnv"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "echo \"export TagBusinessUnit='", {"Ref": "TagBusinessUnit"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "echo \"export Product='", {"Ref": "Product"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "echo \"export Application='", {"Ref": "Application"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "echo \"export NODE_ENV='", {"Ref": "NodeENV"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "echo \"export NSolidConsoleHostPort='", {"Ref": "NSolidConsoleHostPort"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "echo \"export Release='", {"Ref": "Release"},"'\" >> /home/ec2-user/app/current/envvars\n",
+                                "bash -e /home/ec2-user/app/current/deploy/scripts/firstrun.sh\n",
+                                "source /etc/profile\n",
+                                "/opt/aws/bin/cfn-init -v ",
+                                "         --stack ", { "Ref" : "AWS::StackName" },
+                                "         --resource LaunchConfig ",
+                                "         --configsets full_install ",
+                                "         --region ", { "Ref" : "AWS::Region" }, "\n",
+                                "/opt/aws/bin/cfn-signal -e $? ",
+                                "         --stack ", { "Ref" : "AWS::StackName" },
+                                "         --resource AutoScaleGroup ",
+                                "         --region ", { "Ref" : "AWS::Region" }, "\n"
+                            ]
+                        ]
+                    }
+                }
+            },
+            "Type": "AWS::AutoScaling::LaunchConfiguration"
+        },
+        "ScaleDownPolicy": {
+            "Properties": {
+                "AdjustmentType": "ChangeInCapacity",
+                "AutoScalingGroupName": {
+                    "Ref": "AutoScaleGroup"
+                },
+                "Cooldown": {
+                    "Ref": "ScaleDownCooldown"
+                },
+                "ScalingAdjustment": {
+                    "Ref": "ScaleDownScalingAdjustment"
+                }
+            },
+            "Type": "AWS::AutoScaling::ScalingPolicy"
+        },
+        "ScaleUpPolicy": {
+            "Properties": {
+                "AdjustmentType": "ChangeInCapacity",
+                "AutoScalingGroupName": {
+                    "Ref": "AutoScaleGroup"
+                },
+                "Cooldown": {
+                    "Ref": "ScaleUpCooldown"
+                },
+                "ScalingAdjustment": {
+                    "Ref": "ScaleUpScalingAdjustment"
+                }
+            },
+            "Type": "AWS::AutoScaling::ScalingPolicy"
+        },
+        "ELBDashboard": {
+            "Type": "AWS::CloudWatch::Dashboard",
+            "Properties": {
+              "DashboardName": {
+                  "Ref": "AWS::StackName"
+              },
+              "DashboardBody": {
+                  "Fn::Sub": "{\n    \"widgets\": [\n        {\n            \"type\": \"metric\",\n            \"x\": 0,\n            \"y\": 0,\n            \"width\": 24,\n            \"height\": 6,\n            \"properties\": {\n                \"view\": \"timeSeries\",\n                \"stacked\": false,\n                \"metrics\": [\n                    [ \"AWS/ELB\", \"Latency\", \"LoadBalancerName\", \"${ElasticLoadBalancer}\" ],\n                    [ \".\", \"HTTPCode_Backend_5XX\", \".\", \".\", { \"stat\": \"Sum\", \"yAxis\": \"right\" } ],\n                    [ \".\", \"HTTPCode_Backend_2XX\", \".\", \".\", { \"stat\": \"Sum\", \"yAxis\": \"right\" } ]\n                ],\n                \"region\": \"ap-southeast-2\"\n            }\n        },\n        {\n            \"type\": \"metric\",\n            \"x\": 0,\n            \"y\": 6,\n            \"width\": 24,\n            \"height\": 6,\n            \"properties\": {\n                \"view\": \"timeSeries\",\n                \"stacked\": false,\n                \"metrics\": [\n                    [ \"AWS/ELB\", \"HealthyHostCount\", \"LoadBalancerName\", \"${ElasticLoadBalancer}\" ],\n                    [ \".\", \"UnHealthyHostCount\", \".\", \".\" ]\n                ],\n                \"region\": \"ap-southeast-2\"\n            }\n        }\n    ]\n}"
+                }
+            }
+        },
+        "AlarmTopic": {
+            "Type": "AWS::SNS::Topic",
+            "Condition": "CreateAlarmTopic"
+        },
+        "AlarmSubscription": {
+            "Type": "AWS::SNS::Subscription",
+            "Condition": "CreateAlarmTopic",
+            "Properties": {
+                "Protocol": "email",
+                "Endpoint": {
+                    "Ref": "AlarmEmail"
+                },
+                "TopicArn": {
+                    "Fn::If": [
+                        "CreateAlarmTopic",
+                        {
+                            "Ref": "AlarmTopic"
+                        },
+                        {
+                            "Ref": "ExistingAlarmTopic"
+                        }
+                    ]
+                }
+            }
+        },
+        "LatencyAlarm": {
+            "Type": "AWS::CloudWatch::Alarm",
+            "Properties": {
+                "AlarmDescription": {
+                    "Fn::Sub": "\"Alarm if ELB latency is over ${LatencyAlarmThreshold}\"\n"
+                },
+                "Namespace": "AWS/ELB",
+                "MetricName": "Latency",
+                "Statistic": "Average",
+                "Period": 60,
+                "EvaluationPeriods": 10,
+                "Threshold": {
+                    "Ref": "LatencyAlarmThreshold"
+                },
+                "ComparisonOperator": "GreaterThanThreshold",
+                "AlarmActions": [
+                    {
+                        "Fn::If": [
+                            "CreateAlarmTopic",
+                            {
+                                "Ref": "AlarmTopic"
+                            },
+                            {
+                                "Ref": "ExistingAlarmTopic"
+                            }
+                        ]
+                    }
+                ],
+                "InsufficientDataActions": [
+                    {
+                        "Fn::If": [
+                            "CreateAlarmTopic",
+                            {
+                                "Ref": "AlarmTopic"
+                            },
+                            {
+                                "Ref": "ExistingAlarmTopic"
+                            }
+                        ]
+                    }
+                ],
+                "OKActions": [
+                    {
+                        "Fn::If": [
+                            "CreateAlarmTopic",
+                            {
+                                "Ref": "AlarmTopic"
+                            },
+                            {
+                                "Ref": "ExistingAlarmTopic"
+                            }
+                        ]
+                    }
+                ],
+                "Dimensions": [
+                    {
+                        "Name": "LoadBalancerName",
+                        "Value": {
+                            "Ref": "ElasticLoadBalancer"
+                        }
+                    }
+                ]
+            }
+        },
+        "HealthyHostCountAlarm": {
+            "Type": "AWS::CloudWatch::Alarm",
+            "Properties": {
+                "AlarmDescription": "Alarm if ELB HealthyHostCount is less then 1",
+                "Namespace": "AWS/ELB",
+                "MetricName": "HealthyHostCount",
+                "Statistic": "Average",
+                "Period": 60,
+                "EvaluationPeriods": 1,
+                "Threshold": 1,
+                "ComparisonOperator": "LessThanThreshold",
+                "AlarmActions": [
+                    {
+                        "Fn::If": [
+                            "CreateAlarmTopic",
+                            {
+                                "Ref": "AlarmTopic"
+                            },
+                            {
+                                "Ref": "ExistingAlarmTopic"
+                            }
+                        ]
+                    }
+                ],
+                "InsufficientDataActions": [
+                    {
+                        "Fn::If": [
+                            "CreateAlarmTopic",
+                            {
+                                "Ref": "AlarmTopic"
+                            },
+                            {
+                                "Ref": "ExistingAlarmTopic"
+                            }
+                        ]
+                    }
+                ],
+                "OKActions": [
+                    {
+                        "Fn::If": [
+                            "CreateAlarmTopic",
+                            {
+                                "Ref": "AlarmTopic"
+                            },
+                            {
+                                "Ref": "ExistingAlarmTopic"
+                            }
+                        ]
+                    }
+                ],
+                "Dimensions": [
+                    {
+                        "Name": "LoadBalancerName",
+                        "Value": {
+                            "Ref": "ElasticLoadBalancer"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Outputs": {
+        "AutoscaleDNS": {
+            "Description": "DNS for the autoscaled application",
+            "Value": {
+                "Ref": "DNSRecord"
+            }
+        },
+        "AutoscaleID": {
+            "Description": "ID of the autoscaled group",
+            "Value": {
+                "Ref": "AutoScaleGroup"
+            }
+        },
+        "ELBDNSName": {
+            "Description": "ELB DNS Name",
+            "Value": {
+                "Fn::GetAtt": [
+                    "ElasticLoadBalancer",
+                    "DNSName"
+                ]
+            }
+        },
+        "ELBDHostedZoneId": {
+            "Description": "ELB Route53 Hosted Zone ID",
+            "Value": {
+                "Fn::GetAtt": [
+                    "ElasticLoadBalancer",
+                    "CanonicalHostedZoneNameID"
+                ]
+            }
+        },
+        "ELB": {
+            "Description": "ELB ID",
+            "Value": {
+                "Ref": "ElasticLoadBalancer"
+            }
+        }
+    }
+}

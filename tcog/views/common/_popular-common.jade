@@ -1,0 +1,21 @@
+-
+    // normalised the various standalone most-popular templates
+    // removing duplication
+
+    var moduleClasses  = display.moduleClasses || "",
+        popularHeading = display.moduleHeader,
+        domain         = query.domain || display.domain,
+
+        // most of the time most popular is based on a collection
+        // the following logic permits both v1 ( + v1 redirected ) & v2 URLs
+        // to still use the popular templates
+
+        isCollection   = data.results[0] &&
+                         data.results[0].contentType === 'COLLECTION',
+        results        = isCollection ? data.results[0].related : data.results;
+        
+        // legacy calls may still use pageSize as it is a valid CAPI v2 param
+        // but it's does not work for collections so lets normalise
+        
+        pageSize = query.maxRelated || query.pageSize;
+        results  = pageSize ? results.slice(0, pageSize) : results;

@@ -1,0 +1,25 @@
+head
+    meta(http-equiv="Content-type" content="text/html; charset=utf-8")
+    title TCOG &middot; The platform for innovation
+    style
+        include index.css
+body
+
+    .container
+        include logo.svg
+        p.slogan=slogans[Math.random()*slogans.length|0]
+
+        p#version #{ npmPackage }-#{ node } (#{ env })
+
+    a.tell-me-more(href="http://wiki.news.com.au/display/PI/Home") What is this thing, anyway?
+    script.
+        var slogans = !{JSON.stringify(slogans)};
+
+        function refresh() {
+            document.querySelector(".slogan").innerHTML =
+                slogans[Math.random()*slogans.length|0];
+        }
+
+        window.addEventListener("focus", refresh);
+    script
+        include index-canvas.js

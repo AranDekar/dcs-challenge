@@ -1,0 +1,17 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-internal-docs": "./deploy.sh internal",
+    "deploy-api-docs": "./deploy.sh api"
+  },
+  "dependencies": {
+    "keys": "git+http://stash.news.com.au/scm/dcs/keys.git"
+  },
+  "keywords": [],
+  "author": "DCS",
+  "license": "ISC"
+}

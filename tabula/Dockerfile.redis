@@ -1,0 +1,10 @@
+FROM redis:2.8
+
+ENV RDB_FILE "dump.rdb"
+
+EXPOSE 6379
+
+RUN mkdir -p /usr/local/etc/redis/
+ADD files/start.sh ./
+
+CMD ./start.sh

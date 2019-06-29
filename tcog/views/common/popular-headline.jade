@@ -1,0 +1,12 @@
+include ./_popular-common.jade
+
+div(class='module ' + moduleClasses)
+    if (popularHeading)
+        div.module-header
+            h3.heading= popularHeading
+    div.module-content
+        ol.news-headline-numbered: each item in results
+            li: a(href='#{item.domainLinks[0].link}', rel='mostpop')= (item.title||"").trim()
+
+if data.isLegacy
+    // tcog: legacy redirect 

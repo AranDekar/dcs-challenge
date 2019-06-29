@@ -1,0 +1,44 @@
+{
+  "name": "pp-services",
+  "version": "1.0.0",
+  "description": "The uber repository for DCS Pied Piper Services. Simpler to do this for one build pipeline to get started.",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "DEBUG=* forever --minUptime 3000 dist/src/bin/start.js",
+    "test": "NODE_ENV=test mocha --exit -r ts-node/register 'test/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://MoriartyJ1@stash.news.com.au/scm/dcs/pp-services.git"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/ioredis": "^3.2.7",
+    "@types/lodash": "^4.14.112",
+    "@types/mocha": "^2.2.48",
+    "@types/newrelic": "^3.3.0",
+    "@types/node": "^8.10.21",
+    "@types/request": "^2.47.1",
+    "@types/supertest": "^2.0.5",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "supertest": "^3.1.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "dcs-logger": "http://stash.news.com.au/scm/dcs/dcs-logger.git#439ebe65c63566fdf46f7214127709ad189b6612",
+    "forever": "^0.15.3",
+    "ioredis": "^3.2.1",
+    "lodash": "^4.17.10",
+    "newrelic": "^4.8.1",
+    "request": "^2.87.0",
+    "superagent": "^3.8.3"
+  }
+}

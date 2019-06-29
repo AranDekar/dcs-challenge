@@ -1,0 +1,1769 @@
+{
+    "contentType": "NEWS_STORY",
+    "id": {
+        "value": "86f0a4cda1c57ca41ae232369b5b2b13",
+        "link": "http://api.newsapi.com.au/content/v2/86f0a4cda1c57ca41ae232369b5b2b13"
+    },
+    "originId": "841569c2-78eb-11e8-a87f-d6284da931f3",
+    "origin": "METHODE",
+    "channel": "NONE",
+    "title": "First look at Coast’s $15m ‘crown jewels’ central park",
+    "subtitle": "Golden Age: Gold Coast’s City Council to break ground on $15m Robina City Parklands this year",
+    "description": "<p>A GIANT ‘Gold Coast central park’ to rival those in the nation’s capitals will begin construction this year as part of a $15 million revamp of a long-unused site.</p>",
+    "link": "http://cdn.newsapi.com.au/link/86f0a4cda1c57ca41ae232369b5b2b13?domain=newscorpaustralia.com",
+    "paidStatus": "PREMIUM",
+    "originalSource": "Gold Coast Bulletin",
+    "creditedSource": "Gold Coast Bulletin",
+    "subscriptionSummary": "THE $15 million first stage of a city parkland, which will become the Gold Coast's ‘crown jewels’, will begin construction this year. And there are plans for it to become even larger.",
+    "originalAssetId": "841569c2-78eb-11e8-a87f-d6284da931f3",
+    "version": "PUBLISHED",
+    "dateUpdated": "2018-06-27T07:47:45.000Z",
+    "dateLive": "2018-06-26T14:00:00.000Z",
+    "customDate": "2018-06-26T14:00:00.000Z",
+    "dateCreated": "2018-06-26T02:49:16.000Z",
+    "status": "ACTIVE",
+    "thumbnailImage": {
+        "contentType": "IMAGE",
+        "id": {
+            "value": "7d919cd8c4e98d58d8697dbbe0aa292f",
+            "link": "http://api.newsapi.com.au/image/v1/7d919cd8c4e98d58d8697dbbe0aa292f"
+        },
+        "originId": "crop-7a673b52ad6ce5f70a979d25de34a19a",
+        "origin": "METHODE",
+        "title": "Aerial photos of Skilled Park and the Robina train station.",
+        "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+        "description": "Aerial photos of Skilled Park and the Robina train station.",
+        "link": "http://cdn.newsapi.com.au/image/v1/thumbnail/7d919cd8c4e98d58d8697dbbe0aa292f",
+        "paidStatus": "NON_PREMIUM",
+        "originalSource": "News Limited",
+        "version": "PUBLISHED",
+        "dateUpdated": "2018-06-27T07:42:54.000Z",
+        "dateLive": "2018-06-26T14:00:00.000Z",
+        "dateCreated": "2018-06-26T04:48:06.000Z",
+        "status": "ACTIVE",
+        "related": [],
+        "domainLinks": [],
+        "categories": [],
+        "keywords": [
+            "train station",
+            "Aerial photos",
+            "photos",
+            "train"
+        ],
+        "authors": [],
+        "domains": [
+            "newscorpaustralia.com",
+            "cairnspost.com.au",
+            "ntnews.com.au",
+            "couriermail.com.au",
+            "goldcoastbulletin.com.au",
+            "themercury.com.au",
+            "heraldsun.com.au",
+            "adelaidenow.com.au",
+            "townsvillebulletin.com.au",
+            "perthnow.com.au",
+            "dailytelegraph.com.au",
+            "geelongadvertiser.com.au"
+        ],
+        "locationGeoPoints": [],
+        "userOriginUpdated": "westthorpt",
+        "systemOriginUpdated": "METHODE",
+        "domainOriginUpdated": "None",
+        "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+        "revision": 4,
+        "format": "jpeg",
+        "width": 100,
+        "height": 75,
+        "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+        "imageType": "THUMBNAIL",
+        "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+        "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+        "cropName": "4:3-Thumbnail"
+    },
+    "related": [
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "deeb9e39982eb89bb7faa2fa2145c78e",
+                "link": "http://api.newsapi.com.au/image/v1/deeb9e39982eb89bb7faa2fa2145c78e"
+            },
+            "originId": "crop-dd3bab75b9855cef8631ad1baf11e33a",
+            "origin": "METHODE",
+            "title": "Aerial photos of Skilled Park and the Robina train station.",
+            "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "description": "Aerial photos of Skilled Park and the Robina train station.",
+            "link": "http://cdn.newsapi.com.au/image/v1/deeb9e39982eb89bb7faa2fa2145c78e",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Limited",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:48:06.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [
+                "train station",
+                "Aerial photos",
+                "photos",
+                "train"
+            ],
+            "authors": [],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "SUBSTITUTE"
+            ],
+            "format": "jpeg",
+            "width": 1024,
+            "height": 768,
+            "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+            "imageType": "SUBSTITUTE",
+            "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+            "cropName": "4:3-Landscape"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "6d04426fac5d12e6cc19a482ccc035dc",
+                "link": "http://api.newsapi.com.au/image/v1/6d04426fac5d12e6cc19a482ccc035dc"
+            },
+            "originId": "crop-8edce1e88ae4b400ba84b2bd1aea1af6",
+            "origin": "METHODE",
+            "title": "Aerial photos of Skilled Park and the Robina train station.",
+            "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "description": "Aerial photos of Skilled Park and the Robina train station.",
+            "link": "http://cdn.newsapi.com.au/image/v1/6d04426fac5d12e6cc19a482ccc035dc",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Limited",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:48:06.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [
+                "train station",
+                "Aerial photos",
+                "photos",
+                "train"
+            ],
+            "authors": [],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "SUBSTITUTE"
+            ],
+            "format": "jpeg",
+            "width": 768,
+            "height": 1024,
+            "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+            "imageType": "SUBSTITUTE",
+            "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+            "cropName": "3:4-Portrait"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "cdca9e3ea876825f68303f850e0ec4bf",
+                "link": "http://api.newsapi.com.au/image/v1/cdca9e3ea876825f68303f850e0ec4bf"
+            },
+            "originId": "crop-fe76c96366508485817c747a74312e73",
+            "origin": "METHODE",
+            "title": "Aerial photos of Skilled Park and the Robina train station.",
+            "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "description": "Aerial photos of Skilled Park and the Robina train station.",
+            "link": "http://cdn.newsapi.com.au/image/v1/cdca9e3ea876825f68303f850e0ec4bf",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Limited",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:48:06.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [
+                "train station",
+                "Aerial photos",
+                "photos",
+                "train"
+            ],
+            "authors": [],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "SUBSTITUTE"
+            ],
+            "format": "jpeg",
+            "width": 1280,
+            "height": 720,
+            "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+            "imageType": "SUBSTITUTE",
+            "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+            "cropName": "16:9-Landscape"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "deb385d033fa1652287b4ba1e958e662",
+                "link": "http://api.newsapi.com.au/image/v1/deb385d033fa1652287b4ba1e958e662"
+            },
+            "originId": "crop-2dce5d22c3c92705acde9229206ad68d",
+            "origin": "METHODE",
+            "title": "Aerial photos of Skilled Park and the Robina train station.",
+            "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "description": "Aerial photos of Skilled Park and the Robina train station.",
+            "link": "http://cdn.newsapi.com.au/image/v1/deb385d033fa1652287b4ba1e958e662",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Limited",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:48:06.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [
+                "train station",
+                "Aerial photos",
+                "photos",
+                "train"
+            ],
+            "authors": [],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "SUBSTITUTE"
+            ],
+            "format": "jpeg",
+            "width": 1900,
+            "height": 815,
+            "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+            "imageType": "SUBSTITUTE",
+            "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+            "cropName": "21:9-Landscape"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "d3eababde3c1d8435d4d79d00bcad3c2",
+                "link": "http://api.newsapi.com.au/image/v1/d3eababde3c1d8435d4d79d00bcad3c2"
+            },
+            "originId": "crop-db4869b9960537c016517ab328dc2421",
+            "origin": "METHODE",
+            "title": "Aerial photos of Skilled Park and the Robina train station.",
+            "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "description": "Aerial photos of Skilled Park and the Robina train station.",
+            "link": "http://cdn.newsapi.com.au/image/v1/d3eababde3c1d8435d4d79d00bcad3c2",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Limited",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:48:06.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [
+                "train station",
+                "Aerial photos",
+                "photos",
+                "train"
+            ],
+            "authors": [],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "SUBSTITUTE"
+            ],
+            "format": "jpeg",
+            "width": 149,
+            "height": 86,
+            "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+            "imageType": "SUBSTITUTE",
+            "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+            "cropName": "16:9-Thumbnail"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "cddeb4c239f95464f04cc9445c51af2c",
+                "link": "http://api.newsapi.com.au/image/v1/cddeb4c239f95464f04cc9445c51af2c"
+            },
+            "originId": "crop-5298ea9a3ff90d80e361ccc723a18b7a",
+            "origin": "METHODE",
+            "title": "Artist Impression of Robina City Parklands. Supplied by: Gold Coast City Council",
+            "subtitle": "c7aef8f0-78fb-11e8-a87f-d6284da931f3",
+            "description": "Artist Impression of Robina City Parklands. Supplied by: Gold Coast City Council",
+            "link": "http://cdn.newsapi.com.au/image/v1/cddeb4c239f95464f04cc9445c51af2c",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "Supplied",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:53.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:45:41.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "primaryCategory": {
+                "value": "/author/newscorpaustralia.com/Potts, Andrew/",
+                "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Potts,%20Andrew/"
+            },
+            "categories": [
+                {
+                    "value": "/author/newscorpaustralia.com/Potts, Andrew/",
+                    "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Potts,%20Andrew/"
+                }
+            ],
+            "keywords": [
+                "Artist Impression",
+                "Coast City Council"
+            ],
+            "authors": [
+                "Potts, Andrew"
+            ],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "c7aef8f078fb11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "EMBEDDED"
+            ],
+            "format": "jpeg",
+            "width": 650,
+            "height": 366,
+            "imageName": "GCB Artist Impression of Robina City Parklands. Su",
+            "imageType": "EMBEDDED",
+            "sourceImageId": "c7aef8f0-78fb-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000179292177",
+            "cropName": "MajorEvent650x366"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "7e54539216f3458cb3545a0b9bd1cbf1",
+                "link": "http://api.newsapi.com.au/image/v1/7e54539216f3458cb3545a0b9bd1cbf1"
+            },
+            "originId": "crop-ef8b7f93e345ff0e2bca8c91154fd337",
+            "origin": "METHODE",
+            "title": "The parklands will be created next to Cbus Super Stadium",
+            "subtitle": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "description": "The parklands will be created next to Cbus Super Stadium",
+            "link": "http://cdn.newsapi.com.au/image/v1/7e54539216f3458cb3545a0b9bd1cbf1",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Limited",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:48:06.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [
+                "train station",
+                "Aerial photos",
+                "photos",
+                "train"
+            ],
+            "authors": [],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "1e0a831878fc11e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "EMBEDDED"
+            ],
+            "format": "jpeg",
+            "width": 650,
+            "height": 366,
+            "imageName": "Aerial photos of Skilled Park and the Robina train station.",
+            "imageType": "EMBEDDED",
+            "sourceImageId": "1e0a8318-78fc-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000029277259",
+            "cropName": "MajorEvent650x366"
+        },
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "506ac1c758815fa03a37e6155fac3b93",
+                "link": "http://api.newsapi.com.au/image/v1/506ac1c758815fa03a37e6155fac3b93"
+            },
+            "originId": "crop-1245366d875134285d08f2604f554229",
+            "origin": "METHODE",
+            "title": "Councillor Hermann Vorster. Photo: Jerad Williams",
+            "subtitle": "5cb45a1a-78f9-11e8-a87f-d6284da931f3",
+            "description": "Councillor Hermann Vorster. Photo: Jerad Williams",
+            "link": "http://cdn.newsapi.com.au/image/v1/506ac1c758815fa03a37e6155fac3b93",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "News Corp Australia",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:42:54.000Z",
+            "dateLive": "2018-06-26T14:00:00.000Z",
+            "dateCreated": "2018-06-26T04:28:23.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [],
+            "domainLinks": [],
+            "primaryCategory": {
+                "value": "/author/newscorpaustralia.com/Jerad Williams/",
+                "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Jerad%20Williams/"
+            },
+            "categories": [
+                {
+                    "value": "/author/newscorpaustralia.com/Jerad Williams/",
+                    "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Jerad%20Williams/"
+                },
+                {
+                    "value": "/location/iptc.org/Australia/QLD/Bundall/135 Bundall Road/",
+                    "link": "http://api.newsapi.com.au/category/v2/location/iptc.org/Australia/QLD/Bundall/135%20Bundall%20Road/",
+                    "selected": "auto"
+                },
+                {
+                    "value": "/countrycode/iptc.org/AUS/QLD/Bundall/135 Bundall Road/",
+                    "link": "http://api.newsapi.com.au/category/v2/countrycode/iptc.org/AUS/QLD/Bundall/135%20Bundall%20Road/",
+                    "selected": "auto"
+                }
+            ],
+            "keywords": [
+                "Councillor Hermann",
+                "photo",
+                "Evandale Council Chambers",
+                "Hermann Vorster"
+            ],
+            "authors": [
+                "Jerad Williams"
+            ],
+            "domains": [
+                "newscorpaustralia.com",
+                "cairnspost.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au",
+                "goldcoastbulletin.com.au",
+                "themercury.com.au",
+                "heraldsun.com.au",
+                "adelaidenow.com.au",
+                "townsvillebulletin.com.au",
+                "perthnow.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "5cb45a1a78f911e8a87fd6284da931f3",
+            "revision": 4,
+            "containerTypes": [
+                "EMBEDDED"
+            ],
+            "format": "jpeg",
+            "width": 650,
+            "height": 366,
+            "imageName": "The 2016-2020 Gold Coast City Council being sworn",
+            "imageType": "EMBEDDED",
+            "sourceImageId": "5cb45a1a-78f9-11e8-a87f-d6284da931f3",
+            "enterpriseAssetId": "NEWSMMGLPICT000136206840",
+            "cropName": "MajorEvent650x366"
+        },
+        {
+            "contentType": "PROMO",
+            "id": {
+                "value": "ba15bf82ec17cb527fbfb8684a81d554",
+                "link": "http://api.newsapi.com.au/content/v2/ba15bf82ec17cb527fbfb8684a81d554"
+            },
+            "originId": "4b28faa4-6fa7-11e8-b7c5-fb1feabf8b47",
+            "origin": "METHODE",
+            "channel": "NONE",
+            "title": "Golden Age",
+            "subtitle": "Golden Age",
+            "description": "Golden Age",
+            "paidStatus": "NON_PREMIUM",
+            "originalAssetId": "4b28faa4-6fa7-11e8-b7c5-fb1feabf8b47",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-14T23:09:02.000Z",
+            "dateLive": "2018-06-14T23:09:02.000Z",
+            "dateCreated": "2018-06-14T07:48:14.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "related": [
+                {
+                    "contentType": "IMAGE",
+                    "id": {
+                        "value": "a7a5dbf8f50c744e5603ff55b6b6a7fa",
+                        "link": "http://api.newsapi.com.au/image/v1/a7a5dbf8f50c744e5603ff55b6b6a7fa"
+                    },
+                    "originId": "crop-b0501a8d7b52fb47790e33a4152813a3",
+                    "origin": "METHODE",
+                    "title": "",
+                    "subtitle": "38a85f78-6fa7-11e8-b7c5-fb1feabf8b47",
+                    "description": "",
+                    "link": "http://cdn.newsapi.com.au/image/v1/a7a5dbf8f50c744e5603ff55b6b6a7fa",
+                    "paidStatus": "NON_PREMIUM",
+                    "originalSource": "Gold Coast Bulletin",
+                    "version": "PUBLISHED",
+                    "dateUpdated": "2018-06-14T07:49:54.000Z",
+                    "dateLive": "2018-06-14T07:49:54.000Z",
+                    "dateCreated": "2018-06-14T07:47:43.000Z",
+                    "status": "ACTIVE",
+                    "referenceType": "PRIMARY",
+                    "related": [],
+                    "domainLinks": [],
+                    "categories": [],
+                    "keywords": [
+                        "star"
+                    ],
+                    "authors": [],
+                    "domains": [
+                        "newscorpaustralia.com"
+                    ],
+                    "locationGeoPoints": [],
+                    "userOriginUpdated": "westthorpt",
+                    "systemOriginUpdated": "METHODE",
+                    "domainOriginUpdated": "None",
+                    "urlTitle": "38a85f786fa711e8b7c5fb1feabf8b47",
+                    "revision": 2,
+                    "containerTypes": [
+                        "PRIMARY"
+                    ],
+                    "format": "jpeg",
+                    "width": 650,
+                    "height": 138,
+                    "imageName": "STAR+VILLAGELOGOS-650PX-LANDSCAPE.jpg",
+                    "imageType": "PRIMARY",
+                    "sourceImageId": "38a85f78-6fa7-11e8-b7c5-fb1feabf8b47",
+                    "cropName": "CustomAsset"
+                }
+            ],
+            "domainLinks": [],
+            "primaryCategory": {
+                "value": "/rating/newscorpaustralia.com/G/",
+                "link": "http://api.newsapi.com.au/category/v2/rating/newscorpaustralia.com/G/"
+            },
+            "categories": [
+                {
+                    "value": "/rating/newscorpaustralia.com/G/",
+                    "link": "http://api.newsapi.com.au/category/v2/rating/newscorpaustralia.com/G/"
+                },
+                {
+                    "value": "/author/newscorpaustralia.com/Tanya Westthorp/",
+                    "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Tanya%20Westthorp/"
+                }
+            ],
+            "keywords": [],
+            "authors": [
+                "Tanya Westthorp"
+            ],
+            "domains": [
+                "newscorpaustralia.com"
+            ],
+            "references": [
+                {
+                    "id": {
+                        "value": "a7a5dbf8f50c744e5603ff55b6b6a7fa",
+                        "link": "http://api.newsapi.com.au/content/v2/a7a5dbf8f50c744e5603ff55b6b6a7fa"
+                    },
+                    "origin": "METHODE",
+                    "originId": "crop-b0501a8d7b52fb47790e33a4152813a3",
+                    "contentType": "IMAGE",
+                    "referenceType": "PRIMARY"
+                }
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "westthorpt",
+            "systemOriginUpdated": "METHODE",
+            "domainOriginUpdated": "None",
+            "urlTitle": "brought-to-you-by-the-star-and-village-roadshow",
+            "revision": 2,
+            "containerTypes": [
+                "EMBEDDED"
+            ],
+            "promoText": "<p/>",
+            "displayStyle": "Promo image (linked image only)",
+            "promoLink": {},
+            "otherPromoLinks": []
+        },
+        {
+            "contentType": "VIDEO",
+            "id": {
+                "value": "ffdeb34d56e9a758eb98a846c40046f9",
+                "link": "http://api.newsapi.com.au/content/v2/ffdeb34d56e9a758eb98a846c40046f9"
+            },
+            "originId": "5348771529001-5793203398001",
+            "origin": "BRIGHTCOVE",
+            "title": "Gold Coast Bulletin's Golden Age campaign",
+            "subtitle": "Gold Coast Bulletin's Golden Age campaign",
+            "description": "Gold Coast Bulletin's Golden Age campaign",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "GoldCoastBulletin",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-04T07:52:12.000Z",
+            "dateLive": "2018-06-04T07:51:59.000Z",
+            "dateCreated": "2018-06-04T07:49:47.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "thumbnailImage": {
+                "contentType": "IMAGE",
+                "id": {
+                    "value": "813e7da1e2f5d8661044d41b816371a4",
+                    "link": "http://api.newsapi.com.au/image/v1/813e7da1e2f5d8661044d41b816371a4"
+                },
+                "originId": "5348771529001-5793203398001-thumbnail",
+                "origin": "BRIGHTCOVE",
+                "title": "Gold Coast Bulletin's Golden Age campaign",
+                "description": "Nine Gold Coast News story on the Gold Coast Bulletin's Golden Age campaign",
+                "link": "http://cdn.newsapi.com.au/image/v1/813e7da1e2f5d8661044d41b816371a4",
+                "paidStatus": "NON_PREMIUM",
+                "originalSource": "GoldCoastBulletin",
+                "version": "PUBLISHED",
+                "dateUpdated": "2018-06-04T07:52:12.000Z",
+                "dateLive": "2018-06-04T07:51:59.000Z",
+                "dateCreated": "2018-06-04T07:49:47.000Z",
+                "status": "ACTIVE",
+                "related": [],
+                "domainLinks": [],
+                "categories": [],
+                "keywords": [],
+                "authors": [],
+                "domains": [],
+                "locationGeoPoints": [],
+                "userOriginUpdated": "synchroniser",
+                "systemOriginUpdated": "BRIGHTCOVE",
+                "urlTitle": "gold-coast-bulletins-golden-age-campaign",
+                "format": "jpeg",
+                "width": 151,
+                "height": 85,
+                "imageName": "5348771529001_5793208916001_5793203398001-th.jpg",
+                "imageType": "THUMBNAIL",
+                "sourceImageId": "5348771529001-5793203398001-source"
+            },
+            "related": [
+                {
+                    "contentType": "IMAGE",
+                    "id": {
+                        "value": "f4f6b8823e9ebb4627066ce12fe4f9eb",
+                        "link": "http://api.newsapi.com.au/image/v1/f4f6b8823e9ebb4627066ce12fe4f9eb"
+                    },
+                    "originId": "5348771529001-5793203398001-poster",
+                    "origin": "BRIGHTCOVE",
+                    "title": "Gold Coast Bulletin's Golden Age campaign",
+                    "subtitle": "Gold Coast Bulletin's Golden Age campaign",
+                    "description": "Nine Gold Coast News story on the Gold Coast Bulletin's Golden Age campaign",
+                    "link": "http://cdn.newsapi.com.au/image/v1/f4f6b8823e9ebb4627066ce12fe4f9eb",
+                    "paidStatus": "NON_PREMIUM",
+                    "originalSource": "GoldCoastBulletin",
+                    "version": "PUBLISHED",
+                    "dateUpdated": "2018-06-04T07:52:12.000Z",
+                    "dateLive": "2018-06-04T07:51:59.000Z",
+                    "dateCreated": "2018-06-04T07:49:47.000Z",
+                    "status": "ACTIVE",
+                    "referenceType": "SECONDARY",
+                    "related": [],
+                    "domainLinks": [],
+                    "categories": [],
+                    "keywords": [],
+                    "authors": [],
+                    "domains": [],
+                    "locationGeoPoints": [],
+                    "userOriginUpdated": "synchroniser",
+                    "systemOriginUpdated": "BRIGHTCOVE",
+                    "urlTitle": "gold-coast-bulletins-golden-age-campaign",
+                    "revision": 3,
+                    "format": "jpeg",
+                    "width": 649,
+                    "height": 365,
+                    "imageName": "5348771529001_5793204051001_5793203398001-vs.jpg",
+                    "imageType": "HERO",
+                    "sourceImageId": "5348771529001-5793203398001-source"
+                }
+            ],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [],
+            "authors": [],
+            "domains": [],
+            "references": [
+                {
+                    "id": {
+                        "value": "f4f6b8823e9ebb4627066ce12fe4f9eb",
+                        "link": "http://api.newsapi.com.au/content/v2/f4f6b8823e9ebb4627066ce12fe4f9eb"
+                    },
+                    "origin": "BRIGHTCOVE",
+                    "originId": "5348771529001-5793203398001-poster",
+                    "contentType": "IMAGE",
+                    "referenceType": "SECONDARY"
+                }
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "synchroniser",
+            "systemOriginUpdated": "BRIGHTCOVE",
+            "urlTitle": "jcwy2e9islwvahg8",
+            "revision": 5,
+            "containerTypes": [
+                "EMBEDDED"
+            ],
+            "videoFiles": [],
+            "images": [
+                {
+                    "contentType": "IMAGE",
+                    "title": "Gold Coast Bulletin's Golden Age campaign",
+                    "description": "Nine Gold Coast News story on the Gold Coast Bulletin's Golden Age campaign",
+                    "link": "http://cdn.newsapi.com.au/image/v1/813e7da1e2f5d8661044d41b816371a4",
+                    "version": "PUBLISHED",
+                    "format": "jpeg",
+                    "width": 151,
+                    "height": 85,
+                    "imageName": "5348771529001_5793208916001_5793203398001-th.jpg",
+                    "imageType": "THUMBNAIL"
+                },
+                {
+                    "contentType": "IMAGE",
+                    "title": "Gold Coast Bulletin's Golden Age campaign",
+                    "description": "Nine Gold Coast News story on the Gold Coast Bulletin's Golden Age campaign",
+                    "link": "http://cdn.newsapi.com.au/image/v1/f4f6b8823e9ebb4627066ce12fe4f9eb",
+                    "version": "PUBLISHED",
+                    "format": "jpeg",
+                    "width": 649,
+                    "height": 365,
+                    "imageName": "5348771529001_5793204051001_5793203398001-vs.jpg",
+                    "imageType": "HERO"
+                },
+                {
+                    "contentType": "IMAGE",
+                    "title": "Gold Coast Bulletin's Golden Age campaign",
+                    "description": "Nine Gold Coast News story on the Gold Coast Bulletin's Golden Age campaign",
+                    "version": "PUBLISHED",
+                    "format": "jpeg",
+                    "width": 649,
+                    "height": 365,
+                    "imageName": "5348771529001_5793204051001_5793203398001-vs.jpg",
+                    "imageType": "SOURCE"
+                }
+            ],
+            "ooyalaId": "5348771529001-5793203398001",
+            "duration": 85472
+        },
+        {
+            "contentType": "VIDEO",
+            "id": {
+                "value": "d425b8f76b2cc9c5bfec76f963133d80",
+                "link": "http://api.newsapi.com.au/content/v2/d425b8f76b2cc9c5bfec76f963133d80"
+            },
+            "originId": "5348771529001-5802412668001",
+            "origin": "BRIGHTCOVE",
+            "title": "The Gold Coast's new parklands",
+            "subtitle": "The Gold Coast's new parklands",
+            "description": "The Gold Coast's new parklands",
+            "link": "http://cdn.newsapi.com.au/link/d425b8f76b2cc9c5bfec76f963133d80?domain=ntnews.com.au",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "GoldCoastBulletin",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-06-27T07:43:00.000Z",
+            "dateLive": "2018-06-27T07:41:50.000Z",
+            "dateCreated": "2018-06-27T07:40:24.000Z",
+            "status": "ACTIVE",
+            "referenceType": "PRIMARY",
+            "thumbnailImage": {
+                "contentType": "IMAGE",
+                "id": {
+                    "value": "fda7a4b4ae1d2664c5f0efd05cb3e970",
+                    "link": "http://api.newsapi.com.au/image/v1/fda7a4b4ae1d2664c5f0efd05cb3e970"
+                },
+                "originId": "5348771529001-5802412668001-thumbnail",
+                "origin": "BRIGHTCOVE",
+                "title": "The Gold Coast's new parklands",
+                "description": "The Gold Coast's new $15m city parklands at Robina",
+                "link": "http://cdn.newsapi.com.au/image/v1/fda7a4b4ae1d2664c5f0efd05cb3e970",
+                "paidStatus": "NON_PREMIUM",
+                "originalSource": "GoldCoastBulletin",
+                "version": "PUBLISHED",
+                "dateUpdated": "2018-06-27T07:43:00.000Z",
+                "dateLive": "2018-06-27T07:41:50.000Z",
+                "dateCreated": "2018-06-27T07:40:24.000Z",
+                "status": "ACTIVE",
+                "related": [],
+                "domainLinks": [],
+                "categories": [],
+                "keywords": [],
+                "authors": [],
+                "domains": [],
+                "locationGeoPoints": [],
+                "userOriginUpdated": "synchroniser",
+                "systemOriginUpdated": "BRIGHTCOVE",
+                "urlTitle": "the-gold-coasts-new-parklands",
+                "format": "jpeg",
+                "width": 151,
+                "height": 85,
+                "imageName": "5348771529001_5802414865001_5802412668001-th.jpg",
+                "imageType": "THUMBNAIL",
+                "sourceImageId": "5348771529001-5802412668001-source"
+            },
+            "related": [
+                {
+                    "contentType": "IMAGE",
+                    "id": {
+                        "value": "5e9720b979fb3e5ca300a96c69359811",
+                        "link": "http://api.newsapi.com.au/image/v1/5e9720b979fb3e5ca300a96c69359811"
+                    },
+                    "originId": "5348771529001-5802412668001-poster",
+                    "origin": "BRIGHTCOVE",
+                    "title": "The Gold Coast's new parklands",
+                    "subtitle": "The Gold Coast's new parklands",
+                    "description": "The Gold Coast's new $15m city parklands at Robina",
+                    "link": "http://cdn.newsapi.com.au/image/v1/5e9720b979fb3e5ca300a96c69359811",
+                    "paidStatus": "NON_PREMIUM",
+                    "originalSource": "GoldCoastBulletin",
+                    "version": "PUBLISHED",
+                    "dateUpdated": "2018-06-27T07:43:00.000Z",
+                    "dateLive": "2018-06-27T07:41:50.000Z",
+                    "dateCreated": "2018-06-27T07:40:24.000Z",
+                    "status": "ACTIVE",
+                    "referenceType": "SECONDARY",
+                    "related": [],
+                    "domainLinks": [],
+                    "categories": [],
+                    "keywords": [],
+                    "authors": [],
+                    "domains": [],
+                    "locationGeoPoints": [],
+                    "userOriginUpdated": "synchroniser",
+                    "systemOriginUpdated": "BRIGHTCOVE",
+                    "urlTitle": "the-gold-coasts-new-parklands",
+                    "revision": 3,
+                    "format": "jpeg",
+                    "width": 649,
+                    "height": 365,
+                    "imageName": "5348771529001_5802414866001_5802412668001-vs.jpg",
+                    "imageType": "HERO",
+                    "sourceImageId": "5348771529001-5802412668001-source"
+                }
+            ],
+            "domainLinks": [
+                {
+                    "name": "cairnspost.com.au",
+                    "link": "http://www.cairnspost.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "ntnews.com.au",
+                    "link": "http://www.ntnews.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "couriermail.com.au",
+                    "link": "http://www.couriermail.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "goldcoastbulletin.com.au",
+                    "link": "http://www.goldcoastbulletin.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "themercury.com.au",
+                    "link": "http://www.themercury.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "heraldsun.com.au",
+                    "link": "http://www.heraldsun.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "adelaidenow.com.au",
+                    "link": "http://www.adelaidenow.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "townsvillebulletin.com.au",
+                    "link": "http://www.townsvillebulletin.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "perthnow.com.au",
+                    "link": "http://www.perthnow.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "dailytelegraph.com.au",
+                    "link": "http://www.dailytelegraph.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                },
+                {
+                    "name": "geelongadvertiser.com.au",
+                    "link": "http://www.geelongadvertiser.com.au/video/id-5348771529001-5802412668001/the-gold-coasts-new-parklands"
+                }
+            ],
+            "primaryCategory": {
+                "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                "id": "1226692593992",
+                "isDominant": true
+            },
+            "categories": [
+                {
+                    "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1226692593992",
+                    "isDominant": true
+                },
+                {
+                    "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1226692639493",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/adelaidenow.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/adelaidenow.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226556",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/dailytelegraph.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/dailytelegraph.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226554",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/ntnews.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/ntnews.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226844",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/perthnow.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/perthnow.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226553",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/heraldsun.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/heraldsun.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226557",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/townsvillebulletin.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/townsvillebulletin.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226843",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/couriermail.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/couriermail.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226552",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/themercury.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/themercury.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226555",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/geelongadvertiser.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/geelongadvertiser.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226845",
+                    "isSyndicated": true
+                },
+                {
+                    "value": "/display/cairnspost.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+                    "link": "http://api.newsapi.com.au/category/v2/display/cairnspost.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+                    "id": "1228018226842",
+                    "isSyndicated": true
+                }
+            ],
+            "keywords": [],
+            "authors": [],
+            "domains": [
+                "ntnews.com.au",
+                "cairnspost.com.au",
+                "goldcoastbulletin.com.au",
+                "couriermail.com.au",
+                "adelaidenow.com.au",
+                "heraldsun.com.au",
+                "themercury.com.au",
+                "perthnow.com.au",
+                "townsvillebulletin.com.au",
+                "dailytelegraph.com.au",
+                "geelongadvertiser.com.au"
+            ],
+            "references": [
+                {
+                    "id": {
+                        "value": "5e9720b979fb3e5ca300a96c69359811",
+                        "link": "http://api.newsapi.com.au/content/v2/5e9720b979fb3e5ca300a96c69359811"
+                    },
+                    "origin": "BRIGHTCOVE",
+                    "originId": "5348771529001-5802412668001-poster",
+                    "contentType": "IMAGE",
+                    "referenceType": "SECONDARY"
+                }
+            ],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "synchroniser",
+            "systemOriginUpdated": "BRIGHTCOVE",
+            "urlTitle": "the-gold-coasts-new-parklands",
+            "revision": 3,
+            "containerTypes": [
+                "PRIMARY"
+            ],
+            "videoFiles": [],
+            "images": [
+                {
+                    "contentType": "IMAGE",
+                    "title": "The Gold Coast's new parklands",
+                    "description": "The Gold Coast's new $15m city parklands at Robina",
+                    "link": "http://cdn.newsapi.com.au/image/v1/fda7a4b4ae1d2664c5f0efd05cb3e970",
+                    "version": "PUBLISHED",
+                    "format": "jpeg",
+                    "width": 151,
+                    "height": 85,
+                    "imageName": "5348771529001_5802414865001_5802412668001-th.jpg",
+                    "imageType": "THUMBNAIL"
+                },
+                {
+                    "contentType": "IMAGE",
+                    "title": "The Gold Coast's new parklands",
+                    "description": "The Gold Coast's new $15m city parklands at Robina",
+                    "link": "http://cdn.newsapi.com.au/image/v1/5e9720b979fb3e5ca300a96c69359811",
+                    "version": "PUBLISHED",
+                    "format": "jpeg",
+                    "width": 649,
+                    "height": 365,
+                    "imageName": "5348771529001_5802414866001_5802412668001-vs.jpg",
+                    "imageType": "HERO"
+                },
+                {
+                    "contentType": "IMAGE",
+                    "title": "The Gold Coast's new parklands",
+                    "description": "The Gold Coast's new $15m city parklands at Robina",
+                    "version": "PUBLISHED",
+                    "format": "jpeg",
+                    "width": 649,
+                    "height": 365,
+                    "imageName": "5348771529001_5802414866001_5802412668001-vs.jpg",
+                    "imageType": "SOURCE"
+                }
+            ],
+            "ooyalaId": "5348771529001-5802412668001",
+            "duration": 31103
+        }
+    ],
+    "domainLinks": [
+        {
+            "name": "cairnspost.com.au",
+            "link": "http://www.cairnspost.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "ntnews.com.au",
+            "link": "http://www.ntnews.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "newscorpaustralia.com",
+            "link": "http://cdn.newsapi.com.au/link/86f0a4cda1c57ca41ae232369b5b2b13?domain=newscorpaustralia.com"
+        },
+        {
+            "name": "couriermail.com.au",
+            "link": "http://www.couriermail.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "goldcoastbulletin.com.au",
+            "link": "http://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "themercury.com.au",
+            "link": "http://www.themercury.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "heraldsun.com.au",
+            "link": "http://www.heraldsun.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "adelaidenow.com.au",
+            "link": "http://www.adelaidenow.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "townsvillebulletin.com.au",
+            "link": "http://www.townsvillebulletin.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "perthnow.com.au",
+            "link": "http://www.perthnow.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "dailytelegraph.com.au",
+            "link": "http://www.dailytelegraph.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        {
+            "name": "geelongadvertiser.com.au",
+            "link": "http://www.geelongadvertiser.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        }
+    ],
+    "primaryCategory": {
+        "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Special Features/Golden Age/",
+        "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Special%20Features/Golden%20Age/",
+        "id": "4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e",
+        "isDominant": true
+    },
+    "categories": [
+        {
+            "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Special Features/Golden Age/",
+            "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Special%20Features/Golden%20Age/",
+            "id": "4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e",
+            "isDominant": true
+        },
+        {
+            "value": "/displayId/newscorpaustralia.com/4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e/",
+            "link": "http://api.newsapi.com.au/category/v2/displayId/newscorpaustralia.com/4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e/",
+            "id": "4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e",
+            "isDominant": true
+        },
+        {
+            "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Top News/",
+            "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Top%20News/",
+            "id": "1226692594381",
+            "isDominant": false
+        },
+        {
+            "value": "/displayId/newscorpaustralia.com/1226692594381/",
+            "link": "http://api.newsapi.com.au/category/v2/displayId/newscorpaustralia.com/1226692594381/",
+            "id": "1226692594381",
+            "isDominant": false
+        },
+        {
+            "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1226692593992",
+            "isDominant": false
+        },
+        {
+            "value": "/displayId/newscorpaustralia.com/1226692593992/",
+            "link": "http://api.newsapi.com.au/category/v2/displayId/newscorpaustralia.com/1226692593992/",
+            "id": "1226692593992",
+            "isDominant": false
+        },
+        {
+            "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/GB Business News/",
+            "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/GB%20Business%20News/",
+            "id": "1226697578704",
+            "isDominant": false
+        },
+        {
+            "value": "/displayId/newscorpaustralia.com/1226697578704/",
+            "link": "http://api.newsapi.com.au/category/v2/displayId/newscorpaustralia.com/1226697578704/",
+            "id": "1226697578704",
+            "isDominant": false
+        },
+        {
+            "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Council/",
+            "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Gold%20Coast%20Bulletin/Council/",
+            "id": "1227751164173",
+            "isDominant": false
+        },
+        {
+            "value": "/displayId/newscorpaustralia.com/1227751164173/",
+            "link": "http://api.newsapi.com.au/category/v2/displayId/newscorpaustralia.com/1227751164173/",
+            "id": "1227751164173",
+            "isDominant": false
+        },
+        {
+            "value": "/rating/newscorpaustralia.com/G/",
+            "link": "http://api.newsapi.com.au/category/v2/rating/newscorpaustralia.com/G/"
+        },
+        {
+            "value": "/author/newscorpaustralia.com/Andrew Potts/",
+            "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Andrew%20Potts/"
+        },
+        {
+            "value": "/taxonomy/iptc.org/politics/local authority/",
+            "link": "http://api.newsapi.com.au/category/v2/taxonomy/iptc.org/politics/local%20authority/"
+        },
+        {
+            "value": "/taxonomy/iptc.org/economy, business and finance/construction and property/design and engineering/",
+            "link": "http://api.newsapi.com.au/category/v2/taxonomy/iptc.org/economy,%20business%20and%20finance/construction%20and%20property/design%20and%20engineering/"
+        },
+        {
+            "value": "/taxonomy/iptc.org/arts, culture and entertainment/fashion/jewelry/",
+            "link": "http://api.newsapi.com.au/category/v2/taxonomy/iptc.org/arts,%20culture%20and%20entertainment/fashion/jewelry/"
+        },
+        {
+            "value": "/taxonomyid/iptc.org/11008000/",
+            "link": "http://api.newsapi.com.au/category/v2/taxonomyid/iptc.org/11008000/"
+        },
+        {
+            "value": "/taxonomyid/iptc.org/04004007/",
+            "link": "http://api.newsapi.com.au/category/v2/taxonomyid/iptc.org/04004007/"
+        },
+        {
+            "value": "/taxonomyid/iptc.org/01007001/",
+            "link": "http://api.newsapi.com.au/category/v2/taxonomyid/iptc.org/01007001/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/crown jewels/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/crown%20jewels/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/central park/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/central%20park/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Golden Age/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Golden%20Age/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/City Council/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/City%20Council/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/construction works/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/construction%20works/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/green space/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/green%20space/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/green heart/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/green%20heart/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Gold Coast City/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Gold%20Coast%20City/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Coast City Council/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Coast%20City%20Council/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Gold Coast Bulletin/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Gold%20Coast%20Bulletin/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/area councillor/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/area%20councillor/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Golden Age campaign/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Golden%20Age%20campaign/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/rest areas/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/rest%20areas/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Council budget papers/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Council%20budget%20papers/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/council plans/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/council%20plans/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/Councillor Hermann/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/Councillor%20Hermann/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/village green/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/village%20green/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/city parkland/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/city%20parkland/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/city hall/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/city%20hall/"
+        },
+        {
+            "value": "/keyword/newscorpaustralia.com/performance stage/",
+            "link": "http://api.newsapi.com.au/category/v2/keyword/newscorpaustralia.com/performance%20stage/"
+        },
+        {
+            "value": "/organisation/newscorpaustralia.com/State Government/otca/",
+            "link": "http://api.newsapi.com.au/category/v2/organisation/newscorpaustralia.com/State%20Government/otca/"
+        },
+        {
+            "value": "/organisation/newscorpaustralia.com/Gold Coast, Queensland Council/otca/",
+            "link": "http://api.newsapi.com.au/category/v2/organisation/newscorpaustralia.com/Gold%20Coast,%20Queensland%20Council/otca/"
+        },
+        {
+            "value": "/person/newscorpaustralia.com/Donna Gates/otca/",
+            "link": "http://api.newsapi.com.au/category/v2/person/newscorpaustralia.com/Donna%20Gates/otca/"
+        },
+        {
+            "value": "/person/newscorpaustralia.com/Hermann Vorster/otca/",
+            "link": "http://api.newsapi.com.au/category/v2/person/newscorpaustralia.com/Hermann%20Vorster/otca/"
+        },
+        {
+            "value": "/person/newscorpaustralia.com/Tom Tate/otca/",
+            "link": "http://api.newsapi.com.au/category/v2/person/newscorpaustralia.com/Tom%20Tate/otca/"
+        },
+        {
+            "value": "/location/newscorpaustralia.com/United States of America/New York/New York/",
+            "link": "http://api.newsapi.com.au/category/v2/location/newscorpaustralia.com/United%20States%20of%20America/New%20York/New%20York/",
+            "otcaConfidence": 89.6941,
+            "otcaRelevancy": 39.0065,
+            "otcaFrequency": 1,
+            "selected": "auto",
+            "geoPoint": {
+                "latitude": 40.714167,
+                "longitude": -74.006111
+            }
+        },
+        {
+            "value": "/location/newscorpaustralia.com/Australia/Queensland/Gold Coast/",
+            "link": "http://api.newsapi.com.au/category/v2/location/newscorpaustralia.com/Australia/Queensland/Gold%20Coast/",
+            "otcaConfidence": 89.6939,
+            "otcaRelevancy": 89.5952,
+            "otcaFrequency": 8,
+            "selected": "auto"
+        },
+        {
+            "value": "/location/newscorpaustralia.com/America/North America/Northern America/United States of America/New York/New York/",
+            "link": "http://api.newsapi.com.au/category/v2/location/newscorpaustralia.com/America/North%20America/Northern%20America/United%20States%20of%20America/New%20York/New%20York/",
+            "otcaConfidence": 89.6941,
+            "otcaRelevancy": 39.0065,
+            "otcaFrequency": 1,
+            "selected": "auto",
+            "geoPoint": {
+                "latitude": 40.714167,
+                "longitude": -74.006111
+            }
+        },
+        {
+            "value": "/location/newscorpaustralia.com/Oceania/NOSUBCONTINENT/Australia and New Zealand/Australia/Queensland/Gold Coast/",
+            "link": "http://api.newsapi.com.au/category/v2/location/newscorpaustralia.com/Oceania/NOSUBCONTINENT/Australia%20and%20New%20Zealand/Australia/Queensland/Gold%20Coast/",
+            "otcaConfidence": 89.6939,
+            "otcaRelevancy": 89.5952,
+            "otcaFrequency": 8,
+            "selected": "auto"
+        },
+        {
+            "value": "/tone/newscorpaustralia.com/positive/",
+            "link": "http://api.newsapi.com.au/category/v2/tone/newscorpaustralia.com/positive/"
+        },
+        {
+            "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Special Features/Golden Age/",
+            "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/Special%20Features/Golden%20Age/",
+            "id": "dd2b1d88-939f-43d9-8c1c-b20913a2f0e3",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Top News/",
+            "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/Top%20News/",
+            "id": "1226692640333",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1226692639493",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/adelaidenow.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/adelaidenow.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226556",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/dailytelegraph.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/dailytelegraph.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226554",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/ntnews.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/ntnews.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226844",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/perthnow.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/perthnow.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226553",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/heraldsun.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/heraldsun.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226557",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/townsvillebulletin.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/townsvillebulletin.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226843",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/couriermail.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/couriermail.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226552",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/themercury.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/themercury.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226555",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/geelongadvertiser.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/geelongadvertiser.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226845",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/cairnspost.com.au/Gold Coast Bulletin/Gold Coast News and Galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/cairnspost.com.au/Gold%20Coast%20Bulletin/Gold%20Coast%20News%20and%20Galleries/",
+            "id": "1228018226842",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/GB Business News/",
+            "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/GB%20Business%20News/",
+            "id": "1226697578858",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Council/",
+            "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/Council/",
+            "id": "1227751167321",
+            "isSyndicated": true
+        }
+    ],
+    "keywords": [
+        "crown jewels",
+        "central park",
+        "Golden Age",
+        "City Council",
+        "construction works",
+        "green space",
+        "green heart",
+        "Gold Coast City",
+        "Coast City Council",
+        "Gold Coast Bulletin",
+        "area councillor",
+        "Golden Age campaign",
+        "rest areas",
+        "Council budget papers",
+        "council plans",
+        "Councillor Hermann",
+        "village green",
+        "city parkland",
+        "city hall",
+        "performance stage",
+        "New York",
+        "United States of America",
+        "Northern America",
+        "North America",
+        "America",
+        "Gold Coast",
+        "Queensland",
+        "Australia",
+        "Australia and New Zealand",
+        "Oceania",
+        "State Government",
+        "Gold Coast, Queensland Council",
+        "Donna Gates",
+        "Hermann Vorster",
+        "Tom Tate"
+    ],
+    "authors": [
+        "Andrew Potts"
+    ],
+    "domains": [
+        "newscorpaustralia.com",
+        "cairnspost.com.au",
+        "ntnews.com.au",
+        "couriermail.com.au",
+        "goldcoastbulletin.com.au",
+        "themercury.com.au",
+        "heraldsun.com.au",
+        "adelaidenow.com.au",
+        "townsvillebulletin.com.au",
+        "perthnow.com.au",
+        "dailytelegraph.com.au",
+        "geelongadvertiser.com.au"
+    ],
+    "references": [
+        {
+            "id": {
+                "value": "deeb9e39982eb89bb7faa2fa2145c78e",
+                "link": "http://api.newsapi.com.au/content/v2/deeb9e39982eb89bb7faa2fa2145c78e"
+            },
+            "origin": "METHODE",
+            "originId": "crop-dd3bab75b9855cef8631ad1baf11e33a",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "6d04426fac5d12e6cc19a482ccc035dc",
+                "link": "http://api.newsapi.com.au/content/v2/6d04426fac5d12e6cc19a482ccc035dc"
+            },
+            "origin": "METHODE",
+            "originId": "crop-8edce1e88ae4b400ba84b2bd1aea1af6",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "cdca9e3ea876825f68303f850e0ec4bf",
+                "link": "http://api.newsapi.com.au/content/v2/cdca9e3ea876825f68303f850e0ec4bf"
+            },
+            "origin": "METHODE",
+            "originId": "crop-fe76c96366508485817c747a74312e73",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "deb385d033fa1652287b4ba1e958e662",
+                "link": "http://api.newsapi.com.au/content/v2/deb385d033fa1652287b4ba1e958e662"
+            },
+            "origin": "METHODE",
+            "originId": "crop-2dce5d22c3c92705acde9229206ad68d",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "d3eababde3c1d8435d4d79d00bcad3c2",
+                "link": "http://api.newsapi.com.au/content/v2/d3eababde3c1d8435d4d79d00bcad3c2"
+            },
+            "origin": "METHODE",
+            "originId": "crop-db4869b9960537c016517ab328dc2421",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "cddeb4c239f95464f04cc9445c51af2c",
+                "link": "http://api.newsapi.com.au/content/v2/cddeb4c239f95464f04cc9445c51af2c"
+            },
+            "origin": "METHODE",
+            "originId": "crop-5298ea9a3ff90d80e361ccc723a18b7a",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "7e54539216f3458cb3545a0b9bd1cbf1",
+                "link": "http://api.newsapi.com.au/content/v2/7e54539216f3458cb3545a0b9bd1cbf1"
+            },
+            "origin": "METHODE",
+            "originId": "crop-ef8b7f93e345ff0e2bca8c91154fd337",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "506ac1c758815fa03a37e6155fac3b93",
+                "link": "http://api.newsapi.com.au/content/v2/506ac1c758815fa03a37e6155fac3b93"
+            },
+            "origin": "METHODE",
+            "originId": "crop-1245366d875134285d08f2604f554229",
+            "contentType": "IMAGE",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "ba15bf82ec17cb527fbfb8684a81d554",
+                "link": "http://api.newsapi.com.au/content/v2/ba15bf82ec17cb527fbfb8684a81d554"
+            },
+            "origin": "CONTENT_API",
+            "contentType": "UNCLASSIFIED",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "ffdeb34d56e9a758eb98a846c40046f9",
+                "link": "http://api.newsapi.com.au/content/v2/ffdeb34d56e9a758eb98a846c40046f9"
+            },
+            "origin": "CONTENT_API",
+            "contentType": "VIDEO",
+            "referenceType": "PRIMARY"
+        },
+        {
+            "id": {
+                "value": "d425b8f76b2cc9c5bfec76f963133d80",
+                "link": "http://api.newsapi.com.au/content/v2/d425b8f76b2cc9c5bfec76f963133d80"
+            },
+            "origin": "CONTENT_API",
+            "contentType": "VIDEO",
+            "referenceType": "PRIMARY"
+        }
+    ],
+    "locationGeoPoints": [
+        {
+            "latitude": 40.714167,
+            "longitude": -74.006111
+        }
+    ],
+    "seoHeadline": "Golden Age: Gold Coast’s City Council to break ground on $15m Robina City Parklands this year",
+    "userOriginUpdated": "westthorpt",
+    "systemOriginUpdated": "METHODE",
+    "domainOriginUpdated": "None",
+    "dynamicMetadata": {
+        "linkOrigin": "spp",
+        "metered": true,
+        "route": "news/national",
+        "link": "http://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+        "syndicated": true,
+        "adTarget": "NEWS.NATIONAL",
+        "sectionCaption": "Gold Coast",
+        "available": false,
+        "canonical": "http://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+    },
+    "urlTitle": "golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year",
+    "revision": 4,
+    "body": "<p>The Robina Parklands will be built next to CBUS Super Stadium across 17ha of flooplain land that was once known as the city’s “green heart”.</p>\n<p>Council budget papers reveal city hall put $1.5 million towards design and construction works, which will begin later this year, with a further $200,000 to be spent developing “a master plan for the Gold Coast Central Park in the heart of the city”. </p>\n<p> <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-mayor-tom-tate-proposes-the-spit-be-renamed-and-become-gold-coasts-central-park/news-story/3a45871e456cdb4a0354fed492408827\">GOLDEN AGE: THE SPIT COULD BE COAST’S CENTRAL PARK</a> </p>\n<p channel=\"Web,Tablet\"> <a class=\"capi-image\" capiid=\"cddeb4c239f95464f04cc9445c51af2c\"></a> </p>\n<p> <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-southern-gold-coast-light-rail-link-will-transform-palm-beach-and-elanora-and-bring-more-people-to-the-area/news-story/f26222aff463d353553adcfbe201da65\">GOLDEN AGE: HOW HEAVY RAIL WILL TRANSFORM COAST’S SOUTH</a> </p>\n<p>Acting Mayor Donna Gates said the new park would have features which would appeal to people from all walks of life.</p>\n<p>“We are not only preserving green space, we are unlocking it through walking trails, viewing platforms and interpretative signage so the city’s 13 million visitors and 580,000 locals can get out there and experience nature,” she said.</p>\n<p>“We are a city in love with our green space and the City Plan ensures at least 51 per cent of our city’s footprint is forever preserved as open space, for all to enjoy.</p>\n<p>“We already have 2300 parks and around 13,000 hectares of green space and this development will add a unique experience to the mix.”</p>\n<p channel=\"Web,Tablet\"> <a class=\"capi-image\" capiid=\"7e54539216f3458cb3545a0b9bd1cbf1\"></a> </p>\n<p>According to council plans the parklands would feature:</p>\n<p>* A village green and performance stage where concerts could be held with a capacity for 5000 people.</p>\n<p>* A picnic lawn and two adventure playgrounds.</p>\n<p>* Recreation walking trails, with rest areas.</p>\n<p>* Kayak launches into Mudgeeraba Creek</p>\n<p>* Multiple fishing nodes around the edges of the parkland.</p>\n<p>* A multi-use structure with a cafe and community facilities.</p>\n<p>Construction works will begin within a year, with council already having spent $1 million on planning and early works.</p>\n<p> <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-where-the-gold-coasts-light-rail-will-go-next-with-south-west-and-north-links-planned/news-story/c35e96b06a3247f33e9a5d4681f4aaee\">GOLDEN AGE: WHERE LIGHT RAIL WILL GO NEXT</a> </p>\n<p channel=\"Web,Tablet\"> <a class=\"capi-image\" capiid=\"506ac1c758815fa03a37e6155fac3b93\"></a> </p>\n<p channel=\"Web,Tablet\"> <a capiid=\"ba15bf82ec17cb527fbfb8684a81d554\" class=\"capi-promo\">Golden Age</a> </p>\n<p>And there could be more stages to come of what Council lifestyle boss and area councillor Hermann Vorster said would become the central Gold Coast’s “crown jewels”.</p>\n<p>“Residents in the centre of the Gold Coast have been envious of the multi-hundred million dollars of investment on the Glitter Strip and they say they want similar standards of amenity closer to their own homes,” he said.</p>\n<p>“This will be the crown jewels of the suburban Gold Coast and will be a place that locals can choose to go if they’re not going to the beach.</p>\n<p> <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/how-the-trams-can-move-fast-to-the-border-as-transport-plan-emerges-for-gold-coast/news-story/fa1443919ac487b3ad72e402456883ad\">GOLDEN AGE: HOW TRAMS WILL GET TO THE BORDER FASTER</a> </p>\n<p> <a capiid=\"ffdeb34d56e9a758eb98a846c40046f9\" class=\"capi-video\">Gold Coast Bulletin's Golden Age campaign</a> </p>\n<p>“This will bring quality space to ratepayers and will mean that no matter where you live you will have access to great facilities where kids can play and you can enjoy the fresh air.”</p>\n<p>Cr Vorster said he expected the project to take traffic off the M1 and other roads by providing a venue for people to spend their leisure time at without having to drive significant distances.</p>\n<p>It is understood the council also hopes to negotiate with the State Government to obtain fill from the $500 million M1 upgrade for use in the creation of the parklands.</p>\n<p> <a href=\"http://www.goldcoastbulletin.com.au/subscribe/news/1/?utm_medium=editorial&amp;int_source=placement&amp;int_campaign=acq_fy18q4_hotoffer&amp;int_content=various&amp;sourceCode=GCWEB_EDL1086\">GET FULL DIGITAL ACCESS FOR 50C A DAY</a> </p>\n<p>The fill would be used to raise the level of the site in order to prevent future flooding.</p>\n<p>The parklands will be surrounded by major new residential developments, including the under construction $170 million Vue development, as well as the $1.5 billion Breakwater mini-city.</p>\n<p>News of the Robina project comes just days after Mayor Tom Tate announced his own vision for The Spit as the Gold Coast’s answer to New York City’s Central Park.</p>\n<p></p>\n<p></p>",
+    "standFirst": "<p class=\"standfirst-content\">THE $15 million first stage of a city parkland, which will become the Gold Coast’s ‘crown jewels’, will begin construction this year. And there are plans for it to become even larger.</p>",
+    "kicker": "Golden Age",
+    "byline": "ANDREW POTTS",
+    "commentsAllowed": true,
+    "commentsTotal": 0,
+    "commentsShown": true,
+    "authorProfileIds": [],
+    "bylineNames": [
+        "ANDREW POTTS"
+    ],
+    "bylineTitles": [],
+    "bulletList": [],
+    "topics": []
+}

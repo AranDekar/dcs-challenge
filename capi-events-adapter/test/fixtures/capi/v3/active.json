@@ -1,0 +1,51 @@
+{
+    "messageId": "667ee032617cdd53697c9e69e41ed4e6",
+    "percolateId": "ff235576fc495c65af7b385aeed5e3f2",
+    "capiId": "790f08b3d20fa317df22954ecb4b9ba9",
+    "capiUri": "https://newsapi3-uat-client.nprod.newsapi.com.au/v3/articles/790f08b3d20fa317df22954ecb4b9ba9",
+    "type": "article",
+    "subtype": "news",
+    "revision": {
+        "major": 1527466929000,
+        "minor": 0
+    },
+    "status": "active",
+    "draft": false,
+    "platform": {
+        "id": "S-1862851",
+        "system": "aap_live",
+        "documentId": "e1517fd5-fd72-47d3-8f47-96d0a32519d7",
+        "parentId": "S-1862851",
+        "userUpdated": "v3-ingester",
+        "systemUpdated": "aap_live",
+        "capiOrigin": "AU"
+    },
+    "date": {
+        "live": "2018-05-28T01:22:25.000Z",
+        "updated": "2018-05-28T00:22:09.000Z",
+        "created": "2018-05-28T01:22:35.524Z",
+        "processed": "2018-05-28T01:22:35.605Z"
+    },
+    "locale": "en_AU",
+    "originatedSource": "Australian Associated Press",
+    "accessType": "free",
+    "domains": [
+        "heraldsun.com.au",
+        "themercury.com.au",
+        "adelaidenow.com.au",
+        "goldcoastbulletin.com.au",
+        "dailytelegraph.com.au",
+        "perthnow.com.au",
+        "ntnews.com.au",
+        "news.com.au",
+        "geelongadvertiser.com.au",
+        "theaustralian.com.au",
+        "cairnspost.com.au",
+        "weeklytimesnow.com.au",
+        "townsvillebulletin.com.au",
+        "couriermail.com.au"
+    ],
+    "action": "POST",
+    "isSyncToV2": true,
+    "capiVersion": "v3"
+}

@@ -1,0 +1,34 @@
+{
+    "name"          : "",
+    "version"       : "",
+    "description"   : "",
+
+    "route": {
+
+        "config": {
+            "assets": {
+                "css": ["//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"],
+                "js" : ["//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"]
+            }
+        },
+
+        "green": {
+            "config": {
+                "assets": {
+                    "css": ["//foobar.com/css/green.css"]
+                }
+            }
+        },
+
+        "blue": {
+            "config": {
+                "assets": {
+                    "css": [{
+                        "href" : "/foo/bar",
+                        "scope": "top"
+                    }]
+                }
+            }
+        }
+    }
+}

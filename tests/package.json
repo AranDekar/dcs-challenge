@@ -1,0 +1,50 @@
+{
+  "name": "pp-services",
+  "version": "1.0.0",
+  "description": "The uber repository for DCS Pied Piper Services. Simpler to do this for one build pipeline to get started.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register 'test/**/*.ts'",
+    "ecs-test": "mocha -r ts-node/register 'test/integration/tcog/*.ts' 'test/integration/index.test.ts'",
+    "build": "yarn run tslint && yarn run build-ts",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "data-loader": "ts-node test/data/loader.ts",
+    "test:legacy": "ts-node 'test/legacy/index.test.ts' './manifest-20-2-18.json'",
+    "test:prd4": "ts-node 'test/legacy/index.test.ts' './manifest-prd4-9-3-18.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://MoriartyJ1@stash.news.com.au/scm/dcs/pp-services.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/async": "^2.0.47",
+    "@types/chai": "^4.0.4",
+    "@types/ioredis": "^3.2.5",
+    "@types/lodash": "^4.14.85",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.47",
+    "@types/ramda": "^0.25.20",
+    "@types/request": "^2.0.4",
+    "@types/supertest": "^2.0.3",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "supertest": "^3.0.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.0.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "ioredis": "^3.2.2",
+    "lodash": "^4.17.4",
+    "ramda": "^0.25.0",
+    "request": "^2.83.0",
+    "ts-node": "^3.3.0"
+  }
+}

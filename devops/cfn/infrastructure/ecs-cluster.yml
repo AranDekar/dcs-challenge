@@ -1,0 +1,205 @@
+Parameters:
+
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+
+  SecurityGroup:
+    Type: String
+
+  HttpProxy:
+    Type: String
+
+  ECSSubnets:
+    Type: List<AWS::EC2::Subnet::Id>
+
+  InstanceType:
+    Type: String
+
+  ClusterSize:
+    Type: Number
+
+  KeyPair:
+    Type: String
+
+  EnvironmentTag:
+    Type: String
+    Default: dev
+
+Mappings:
+  AWSRegionToAMI:
+    ap-southeast-2:
+      AMI: ami-774b7314
+
+Conditions:
+
+  IsUAT: !Equals [ !Ref EnvironmentTag, uat]
+
+Resources:
+
+  ECSRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Path: /
+      AssumeRolePolicyDocument: |
+        {
+            "Statement": [{
+                "Effect": "Allow",
+                "Principal": { "Service": [ "ec2.amazonaws.com" ]},
+                "Action": [ "sts:AssumeRole" ]
+            }]
+        }
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceforEC2Role
+
+  InstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Path: /
+      Roles:
+        - !Ref ECSRole
+
+  Cluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: !Ref AWS::StackName
+
+  AutoScalingGroup:
+    Type: AWS::AutoScaling::AutoScalingGroup
+    Properties:
+      VPCZoneIdentifier: !Ref ECSSubnets
+      LaunchConfigurationName: !Ref LaunchConfiguration
+      MinSize: !Ref ClusterSize
+      MaxSize: !Ref ClusterSize
+      DesiredCapacity: !Ref ClusterSize
+      Tags: 
+        - Key: Name
+          Value: !Sub ${AWS::StackName} - ECS Host
+          PropagateAtLaunch: true
+        - Key: Environment
+          Value: !Ref EnvironmentTag
+          PropagateAtLaunch: true
+        - Key: Bu
+          Value: News Digital Media
+          PropagateAtLaunch: true
+        - Key: Product
+          Value: TCOG
+          PropagateAtLaunch: true
+    CreationPolicy:
+      ResourceSignal:
+        Timeout: PT15M
+    UpdatePolicy:
+      AutoScalingRollingUpdate:
+        SuspendProcesses:
+          - ScheduledActions
+        MinInstancesInService: 1
+        MaxBatchSize: 1
+        PauseTime: PT15M
+        WaitOnResourceSignals: true
+
+  LaunchConfiguration:
+    Type: AWS::AutoScaling::LaunchConfiguration
+    DependsOn: Cluster
+    Metadata:
+      AWS::CloudFormation::Init:
+        config:
+          files:
+            "/etc/cfn/cfn-hup.conf":
+              mode: 000400
+              owner: root
+              group: root
+              content: !Sub |
+                [main]
+                stack=${AWS::StackId}
+                region=${AWS::Region}
+            "/etc/cfn/hooks.d/cfn-auto-reloader.conf":
+              content: !Sub |
+                [cfn-auto-reloader-hook]
+                triggers=post.update
+                path=Resources.ContainerInstances.Metadata.AWS::CloudFormation::Init
+                action=/opt/aws/bin/cfn-init -v --region ${AWS::Region} --stack ${AWS::StackName} --resource LaunchConfiguration
+          services:
+            sysvinit:
+              cfn-hup:
+                enabled: true
+                ensureRunning: true
+                files:
+                  - /etc/cfn/cfn-hup.conf
+                  - /etc/cfn/hooks.d/cfn-auto-reloader.conf
+
+    Properties:
+      ImageId: !FindInMap [ AWSRegionToAMI, !Ref "AWS::Region", AMI ]
+      InstanceType: !Ref InstanceType
+      IamInstanceProfile: !Ref InstanceProfile
+      SecurityGroups:
+        - !Ref SecurityGroup
+      KeyName: !Ref KeyPair
+      UserData:
+        "Fn::Base64": !Sub |
+          #!/bin/bash -ex
+          exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
+
+          # Set Yum HTTP proxy
+          if [ ! -f /var/lib/cloud/instance/sem/config_yum_http_proxy ]; then
+            echo "proxy=http://${HttpProxy}" >> /etc/yum.conf
+            echo "$$: $(date +%s.%N | cut -b1-13)" > /var/lib/cloud/instance/sem/config_yum_http_proxy
+          fi
+
+          # Set Docker HTTP proxy
+          if [ ! -f /var/lib/cloud/instance/sem/config_docker_http_proxy ]; then
+            echo "export HTTP_PROXY=http://${HttpProxy}" >> /etc/sysconfig/docker
+            echo "export NO_PROXY=169.254.169.254" >> /etc/sysconfig/docker
+            echo "$$: $(date +%s.%N | cut -b1-13)" > /var/lib/cloud/instance/sem/config_docker_http_proxy
+          fi
+
+          # Set ECS agent HTTP proxy
+          if [ ! -f /var/lib/cloud/instance/sem/config_ecs-agent_http_proxy ]; then
+            echo "ECS_CLUSTER=${Cluster}" >> /etc/ecs/ecs.config
+            echo "HTTP_PROXY=${HttpProxy}" >> /etc/ecs/ecs.config
+            echo "NO_PROXY=169.254.169.254,169.254.170.2,/var/run/docker.sock" >> /etc/ecs/ecs.config
+            echo "$$: $(date +%s.%N | cut -b1-13)" > /var/lib/cloud/instance/sem/config_ecs-agent_http_proxy
+          fi
+
+          # Set ecs-init HTTP proxy
+          if [ ! -f /var/lib/cloud/instance/sem/config_ecs-init_http_proxy ]; then
+            echo "env HTTP_PROXY=${HttpProxy}" >> /etc/init/ecs.override
+            echo "env NO_PROXY=169.254.169.254,169.254.170.2,/var/run/docker.sock" >> /etc/init/ecs.override
+            echo "$$: $(date +%s.%N | cut -b1-13)" > /var/lib/cloud/instance/sem/config_ecs-init_http_proxy
+          fi
+
+          # Set the Sumo Logger as an option
+          sudo service docker restart
+          docker plugin install store/sumologic/docker-logging-driver:1.0.2 --grant-all-permissions --alias sumologic
+          echo "ECS_AVAILABLE_LOGGING_DRIVERS=[\"json-file\",\"awslogs\",\"sumologic\"]" >> /etc/ecs/ecs.config
+
+          # Start ECS agent
+          sudo start ecs
+
+          yum install -y aws-cfn-bootstrap
+          /opt/aws/bin/cfn-init -v --region ${AWS::Region} --stack ${AWS::StackName} --resource LaunchConfiguration --http-proxy http://${HttpProxy} --https-proxy https://${HttpProxy} || true
+          /opt/aws/bin/cfn-signal -e $? --region ${AWS::Region} --stack ${AWS::StackName} --resource AutoScalingGroup --http-proxy http://${HttpProxy}  --https-proxy https://${HttpProxy} || true
+
+  ScheduledActionUp: 
+    Type: AWS::AutoScaling::ScheduledAction
+    Condition: IsUAT
+    Properties:
+      AutoScalingGroupName: !Ref AutoScalingGroup
+      MaxSize: !Ref ClusterSize
+      MinSize: !Ref ClusterSize
+      DesiredCapacity: !Ref ClusterSize
+      Recurrence: "0 21 * * *"
+
+  ScheduledActionDown: 
+    Type: AWS::AutoScaling::ScheduledAction
+    Condition: IsUAT
+    Properties:
+      AutoScalingGroupName: !Ref AutoScalingGroup
+      MaxSize: 0
+      MinSize: 0
+      DesiredCapacity: 0
+      Recurrence: "0 8 * * *"
+
+Outputs:
+
+    Cluster:
+        Description: A reference to the ECS cluster
+        Value: !Ref Cluster

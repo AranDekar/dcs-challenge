@@ -1,0 +1,10 @@
+{
+    "dateProcessed": "2014-09-01T05:34:16.512Z",
+    "domain": "theaustralian.com.au",
+    "gravatarContent": "{\"entry\":[{\"id\":\"\",\"hash\":\"\",\"requestHash\":\"jaredowens\",\"profileUrl\":\"\",\"preferredUsername\":\"jaredowens\",\"thumbnailUrl\":\"http:\\/\\/media.theaustralian.com.au\\/authors\\/images\\/jared_owens.png\",\"photos\":[{\"value\":\"http:\\/\\/media.theaustralian.com.au\\/authors\\/images\\/jared_owens.png\",\"type\":\"thumbnail\"}],\"currency\":[],\"profileBackground\":{\"color\":\"#\",\"position\":\"left\",\"repeat\":\"repeat\",\"url\":\"\"},\"name\":{\"givenName\":\"Jared\",\"familyName\":\"Owens\",\"formatted\":\"Jared Owens\"},\"displayName\":\"Jared Owens\",\"aboutMe\":\"Jared Owens is a political reporter based in Canberra. He has previously worked at The Australian’s Sydney and Brisbane bureaux\n\nAwards: 2011 Queensland Clarion Media Award for All-Media Young Reporter of the Year\",\"currentLocation\":\"Canberra\",\"emails\":[{\"primary\":\"true\",\"value\":\"owensja@theaustralian.com.au\"}],\"accounts\":[{\"domain\":\"plus.google.com\",\"display\":\"plus.google.com\",\"url\":\"https:\\/\\/plus.google.com\\/116039583906467076146\",\"userid\":\"116039583906467076146\",\"verified\":\"\",\"shortname\":\"google\"},{\"domain\":\"twitter.com\",\"display\":\"@jaredowens\",\"url\":\"http:\\/\\/twitter.com\\/jaredowens\",\"username\":\"jaredowens\",\"verified\":\"true\",\"shortname\":\"twitter\"}],\"urls\":[{\"value\":\"theaustralian.com.au\",\"title\":\"TheAustralian\"}]}]}",
+    "id": "cf37e1e81f79b327f270035b0c17396c",
+    "name": "Jared Owens",
+    "profileSourceType": "INTERNAL",
+    "title": "Reporter",
+    "username": "jaredowens"
+}

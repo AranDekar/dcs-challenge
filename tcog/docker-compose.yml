@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  tcog:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    command: /bin/bash -c "node run.js | ./node_modules/.bin/bunyan"

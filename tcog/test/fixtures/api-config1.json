@@ -1,0 +1,32 @@
+{
+    "news_sdk": {
+        "appBundleId":  "tcog.core",
+        "appVersion":   "0.1.0",
+        "appPart":      "newslocal"
+    },
+    "title": "News Local",
+    "link": [
+        { "rel": "canonical", "href": "http://news.com.au/local" }
+    ],
+    "meta": [
+        { "http-equiv": "content-type", "value": "text/html" },
+        { "name": "description", "content": "this is a test" }
+    ],
+    "vars": {
+        "advertiserID": 1234,
+        "dynamicFailover": { "contact": "john" }
+    },
+    "manlyDaily": {
+        "title": "The Manly Daily",
+        "link": [
+            { "rel": "canonical", "href": "http://dailytelegraph.com.au/md" }
+        ],
+        "meta": [
+            { "name": "description", "content": "the manly daily test test" }
+        ],
+        "vars": {
+            "advertiserID": 4321,
+            "dynamicFailover": { "contact": "michael" }
+        }
+    }
+}

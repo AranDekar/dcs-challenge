@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+
+dump.rdb
+
+# Dependency directory
+node_modules
+
+# OS metadata
+../.DS_Store
+.DS_Store
+
+test/data/conf/integration-data.rdb

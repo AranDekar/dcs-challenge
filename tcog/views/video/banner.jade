@@ -1,0 +1,7 @@
+include mixin/list
+include mixin/esi
+
+if data.results.length
+    div.vms-banner
+        div.vms-banner-inner
+            +list( data.results, 'line', 'vms-banner-playlist', 'HERO' )

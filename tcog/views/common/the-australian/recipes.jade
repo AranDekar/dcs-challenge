@@ -1,0 +1,73 @@
+//- Recipes template
+
+block content
+    for item, idx in data.results
+        -var imageProperties = {}
+        -var premium = (item.paidStatus === "PREMIUM") ? "prm prm-story " : ""
+        -var keywordsLimit = 5
+
+        //- Define image properties
+        if item.relatedMap.image && item.relatedMap.image["650"]
+            -imageProperties.link = item.relatedMap.image["650"].link + (!/resources[0-9]?/g.test(item.relatedMap.image["650"].link) ? "&group=iphone&size=medium" : "")
+            -imageProperties.imageName = item.relatedMap.image["650"].imageName
+            -imageProperties.height = "auto"
+            -imageProperties.width = "320"
+            -imageProperties.dimensions = "image-" + imageProperties.width + "w" + imageProperties.height + "h"
+            -imageProperties.hasImage = ""
+        else if item.relatedMap.image && item.relatedMap.image["316"]
+            -imageProperties.link = item.relatedMap.image["316"].link
+            -imageProperties.imageName = item.relatedMap.image["316"].imageName
+            -imageProperties.height = item.relatedMap.image["316"].height
+            -imageProperties.width = item.relatedMap.image["316"].width
+            -imageProperties.dimensions = "image-" + imageProperties.width + "w" + imageProperties.height + "h"
+            -imageProperties.hasImage = ""
+        else
+            -imageProperties.link = ""
+            -imageProperties.imageName = ""
+            -imageProperties.height = ""
+            -imageProperties.width = ""
+            -imageProperties.dimensions = ""
+            -imageProperties.hasImage = "no-image"
+
+        //- Check if video or gallery present
+        if item.relatedMap.video
+            -imageProperties.hasMedia = " has-video"
+        else if item.gallery.length > 0
+            -imageProperties.hasMedia = " has-gallery"
+        else
+            -imageProperties.hasMedia = ""
+
+        .content-item(class="cipos-#{idx} cirpos-#{data.results.length - idx}" + imageProperties.hasMedia)
+            .image-block(class=imageProperties.dimensions + imageProperties.hasImage)
+                //- Image (serve 650 if 316 unavailable)
+                .image-frame
+                    a.image-link(href=item.link)
+                        img(
+                            src=imageProperties.link,
+                            alt=(imageProperties.imageName||"").trim(),
+                            height=imageProperties.height,
+                            width=imageProperties.width)
+
+                //- Keyword tags (output at most 5)
+                if item.keywords.length > 0
+                    .tags
+                        -for (var i = 0; i < keywordsLimit && i !== item.keywords.length - 1; ++i)
+                            =item.keywords[i] + ((i !== keywordsLimit - 1) ? ", " : "")
+
+            div(class=premium + "story-block sbpos-#{idx} sbrpos-#{data.results.length - idx}", id="#{item.id}")
+                h4.heading
+                    if item.kicker
+                        span.kicker= (item.kicker||"").trim()
+                    a(href=item.link, class=premium)= (item.title||"").trim()
+
+                if item.standFirst
+                    p.standfirst
+                        if item.byline
+                            span.article-info
+                                if item.timestamp !== false
+                                    span.timestamp
+                                        time(datetime=item.dateLive)= moment(item.dateLive).format('H:mm A')
+
+                                em.byline= (item.byline||"").trim() + " "
+                        span=(item.standFirst||"").trim()
+

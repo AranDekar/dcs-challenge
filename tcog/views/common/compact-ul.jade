@@ -1,0 +1,6 @@
+extends ../layouts/page.jade
+
+block content
+    ul
+        for item, idx in data.results
+            include _compact-list-items

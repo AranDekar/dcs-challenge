@@ -1,0 +1,56 @@
+doctype html5
+
+-var story = data;
+-var formattedDate = moment(story.dateLive).format(display.dateformat || 'H:mm A');
+-var section = story.primaryCategory ? (story.primaryCategory.value || story.primaryCategory).split(/\//ig).filter(function(i) { return !!i; }).pop() : "News";
+
+include _paragraph-html
+include _paragraph-iframe
+include _paragraph-image
+include _article-navigation
+
+html
+    head
+        meta(charset="utf-8")
+        title= story.title
+
+    body
+        main
+            header
+                h1.masthead-logo: a(href="#") The Daily Telegraph
+                if (story.navigation && story.navigation.length)
+                    nav: +navigation(story.navigation)
+
+            section.left.column.article
+                article.primary-article.non-premium(id=story.id)
+                    header
+                        h2.section= section
+                        h1=         story.subtitle
+
+                        p.article-info
+                            time(datetime=story.dateLive)= formattedDate
+                            |&nbsp;
+                            span.byline= story.byline
+
+                    div.shareTools
+                    p.introduction= story.description
+
+                    for paragraph in story.paragraphs
+
+                        if (paragraph.contentType === "HTML")
+                            +paragraph_html(paragraph)
+
+                        if (paragraph.contentType === "IFRAME")
+                            +paragraph_iframe(paragraph)
+
+                        if (paragraph.contentType === "IMAGE")
+                            +paragraph_image(paragraph)
+
+
+            section.right.column.sidebar
+                //- advertisement
+                aside.box
+                    h3 Keep Reading
+
+                aside.box.right-rail
+                    h3 The Right Rail

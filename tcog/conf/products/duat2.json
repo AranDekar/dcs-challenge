@@ -1,0 +1,286 @@
+{
+    "applenews": {
+        "capiV3AuthoringKey": "p7u3zx992qq9n6qp7pjx6cmb",
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5"
+    },
+    "WeeklyTimesNow": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "p7u3zx992qq9n6qp7pjx6cmb",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "60b7e476e5ef6150cac98a958b32c907",
+        "domain": "weeklytimesnow.com.au"
+    },
+    "tcog": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIConfigKey": "a4uqqj4g2863g5s7u62w8d22",
+        "foxsportsApiKey": "becbf7f4-8ca5-4ba0-b399-693ac5941456"
+    },
+    "the-australian": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "capiV2APIConfigKey": "a4uqqj4g2863g5s7u62w8d22",
+        "capiV2APIProductArticleKey": "h4demk333hayau3vw2bs9p4c",
+        "domain": "theaustralian.com.au"
+    },
+    "newscomau": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIProductArticleKey": "dnqv9zav84jsw3gh6fuvyzug",
+        "chartbeatKey": "5f50373359f904d4bfc40de33c8f45aa",
+        "domain": "news.com.au"
+    },
+    "capability": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIConfigKey": "a4uqqj4g2863g5s7u62w8d22"
+    },
+    "DailyTelegraph": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "dca67808316670ecb01f50aee88527e4",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "domain": "dailytelegraph.com.au",
+        "vidoraApiKey": "dailytelegraph.ED76B39B872C754B916B7D770AA8BBEC"
+    },
+    "BetaDailyTelegraph": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "dca67808316670ecb01f50aee88527e4",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "domain": "dailytelegraph.com.au"
+    },
+    "AdelaideNow": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "f6a4a1dc9dbbb4a6cfc4bd31afeb48c8",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "domain": "adelaidenow.com.au",
+        "vidoraApiKey": "adelaide_advertiser.7C7FF7CA84DB1A67F44F9CF6566A7F7E"
+    },
+    "CourierMail": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "c21275acfaa374aef5d7ae356e466bd8",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "cid": "1227028450721",
+        "domain": "couriermail.com.au",
+        "vidoraApiKey": "couriermail.86A83FC34FE5C7098A2D40AD3E923D9B"
+    },
+    "HeraldSun": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIProductArticleKey": "dmxhnkfs6vydk7j8qjnd9nn9",
+        "chartbeatKey": "82d666905083b4cc444e495af68446bc",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "domain": "heraldsun.com.au",
+        "foxsportsPulseApiKey": "6oy5vZ2RQb6LfGr6ILOlw2A6xA8HwjvC3dYhX37h",
+        "vidoraApiKey": "heraldsun.2F8773CE626E38E3517E704E87B6D52D"
+    },
+    "FoxSports": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIProductArticleKey": "g8w5ft8qjb28d5gecwuc6ejq",
+        "chartbeatKey": "b3c090914a60ebade2535b49ace0a36c",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "domain": "foxsports.com.au"
+    },
+    "CairnsPost": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "3c8ab934a34b95d7769bf3b25cfd5498",
+        "domain": "cairnspost.com.au"
+    },
+    "GeelongAdvertiser": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "9a4d1536ed0019850861d44f48eba9d2",
+        "domain": "geelongadvertiser.com.au"
+    },
+    "GoldCoastBulletin": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "1123b4964949f1fc2bf0f277da2199b5",
+        "domain": "goldcoastbulletin.com.au"
+    },
+    "Mercury": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "198fd5375b22302788241097394a3682",
+        "domain": "themercury.com.au"
+    },
+    "NTNews": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "6f7c1827ba38019d783362d0b87543c2",
+        "domain": "ntnews.com.au"
+    },
+    "TownsvilleBulletin": {
+        "capiV3APIKey": "caevreetjd6ssddw9zq23sgm",
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "7cd59315d2539b49fcc4a299f5bea2a5",
+        "domain": "townsvillebulletin.com.au"
+    },
+    "network-editorial": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr"
+    },
+    "video": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIConfigKey": "a4uqqj4g2863g5s7u62w8d22"
+    },
+    "entertainment": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr"
+    },
+    "most-popular-mobile": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5"
+    },
+    "bestofmelbourne": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr"
+    },
+    "ad24eeb1a77085a62fa76aad00faad19": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "name": "kurator-draft",
+        "capiV2APIKey": "5xbkmgb22mjmg6txk6734t7m",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr"
+    },
+    "ad24eeb1a77085a62fa76aad00faad19-sit": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "name": "kurator-draft-sit",
+        "capiV2APIKey": "6spbkskqq7p2fxf289xkat79",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr"
+    },
+    "consumer-commerce": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "recipients": "tcog_admin, tcog_consumer_commerce"
+    },
+    "spp": {},
+    "bodyandsoul": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "0500811afc018e0fc5e0cc4cd03146cc",
+        "domain": "bodyandsoul.com.au"
+    },
+    "escape": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "capiV2APIProductArticleKey": "yk3qm3agzst3tp9dv7h4xrx7",
+        "capiV2APIConfigKey": "a4uqqj4g2863g5s7u62w8d22",
+        "domain": "escape.com.au"
+    },
+    "apps.adv": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "kx9wubneu9ps6aetj52ppqr4"
+    },
+    "apps.dt": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "apps.tcm": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "gsnbxuvmtgg3945t4jpt6bsj"
+    },
+    "apps.hs": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "crtpyed2uhk9kwuhuxvxc66n"
+    },
+    "apps.adv.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "kx9wubneu9ps6aetj52ppqr4"
+    },
+    "apps.dt.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "apps.tcm.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "gsnbxuvmtgg3945t4jpt6bsj"
+    },
+    "apps.hs.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "crtpyed2uhk9kwuhuxvxc66n"
+    },
+    "apps.nca.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "dvc6pfmpwetq5at8j7c648q8"
+    },
+    "apps.twt.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "apps.gcb.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "kx9wubneu9ps6aetj52ppqr4"
+    },
+    "apps.ga.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "crtpyed2uhk9kwuhuxvxc66n"
+    },
+    "apps.cp.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "gsnbxuvmtgg3945t4jpt6bsj"
+    },
+    "apps.ntn.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "apps.tb.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "kx9wubneu9ps6aetj52ppqr4"
+    },
+    "apps.hm.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "crtpyed2uhk9kwuhuxvxc66n"
+    },
+    "apps.sfnrl.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "apps.sfafl.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "apps.sfrugby.h20": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "ub7ym3sst33jvubggrcqznue"
+    },
+    "kidsnews": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "domain": "kidspot.com.au"
+    },
+    "whimn": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "mgxz9ytxeek5qpdbkcte4ay9",
+        "chartbeatKey": "b13a8410c60c332c54a47043000cb96a",
+        "domain": "whimn.com.au"
+    },
+    "xyz": {
+        "capiV3AuthoringKey": "ft4vnjnxtkr5bwkgjguwrja6",
+        "capiV2APIKey": "5u77xavpr4hfq2ncjkgc4wz5",
+        "chartbeatKey": "dca67808316670ecb01f50aee88527e4",
+        "capiV2APIImageKey": "7xnktd3q3de7dbtnw3wrfukr",
+        "foxsportsApiKey": "becbf7f4-8ca5-4ba0-b399-693ac5941456",
+        "domain": "dailytelegraph.com.au"
+    }
+}

@@ -1,0 +1,9 @@
+-var moduleClasses = display.moduleClasses || ""
+
+div(class='module ' + moduleClasses)
+    if display.moduleHeader
+        .module-header
+            h2.heading= display.moduleHeader
+
+    .module-content
+        block content

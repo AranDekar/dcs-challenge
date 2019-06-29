@@ -1,0 +1,344 @@
+Description: Pied Piper ECS services cluster.
+
+Parameters:
+
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+
+  SecurityGroup:
+    Type: String
+
+  HttpProxy:
+    Type: String
+
+  ECSSubnets:
+    Type: String # *List<AWS::EC2::Subnet::Id>
+
+  LoadBalancerSubnets:
+    Type: String # *List<AWS::EC2::Subnet::Id>
+
+  InstanceType:
+    Type: String
+
+  ClusterSize:
+    Type: Number
+
+  KeyPair:
+    Type: String
+
+  RedisPubSubHost:
+    Type: String
+  
+  RedisPubSubChannel:
+    Type: String
+
+  RedisCacheHost:
+    Type: String
+
+  TcogNodeEnv:
+    Type: String
+
+  SqsQueue:
+    Type: String
+
+  HostedZoneName:
+    Type: String
+
+  Tag:
+    Type: String
+    Default: latest
+
+  AlarmTopic:
+    Type: String
+    Default: AWS::NoValue
+
+  EnvironmentTag:
+    Type: String
+    Default: dev
+
+  CapiV2:
+    Type: String
+    Default: AWS::NoValue
+
+  CapiV3:
+    Type: String
+    Default: AWS::NoValue
+
+  NewRelicLicenseKey:
+    Type: String
+    Default: AWS::NoValue
+
+  LogLevel:
+    Type: String
+    Default: error
+
+  NewsGraphDesiredCount:
+    Type: Number
+    Default: 2
+
+Resources:
+
+    ECS:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/ecs-cluster.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          ECSSubnets: !Ref ECSSubnets
+          ClusterSize: !Ref ClusterSize
+          InstanceType: !Ref InstanceType
+          SecurityGroup: !Ref SecurityGroup
+          HttpProxy: !Ref HttpProxy
+          KeyPair: !Ref KeyPair
+          EnvironmentTag: !Ref EnvironmentTag
+
+    TabulaLoadBalancer:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/load-balancer.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          LoadBalancerName: !Sub ${AWS::StackName}-tabula
+          LoadBalancerSubnets: !Ref LoadBalancerSubnets
+          SecurityGroup: !Ref SecurityGroup
+          HostedZoneName: !Ref HostedZoneName
+
+    Tabula:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/http-service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Listener: !GetAtt TabulaLoadBalancer.Outputs.Listener 
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          Memory: 512
+          MemoryReservation: 256
+          ApplicationName: tabula
+          ContainerPort: 3000
+          Repository: pied-piper/tabula
+          Command: "yarn,start"
+          NodeEnv: production
+          RedisCacheHost: !Ref RedisCacheHost
+          RedisPubSubHost: !Ref RedisPubSubHost
+          RedisPubSubChannel: !Ref RedisPubSubChannel
+          HttpProxy: !Sub http://${HttpProxy}
+          NoProxy: api.newsapi.com.au
+          Tag: !Ref Tag
+          AlarmTopic: !Ref AlarmTopic
+          ElasticLoadBalancerName: !GetAtt TabulaLoadBalancer.Outputs.LoadBalancerFullName
+          NewRelicLicenseKey: !Ref NewRelicLicenseKey
+          NewRelicAppName: !Sub DCS - TABULA (${EnvironmentTag})
+          LogLevel: !Ref LogLevel
+
+    VarnishLoadBalancer:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/load-balancer.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          LoadBalancerName: !Sub ${AWS::StackName}-varnish
+          LoadBalancerSubnets: !Ref LoadBalancerSubnets
+          SecurityGroup: !Ref SecurityGroup
+          HostedZoneName: !Ref HostedZoneName
+
+    Varnish:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/http-service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Listener: !GetAtt VarnishLoadBalancer.Outputs.Listener 
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          Memory: 2048
+          MemoryReservation: 2048
+          ApplicationName: varnish
+          ContainerPort: 80
+          DesiredCount: 1
+          Repository: pied-piper/varnish
+          Command: '/start.sh'
+          BackendHost: !GetAtt TcogLoadBalancer.Outputs.LoadBalancerHost
+          BackendPort: "80"
+          HealthCheckPath: /healthcheck?t_product=tcog
+          Tag: !Ref Tag
+          AlarmTopic: !Ref AlarmTopic
+          ElasticLoadBalancerName: !GetAtt VarnishLoadBalancer.Outputs.LoadBalancerFullName
+
+    TcogLoadBalancer:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/load-balancer.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          LoadBalancerName: !Sub ${AWS::StackName}-tcog
+          LoadBalancerSubnets: !Ref LoadBalancerSubnets
+          SecurityGroup: !Ref SecurityGroup
+          HostedZoneName: !Ref HostedZoneName
+
+    Tcog:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/http-service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Listener: !GetAtt TcogLoadBalancer.Outputs.Listener 
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          Memory: 1024
+          MemoryReservation: 512
+          ApplicationName: tcog
+          ContainerPort: 3000
+          Repository: pied-piper/tcog
+          Command: "yarn,start"
+          HealthCheckPath: /healthcheck?t_product=tcog
+          HttpProxy: !Sub http://${HttpProxy}
+          NoProxy: !Sub ${TabulaLoadBalancer.Outputs.LoadBalancerHost},localhost,.digprod.cp1.news.com.au,.diguat.cp1.news.com.au,.digdev.cp1.news.com.au
+          NodeEnv: !Ref TcogNodeEnv
+          Tag: !Ref Tag
+          AlarmTopic: !Ref AlarmTopic
+          ElasticLoadBalancerName: !GetAtt TcogLoadBalancer.Outputs.LoadBalancerFullName
+          NewRelicLicenseKey: !Ref NewRelicLicenseKey
+          NewRelicAppName: !Sub DCS - TCOG (${EnvironmentTag})
+          LogLevel: !Ref LogLevel
+
+    VarnishEventsAdapter:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          ApplicationName: varnish-events-adapter
+          Repository: pied-piper/varnish-events-adapter
+          Command: "yarn,start"
+          HttpProxy: !Sub http://${HttpProxy}
+          RedisPubSubHost: !Ref RedisPubSubHost
+          RedisPubSubChannel: !Ref RedisPubSubChannel
+          VarnishHost: !GetAtt VarnishLoadBalancer.Outputs.LoadBalancerHost
+          Tag: !Ref Tag
+          NewRelicLicenseKey: !Ref NewRelicLicenseKey
+          NewRelicAppName: !Sub DCS - VARNISH EVENTS ADAPTER (${EnvironmentTag})
+          LogLevel: !Ref LogLevel
+
+    CapiEventsAdapter:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          ApplicationName: capi-events-adapter
+          Repository: pied-piper/capi-events-adapter
+          Command: "yarn,start"
+          HttpProxy: !Sub http://${HttpProxy}
+          RedisPubSubHost: !Ref RedisPubSubHost
+          RedisPubSubChannel: !Ref RedisPubSubChannel
+          SqsQueue: !Ref SqsQueue
+          Tag: !Ref Tag
+          NewRelicLicenseKey: !Ref NewRelicLicenseKey
+          NewRelicAppName: !Sub DCS - CAPI EVENTS ADAPTER (${EnvironmentTag})
+          LogLevel: !Ref LogLevel
+
+    NewsGraphLoadBalancer:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/load-balancer.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          LoadBalancerName: !Sub ${AWS::StackName}-ngraph
+          LoadBalancerSubnets: !Ref LoadBalancerSubnets
+          SecurityGroup: !Ref SecurityGroup
+          HostedZoneName: !Ref HostedZoneName
+
+    NewsGraph:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/http-service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Listener: !GetAtt NewsGraphLoadBalancer.Outputs.Listener 
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          Memory: 1024
+          MemoryReservation: 512
+          ApplicationName: newsgraph
+          ContainerPort: 4000
+          DesiredCount: !Ref NewsGraphDesiredCount
+          Repository: pied-piper/newsgraph
+          Command: "yarn,start"
+          TabulaUrl: !Sub
+            - http://${host}/
+            - { host: !GetAtt TabulaLoadBalancer.Outputs.LoadBalancerHost }
+          HttpProxy: !Sub http://${HttpProxy}
+          NoProxy: !Sub ${TabulaLoadBalancer.Outputs.LoadBalancerHost},localhost,.digprod.cp1.news.com.au,.diguat.cp1.news.com.au,.digdev.cp1.news.com.au
+          Tag: !Ref Tag
+          AlarmTopic: !Ref AlarmTopic
+          ElasticLoadBalancerName: !GetAtt NewsGraphLoadBalancer.Outputs.LoadBalancerFullName
+          CapiV2: !Ref CapiV2
+          CapiV3: !Ref CapiV3
+          NewRelicLicenseKey: !Ref NewRelicLicenseKey
+          NewRelicAppName: !Sub DCS - NEWSGRAPH (${EnvironmentTag})
+          LogLevel: !Ref LogLevel
+
+    DeckEventsAdapterLoadBalancer:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/load-balancer.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          LoadBalancerName: !Sub ${AWS::StackName}-deck
+          LoadBalancerSubnets: !Ref LoadBalancerSubnets
+          SecurityGroup: !Ref SecurityGroup
+          HostedZoneName: !Ref HostedZoneName
+
+    Deck:
+      Type: AWS::CloudFormation::Stack
+      Properties:
+        TemplateURL: infrastructure/http-service.yml
+        Parameters:
+          VpcId: !Ref VpcId
+          Listener: !GetAtt DeckEventsAdapterLoadBalancer.Outputs.Listener
+          Cluster: !GetAtt ECS.Outputs.Cluster
+          SecurityGroup: !Ref SecurityGroup
+          Memory: 512
+          MemoryReservation: 256
+          ApplicationName: deck
+          ContainerPort: 3000
+          DesiredCount: 1
+          Repository: pied-piper/deck-events-adapter
+          Command: "yarn,start"
+          RedisPubSubHost: !Ref RedisPubSubHost
+          RedisPubSubChannel: !Ref RedisPubSubChannel
+          HttpProxy: !Sub http://${HttpProxy}
+          NoProxy: api.newsapi.com.au
+          Tag: !Ref Tag
+          AlarmTopic: !Ref AlarmTopic
+          ElasticLoadBalancerName: !GetAtt TabulaLoadBalancer.Outputs.LoadBalancerFullName
+          NewRelicLicenseKey: !Ref NewRelicLicenseKey
+          NewRelicAppName: !Sub DCS - DECK EVENTS ADAPTER (${EnvironmentTag})
+          LogLevel: !Ref LogLevel
+
+Outputs:
+  VarnishUrl:
+    Value: !Sub
+      - http://${host}/
+      - { host: !GetAtt VarnishLoadBalancer.Outputs.LoadBalancerHost }
+  TcogUrl:
+    Value: !Sub
+      - http://${host}/
+      - { host: !GetAtt TcogLoadBalancer.Outputs.LoadBalancerHost }
+  TabulaUrl:
+    Value: !Sub
+      - http://${host}/
+      - { host: !GetAtt TabulaLoadBalancer.Outputs.LoadBalancerHost }
+  NewsGraphUrl:
+    Value: !Sub
+      - http://${host}/
+      - { host: !GetAtt NewsGraphLoadBalancer.Outputs.LoadBalancerHost }
+  DeckEventsAdapterUrl:
+    Value: !Sub
+      - http://${host}/
+      - { host: !GetAtt DeckEventsAdapterLoadBalancer.Outputs.LoadBalancerHost }

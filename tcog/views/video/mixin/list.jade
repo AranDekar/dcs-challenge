@@ -1,0 +1,21 @@
+include videoBody
+
+mixin videoLink(item, imgSize)
+    a.vms-list-item.module(href='/video/id-'+ item.originId +'/'+item.title.replace(/\W/g,'-'))
+        +videoBody(item, imgSize)
+
+
+mixin list(items, align, classes, imgSize)
+    div(class=classes+ ' vms-list-'+align)
+        if align === 'line'
+            button.vms-button.vms-list-prev.icon-chevron-left
+        .vms-list.vms-thumbnail
+            for item in items
+                +videoLink(item, imgSize)
+        if align === 'line'
+            button.vms-button.vms-list-next.icon-chevron-right
+
+        if imgSize === 'HERO'
+            .vms-list-crumbs
+                for item, index in items
+                    button.vms-list-crumb(for=index)

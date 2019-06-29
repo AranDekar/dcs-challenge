@@ -1,0 +1,262 @@
+{  
+   "content":{  
+      "id":"e8a0b180f614a76cf5935e8e02b86a32101",
+      "link":{  
+         "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/articles/e8a0b180f614a76cf5935e8e02b86a32101"
+      },
+      "type":"article",
+      "subtype":"news",
+      "draft":false,
+      "status":"active",
+      "locale":"en_US",
+      "originalLocale":"en_AU",
+      "platform":{  
+         "id":"AT_TEST_15156317480831515631748084",
+         "instance":"02",
+         "system":"wordpress",
+         "enterpriseAssetId":"NEWSMMGPL23456789",
+         "documentId":"92cd048a-cf74-4cb8-b7d3-5be2432970e6",
+         "userUpdated":"AT_testuser",
+         "systemUpdated":"wordpress",
+         "instanceUpdated":"dailytelegraph",
+         "capiOrigin":"AU",
+         "capiEnterpriseId":"e8a0b180f614a76cf5935e8e02b86a32101"
+      },
+      "date":{  
+         "live":"2017-03-18T00:03:26.000Z",
+         "updated":"2018-01-11T03:12:39.096Z",
+         "custom":"2017-01-18T00:03:26.001Z",
+         "expiry":"2120-09-17T00:03:26.001Z",
+         "created":"2017-01-18T00:03:26.000Z",
+         "processed":"2018-01-11T03:12:39.002Z"
+      },
+      "extendedMetadata":{  
+         "wsj":{  
+            "slugs":[  
+               "wsj-some-searchable-text",
+               "wsj-someother-searchable-text"
+            ],
+            "key1":"value",
+            "key2":[  
+               1,
+               2,
+               3
+            ],
+            "key3":true,
+            "key4":[  
+               {  
+                  "id":"111",
+                  "path":"/l/l"
+               }
+            ]
+         }
+      },
+      "categories":{  
+         "person":[  
+            {  
+               "id":"e02b88c4b450011ea07d0bc2b84ebd6a8ff",
+               "subtype":"singer",
+               "slug":"person-personarticle001",
+               "path":"/person/person article 001",
+               "provider":"kurator",
+               "providerId":"kurator uuid",
+               "confidence":80,
+               "relevancy":66,
+               "frequency":3,
+               "classification":"suggested",
+               "link":{  
+                  "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/categories/e02b88c4b450011ea07d0bc2b84ebd6a8ff"
+               },
+               "aliases":[  
+
+               ]
+            }
+         ],
+         "location":[  
+            {  
+               "id":"bb66b34d066d39f9a1d5a2ec27ab43cb8ff",
+               "slug":"location-subcontinent-continentalregion-korea-state-suburb",
+               "path":"/location/SubContinent/ContinentalRegion/Korea/State/Suburb",
+               "provider":"kurator",
+               "providerId":"kurator uuid",
+               "confidence":80,
+               "relevancy":66,
+               "frequency":3,
+               "geoPoint":{  
+                  "lat":-27.468056,
+                  "lon":153.028056
+               },
+               "classification":"experiment",
+               "link":{  
+                  "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/categories/bb66b34d066d39f9a1d5a2ec27ab43cb8ff"
+               },
+               "aliases":[  
+
+               ]
+            }
+         ],
+         "keyword":[  
+            {  
+               "id":"bd5d75f5eef05907ae938559738220ae8ff",
+               "slug":"keyword-keywordarticle001",
+               "path":"/keyword/keyword article 001",
+               "provider":"kurator",
+               "providerId":"kurator uuid",
+               "confidence":80,
+               "relevancy":66,
+               "frequency":3,
+               "classification":"suggested",
+               "link":{  
+                  "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/categories/bd5d75f5eef05907ae938559738220ae8ff"
+               },
+               "aliases":[  
+
+               ]
+            }
+         ]
+      },
+      "keywords":[  
+         "keyword article 001",
+         "Suburb",
+         "SubContinent",
+         "State",
+         "person article 001",
+         "ContinentalRegion",
+         "Korea"
+      ],
+      "revision":{  
+         "major":1515640359096,
+         "minor":0
+      },
+      "rightsMetadata":{  
+         "copyrightText":"News Limited Copyright © 2017",
+         "originatedSource":"News Corp Australia Network",
+         "copyrightHolder":"News Corp Australia Network"
+      },
+      "target":{  
+         "domainLink":{  
+            "heraldsun.com.au":{  
+               "link":"https://www.heraldsun.com.au/news/boy-george-has-signed-on-for-the-2017-season/news-story/e8a0b180f614a76cf5935e8e02b86a32101",
+               "dynamicLink":"https://www.heraldsun.com.au/news/boy-george-has-signed-on-for-the-2017-season/news-story/e8a0b180f614a76cf5935e8e02b86a32101",
+               "route":"news",
+               "adTarget":"NEWS",
+               "metered":true
+            },
+            "perthnow.com.au":{  
+               "link":"https://www.perthnow.com.au/news/boy-george-has-signed-on-for-the-2017-season/news-story/e8a0b180f614a76cf5935e8e02b86a32101",
+               "dynamicLink":"https://www.perthnow.com.au/news/boy-george-has-signed-on-for-the-2017-season/news-story/e8a0b180f614a76cf5935e8e02b86a32101",
+               "route":"news",
+               "adTarget":"NEWS",
+               "metered":true
+            }
+         },
+         "domains":[  
+            "perthnow.com.au",
+            "heraldsun.com.au",
+            "_ANY"
+         ],
+         "sections":[  
+            {  
+               "id":"1226620527953",
+               "path":"/section/Web/HeraldSun/Best from Around",
+               "slug":"section-web-heraldsun-bestfromaround",
+               "link":{  
+                  "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/sections/1226620527953"
+               }
+            }
+         ],
+         "displays":[  
+            {  
+               "id":"1226643946953",
+               "path":"/display/heraldsun.com.au/HeraldSun/Best from Around",
+               "slug":"display-heraldsuncomau-heraldsun-bestfromaround",
+               "link":{  
+                  "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/sections/1226643946953"
+               },
+               "dominant":true
+            },
+            {  
+               "id":"1228020697923",
+               "path":"/display/perthnow.com.au/HeraldSun/Best from Around",
+               "slug":"display-perthnowcomau-heraldsun-bestfromaround",
+               "link":{  
+                  "self":"https://newsapi3-sit-client.nprod.newsapi.com.au/v3/sections/1228020697923"
+               },
+               "dominant":true
+            }
+         ]
+      },
+      "authors":[  
+         {  
+            "name":"Colin Vickery",
+            "title":"National TV Writer",
+            "type":"creator"
+         },
+         {  
+            "name":"John Doe",
+            "title":"Staff Writer",
+            "type":"editor"
+         }
+      ],
+      "accessType":"free",
+      "subscriptionSummary":{  
+         "default":"paywall subscription summary text",
+         "theaustralian.com.au":"paywall subscription summary text for theOZ"
+      },
+      "channel":"none",
+      "autoTranslate":true,
+      "headline":{  
+         "default":"BOY George has signed on for the 2017 season",
+         "theaustralian.com.au":{  
+            "web":"BOY George has signed on for the 2017 season foo",
+            "tablet":"BOY George has signed on for the 2017 season foo foo2",
+            "social":"BOY George has signed on for the 2017 season foo foo2 foo3"
+         },
+         "dailytelegraph.com.au":{  
+            "web":"BOY George has signed on for the 2017 season boo"
+         }
+      },
+      "standfirst":{  
+         "default":"BOY George has signed on for the 2017 season",
+         "theaustralian.com.au":{  
+            "mobile":"BOY George has signed on for the 2017 season shorter",
+            "twitter":"BOY George has signed on for the 2017 season much shorter"
+         }
+      },
+      "byline":{  
+         "default":"By Colin Vickery, John Doe and Staff"
+      },
+      "kicker":{  
+         "default":"INSIDE STORY"
+      },
+      "intro":{  
+         "default":"BOY George is joining The Voice Australia in 2017.",
+         "theaustralian.com.au":{  
+            "web":"BOY George is joining The Voice Australia in 2017 foo.",
+            "tablet":"BOY George is joining The Voice Australia in 2017 boo."
+         }
+      },
+      "seoOwner":{  
+         "displayName":"The Daily Telegraph",
+         "domain":"dailytelegraph.com.au"
+      },
+      "bulletlist":[  
+         "<a href=\"#U601689948258jdH\">Aussie teen Fourlis out</a>"
+      ],
+      "body":{  
+         "default":"<h1>h1 tag</h1><h2>h2 tag</h2><p>paragraph 1 paragraph 2</p>"
+      },
+      "extendedHeadline":{  
+         "default":"BOY George has signed on for the 2017 season",
+         "theaustralian.com.au":{  
+            "web":"BOY George has signed on for the 2017 season longer",
+            "mobile":"BOY George has signed on for the 2017 season shorter",
+            "social":"BOY George has signed on for the 2017 season much shorter"
+         }
+      },
+      "commentsAllowed":{
+          "default": true
+      },
+      "schemaVersion":"v3.0"
+   }
+}

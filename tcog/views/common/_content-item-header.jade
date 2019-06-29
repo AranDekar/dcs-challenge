@@ -1,0 +1,4 @@
+.content-item(class="cipos-#{idx} cirpos-#{data.results.length - idx}")
+    if (display.dateHeader && data.markDate)
+        .ci-header: .heading= dateLive
+    block content-item

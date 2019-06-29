@@ -1,0 +1,511 @@
+{
+    "content": {
+        "id": "98485290c72e31ce538c6b5de08912b6",
+        "link": {
+            "self": "https://content-sit.api.news/v3/videos/98485290c72e31ce538c6b5de08912b6"
+        },
+        "type": "video",
+        "draft": false,
+        "status": "active",
+        "locale": "en_AU",
+        "originalLocale": "en_AU",
+        "platform": {
+            "id": "5348771526001-5738669451001",
+            "system": "brightcove",
+            "documentId": "c23cfc7c-f53c-4842-80ec-9df3de932c14",
+            "userUpdated": "synchroniser",
+            "systemUpdated": "brightcove",
+            "alias": {
+                "ooyala": "5348771526001-5738669451001"
+            }
+        },
+        "date": {
+            "live": "2018-02-22T18:10:12.000Z",
+            "updated": "2018-02-23T03:52:10.000Z",
+            "created": "2018-02-22T18:10:12.000Z",
+            "processed": "2018-02-23T03:51:58.344Z"
+        },
+        "categories": {
+            "keyword": [
+                {
+                    "id": "c9e38655f6b4be4d6d075336963da077",
+                    "slug": "keyword-flipacrobatic",
+                    "path": "/keyword/Flip (acrobatic)",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/c9e38655f6b4be4d6d075336963da077"
+                    }
+                },
+                {
+                    "id": "a744db27af22d723458f6d177c12d3ae",
+                    "slug": "keyword-springbreak",
+                    "path": "/keyword/Spring break",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/a744db27af22d723458f6d177c12d3ae"
+                    }
+                },
+                {
+                    "id": "2d7968524f5d1d86f80d4da25d115ca2",
+                    "slug": "keyword-drone",
+                    "path": "/keyword/Drone",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/2d7968524f5d1d86f80d4da25d115ca2"
+                    }
+                },
+                {
+                    "id": "cd9fc6b508eb7c5ebecaba62839b4e5e",
+                    "slug": "keyword-wakeboarding",
+                    "path": "/keyword/Wakeboarding",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/cd9fc6b508eb7c5ebecaba62839b4e5e"
+                    }
+                },
+                {
+                    "id": "c374a7405294075c4bc066f1c8b30fb2",
+                    "slug": "keyword-barbecue",
+                    "path": "/keyword/Barbecue",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/c374a7405294075c4bc066f1c8b30fb2"
+                    }
+                },
+                {
+                    "id": "67a36dcead1eed52387775caff265121",
+                    "slug": "keyword-skimboarding",
+                    "path": "/keyword/Skimboarding",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/67a36dcead1eed52387775caff265121"
+                    }
+                },
+                {
+                    "id": "0d191b0560d9b87a60258db03d74267d",
+                    "slug": "keyword-dog",
+                    "path": "/keyword/Dog",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/0d191b0560d9b87a60258db03d74267d"
+                    }
+                },
+                {
+                    "id": "aac0baaae2c1e1ed615deca688479caf",
+                    "slug": "keyword-surfing",
+                    "path": "/keyword/Surfing",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/aac0baaae2c1e1ed615deca688479caf"
+                    }
+                },
+                {
+                    "id": "336a41c2f68cd7caca431f1546067cc8",
+                    "slug": "keyword-pet",
+                    "path": "/keyword/Pet",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/336a41c2f68cd7caca431f1546067cc8"
+                    }
+                },
+                {
+                    "id": "08ccca57b9cd19f6b9f44d152b7f0f64",
+                    "slug": "keyword-ropeswing",
+                    "path": "/keyword/Rope Swing",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/08ccca57b9cd19f6b9f44d152b7f0f64"
+                    }
+                },
+                {
+                    "id": "0e54ade5a0a904c862c2ddce81080591",
+                    "slug": "keyword-boat",
+                    "path": "/keyword/Boat",
+                    "provider": "brightcove",
+                    "providerSource": "editor",
+                    "providerSourceId": "none",
+                    "classification": "manual",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/categories/0e54ade5a0a904c862c2ddce81080591"
+                    }
+                }
+            ]
+        },
+        "keywords": [
+            "Flip (acrobatic)",
+            "Spring break",
+            "Drone",
+            "Wakeboarding",
+            "Barbecue",
+            "Skimboarding",
+            "Dog",
+            "Surfing",
+            "Pet",
+            "Rope Swing",
+            "Boat"
+        ],
+        "revision": {
+            "major": 1519357930000,
+            "minor": 0
+        },
+        "rightsMetadata": {
+            "originatedSource": "Storyful"
+        },
+        "target": {
+            "domainLink": {
+                "news.com.au": {
+                    "link": "https://www.news.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.news.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "national",
+                    "adTarget": "NATIONAL",
+                    "metered": false
+                },
+                "perthnow.com.au": {
+                    "link": "https://www.perthnow.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.perthnow.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "heraldsun.com.au": {
+                    "link": "https://www.heraldsun.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.heraldsun.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "dailytelegraph.com.au": {
+                    "link": "https://www.dailytelegraph.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.dailytelegraph.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "adelaidenow.com.au": {
+                    "link": "https://www.adelaidenow.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.adelaidenow.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "couriermail.com.au": {
+                    "link": "https://www.couriermail.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.couriermail.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "themercury.com.au": {
+                    "link": "https://www.themercury.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.themercury.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "goldcoastbulletin.com.au": {
+                    "link": "https://www.goldcoastbulletin.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.goldcoastbulletin.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "weeklytimesnow.com.au": {
+                    "link": "https://www.weeklytimesnow.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.weeklytimesnow.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "ntnews.com.au": {
+                    "link": "https://www.ntnews.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.ntnews.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "geelongadvertiser.com.au": {
+                    "link": "https://www.geelongadvertiser.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.geelongadvertiser.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "cairnspost.com.au": {
+                    "link": "https://www.cairnspost.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.cairnspost.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "townsvillebulletin.com.au": {
+                    "link": "https://www.townsvillebulletin.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.townsvillebulletin.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "metered": true
+                },
+                "theaustralian.com.au": {
+                    "link": "https://www.theaustralian.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "dynamicLink": "https://www.theaustralian.com.au/video/id-5348771526001-5738669451001/this-is-the-updated-name",
+                    "route": "news",
+                    "adTarget": "NEWS",
+                    "metered": false
+                }
+            },
+            "domains": [
+                "heraldsun.com.au",
+                "_ANY",
+                "themercury.com.au",
+                "adelaidenow.com.au",
+                "goldcoastbulletin.com.au",
+                "dailytelegraph.com.au",
+                "perthnow.com.au",
+                "ntnews.com.au",
+                "news.com.au",
+                "geelongadvertiser.com.au",
+                "theaustralian.com.au",
+                "cairnspost.com.au",
+                "weeklytimesnow.com.au",
+                "townsvillebulletin.com.au",
+                "couriermail.com.au"
+            ],
+            "sections": [
+                {
+                    "id": "1226490441611",
+                    "path": "/section/main/newscorpaustralia.com/Web/NewsNetwork/Network News/National",
+                    "slug": "section-main-newscorpaustraliacom-web-newsnetwork-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226490441611"
+                    }
+                },
+                {
+                    "id": "1111112088738",
+                    "path": "/section/aux/theaustralian.com.au/Web/TheAustralian/News",
+                    "slug": "section-aux-theaustraliancomau-web-theaustralian-news",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1111112088738"
+                    }
+                }
+            ],
+            "displays": [
+                {
+                    "id": "1226312254910",
+                    "path": "/display/news.com.au/National News",
+                    "slug": "display-newscomau-nationalnews",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226312254910"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226596458827",
+                    "path": "/display/perthnow.com.au/Network News/National",
+                    "slug": "display-perthnowcomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226596458827"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226618420663",
+                    "path": "/display/heraldsun.com.au/Network News/National",
+                    "slug": "display-heraldsuncomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226618420663"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226618420664",
+                    "path": "/display/dailytelegraph.com.au/Network News/National",
+                    "slug": "display-dailytelegraphcomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226618420664"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226628352059",
+                    "path": "/display/adelaidenow.com.au/Network News/National",
+                    "slug": "display-adelaidenowcomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226628352059"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226646734598",
+                    "path": "/display/couriermail.com.au/Network News/National",
+                    "slug": "display-couriermailcomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226646734598"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226683748532",
+                    "path": "/display/themercury.com.au/Network News/National",
+                    "slug": "display-themercurycomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226683748532"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226692643376",
+                    "path": "/display/goldcoastbulletin.com.au/Network News/National",
+                    "slug": "display-goldcoastbulletincomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226692643376"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226696905239",
+                    "path": "/display/weeklytimesnow.com.au/Network News/National",
+                    "slug": "display-weeklytimesnowcomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226696905239"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226696905240",
+                    "path": "/display/ntnews.com.au/Network News/National",
+                    "slug": "display-ntnewscomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226696905240"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226696905241",
+                    "path": "/display/geelongadvertiser.com.au/Network News/National",
+                    "slug": "display-geelongadvertisercomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226696905241"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226696905242",
+                    "path": "/display/cairnspost.com.au/Network News/National",
+                    "slug": "display-cairnspostcomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226696905242"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226696905243",
+                    "path": "/display/townsvillebulletin.com.au/Network News/National",
+                    "slug": "display-townsvillebulletincomau-networknews-national",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1226696905243"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1111112088738",
+                    "path": "/display/theaustralian.com.au/News",
+                    "slug": "display-theaustraliancomau-news",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/sections/1111112088738"
+                    },
+                    "dominant": true
+                }
+            ]
+        },
+        "accessType": "free",
+        "headline": {
+            "default": "This is the UPDATED name"
+        },
+        "related": {
+            "thumbnail": {
+                "default": [
+                    "9cfa5f7e9fc75b8064004fba842e418f"
+                ]
+            },
+            "primary": {
+                "default": [
+                    "736d45561435b42c2cd58198abc6aaa9"
+                ]
+            }
+        },
+        "references": {
+            "9cfa5f7e9fc75b8064004fba842e418f": {
+                "id": "9cfa5f7e9fc75b8064004fba842e418f",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Storyful"
+                },
+                "platform": {
+                    "id": "5348771526001-5738669451001-thumbnail",
+                    "system": "brightcove"
+                },
+                "link": {
+                    "self": "https://content-sit.api.news/v3/images/9cfa5f7e9fc75b8064004fba842e418f",
+                    "media": "https://content-sit.api.news/v3/images/bin/9cfa5f7e9fc75b8064004fba842e418f"
+                },
+                "width": 151,
+                "height": 85,
+                "altText": "This is the UPDATED name",
+                "mimeType": "image/jpeg"
+            },
+            "736d45561435b42c2cd58198abc6aaa9": {
+                "id": "736d45561435b42c2cd58198abc6aaa9",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Storyful"
+                },
+                "platform": {
+                    "id": "5348771526001-5738669451001-poster",
+                    "system": "brightcove"
+                },
+                "link": {
+                    "self": "https://content-sit.api.news/v3/images/736d45561435b42c2cd58198abc6aaa9",
+                    "media": "https://content-sit.api.news/v3/images/bin/736d45561435b42c2cd58198abc6aaa9"
+                },
+                "width": 649,
+                "height": 365,
+                "altText": "This is the UPDATED name",
+                "mimeType": "image/jpeg"
+            }
+        },
+        "seoOwner": {},
+        "duration": 70240,
+        "transcodeStatus": "complete",
+        "caption": "this is the UPDATED long description.",
+        "schemaVersion": "v3.0"
+    }
+}

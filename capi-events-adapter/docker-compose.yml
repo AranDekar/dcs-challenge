@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  test:
+    build: .
+    depends_on:
+      - redis
+    environment:
+      - REDIS_PUB_SUB_HOST=redis
+      - DEBUG=*
+    command: yarn test
+
+  redis:
+    build:
+      context: ../tabula/
+      dockerfile: Dockerfile.redis

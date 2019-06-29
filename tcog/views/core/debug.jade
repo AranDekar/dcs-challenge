@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		title tcog Debug Route
+		link(
+			rel='stylesheet',
+			media='screen',
+			type='text/css',
+			href='/css/debug.css')
+
+	body
+		h1 tcog Debug Log
+		table
+			caption
+				| List of events captured for this request.
+				| <strong>&nbsp;— Request time: #{time}ms</strong>
+				| <em class="url">#{url}</em>
+
+			colgroup.name
+			colgroup.time
+			colgroup.data
+
+			thead: tr
+				th Event Name
+				th time
+				th Data
+
+			tbody
+
+				for item in log
+					tr(time="#{item.time}", class=(item.slow?"slow":""))
+						th= item.namespace
+						td
+							p: strong.offsetTime +#{item.time - startTime}ms
+							p: em: small=item.time
+
+						td
+							for data, idx in item.data
+								if idx > 0
+									hr
+
+								if data.message
+									p: strong= data.message
+
+								if data.name
+									p Name:
+										strong= data.name
+
+								details
+									summary Instance Data
+									pre= JSON.stringify(data, null, 4)
+
+							hr
+							details
+								summary Call Stack
+								ul.stack
+									for stackEntry in item.stack
+										li=stackEntry

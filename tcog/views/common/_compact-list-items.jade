@@ -1,0 +1,13 @@
+-var premium = (item.paidStatus === "PREMIUM") ? "prm prm-story" : "";
+li(class=premium + " lipos-#{idx} lirpos-#{data.results.length- idx}" id=item.id)
+    if display.timestamp !== false
+        span.timestamp
+            time(datetime=item.dateLive)= moment(item.dateLive).format(display.dateformat || 'H:mm A')
+
+    a(href=item.link, class=premium)= (item.title||"").trim()
+
+    if display.standfirst === true && item.standFirst
+        p.standfirst
+            if display.byline !== false && item.byline
+                span.article-info: em.byline= item.byline
+            span=(item.standFirst||"").trim()

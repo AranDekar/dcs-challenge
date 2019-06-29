@@ -1,0 +1,29 @@
+{
+    "StackName": "TCOG-SecurityGroup", 
+    "Parameters": [
+	  {
+        "ParameterKey": "VpcId", 
+        "ParameterValue": "vpc-536fce36",
+        "UsePreviousValue": true
+      }
+    ], 
+    "OnFailure": "DO_NOTHING", 
+    "Tags": [
+      {
+        "Key": "Owner", 
+        "Value": "hatfieldd"
+      },
+	  {
+        "Key": "Product",
+        "Value": "tcog"
+      },
+      {
+        "Key": "NetworkSecurityEnv", 
+        "Value": "prod"
+      },
+	  {
+        "Key": "Bu", 
+        "Value": "News Technology Shared Services"
+      }
+    ]
+}

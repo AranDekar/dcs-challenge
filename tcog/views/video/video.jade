@@ -1,0 +1,28 @@
+include mixin/videoBody
+include mixin/esi
+
+- var domain = query.domain || display.domain || query.site || display.site
+
+//- rendered by router.jade
+//- data = response from:
+//- http://localhost:3000/news/content/v2/origin:brightcove.5348771529001-5470343978001?t_product=video&td_site=news.com.au&t_output=json
+//- http://localhost:3000/news/content/v2/origin:video_integrator.I2cHZnYjE6RvY16ermiEgx5E6wt-5PRh?t_product=video&td_site=news.com.au&t_output=json
+
+if data
+    div.vms-banner
+        div.vms-banner-inner
+            div.vms.module(class="vms-play", vms-embedcode=data.originId )
+                +videoBody(data, 'HERO')
+
+    - var categories = data.categories.filter(category => category.id).map(category => category.id).join(',')
+
+    - var templateParam = 't_template=../video/index'
+    - var productParam = 't_product=' + product.name
+    - var domainParam = ( domain ? 'td_domain=' + domain : '')
+    - var categoriesParam = 'td_categories=' + categories
+    - var styleParam = 'td_list_style=line'
+    - var params = [templateParam, productParam, domainParam, categoriesParam, styleParam].filter(i => i).join('&')
+    +esiDca('/news/video/categories?' + params)
+
+else
+    div="Whoops, unrecognised video"

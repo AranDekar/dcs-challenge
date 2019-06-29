@@ -1,0 +1,11 @@
+{
+    "response" : {
+        "code": 200,
+        "headers" : {},
+        "body": {
+            "name"     : "tcog.template.article.couriermail.index",
+            "version"  : "1.1.0",
+            "template" : "function (a){var e,t=[],n=a||{};return function(a){t.push(\"\\n<p>\"+jade.escape(null==(e=a.title)?\"\":e)+\"</p>\")}.call(this,\"data\"in n?n.data:\"undefined\"!=typeof data?data:void 0),t.join(\"\")}"
+        }
+    }
+}

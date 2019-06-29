@@ -1,0 +1,20 @@
+-var author   = data;
+-var gravatar = data.gravatarContent.entry[0];
+
+div.author
+
+    div.avatar
+        img(src= gravatar.thumbnailUrl)
+
+    h1= author.name
+    h3= gravatar.currentLocation
+    p= gravatar.aboutMe
+
+    hr
+
+    ul
+        each account in gravatar.accounts
+            li
+                span= account.shortname+" "
+                    a(href= account.url)
+                        span= account.display

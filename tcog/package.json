@@ -1,0 +1,125 @@
+{
+  "name": "tcog.core",
+  "version": "5.0.0",
+  "description": "Rendering Proxy Server.",
+  "main": "run.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test:unit": "NODE_ENV=test mocha ./test/unit",
+    "test:unit:w": "NODE_ENV=test mocha --inspect-brk ./test/unit",
+    "test:integration": "NODE_ENV=integration mocha ./test/integration",
+    "test:integration:w": "NODE_ENV=integration mocha --inspect-brk ./test/integration",
+    "test:regression": "NODE_ENV=regression mocha ./test/regression",
+    "test:smoke": "mocha test/smoketest/runner.js",
+    "lint": "./node_modules/.bin/eslint --quiet --fix build conf lib test transformers views tools run.js",
+    "test": "yarn run test:unit && yarn run test:integration && yarn run test:regression",
+    "start": "forever run.js",
+    "forever": "forever"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://stash.news.com.au/scm/tcog/tcog.core.git"
+  },
+  "slogans": [
+    "Optimus!",
+    "Servus!"
+  ],
+  "author": "Jonathan Barnett <jonathan.barnett@news.com.au>",
+  "contributors": [
+    {
+      "name": "Christopher Giffard",
+      "email": "christopher.giffard@news.com.au"
+    },
+    {
+      "name": "Nicolas Faiz",
+      "email": "nicholas.faiz@news.com.au"
+    },
+    {
+      "name": "Drew Walker",
+      "email": "drew.walker@news.com.au"
+    },
+    {
+      "name": "Ray Elslieman",
+      "email": "ray.elslieman@news.com.au"
+    },
+    {
+      "name": "Alex Lytvynenko",
+      "email": "alex.lytvynenko@news.com.au"
+    },
+    {
+      "name": "David Pisek",
+      "email": "david.pisek@news.com.au"
+    },
+    {
+      "name": "Benjamin Lupton",
+      "email": "benjamin.lupton@news.com.au"
+    },
+    {
+      "name": "Gao Jiang",
+      "email": "gao.jiang@news.com.au"
+    },
+    {
+      "name": "James Moriarty",
+      "email": "james.moriarty@news.com.au"
+    },
+    {
+      "name": "Vignesh Sankaran",
+      "email": "vignesh.sankaran@news.com.au"
+    }
+  ],
+  "private": true,
+  "devDependencies": {
+    "argv": "0.0.2",
+    "chai": "3.5.0",
+    "colors": "1.1.2",
+    "csv-parse": "^2.2.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "fs-extra": "0.30.0",
+    "glob": "7.0.3",
+    "http-status-codes": "1.0.6",
+    "is-semver": "^1.0.2",
+    "leche": "2.1.1",
+    "mocha": "^3.5.3",
+    "nock": "^9.0.14",
+    "node-version-data": "1.0.1",
+    "plato": "1.5.0",
+    "pretty": "^2.0.0",
+    "semver-compare": "1.0.0",
+    "semver-sort": "0.0.4",
+    "sinon": "1.17.4",
+    "supertest": "1.2.0"
+  },
+  "dependencies": {
+    "agent": "https://github.com/newscorpaus/node-agent.git#tweak/tsc-as-a-dependency",
+    "async": "1.5.2",
+    "bunyan": "^1.8.12",
+    "cheerio": "0.22.0",
+    "cors": "2.7.1",
+    "dev-null": "^0.1.1",
+    "errorhandler": "1.4.3",
+    "event-loop-lag": "1.1.0",
+    "express": "4.13.4",
+    "forever": "^0.15.2",
+    "html": "0.0.10",
+    "jade": "1.11.0",
+    "lodash": "4.13.1",
+    "moment": "2.13.0",
+    "moment-timezone": "0.5.4",
+    "newrelic": "^4.8.1",
+    "query-string": "^5.0.1",
+    "request": "2.72.0",
+    "require-all": "2.0.0",
+    "safe-regex": "1.1.0",
+    "smartclone": "0.0.2",
+    "string": "3.3.1",
+    "typescript": "2.5.1",
+    "uuid": "^3.1.0",
+    "yarn": "^1.9.4",
+    "yn": "1.2.0"
+  }
+}

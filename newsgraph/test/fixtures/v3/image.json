@@ -1,0 +1,47 @@
+{
+    "content": {
+        "id": "3b25867dee63719309825c33d6b8711a",
+        "link": {
+            "self": "https://content-sit.api.news/v3/images/3b25867dee63719309825c33d6b8711a",
+            "media": "https://content-sit.api.news/v3/images/bin/3b25867dee63719309825c33d6b8711a"
+        },
+        "type": "image",
+        "draft": false,
+        "status": "active",
+        "locale": "en_AU",
+        "platform": {
+            "id": "C-481367-4594201",
+            "system": "aap_live",
+            "documentId": "05b4bf2a-d06e-48a3-9b3d-7d143b36f092",
+            "parentId": "C-481367",
+            "userUpdated": "v3-ingester",
+            "systemUpdated": "aap_live"
+        },
+        "date": {
+            "live": "2018-07-03T03:00:02.000Z",
+            "updated": "2018-07-03T02:59:40.000Z",
+            "created": "2018-07-03T03:01:29.488Z",
+            "processed": "2018-07-03T03:01:29.523Z"
+        },
+        "revision": {
+            "major": 1530586780000,
+            "minor": 0
+        },
+        "rightsMetadata": {
+            "originatedSource": "Australian Associated Press"
+        },
+        "accessType": "free",
+        "caption": "Child sex abuse survivor Peter Gogarty takes comfort in the conviction of Archbishop Philip Wilson.",
+        "altText": "Peter Gogarty",
+        "mimeType": "image/jpeg",
+        "width": 100,
+        "height": 75,
+        "aspectRatio": "4:3",
+        "cropName": "4:3-Thumbnail",
+        "transformTranslateX": 0,
+        "transformTranslateY": 0,
+        "transformScaleHeight": 0,
+        "transformScaleWidth": 0,
+        "schemaVersion": "v3.0"
+    }
+}

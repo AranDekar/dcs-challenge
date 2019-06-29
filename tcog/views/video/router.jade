@@ -1,0 +1,36 @@
+include mixin/esi
+
+//- Trim the prefix from the hostname
+- var hostname = (display.host||'news.com.au').replace(/^(www|m|mobile|sit|uat)\./,'').replace(/(sit|uat)\b/,'')
+
+esi:assign(name="HOSTNAME", value="'" + hostname + "'")
+
+esi:choose
+
+    //- Bright Cove Video (number-number video ids)
+    //- E.g. /video/id-5348771529001-5470343978001
+    esi:when(test="$(AKA_PM_FWD_URL) matches_i '''^/video/id-([0-9]+[-][0-9]+)'''", matchname="pathvars")
+        +esiDcaTry("/news/content/v2/origin:brightcove.$(pathvars{1})?domain=$(HOSTNAME)&t_product=" + product.name + "&t_template=../video/video")
+
+    //- OOYALA Video (any other form of video ids)
+    //- E.g. /video/id-Y2bWIxYjE6ae4QTa91ithtW1nsW036hQ
+    esi:when(test="$(AKA_PM_FWD_URL) matches_i '''^/video/id-([^/]+)'''", matchname="pathvars")
+        +esiDcaTry("/news/content/v2/origin:video_integrator.$(pathvars{1})?domain=$(HOSTNAME)&t_product=" + product.name + "&t_template=../video/video")
+
+    //- Video Playlist
+    //- e.g. /video/playlist/rememberingmandela
+    esi:when(test="$(AKA_PM_FWD_URL) matches_i '''^/[^/]+/playlist/(.*?)/?$'''" matchname="pathvars")
+        //- these params are not CAPI v2 compatible: subtitle
+        +esiDca("/news/content/v2/collection/?query=(contentType:video AND subtitle:$(pathvars{1}) AND domains:$(HOSTNAME) AND -paidStatus:fair_dealing)&pageSize=1&offset=0&t_product=" + product.name + "&t_template=../video/playlist-pre-flight&td_domain=$(HOSTNAME)")
+
+    //- Video Categories and Sub Categories
+    //- e.g. /video/Sport/
+    //- e.g. /video/Sport/MotorSport/
+    esi:when(test="$(AKA_PM_FWD_URL) matches_i '''^/[^/]+/([^?]+?)/?$'''" matchname="pathvars")
+        +esiDca("/news/video/categories?t_product=" + product.name + "&t_template=../video/index&td_domain=$(HOSTNAME)&td_path=$(pathvars{1})&td_list_style=block&td_banner=true")
+
+    //- Video Hub
+    //- e.g. /video/
+    esi:otherwise
+        +esiDca("/news/content/v2?query=(contentType:video AND domains:$(HOSTNAME) AND -paidStatus:fair_dealing)&maxRelated=20&pageSize=5&offset=0&t_product=" + product.name + "&t_template=../video/banner&td_domain=$(HOSTNAME)")
+        +esiDca("/news/video/categories?t_product=" + product.name + "&t_template=../video/index&td_domain=$(HOSTNAME)")

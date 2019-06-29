@@ -1,0 +1,90 @@
+{
+  "extends": "standard",
+  "globals": {
+    "sinon": true,
+    "expect": true,
+    "leche": true,
+    "before": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "after": true,
+    "describe": true,
+    "it": true,
+    "mockRemote": true,
+    "TCOG_APP_DIR": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "one-var": [
+      "warn",
+      "always"
+    ],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "handle-callback-err": [
+      "warn",
+      "^(err|error)$"
+    ],
+    "standard/no-callback-literal": [
+      "warn",
+      [
+        "cb",
+        "callback"
+      ]
+    ],
+    "no-mixed-operators": [
+      "warn",
+      {
+        "groups": [
+          [
+            "==",
+            "!=",
+            "===",
+            "!==",
+            ">",
+            ">=",
+            "<",
+            "<="
+          ],
+          [
+            "&&",
+            "||"
+          ],
+          [
+            "in",
+            "instanceof"
+          ]
+        ],
+        "allowSamePrecedence": true
+      }
+    ],
+    "no-control-regex": "warn",
+    "no-template-curly-in-string": "warn",
+    "no-tabs": "warn",
+    "prefer-const": "warn",
+    "no-path-concat": "warn",
+    "no-useless-escape": "warn",
+    "no-sequences": "warn",
+    "no-unused-expressions": 0,
+    "space-before-function-paren": ["error", "never"]
+  }
+}

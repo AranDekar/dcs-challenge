@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# Usage:
+#
+#   AWS_ACCOUNT_ID=123 push-images
+#
+
+set -x
+set -e
+
+AWS_ACCOUNT_ID=${AWS_ACCOUNT_ID:-NOTSET}
+AWS_ECR_TAG=$(source $(dirname $0)/version)
+
+for image in "capi-events-adapter" "deck-events-adapter" "newsgraph" "tabula" "tcog" "varnish" "varnish-events-adapter"; do 
+	(
+		docker build $@ -t "pied-piper/$image" "../$image/" || docker build $@ -t "pied-piper/$image" -f "../$image/Dockerfile.$image" "../$image/"
+		docker tag pied-piper/$image:latest $AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-2.amazonaws.com/pied-piper/$image:$AWS_ECR_TAG
+		docker tag pied-piper/$image:latest $AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-2.amazonaws.com/pied-piper/$image:latest
+		docker push $AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-2.amazonaws.com/pied-piper/$image:$AWS_ECR_TAG
+		docker push $AWS_ACCOUNT_ID.dkr.ecr.ap-southeast-2.amazonaws.com/pied-piper/$image:latest
+	) & pids+=($!)
+done
+
+wait "${pids[@]}"

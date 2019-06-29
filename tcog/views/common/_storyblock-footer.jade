@@ -1,0 +1,17 @@
+if display.footer
+    .storyblock-footer
+        if (display.sectionLinks !== false)
+            -//guard against strings full of spaces
+            if (item.sectionName && item.sectionName.replace(/\s/gi, '').length > 0)
+                span.section
+                    a(class=item.sectionName + " sectionClass", href=item.sectionLink)
+                        | #{(item.sectionName||"").trim()}
+
+        span.share
+        span.bookmark
+
+        ul.related.related-media
+            if item.commentsAllowed && item.commentsShown
+                li.comments.no-comments
+                    a(title="This story has #{item.commentsTotal} comments" href=item.link)
+                        span.count #{item.commentsTotal} comments

@@ -1,0 +1,9 @@
+{
+  "name": "Thumbnail Block",
+  "description": "List of larger thumbnails",
+  "config": {
+    "timestamp": true,
+    "thumbnail": true,
+    "style": "extended"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "@types/express": "^4.0.39",
+    "@types/node": "^8.0.47",
+    "dcs-logger": "http://SankaranV@stash.news.com.au/scm/dcs/dcs-logger.git#439ebe65c63566fdf46f7214127709ad189b6612",
+    "express": "^4.16.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
+}

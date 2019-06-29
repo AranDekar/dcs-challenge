@@ -1,0 +1,7 @@
+FROM redis:2.8
+
+EXPOSE 6380
+
+ADD ./redis.conf .
+
+CMD ["redis-server", "./redis.conf"]

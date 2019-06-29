@@ -1,0 +1,83 @@
+{
+    "contentType": "IMAGE",
+    "id": {
+        "value": "5b681bc9105f17d66a4145a96350df1f",
+        "link": "http://api.newsapi.com.au/image/v1/5b681bc9105f17d66a4145a96350df1f"
+    },
+    "originId": "crop-c2b672910cf3f071d0d1eb8a1e042c06",
+    "origin": "METHODE",
+    "title": "NEW CITIZENS",
+    "subtitle": "b802f34a-87c8-11e7-be91-9e5f27510ef6",
+    "description": "Indians Ruchika Batra and partner Aditya Arora and their son Arnav Arora, 5, become citizens at Melbourne Town Hall. City council has had record numbers applying to be citizens. Picture: Mark Stewart",
+    "link": "http://cdn.newsapi.com.au/image/v1/thumbnail/5b681bc9105f17d66a4145a96350df1f",
+    "paidStatus": "NON_PREMIUM",
+    "originalSource": "News Limited",
+    "version": "PUBLISHED",
+    "dateUpdated": "2017-08-23T06:55:39.000Z",
+    "dateLive": "2017-08-23T06:40:00.000Z",
+    "dateCreated": "2017-08-23T06:03:00.000Z",
+    "status": "ACTIVE",
+    "related": [],
+    "domainLinks": [],
+    "primaryCategory": {
+        "value": "/author/newscorpaustralia.com/Mark Stewart/",
+        "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Mark%20Stewart/"
+    },
+    "categories": [
+        {
+            "value": "/author/newscorpaustralia.com/Mark Stewart/",
+            "link": "http://api.newsapi.com.au/category/v2/author/newscorpaustralia.com/Mark%20Stewart/"
+        },
+        {
+            "value": "/location/iptc.org/Australia/VIC/Melbourne/Swanston st Melbourne Town Hall/",
+            "link": "http://api.newsapi.com.au/category/v2/location/iptc.org/Australia/VIC/Melbourne/Swanston%20st%20Melbourne%20Town%20Hall/",
+            "selected": "auto"
+        },
+        {
+            "value": "/countrycode/iptc.org/AUS/VIC/Melbourne/Swanston st Melbourne Town Hall/",
+            "link": "http://api.newsapi.com.au/category/v2/countrycode/iptc.org/AUS/VIC/Melbourne/Swanston%20st%20Melbourne%20Town%20Hall/",
+            "selected": "auto"
+        }
+    ],
+    "keywords": [
+        "NEW CITIZENS",
+        "City council",
+        "citizens",
+        "picture",
+        "Aditya Arora",
+        "Arnav Arora",
+        "Stewart",
+        "Mark"
+    ],
+    "authors": [
+        "Mark Stewart"
+    ],
+    "domains": [
+        "heraldsun.com.au",
+        "cairnspost.com.au",
+        "ntnews.com.au",
+        "couriermail.com.au",
+        "goldcoastbulletin.com.au",
+        "themercury.com.au",
+        "adelaidenow.com.au",
+        "news.com.au",
+        "townsvillebulletin.com.au",
+        "perthnow.com.au",
+        "dailytelegraph.com.au",
+        "geelongadvertiser.com.au"
+    ],
+    "locationGeoPoints": [],
+    "userOriginUpdated": "campbellsh",
+    "systemOriginUpdated": "METHODE",
+    "domainOriginUpdated": "None",
+    "urlTitle": "b802f34a87c811e7be919e5f27510ef6",
+    "revision": 6,
+    "format": "jpeg",
+    "width": 100,
+    "height": 75,
+    "imageName": "NEW CITIZENS",
+    "imageType": "THUMBNAIL",
+    "sourceImageId": "b802f34a-87c8-11e7-be91-9e5f27510ef6",
+    "enterpriseAssetId": "NEWSMMGLPICT000162941377",
+    "cropName": "4:3-Thumbnail"
+}

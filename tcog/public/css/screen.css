@@ -1,0 +1,167 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.modal-dialog {
+    width:900px;
+}
+
+.container {
+    width: 1356px;
+}
+
+.navbar-brand .glyphicon {
+    margin: 0 5px 0 0;
+    top:3px;
+}
+
+.panel {
+    min-height: 600px;
+}
+
+.tcog-configure-preview .panel-body {
+    padding:0;
+}
+
+.tcog-configure-preview iframe {
+    border: none;
+    width: 100%;
+    min-height: 555px;
+}
+
+.tcog-configure-integrate {
+    margin-top: 10px;
+    min-height: 580px;
+}
+
+.tcog-configure-integrate .tab-pane {
+    min-height: 465px;
+    border: 1px solid #ddd;
+    border-top:none;
+    padding: 15px;
+}
+
+#EDT {
+    z-index:100000000000 !important;
+}
+
+.tcog-configure-options .well {
+    overflow: hidden;
+}
+
+.jumbotron .help-inline {
+    margin: 0 0 0 5px;
+}
+
+.fields-default .controls select,
+.fields-default .controls input[type="text"] {
+    width:118px;
+    float:left;
+    margin: 0 10px 0 0;
+}
+
+.fields-default ._jsonform-array-ul {
+    padding:0;
+}
+.fields-default ._jsonform-array-ul li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.fields-default ._jsonform-array-ul .form-group .controls {
+    float:left;
+}
+
+.fields-default ._jsonform-array-ul fieldset {
+    width:288px;
+    display:inline-block;
+}
+
+.fields-default ._jsonform-array-ul .form-group .controls .input-group-addon {
+    width:60px;
+    float: left;
+    border-right: 1px solid #ccc;
+    margin-right:10px;
+}
+
+.tcog-configure-options .controls .nav {
+    width: 80px;
+}
+
+.tcog-configure-options .controls .param-type {
+    width:65px;
+}
+
+.tcog-configure-options .controls .configure-variables {
+    width: 118px;
+    margin: 0;
+}
+
+.tcog-configure-options input[type="submit"],
+.tcog-configure-options button {
+    float: right;
+    position: relative;
+}
+
+.tcog-configure-options button {
+    margin: 0 20px 0 0;
+}
+
+.fields-custom {
+    border-bottom: 1px solid #ccc;
+}
+
+.fields-custom .input-group-addon {
+    width:100px;
+    text-align: left;
+    border-right: 1px solid #ccc;
+    margin: 0 10px 0 0;
+    float: left;
+}
+
+.fields-custom .input-group {
+    text-align: left;
+    width: 100%;
+}
+
+.fields-custom .form-control {
+    width:465px;
+}
+
+.transformer-configure .tcog-configure-options .jumbotron {
+    display:none;
+}
+
+.tcog-configure-options .transformer {
+    display:none;
+}
+
+.transformer-configure .tcog-configure-options .transformer {
+    display:block;
+}
+
+.tcog-configure-options ._jsonform-array-addmore i,
+.tcog-configure-options ._jsonform-array-deletelast i {
+    float:left;
+}
+
+.tcog-configure-options ._jsonform-array-addmore:after,
+.tcog-configure-options ._jsonform-array-deletelast:after {
+    display: block;
+    width: 40px;
+    margin: 0 0 0 20px;
+    position: relative;
+    top: -2px;
+}
+
+.tcog-configure-options ._jsonform-array-addmore {
+    padding-left:0px;
+}
+.tcog-configure-options ._jsonform-array-addmore:after {
+    content: "Add Filter";
+}
+
+.tcog-configure-options ._jsonform-array-deletelast:after {
+    content: "Remove last Filter";
+}

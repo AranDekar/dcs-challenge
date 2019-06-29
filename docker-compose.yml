@@ -1,0 +1,120 @@
+version: '2'
+
+services:
+  fake-sqs:
+    ports:
+      - 9494:9494
+    image: feathj/fake-sqs
+
+  capi-events-adapter:
+    environment:
+      - REDIS_PUB_SUB_HOST=redis
+      - REDIS_PUB_SUB_CHANNEL=content
+      - SQS_QUEUE=http://fake-sqs:9494/test-queue
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=anything
+    build:
+      context: ./capi-events-adapter/
+    depends_on:
+      - redis
+      - fake-sqs
+    command: >
+      sh -c "apk add --no-cache curl &&
+      curl http://fake-sqs:9494 -d 'Action=CreateQueue&QueueName=test-queue&AWSAccessKeyId=test' &&
+      yarn start"
+
+  deck-events-adapter:
+    environment:
+      - REDIS_PUB_SUB_HOST=redis
+      - REDIS_PUB_SUB_CHANNEL=content
+    build:
+      context: ./deck-events-adapter/
+    depends_on:
+      - redis
+    command: yarn start
+
+  varnish:
+    ports:
+      - 3000:80
+    environment:
+      - BACKEND_HOST=tcog
+      - BACKEND_PORT=3000
+    build:
+      args:
+        - http_proxy=http://proxy.news.net.au:80
+      context: ./varnish/
+      dockerfile: Dockerfile.varnish
+    depends_on:
+      - tcog
+
+  varnish-events-adapter:
+    environment:
+      - REDIS_PUB_SUB_HOST=redis
+      - REDIS_PUB_SUB_CHANNEL=content
+      - VARNISH_HOST=varnish
+    build:
+      args:
+        - HTTP_PROXY
+      context: ./varnish-events-adapter/
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - varnish
+
+  tabula:
+    ports:
+      - 3001:3000
+    build:
+      context: ./tabula/
+      dockerfile: Dockerfile.tabula
+    depends_on:
+      - redis
+      - mock-server
+    environment:
+      - REDIS_CACHE_HOST=redis
+      - REDIS_PUB_SUB_HOST=redis
+      - REDIS_PUB_SUB_CHANNEL=content
+      - DEBUG=*
+      - HTTP_PROXY
+    command: node dist/src/server.js
+
+  tcog:
+    ports:
+      - 3000:3000
+      - 9228:9228
+    build:
+      context: ./tcog/
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - NODE_DEBUG=request
+      - DEBUG=*
+    depends_on:
+      - tabula
+    command: node --inspect=0.0.0.0:9228 run.js
+
+  newsgraph:
+    ports:
+      - 3003:4000
+      - 9229:9229
+    build:
+      context: ./newsgraph/
+    environment:
+      - DEBUG=*
+      - NODE_DEBUG=request
+      - CAPI_V2_URL=http://tabula:3000/https://content.api.news
+      - CAPI_V3_URL=http://tabula:3000/https://content.api.news
+    depends_on:
+      - tabula
+    command: node --inspect=0.0.0.0:9229 dist/src/run.js
+
+  mock-server:
+    ports:
+      - 3002:80
+    build:
+      context: ./mock-server/
+  
+  redis:
+    ports:
+      -  6379:6379
+    image: redis
+  

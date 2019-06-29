@@ -1,0 +1,28 @@
+{
+    "gzip": true,
+    "tcogHost": {
+      "external": "a.uat.tcog.news.com.au",
+      "pixel": "https://i1.wp.com/uat.pixel.tcog.cp1.news.com.au"
+    },
+    "logLevel": "error",
+    "api": {
+      "template": "https://uat.resources.newscdn.com.au/cs",
+      "resource": {
+        "cs": "https://uat.resources.newscdn.com.au/cs",
+        "deck": "https://s3-ap-southeast-2.amazonaws.com/news-deck",
+        "nmdata": {
+          "url": "http://prod.marketdata.digprod.cp1.news.com.au/nmdata",
+          "contentType": "application/json"
+        },
+        "mozo": "https://stat.mozo.com.au",
+        "whistleout": "https://r3.whistleout.com.au"
+      }
+    },
+    "sppAPI": "http://tabula-uat.dcs.diguat.cp1.news.com.au/http://{{ res.locals.config.domain }}/spp-api/",
+    "foxsportsAPI": "http://tabula-uat.dcs.diguat.cp1.news.com.au/http://api-staging.stats.foxsports.com.au",
+    "foxsportsPulseAPI": "http://tabula-uat.dcs.diguat.cp1.news.com.au/https://awsapi.foxsportspulse.com",
+    "capiV2CDN": "http://tabula-uat.dcs.diguat.cp1.news.com.au/https://cdn.newsapi.com.au/uat",
+    "capiV2API": "http://tabula-uat.dcs.diguat.cp1.news.com.au/https://api.newsapi.com.au/uat",
+    "capiV3API": "http://tabula-uat.dcs.diguat.cp1.news.com.au/https://content-uat.api.news",
+    "newsgraph": "http://newsgraph-uat.dcs.diguat.cp1.news.com.au"
+  }

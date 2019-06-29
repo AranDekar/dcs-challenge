@@ -1,0 +1,6 @@
+extends ../layouts/page.jade
+
+block content
+    ul.breaking-news-list
+        for item, idx in data.results
+            include _compact-list-items

@@ -1,0 +1,17 @@
+{
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "pixel.tcog.cp1.news.com.au",
+        "Type": "CNAME",
+        "TTL": 60,
+        "ResourceRecords": [
+          {
+            "Value": "blackhole-1.iana.org"
+          }
+        ]
+      }
+    }
+  ]
+}

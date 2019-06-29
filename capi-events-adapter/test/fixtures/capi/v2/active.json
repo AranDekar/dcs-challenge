@@ -1,0 +1,21 @@
+{
+    "type": "CAPI",
+    "id": "e6b0da712edd567cf70d3acdca1981d1",
+    "capiId": "a1c7d5f847550f05f24e8d46afcae70f",
+    "percolateId": "7e8b5b8f1702eb20696d25fdfaf98a1a",
+    "status": "ACTIVE",
+    "responseMessage": null,
+    "responseCode": null,
+    "origin": "CAINER",
+    "contentType": "NEWS_STORY",
+    "version": "PUBLISHED",
+    "docRevision": 6745,
+    "documentId": null,
+    "originId": "monthly-capricorn",
+    "dateLive": "2017-09-10T23:33:06.800Z",
+    "assetMetadata": {
+        "methodeCapiId": null,
+        "activeVersion": true
+    },
+    "occurrenceMetadata": null
+}

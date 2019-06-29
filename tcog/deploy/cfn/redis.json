@@ -1,0 +1,231 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Conditions": {
+        "CreateResourceCondition": {
+            "Fn::Equals": [
+                {
+                    "Ref": "CreateResource"
+                },
+                "true"
+            ]
+        }
+    },
+    "Description": "ElasticCache Cluster",
+    "Mappings": {
+        "ResourceSize": {
+            "CacheInstance": {
+                "an": "cache.m3.large",
+                "apps": "cache.m3.xlarge",
+                "dev": "cache.t1.micro",
+                "dt": "cache.r3.xlarge",
+                "hs": "cache.r3.large",
+                "nca": "cache.r3.2xlarge",
+                "perf": "cache.r3.xlarge",
+                "pn": "cache.r3.xlarge",
+                "prd2": "cache.r3.xlarge",
+                "prd3": "cache.r3.xlarge",
+                "prd4": "cache.r3.large",
+                "prod": "cache.r3.2xlarge",
+                "sit": "cache.r3.xlarge",
+                "sit2": "cache.t2.medium",
+                "ssl": "cache.r3.xlarge",
+                "taus": "cache.r3.xlarge",
+                "uat": "cache.r3.xlarge"
+            },
+            "NodeCount": {
+                "dev": "1",
+                "prod": "1",
+                "uat": "1"
+            }
+        },
+        "SNSEndpoint": {
+            "OperationalAlerts": {
+                "dev": "arn:aws:sns:ap-southeast-2:877800914193:blackhole",
+                "prod": "arn:aws:sns:ap-southeast-2:877800914193:blackhole",
+                "uat": "arn:aws:sns:ap-southeast-2:877800914193:blackhole"
+            }
+        },
+        "SecurityGroup": {
+            "dev": {
+                "back": [
+                    "sg-80b351ef",
+                    "sg-7db05212"
+                ],
+                "front": [
+                    "sg-80b351ef",
+                    "sg-6ab05205"
+                ],
+                "misc": [
+                    "sg-80b351ef",
+                    "sg-8cb351e3"
+                ]
+            },
+            "prod": {
+                "back": [
+                    "sg-80b351ef",
+                    "sg-65b0520a"
+                ],
+                "front": [
+                    "sg-80b351ef",
+                    "sg-96b351f9"
+                ],
+                "misc": [
+                    "sg-80b351ef",
+                    "sg-8cb351e3"
+                ]
+            },
+            "uat": {
+                "back": [
+                    "sg-80b351ef",
+                    "sg-61b0520e"
+                ],
+                "front": [
+                    "sg-80b351ef",
+                    "sg-91b351fe"
+                ],
+                "misc": [
+                    "sg-80b351ef",
+                    "sg-8cb351e3"
+                ]
+            }
+        },
+        "SubnetGroup": {
+            "dev": {
+                "back": "dev-back",
+                "front": "dev-front",
+                "misc": "misc-private"
+            },
+            "prod": {
+                "back": "prod-back",
+                "front": "prod-front",
+                "misc": "misc-private"
+            },
+            "uat": {
+                "back": "uat-back",
+                "front": "uat-front",
+                "misc": "misc-private"
+            }
+        }
+    },
+    "Parameters": {
+        "Application": {
+            "Description": "Name of application for naming and DNS.",
+            "Type": "String"
+        },
+        "Branch": {
+            "Description": "Git branch name, which becomes the environment.",
+            "Type": "String"
+        },
+        "BuildNumber": {
+            "Description": "Bamboo build number.",
+            "Type": "String"
+        },
+        "CreateResource": {
+            "Default": "true",
+            "Type": "String"
+        },
+        "ElastiCacheName": {
+            "Default": "TCOG-ssl-54-QwR",
+            "Type": "String"
+        },
+        "EngineVersion": {
+            "Default": "2.8.24",
+            "Description": "The memcache version number",
+            "Type": "String"
+        },
+        "NetworkSecurityEnv": {
+            "Description": "Name of the environment for network and security",
+            "Type": "String"
+        },
+        "Product": {
+            "Description": "Tag for Product",
+            "Type": "String"
+        },
+        "Subnet": {
+            "Default": "front",
+            "Description": "Subnet",
+            "Type": "String"
+        }
+    },
+    "Resources": {
+        "RedisCluster": {
+            "Condition": "CreateResourceCondition",
+            "Properties": {
+                "AutoMinorVersionUpgrade": "false",
+                "CacheNodeType": {
+                    "Fn::FindInMap": [
+                        "ResourceSize",
+                        "CacheInstance",
+                        {
+                            "Ref": "Branch"
+                        }
+                    ]
+                },
+                "CacheParameterGroupName": {
+                    "Ref": "RedisParamGroup"
+                },
+                "CacheSubnetGroupName": {
+                    "Fn::FindInMap": [
+                        "SubnetGroup",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        },
+                        {
+                            "Ref": "Subnet"
+                        }
+                    ]
+                },
+                "ClusterName": {
+                    "Ref": "ElastiCacheName"
+                },
+                "Engine": "redis",
+                "EngineVersion": {
+                    "Ref": "EngineVersion"
+                },
+                "NotificationTopicArn": {
+                    "Fn::FindInMap": [
+                        "SNSEndpoint",
+                        "OperationalAlerts",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        }
+                    ]
+                },
+                "NumCacheNodes": {
+                    "Fn::FindInMap": [
+                        "ResourceSize",
+                        "NodeCount",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        }
+                    ]
+                },
+                "PreferredMaintenanceWindow": "tue:17:35-tue:18:35",
+                "VpcSecurityGroupIds": {
+                    "Fn::FindInMap": [
+                        "SecurityGroup",
+                        {
+                            "Ref": "NetworkSecurityEnv"
+                        },
+                        {
+                            "Ref": "Subnet"
+                        }
+                    ]
+                }
+            },
+            "Type": "AWS::ElastiCache::CacheCluster"
+        },
+        "RedisParamGroup": {
+            "Properties": {
+                "CacheParameterGroupFamily": "redis2.8",
+                "Description": "tcog-redis-2-8-24",
+                "Properties": {
+                    "maxmemory-policy": "allkeys-lru",
+                    "tcp-keepalive": "300",
+                    "timeout": "20"
+                }
+            },
+            "Type": "AWS::ElastiCache::ParameterGroup"
+        }
+    }
+}

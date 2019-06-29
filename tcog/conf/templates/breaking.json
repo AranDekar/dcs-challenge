@@ -1,0 +1,10 @@
+{
+  "name": "Breaking News",
+  "description": "Compact list without images",
+  "config": {
+    "module-header": "Breaking News",
+    "timestamp": true,
+    "thumbnail": false,
+    "style": "compact"
+  }
+}

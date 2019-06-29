@@ -1,0 +1,36 @@
+extends ../layouts/page.jade
+
+block content
+    for item, idx in data.results
+        .content-item(class="cipos-#{idx} cirpos-#{data.results.length - idx}")
+            if (display.dateHeader && data.markDate)
+                .ci-header: .heading= dateLive
+
+            -var premium = (item.paidStatus === "PREMIUM") ? "prm prm-story " : "";
+            div(class=premium + "story-block sbpos-#{idx} sbrpos-#{data.results.length - idx}", id="#{item.id}")
+                h4.heading
+                    if display.kicker !== false && item.kicker
+                        span.kicker= (item.kicker||"").trim()
+
+                    a(href=item.link, class=premium)= (item.title||"").trim()
+                if (display.thumbnail !== false && item.thumbnailImage)
+                    a.thumb-link(href=item.link)
+                        img.thumbnail(
+                            src=item.thumbnailImage.link,
+                            alt=(item.thumbnailImage.title||"").trim(),
+                            width=item.thumbnailImage.width,
+                            height=item.thumbnailImage.height)
+
+                if (display.standfirst !== false && item.standFirst)
+                    p.standfirst
+                        if (display.byline !== false && item.byline)
+                            span.article-info
+                                if display.timestamp !== false
+                                    span.timestamp
+                                        time(datetime=item.dateLive)= moment(item.dateLive).format(display.dateformat || 'H:mm A')
+
+                                em.byline= (item.byline||"").trim() + " "
+                        span=(item.standFirst||"").trim()
+
+                -// Storyblock footer must be in story-block div
+                include _storyblock-footer

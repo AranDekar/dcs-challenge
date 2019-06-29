@@ -1,0 +1,25 @@
+mixin videoBody(item, imgType)
+    - imgType = imgType || 'THUMBNAIL'
+    .module-header.vms-header
+        h3.heading= item.title
+            span.time= parseInt(item.duration/60000, 10) + ":" + String("00" + parseInt((item.duration/1000)%60, 10)).slice(-2)
+    .module-content
+        .poster
+            if item.images && item.images.length
+                for image in item.images
+                    if imgType === 'THUMBNAIL'
+                        if image.imageType === 'HERO'
+                            - image.link = (image.link||'').replace(/width=(\d+)/, 'width=285')
+                            img(data-src=image.link, alt="")
+                            - break
+                    else if image.imageType == imgType
+                        img(src=image.link, alt="")
+                        - break
+        if imgType === "HERO"
+            .description(tabindex=-1)
+                p= item.description
+    .module-footer.vms-footer
+        ul.info
+            li(class="date")= moment(item.dateLive).format('MMMM Do YYYY')
+            li(class="age")= moment(item.dateLive).fromNow()
+            li(class="primaryCategory")= item.primaryCategory && item.primaryCategory.value || item.primaryCategory

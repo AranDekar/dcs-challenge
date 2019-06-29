@@ -1,0 +1,28 @@
+{
+  "tcogHost": {
+    "external": "a.tcog.news.com.au",
+    "pixel": "https://i1.wp.com/pixel.tcog.cp1.news.com.au"
+  },
+  "logLevel": "error",
+  "capiV2CDN": "http://tabula:3000/http://cdn.newsapi.com.au",
+  "capiV2API": "http://tabula:3000/http://cdn.newsapi.com.au",
+  "sppAPI": "http://tabula:3000/http://{{ res.locals.config.domain }}/spp-api/",
+  "api": {
+    "template": "http://resources.newscdn.com.au/cs",
+    "resource": {
+      "cs": "http://dev.resources.newscdn.com.au/cs",
+      "deck": "https://s3-ap-southeast-2.amazonaws.com/news-deck",
+      "nmdata": {
+        "url": "http://prod.marketdata.digprod.cp1.news.com.au/nmdata",
+        "contentType": "application/json"
+      },
+      "mozo": "http://stat.mozo.com.au",
+      "whistleout": "https://r3.whistleout.com.au",
+      "perthNow": "http://tabula:3000/https://content.perthnow.com.au/publication/popular"
+    }
+  },
+  "foxsportsAPI": "http://api.stats.foxsports.com.au",
+  "foxsportsPulseAPI": "https://awsapi.foxsportspulse.com",
+  "capiV2APIKey": "2ychcynj646ctct5fmjcmauw",
+  "newsgraph": "http://newsgraph"
+}

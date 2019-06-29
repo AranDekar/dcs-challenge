@@ -1,0 +1,48 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "VpcId" : {
+            "Description": "The ID of the VPC.",
+            "Type": "AWS::EC2::VPC::Id"
+        }
+    },
+    "Description": " VPC Security Groups for TCOG",
+    "Resources": {
+        "SGTCOG": {
+            "Type" : "AWS::EC2::SecurityGroup",
+            "Properties" : {
+                "GroupName" : "SGTCOGBase",
+                "GroupDescription" : "TCOG base security group",
+                "Tags" :  [ 
+                {
+                    "Value": "SGTCOGBase",
+                    "Key": "Name"
+                }
+                ],
+                "VpcId" : { "Ref": "VpcId" }
+            }
+        },
+        "SGTCOGIngress": {
+            "Type" : "AWS::EC2::SecurityGroupIngress",
+            "Properties" : {
+                "FromPort" : 3000,
+                "SourceSecurityGroupId" : {
+                    "Ref": "SGTCOG"
+                },
+                "GroupId" : {
+                    "Ref": "SGTCOG"
+                },
+                "IpProtocol" : "tcp",
+                "ToPort" : 3000
+            }
+        }
+    },
+    "Outputs": {
+        "SGTCOGGroupID" : {
+            "Description" : "The TCOG security group ID.",
+            "Value" : {
+                "Ref": "SGTCOG"
+            }
+        }
+    }
+}

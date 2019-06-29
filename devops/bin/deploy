@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# Usage:
+#
+#   deploy env/digidev Tag=860545f
+#
+#   AWS_STACK_NAME=bar AWS_S3_BUCKET=foo deploy env/digidev
+
+set -x
+set -e
+
+AWS_REGION=${AWS_REGION:-ap-southeast-2}
+AWS_S3_BUCKET=${AWS_S3_BUCKET:-dcs-templates}
+AWS_STACK_NAME=${AWS_STACK_NAME:-dcs-services}
+
+aws --region $AWS_REGION cloudformation package \
+  --template-file cfn/master.yml \
+  --s3-bucket $AWS_S3_BUCKET \
+  --output-template-file cfn/package.yml \
+  --force
+
+ aws --region $AWS_REGION cloudformation deploy \
+  --template-file cfn/package.yml \
+  --stack-name $AWS_STACK_NAME \
+  --capabilities CAPABILITY_IAM \
+  --parameter-overrides $(cat $1 | tr '\n' ' '| sed '/^[[:space:]]*$/d') $2

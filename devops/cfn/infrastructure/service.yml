@@ -1,0 +1,122 @@
+Parameters:
+
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+
+  SecurityGroup:
+    Type: String
+
+  Cluster:
+    Type: String
+
+  ApplicationName:
+    Type: String
+
+  Repository:
+    Type: String
+
+  Tag:
+    Type: String
+
+  Command:
+    Type: List<String>
+
+  DesiredCount:
+    Type: Number
+    Default: 1
+  
+  RedisPubSubHost:
+    Type: String
+    Default: AWS::NoValue
+
+  RedisPubSubChannel:
+    Type: String
+    Default: AWS::NoValue
+
+  VarnishHost:
+    Type: String
+    Default: AWS::NoValue
+
+  VarnishHost:
+    Type: String
+    Default: AWS::NoValue
+
+  SqsQueue:
+    Type: String
+    Default: AWS::NoValue
+
+  HttpProxy:
+    Type: String
+    Default: AWS::NoValue
+
+  NewRelicAppName:
+    Type: String
+    Default: AWS::NoValue
+
+  NewRelicLicenseKey:
+    Type: String
+    Default: AWS::NoValue
+  
+  LogLevel:
+    Type: String
+    Default: error
+
+Conditions:
+
+  NewRelicEnabled: !Not [!Equals [!Ref NewRelicLicenseKey, "AWS::NoValue"]]
+
+Resources:
+  Service:
+    Type: AWS::ECS::Service
+    Properties:
+      Cluster: !Ref Cluster
+      DesiredCount: !Ref DesiredCount
+      TaskDefinition: !Ref TaskDefinition
+
+  TaskDefinition:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      Family: !Sub ${AWS::StackName}-${ApplicationName}
+      ContainerDefinitions:
+        - Name: !Ref ApplicationName
+          Image: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/${Repository}:${Tag}
+          Command: !Ref Command
+          Essential: true
+          Memory: 512
+          MemoryReservation: 256
+          Environment:
+            - Name: REDIS_PUB_SUB_HOST
+              Value: !Ref RedisPubSubHost
+            - Name: REDIS_PUB_SUB_CHANNEL
+              Value: !Ref RedisPubSubChannel
+            - Name: VARNISH_HOST
+              Value: !Ref VarnishHost
+            - Name: SQS_QUEUE
+              Value: !Ref SqsQueue
+            - Name: http_proxy
+              Value: !Ref HttpProxy
+            - Name: NEW_RELIC_LICENSE_KEY
+              Value: !Ref NewRelicLicenseKey
+            - Name: NEW_RELIC_APP_NAME
+              Value: !Ref NewRelicAppName
+            - Name: NEW_RELIC_NO_CONFIG_FILE
+              Value: true
+            - Name: NEW_RELIC_LOG_LEVEL
+              Value: info
+            - Name: NEW_RELIC_PROXY_URL
+              Value: !Ref HttpProxy
+            - Name: NEW_RELIC_ENABLED
+              Value: !If [NewRelicEnabled, true, false]
+            - Name: LOG_LEVEL
+              Value: !Ref LogLevel
+          LogConfiguration:
+            LogDriver: sumologic
+            Options:
+              sumo-url: https://collectors.au.sumologic.com/receiver/v1/http/ZaVnC4dhaV0elbWzKIF7LcHuVg-nhVE_aH119Nzu5oTRTbTzxAvmdQWhyQdWIfNtkzZkxWOI4E76hNDIQAhxJMW-fReFgvh0Hp74oY3-LEQFAxwxmL4Lvw==
+
+  CloudWatchLogsGroup:
+    Type: AWS::Logs::LogGroup
+    Properties: 
+        LogGroupName: !Ref AWS::StackName
+        RetentionInDays: 3
+  

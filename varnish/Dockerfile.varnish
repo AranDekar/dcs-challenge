@@ -1,0 +1,19 @@
+FROM million12/varnish:latest
+
+ARG http_proxy
+
+ENV BACKEND_HOST=localhost
+ENV BACKEND_PORT=3000
+ENV VCL_CONFIG=/etc/varnish/default.vcl
+ENV CACHE_SIZE=1.5G
+ENV VARNISHD_PARAMS="-p thread_pools=4 -p thread_pool_min=500 -p default_ttl=7200 -p default_grace=14400"
+
+RUN yum install -y nginx
+RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
+RUN mv /start.sh /start.original.sh
+ADD ./files/start.sh /start.sh
+ADD ./files/etc/varnish/default.vcl /etc/varnish/default.vcl
+
+CMD /start.sh
+
+EXPOSE 80

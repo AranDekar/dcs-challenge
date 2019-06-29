@@ -1,0 +1,25 @@
+if (typeof data.title !== "undefined" && display.title)
+    title=data.title
+
+if (typeof data.meta !== "undefined" && display.meta)
+    for obj in data.meta
+        | <meta
+        for val, key in obj
+            |  #{key}="#{val}"
+        | />
+
+if (typeof data.link !== "undefined" && display.link)
+    for obj in data.link
+        | <link
+        for val, key in obj
+            |  #{key}="#{val}"
+        | />
+
+if (typeof data.vars !== "undefined" && display.vars)
+    script(type="text/javascript")
+        for val, key in data.vars
+            | var !{key} = !{JSON.stringify(val)};
+
+if (typeof data.vars !== "undefined" && display.getvar)
+    if (data.vars[display.getvar])
+        | !{String(data.vars[display.getvar])}

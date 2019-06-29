@@ -1,0 +1,9 @@
+include mixin/videoBody
+include mixin/list
+
+div.vms-banner
+    div.vms-banner-inner
+        div.vms.module(class="vms-embedcode-" + data.results[0].originId)
+            +videoBody(data.results[0], 'HERO')
+
++list( data.results, 'line', 'vms-playlist-module' )

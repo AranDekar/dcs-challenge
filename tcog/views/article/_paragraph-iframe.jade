@@ -1,0 +1,13 @@
+mixin paragraph_iframe(iframe)
+
+    //- Evaluate if we /really/ need to get the text in an iframe
+    if (!iframe.iframeUrl)
+        |!{iframe.body}
+
+    if (iframe.iframeUrl)
+        iframe( width=  iframe.width,
+                height= iframe.height,
+                src=    iframe.iframeUrl,
+                id=     iframe.id,
+                title=  iframe.title)
+

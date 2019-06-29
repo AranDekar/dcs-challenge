@@ -1,0 +1,521 @@
+{
+    "content": {
+        "id": "5f145d128a3c4ad74fd1c2a58401781f",
+        "link": {
+            "self": "https://content-dev.api.news/v3/collections/5f145d128a3c4ad74fd1c2a58401781f"
+        },
+        "type": "collection",
+        "draft": false,
+        "status": "active",
+        "locale": "en_AU",
+        "originalLocale": "en_AU",
+        "platform": {
+            "id": "1225739692585",
+            "system": "fatwire",
+            "userUpdated": "kelapajk",
+            "systemUpdated": "wordpress",
+            "instanceUpdated": "PerthNow",
+            "capiOrigin": "AU"
+        },
+        "date": {
+            "live": "2017-10-10T12:02:22.000Z",
+            "updated": "2017-10-10T12:02:22.000Z",
+            "created": "2009-06-24T02:09:32.000Z",
+            "processed": "2017-10-10T12:02:33.065Z"
+        },
+        "revision": {
+            "major": 1507636942000,
+            "minor": 0
+        },
+        "target": {
+            "domains": [
+                "_ANY",
+                "perthnow.com.au"
+            ]
+        },
+        "accessType": "free",
+        "headline": {
+            "default": "PN-NN-REC/NEWS/TOP-NEWS-WEB (050708)"
+        },
+        "related": {
+            "primary": {
+                "default": [
+                    "e431e3cfb8e09aaed37de0920b5a5e27",
+                    "a1c9782924a4786f63db3ceecb641c94",
+                    "15859eec5d1f892f52c6435018634bbb",
+                    "690f22f28fb3f1673a32f5f0825fb3da",
+                    "1df5dabcf123af038ad14040dd86dd08",
+                    "d84779211b39cfa7c089ed6afbc91bb3",
+                    "048a90d6277592d536ef81899a78857a",
+                    "7a4242af7a4ba8204e529fe60bef221d",
+                    "554a1170b7be0aa95b70d713d38a4ff0",
+                    "568a6d2587fcb2563ce0bcc2d52e7bbb",
+                    "5c66f5acfb004271cf2f27cd91eef4d2",
+                    "1a4f0629fec1b419d609bb4d25bd8086",
+                    "98497e5a7f5b64d7d08c6eb6e01aa73b",
+                    "a994d3b8e2f6a243ed56f918e5e1b108",
+                    "e50683aa8d71665b5837042e962d36ad",
+                    "8d2ed1b1aa0bc68ebec6e0bc6e3060a4",
+                    "ffe0e0759e54e49dd158e574bf277554",
+                    "716d34dc4a45c2414b0e048cc59ce9ff",
+                    "2276fa37b922e19a98b2215ba8f1266d",
+                    "3f8a1c4cfcb6992d87940d78e0b11644",
+                    "7045bbc3e4e80d79c6489d08732e8f5f",
+                    "dc42c5598f4c63e0e9689d6eacaf3b07",
+                    "fe284a8a813a4c986adbd3b7c8f4b042",
+                    "a391999184e3fc600467d3370e34f69e",
+                    "b7f84db5c445c1d4c41865af42503b83",
+                    "ebe7dc9e5c77c271f885176085260d7a",
+                    "158099e4a729c6964aaaeea9c0ba6e5e",
+                    "d4e2ce3f2583a115d5621506342ce78a",
+                    "c04d59a2a9df929f9e50c22438881b8c",
+                    "0d6d6138affc04560b3170eedd9054ca",
+                    "ee215aaf6b6479fd423c4cf2ffe48a5c"
+                ]
+            }
+        },
+        "references": {
+            "716d34dc4a45c2414b0e048cc59ce9ff": {
+                "id": "716d34dc4a45c2414b0e048cc59ce9ff",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "ef6de720-ad4a-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/716d34dc4a45c2414b0e048cc59ce9ff"
+                }
+            },
+            "690f22f28fb3f1673a32f5f0825fb3da": {
+                "id": "690f22f28fb3f1673a32f5f0825fb3da",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425910",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/690f22f28fb3f1673a32f5f0825fb3da"
+                }
+            },
+            "ebe7dc9e5c77c271f885176085260d7a": {
+                "id": "ebe7dc9e5c77c271f885176085260d7a",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "Quest Newspapers"
+                },
+                "platform": {
+                    "id": "dd7f418c-ad34-11e7-83be-43d5974e9c9c",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/ebe7dc9e5c77c271f885176085260d7a"
+                }
+            },
+            "0d6d6138affc04560b3170eedd9054ca": {
+                "id": "0d6d6138affc04560b3170eedd9054ca",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2424758",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/0d6d6138affc04560b3170eedd9054ca"
+                }
+            },
+            "dc42c5598f4c63e0e9689d6eacaf3b07": {
+                "id": "dc42c5598f4c63e0e9689d6eacaf3b07",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "aafa6650-ad3a-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/dc42c5598f4c63e0e9689d6eacaf3b07"
+                }
+            },
+            "a1c9782924a4786f63db3ceecb641c94": {
+                "id": "a1c9782924a4786f63db3ceecb641c94",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2426055",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/a1c9782924a4786f63db3ceecb641c94"
+                }
+            },
+            "ee215aaf6b6479fd423c4cf2ffe48a5c": {
+                "id": "ee215aaf6b6479fd423c4cf2ffe48a5c",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2424621",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/ee215aaf6b6479fd423c4cf2ffe48a5c"
+                }
+            },
+            "a391999184e3fc600467d3370e34f69e": {
+                "id": "a391999184e3fc600467d3370e34f69e",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia"
+                },
+                "platform": {
+                    "id": "2804fc82-acff-11e7-b6da-99213aeb1f33",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/a391999184e3fc600467d3370e34f69e"
+                }
+            },
+            "8d2ed1b1aa0bc68ebec6e0bc6e3060a4": {
+                "id": "8d2ed1b1aa0bc68ebec6e0bc6e3060a4",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425594",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/8d2ed1b1aa0bc68ebec6e0bc6e3060a4"
+                }
+            },
+            "3f8a1c4cfcb6992d87940d78e0b11644": {
+                "id": "3f8a1c4cfcb6992d87940d78e0b11644",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2424787",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/3f8a1c4cfcb6992d87940d78e0b11644"
+                }
+            },
+            "7045bbc3e4e80d79c6489d08732e8f5f": {
+                "id": "7045bbc3e4e80d79c6489d08732e8f5f",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "d126e852-ad31-11e7-b6da-99213aeb1f33",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/7045bbc3e4e80d79c6489d08732e8f5f"
+                }
+            },
+            "b7f84db5c445c1d4c41865af42503b83": {
+                "id": "b7f84db5c445c1d4c41865af42503b83",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "4f442f68-ad16-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/b7f84db5c445c1d4c41865af42503b83"
+                }
+            },
+            "7a4242af7a4ba8204e529fe60bef221d": {
+                "id": "7a4242af7a4ba8204e529fe60bef221d",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425892",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/7a4242af7a4ba8204e529fe60bef221d"
+                }
+            },
+            "a994d3b8e2f6a243ed56f918e5e1b108": {
+                "id": "a994d3b8e2f6a243ed56f918e5e1b108",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425850",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/a994d3b8e2f6a243ed56f918e5e1b108"
+                }
+            },
+            "554a1170b7be0aa95b70d713d38a4ff0": {
+                "id": "554a1170b7be0aa95b70d713d38a4ff0",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "f681c3da-ad7a-11e7-b6da-99213aeb1f33",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/554a1170b7be0aa95b70d713d38a4ff0"
+                }
+            },
+            "d4e2ce3f2583a115d5621506342ce78a": {
+                "id": "d4e2ce3f2583a115d5621506342ce78a",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "c3c6dfd2-acb9-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/d4e2ce3f2583a115d5621506342ce78a"
+                }
+            },
+            "e431e3cfb8e09aaed37de0920b5a5e27": {
+                "id": "e431e3cfb8e09aaed37de0920b5a5e27",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2426087",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/e431e3cfb8e09aaed37de0920b5a5e27"
+                }
+            },
+            "158099e4a729c6964aaaeea9c0ba6e5e": {
+                "id": "158099e4a729c6964aaaeea9c0ba6e5e",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2424873",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/158099e4a729c6964aaaeea9c0ba6e5e"
+                }
+            },
+            "98497e5a7f5b64d7d08c6eb6e01aa73b": {
+                "id": "98497e5a7f5b64d7d08c6eb6e01aa73b",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "Herald Sun"
+                },
+                "platform": {
+                    "id": "2cf88d7e-ad5b-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/98497e5a7f5b64d7d08c6eb6e01aa73b"
+                }
+            },
+            "c04d59a2a9df929f9e50c22438881b8c": {
+                "id": "c04d59a2a9df929f9e50c22438881b8c",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2424972",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/c04d59a2a9df929f9e50c22438881b8c"
+                }
+            },
+            "ffe0e0759e54e49dd158e574bf277554": {
+                "id": "ffe0e0759e54e49dd158e574bf277554",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "9acafb7e-ad4d-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/ffe0e0759e54e49dd158e574bf277554"
+                }
+            },
+            "d84779211b39cfa7c089ed6afbc91bb3": {
+                "id": "d84779211b39cfa7c089ed6afbc91bb3",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "The Daily Telegraph"
+                },
+                "platform": {
+                    "id": "041ec5b2-ad56-11e7-b6da-99213aeb1f33",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/d84779211b39cfa7c089ed6afbc91bb3"
+                }
+            },
+            "2276fa37b922e19a98b2215ba8f1266d": {
+                "id": "2276fa37b922e19a98b2215ba8f1266d",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "646645d8-ad49-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/2276fa37b922e19a98b2215ba8f1266d"
+                }
+            },
+            "fe284a8a813a4c986adbd3b7c8f4b042": {
+                "id": "fe284a8a813a4c986adbd3b7c8f4b042",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "The Daily Telegraph"
+                },
+                "platform": {
+                    "id": "cc00292a-ad3f-11e7-a182-b1c918163bc8",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/fe284a8a813a4c986adbd3b7c8f4b042"
+                }
+            },
+            "e50683aa8d71665b5837042e962d36ad": {
+                "id": "e50683aa8d71665b5837042e962d36ad",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "The Daily Telegraph"
+                },
+                "platform": {
+                    "id": "23acb06e-ad66-11e7-b6da-99213aeb1f33",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/e50683aa8d71665b5837042e962d36ad"
+                }
+            },
+            "1a4f0629fec1b419d609bb4d25bd8086": {
+                "id": "1a4f0629fec1b419d609bb4d25bd8086",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425035",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/1a4f0629fec1b419d609bb4d25bd8086"
+                }
+            },
+            "568a6d2587fcb2563ce0bcc2d52e7bbb": {
+                "id": "568a6d2587fcb2563ce0bcc2d52e7bbb",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "32aa5a74-ad86-11e7-a182-b1c918163bc8",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/568a6d2587fcb2563ce0bcc2d52e7bbb"
+                }
+            },
+            "1df5dabcf123af038ad14040dd86dd08": {
+                "id": "1df5dabcf123af038ad14040dd86dd08",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425955",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/1df5dabcf123af038ad14040dd86dd08"
+                }
+            },
+            "15859eec5d1f892f52c6435018634bbb": {
+                "id": "15859eec5d1f892f52c6435018634bbb",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2426004",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/15859eec5d1f892f52c6435018634bbb"
+                }
+            },
+            "5c66f5acfb004271cf2f27cd91eef4d2": {
+                "id": "5c66f5acfb004271cf2f27cd91eef4d2",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "PerthNow"
+                },
+                "platform": {
+                    "id": "PerthNow-2425605",
+                    "system": "wordpress"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/5c66f5acfb004271cf2f27cd91eef4d2"
+                }
+            },
+            "048a90d6277592d536ef81899a78857a": {
+                "id": "048a90d6277592d536ef81899a78857a",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "FOX SPORTS"
+                },
+                "platform": {
+                    "id": "c2788826-ad9d-11e7-870b-f10c52fa763b",
+                    "system": "methode"
+                },
+                "link": {
+                    "self": "https://content-dev.api.news/v3/articles/048a90d6277592d536ef81899a78857a"
+                }
+            }
+        },
+        "seoOwner": {},
+        "query": {
+            "type": "legacy",
+            "size": 100,
+            "value": "queryName:Generic Query Recent100StoriesBySection,lastManualEntry:31,sectionId:1226522798434"
+        },
+        "schemaVersion": "v3.0"
+    }
+}

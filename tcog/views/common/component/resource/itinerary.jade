@@ -1,0 +1,25 @@
+- var resources = data || {};
+
+//- stylesheets
+
+each item in resources['assets.css'] || []
+
+  - var url     = item.href || typeof item === 'string' && item;
+  - var content = item.content;
+
+  if content
+      style= content
+  if url
+      link(href='#{url}', rel='stylesheet')
+
+//- scripts
+
+each item in resources['assets.js'] || []
+
+  - var url = item.src || typeof item === 'string' && item;
+  - var content = item.content;
+
+  if content
+     script= content
+  if url
+      script(src='#{url}')

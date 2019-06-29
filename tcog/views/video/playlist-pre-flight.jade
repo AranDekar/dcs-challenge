@@ -1,0 +1,17 @@
+include mixin/esi
+
+- var domain = query.domain || display.domain || query.site || display.site
+
+if data.results.length
+    - var productParam = 't_product=' + product.name
+    - var templateParam = 't_template=../video/playlist'
+    - var domainParam = ( domain ? 'td_domain=' + domain : '')
+    - var domainQuery = ( domain ? 'domains:' + domain : '')
+    - var typeQuery = 'contentType:video'
+    - var paidStatusQuery = '-paidStatus:fair_dealing'
+    - var queryParam = 'query=(' + [typeQuery, domainQuery, paidStatusQuery].filter(i => i).join(' AND ') + ')'
+    - var params = ['pageSize=20', 'offset=0', queryParam, domainParam, productParam, templateParam, domainParam].filter(i => i).join('&')
+    +esi("/news/content/v2/collection/" + data.results[0].id + '?' + params)
+else
+    = "Could not find a playlist by the name "
+        b= query.subtitle

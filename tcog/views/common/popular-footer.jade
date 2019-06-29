@@ -1,0 +1,7 @@
+include ./_popular-common.jade
+
+ol: for item, idx in results
+    li: a(href='#{item.domainLinks[0].link}', rel="track-mostpopfooter")= item.title.trim()
+
+if data.isLegacy
+    // tcog: legacy redirect 

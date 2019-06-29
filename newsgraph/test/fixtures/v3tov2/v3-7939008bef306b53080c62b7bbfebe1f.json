@@ -1,0 +1,682 @@
+{
+    "content": {
+        "id": "7939008bef306b53080c62b7bbfebe1f",
+        "link": {
+            "self": "https://content.api.news/v3/articles/7939008bef306b53080c62b7bbfebe1f",
+            "canonical": "https://www.dailytelegraph.com.au/news/national/federal-election/labors-battle-to-replace-bill-shorten-whats-really-going-on/news-story/7939008bef306b53080c62b7bbfebe1f"
+        },
+        "type": "article",
+        "draft": false,
+        "status": "active",
+        "locale": "en_AU",
+        "originalLocale": "en_AU",
+        "platform": {
+            "id": "53d53f44-7c37-11e9-9e4a-69dcd5583c65",
+            "instance": "meth01",
+            "system": "methode",
+            "documentId": "a55c3d7e-1a33-48c1-8cb6-12ed27e19cb8",
+            "parentId": "53d53f44-7c37-11e9-9e4a-69dcd5583c65",
+            "userUpdated": "bickersc",
+            "systemUpdated": "methode",
+            "capiOrigin": "AU"
+        },
+        "date": {
+            "live": "2019-05-22T04:18:00.000Z",
+            "updated": "2019-05-22T06:12:18.000Z",
+            "custom": "2019-05-22T06:12:00.000Z",
+            "created": "2019-05-22T02:14:28.000Z",
+            "processed": "2019-05-22T06:12:23.460Z"
+        },
+        "categories": {},
+        "keywords": [],
+        "revision": {
+            "major": 1558505538000,
+            "minor": 0
+        },
+        "rightsMetadata": {
+            "originatedSource": "News Corp Australia Network"
+        },
+        "target": {},
+        "authors": [
+            {
+                "name": "Zoe Smith",
+                "providerId": "p4CwAGlzK0vKpKlHmAy0",
+                "email": "zoe.smith@news.com.au"
+            },
+            {
+                "name": "Claire Bickers"
+            }
+        ],
+        "accessType": "premium",
+        "subscriptionSummary": {
+            "default": "Hot on the heels of their shock election loss, the ALP is now descending into the kind of infighting the party hasn’t seen since the Rudd-Gillard-Rudd era. "
+        },
+        "channel": "none",
+        "autoTranslate": false,
+        "headline": {
+            "default": "Labor’s leadership clash: What’s really going on"
+        },
+        "standfirst": {
+            "default": "<p>Hot on the heels of their shock election loss, the ALP is now descending into the kind of infighting the party hasn’t seen since the Rudd-Gillard-Rudd era.  </p>"
+        },
+        "related": {
+            "thumbnail": {
+                "default": [
+                    "69ed0c2cfa68419d03774ea59dfa353e",
+                    "62820401b5138aad24f4816c03751cd5",
+                    "7ee5be5dc68348d123edba60b54c4007",
+                    "3fbe27a1703daaf7c31f42eefe343de4",
+                    "d2873c3db0adc8743879fca6de75779e",
+                    "c4a8847f51de4ce8c46a5fc0a4ea9788"
+                ]
+            },
+            "primary": {
+                "default": [
+                    "ad7b97d2b4cf8b119b0c7e1704bcae74",
+                    "b9fd6db39dea288dc6adca4b85d34e28"
+                ]
+            }
+        },
+        "references": {
+            "69ed0c2cfa68419d03774ea59dfa353e": {
+                "id": "69ed0c2cfa68419d03774ea59dfa353e",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-fc3bb34623c330128030d1133b4729e9",
+                    "system": "methode"
+                },
+                "width": 100,
+                "height": 75,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Thumbnail",
+                "altText": "Chris bowen and anthony albanese",
+                "altAspectRatio": {
+                    "4:3": "d2873c3db0adc8743879fca6de75779e"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/69ed0c2cfa68419d03774ea59dfa353e",
+                    "media": "https://content.api.news/v3/images/bin/69ed0c2cfa68419d03774ea59dfa353e"
+                }
+            },
+            "62820401b5138aad24f4816c03751cd5": {
+                "id": "62820401b5138aad24f4816c03751cd5",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-25426d3611054f12daee187f3ad9f46d",
+                    "system": "methode"
+                },
+                "width": 1280,
+                "height": 720,
+                "aspectRatio": "16:9",
+                "cropName": "16:9-Landscape",
+                "altText": "Chris bowen and anthony albanese",
+                "altAspectRatio": {
+                    "16:9": "3fbe27a1703daaf7c31f42eefe343de4",
+                    "21:9": "7ee5be5dc68348d123edba60b54c4007"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/62820401b5138aad24f4816c03751cd5",
+                    "media": "https://content.api.news/v3/images/bin/62820401b5138aad24f4816c03751cd5"
+                }
+            },
+            "7ee5be5dc68348d123edba60b54c4007": {
+                "id": "7ee5be5dc68348d123edba60b54c4007",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-527f89d51598afc37a8ef86277d9c228",
+                    "system": "methode"
+                },
+                "width": 1900,
+                "height": 815,
+                "aspectRatio": "21:9",
+                "cropName": "21:9-Landscape",
+                "altText": "Chris bowen and anthony albanese",
+                "altAspectRatio": {
+                    "16:9": "3fbe27a1703daaf7c31f42eefe343de4"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/7ee5be5dc68348d123edba60b54c4007",
+                    "media": "https://content.api.news/v3/images/bin/7ee5be5dc68348d123edba60b54c4007"
+                }
+            },
+            "3fbe27a1703daaf7c31f42eefe343de4": {
+                "id": "3fbe27a1703daaf7c31f42eefe343de4",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-68fc4e838a5a4c5cf5fcab7af41968af",
+                    "system": "methode"
+                },
+                "width": 149,
+                "height": 86,
+                "aspectRatio": "16:9",
+                "cropName": "16:9-Thumbnail",
+                "altText": "Chris bowen and anthony albanese",
+                "altAspectRatio": {
+                    "16:9": "62820401b5138aad24f4816c03751cd5",
+                    "21:9": "7ee5be5dc68348d123edba60b54c4007"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/3fbe27a1703daaf7c31f42eefe343de4",
+                    "media": "https://content.api.news/v3/images/bin/3fbe27a1703daaf7c31f42eefe343de4"
+                }
+            },
+            "d2873c3db0adc8743879fca6de75779e": {
+                "id": "d2873c3db0adc8743879fca6de75779e",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-57de23c10fd350e9633c9bec29a77d32",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "altText": "Chris bowen and anthony albanese",
+                "altAspectRatio": {
+                    "4:3": "69ed0c2cfa68419d03774ea59dfa353e"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/d2873c3db0adc8743879fca6de75779e",
+                    "media": "https://content.api.news/v3/images/bin/d2873c3db0adc8743879fca6de75779e"
+                }
+            },
+            "c4a8847f51de4ce8c46a5fc0a4ea9788": {
+                "id": "c4a8847f51de4ce8c46a5fc0a4ea9788",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-e0227a466714378b1386023c95df6eda",
+                    "system": "methode"
+                },
+                "width": 768,
+                "height": 1024,
+                "aspectRatio": "3:4",
+                "cropName": "3:4-Portrait",
+                "altText": "Chris bowen and anthony albanese",
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/c4a8847f51de4ce8c46a5fc0a4ea9788",
+                    "media": "https://content.api.news/v3/images/bin/c4a8847f51de4ce8c46a5fc0a4ea9788"
+                }
+            },
+            "ad7b97d2b4cf8b119b0c7e1704bcae74": {
+                "id": "ad7b97d2b4cf8b119b0c7e1704bcae74",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "AAP"
+                },
+                "platform": {
+                    "id": "crop-540c6fd4832ba98fd81f7ee9a1f3e30f",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Opposition Leader Bill Shorten pictured with his Labor frontbench team at the party’s official election campaign launch in Brisbane. Picture: AAP",
+                "link": {
+                    "self": "https://content.api.news/v3/images/ad7b97d2b4cf8b119b0c7e1704bcae74",
+                    "media": "https://content.api.news/v3/images/bin/ad7b97d2b4cf8b119b0c7e1704bcae74"
+                }
+            },
+            "b9fd6db39dea288dc6adca4b85d34e28": {
+                "id": "b9fd6db39dea288dc6adca4b85d34e28",
+                "type": "video",
+                "rightsMetadata": {
+                    "originatedSource": "NewsDNA",
+                    "usage": "unlimited"
+                },
+                "platform": {
+                    "id": "5348771529001-6038831794001",
+                    "system": "brightcove"
+                },
+                "captionOverride": "With the Labor Parties election loss and the announcement that Bill Shorten will step down as leader.",
+                "titleOverride": "Who will be the next Labor leader?",
+                "link": {
+                    "self": "https://content.api.news/v3/videos/b9fd6db39dea288dc6adca4b85d34e28"
+                }
+            },
+            "ef90c3f157070dce44ddc20c0b3245fa": {
+                "id": "ef90c3f157070dce44ddc20c0b3245fa",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "52d4b1f0-7b66-11e9-9e4a-69dcd5583c65",
+                    "system": "methode"
+                },
+                "target": {
+                    "domainLinks": {
+                        "news.com.au": {
+                            "link": "https://www.news.com.au/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "perthnow.com.au": {
+                            "link": "https://www.perthnow.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "heraldsun.com.au": {
+                            "link": "https://www.heraldsun.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "adelaidenow.com.au": {
+                            "link": "https://www.adelaidenow.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "couriermail.com.au": {
+                            "link": "https://www.couriermail.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "dailytelegraph.com.au": {
+                            "link": "https://www.dailytelegraph.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "themercury.com.au": {
+                            "link": "https://www.themercury.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "geelongadvertiser.com.au": {
+                            "link": "https://www.geelongadvertiser.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "goldcoastbulletin.com.au": {
+                            "link": "https://www.goldcoastbulletin.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "cairnspost.com.au": {
+                            "link": "https://www.cairnspost.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "weeklytimesnow.com.au": {
+                            "link": "https://www.weeklytimesnow.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "townsvillebulletin.com.au": {
+                            "link": "https://www.townsvillebulletin.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        },
+                        "ntnews.com.au": {
+                            "link": "https://www.ntnews.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                        }
+                    }
+                },
+                "captionOverride": "Albanese vs Bowen: What you don’t know",
+                "link": {
+                    "self": "https://content.api.news/v3/articles/ef90c3f157070dce44ddc20c0b3245fa",
+                    "canonical": "https://www.dailytelegraph.com.au/news/national/federal-election/labor-leadership-contenders-all-you-need-to-know-about-anthony-albanese-and-chris-bowen/news-story/ef90c3f157070dce44ddc20c0b3245fa"
+                }
+            },
+            "eac910e4da05571be64b3fc73721ae6d": {
+                "id": "eac910e4da05571be64b3fc73721ae6d",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia"
+                },
+                "platform": {
+                    "id": "crop-abca093def9d7599a29deb22c9564fe6",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "altText": "Election Margin Call Labor",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Bill Shorten makes his concession speech, with wife Chloe, at the 2019 ALP Election Night function in Melbourne. Picture: Stuart McEvoy/The Australian.",
+                "link": {
+                    "self": "https://content.api.news/v3/images/eac910e4da05571be64b3fc73721ae6d",
+                    "media": "https://content.api.news/v3/images/bin/eac910e4da05571be64b3fc73721ae6d"
+                }
+            },
+            "48291458c1e9e4848d9f5c059614382f": {
+                "id": "48291458c1e9e4848d9f5c059614382f",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "AAP"
+                },
+                "platform": {
+                    "id": "crop-c862800781bb78b9c4ffac3cfadc41e7",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Shadow Treasurer Chris Bowen will run against Anthony Albanese for the leadership. Picture: AAP",
+                "link": {
+                    "self": "https://content.api.news/v3/images/48291458c1e9e4848d9f5c059614382f",
+                    "media": "https://content.api.news/v3/images/bin/48291458c1e9e4848d9f5c059614382f"
+                }
+            },
+            "ed59ab56d9b2e05bb1f623f92259b503": {
+                "id": "ed59ab56d9b2e05bb1f623f92259b503",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "a6c67262-7c2e-11e9-bb29-658b72eb1dc2",
+                    "system": "methode"
+                },
+                "target": {
+                    "domainLinks": {
+                        "news.com.au": {
+                            "link": "https://www.news.com.au/finance/money/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "perthnow.com.au": {
+                            "link": "https://www.perthnow.com.au/lifestyle/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "dailytelegraph.com.au": {
+                            "link": "https://www.dailytelegraph.com.au/lifestyle/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "heraldsun.com.au": {
+                            "link": "https://www.heraldsun.com.au/lifestyle/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "adelaidenow.com.au": {
+                            "link": "https://www.adelaidenow.com.au/lifestyle/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "couriermail.com.au": {
+                            "link": "https://www.couriermail.com.au/lifestyle/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "themercury.com.au": {
+                            "link": "https://www.themercury.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "geelongadvertiser.com.au": {
+                            "link": "https://www.geelongadvertiser.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "goldcoastbulletin.com.au": {
+                            "link": "https://www.goldcoastbulletin.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "cairnspost.com.au": {
+                            "link": "https://www.cairnspost.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "weeklytimesnow.com.au": {
+                            "link": "https://www.weeklytimesnow.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "townsvillebulletin.com.au": {
+                            "link": "https://www.townsvillebulletin.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        },
+                        "ntnews.com.au": {
+                            "link": "https://www.ntnews.com.au/news/national/federal-election/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                        }
+                    }
+                },
+                "captionOverride": "How ScoMo’s ‘miracle’ win will hit your wallet",
+                "link": {
+                    "self": "https://content.api.news/v3/articles/ed59ab56d9b2e05bb1f623f92259b503",
+                    "canonical": "https://www.dailytelegraph.com.au/lifestyle/how-scott-morrisons-miracle-federal-election-win-affects-property-superannuation-and-tax/news-story/ed59ab56d9b2e05bb1f623f92259b503"
+                }
+            },
+            "d5801c91e2b6540594655aee1b649f0c": {
+                "id": "d5801c91e2b6540594655aee1b649f0c",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia"
+                },
+                "platform": {
+                    "id": "crop-052d75e5626e00e554ff2d6ad7177694",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "altText": "PLIBERSEK WATCH",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Labour deputy leader Tanya Plibersek, at home, in Rosebery. Picture: Justin Lloyd.",
+                "link": {
+                    "self": "https://content.api.news/v3/images/d5801c91e2b6540594655aee1b649f0c",
+                    "media": "https://content.api.news/v3/images/bin/d5801c91e2b6540594655aee1b649f0c"
+                }
+            },
+            "a3b7836f032957bb8b53e972f549561d": {
+                "id": "a3b7836f032957bb8b53e972f549561d",
+                "type": "custom",
+                "subtype": "html",
+                "platform": {
+                    "id": "1558493514804",
+                    "system": "kurator"
+                },
+                "headline": {
+                    "default": "NED-0646-shadow-ministers-right"
+                },
+                "dataModel": {
+                    "width": "UNDEFINED_SIZE",
+                    "html": "<div class=\"nca-et-embed\"  data-type=\"imageslideshow\" data-id=\"1558493514804\"></div>\n<script> !function(d,s){ var j=d.createElement(s); j.type=\"text/javascript\";  j.src=\"https://multitools.newscdn.com.au/editorialtools/build/static/js/loader.js?v=1558493565398\"; d.getElementsByTagName(\"head\")[0].appendChild(j); }(document, \"script\");</script>\n    ",
+                    "type": "multitools",
+                    "height": "UNDEFINED_SIZE"
+                },
+                "captionOverride": "NED-0646-shadow-ministers-right",
+                "link": {
+                    "self": "https://content.api.news/v3/customs/a3b7836f032957bb8b53e972f549561d"
+                }
+            },
+            "264a46c00373ff0e4c78f85a2109aca2": {
+                "id": "264a46c00373ff0e4c78f85a2109aca2",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "3bcca18c-796f-11e9-9e4a-69dcd5583c65",
+                    "system": "methode"
+                },
+                "target": {
+                    "domainLinks": {
+                        "couriermail.com.au": {
+                            "link": "https://www.couriermail.com.au/news/national/federal-budget/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "heraldsun.com.au": {
+                            "link": "https://www.heraldsun.com.au/news/national/federal-budget/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "dailytelegraph.com.au": {
+                            "link": "https://www.dailytelegraph.com.au/news/national/federal-budget/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "adelaidenow.com.au": {
+                            "link": "https://www.adelaidenow.com.au/news/national/federal-budget/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "news.com.au": {
+                            "link": "https://www.news.com.au/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "perthnow.com.au": {
+                            "link": "https://www.perthnow.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "themercury.com.au": {
+                            "link": "https://www.themercury.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "goldcoastbulletin.com.au": {
+                            "link": "https://www.goldcoastbulletin.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "weeklytimesnow.com.au": {
+                            "link": "https://www.weeklytimesnow.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "ntnews.com.au": {
+                            "link": "https://www.ntnews.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "geelongadvertiser.com.au": {
+                            "link": "https://www.geelongadvertiser.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "cairnspost.com.au": {
+                            "link": "https://www.cairnspost.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        },
+                        "townsvillebulletin.com.au": {
+                            "link": "https://www.townsvillebulletin.com.au/news/national/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                        }
+                    }
+                },
+                "captionOverride": "What the Coalition victory means for you",
+                "link": {
+                    "self": "https://content.api.news/v3/articles/264a46c00373ff0e4c78f85a2109aca2",
+                    "canonical": "https://www.heraldsun.com.au/news/national/federal-budget/federal-election-2019-heres-what-the-coalition-victory-means-for-you/news-story/264a46c00373ff0e4c78f85a2109aca2"
+                }
+            },
+            "705a5892864ae00435c168f60cbebaa7": {
+                "id": "705a5892864ae00435c168f60cbebaa7",
+                "type": "custom",
+                "subtype": "html",
+                "platform": {
+                    "id": "1558493334269",
+                    "system": "kurator"
+                },
+                "headline": {
+                    "default": "NED-0646-shadow-ministers-left"
+                },
+                "dataModel": {
+                    "width": "UNDEFINED_SIZE",
+                    "html": "<div class=\"nca-et-embed\"  data-type=\"imageslideshow\" data-id=\"1558493334269\"></div>\n<script> !function(d,s){ var j=d.createElement(s); j.type=\"text/javascript\";  j.src=\"https://multitools.newscdn.com.au/editorialtools/build/static/js/loader.js?v=1558493431585\"; d.getElementsByTagName(\"head\")[0].appendChild(j); }(document, \"script\");</script>\n    ",
+                    "type": "multitools",
+                    "height": "UNDEFINED_SIZE"
+                },
+                "captionOverride": "NED-0646-shadow-ministers-left",
+                "link": {
+                    "self": "https://content.api.news/v3/customs/705a5892864ae00435c168f60cbebaa7"
+                }
+            },
+            "c96a9079aca8734271335f00b2547b69": {
+                "id": "c96a9079aca8734271335f00b2547b69",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "AFP"
+                },
+                "platform": {
+                    "id": "crop-972d3d73003ac007a1eeff32bab5a633",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Happier times. Bill Shorten greets former Labor leaders Julia Gillard and Kevin Rudd at Labor’s campaign launch in early May. Picture: Patrick Hamilton/ AFP",
+                "link": {
+                    "self": "https://content.api.news/v3/images/c96a9079aca8734271335f00b2547b69",
+                    "media": "https://content.api.news/v3/images/bin/c96a9079aca8734271335f00b2547b69"
+                }
+            },
+            "997f584463e0e22644ffed56c3d010ed": {
+                "id": "997f584463e0e22644ffed56c3d010ed",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Getty Images"
+                },
+                "platform": {
+                    "id": "crop-ca98da8191c25be6acbaf1232d18e90a",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "altText": "Anthony Albanese Discusses ALP Leadership Contest",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Anthony Albanese is the Left faction candidate vying to be the next Labor leader. Picture: Mark Metcalfe/Getty Images",
+                "link": {
+                    "self": "https://content.api.news/v3/images/997f584463e0e22644ffed56c3d010ed",
+                    "media": "https://content.api.news/v3/images/bin/997f584463e0e22644ffed56c3d010ed"
+                }
+            },
+            "3fdc14a72415e65d8ff473bda9821351": {
+                "id": "3fdc14a72415e65d8ff473bda9821351",
+                "type": "article",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia Network"
+                },
+                "platform": {
+                    "id": "b9457962-7966-11e9-9e4a-69dcd5583c65",
+                    "system": "methode"
+                },
+                "target": {
+                    "domainLinks": {
+                        "news.com.au": {
+                            "link": "https://www.news.com.au/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "perthnow.com.au": {
+                            "link": "https://www.perthnow.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "heraldsun.com.au": {
+                            "link": "https://www.heraldsun.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "adelaidenow.com.au": {
+                            "link": "https://www.adelaidenow.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "couriermail.com.au": {
+                            "link": "https://www.couriermail.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "dailytelegraph.com.au": {
+                            "link": "https://www.dailytelegraph.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "themercury.com.au": {
+                            "link": "https://www.themercury.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "geelongadvertiser.com.au": {
+                            "link": "https://www.geelongadvertiser.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "goldcoastbulletin.com.au": {
+                            "link": "https://www.goldcoastbulletin.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "cairnspost.com.au": {
+                            "link": "https://www.cairnspost.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "weeklytimesnow.com.au": {
+                            "link": "https://www.weeklytimesnow.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "townsvillebulletin.com.au": {
+                            "link": "https://www.townsvillebulletin.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        },
+                        "ntnews.com.au": {
+                            "link": "https://www.ntnews.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                        }
+                    }
+                },
+                "captionOverride": "How Queensland helped deliver a Coalition win",
+                "link": {
+                    "self": "https://content.api.news/v3/articles/3fdc14a72415e65d8ff473bda9821351",
+                    "canonical": "https://www.couriermail.com.au/news/national/federal-election/federal-election-2019-why-queensland-turned-its-back-on-labor-and-helped-deliver-a-coalition-win/news-story/3fdc14a72415e65d8ff473bda9821351"
+                }
+            }
+        },
+        "byline": {
+            "default": "Claire Bickers"
+        },
+        "bylineTitle": {
+            "default": "National Political Reporter"
+        },
+        "kicker": {
+            "default": "Election fallout"
+        },
+        "intro": {
+            "default": "<p>Chris Bowen has dropped out of the race to replace Bill Shorten but Labor could still be headed for a messy behind-the-scenes fight which could engulf the party for at least a month.</p>"
+        },
+        "seoOwner": {
+            "displayName": "The Daily Telegraph",
+            "domain": "dailytelegraph.com.au"
+        },
+        "seoTitle": "Labor leadership: Party factions at war on Bil lShorten’s replacement",
+        "socialHeadline": {
+            "default": "Labor’s battle to replace Bill Shorten: What’s really going on"
+        },
+        "commentsAllowed": {
+            "default": true
+        },
+        "body": {
+            "default": "<p>Hot on the heels of their shock election loss, the ALP is on the cusp of descending into the kind of infighting the party hasn’t seen since the Rudd-Gillard-Rudd era. </p><p>\n               <a href=\"https://www.dailytelegraph.com.au/news/national/federal-election/bill-shortens-shock-defeat-raises-questions-of-who-would-be-likely-to-lead-labor-to-victory/news-story/87f7e0d52fa33aa857640ef8bb6b81f7\">Anthony Albanese</a> and <a href=\"https://www.heraldsun.com.au/news/national/federal-election/federal-election-results-pms-new-economic-plan-as-labor-leadership-race-continues/live-coverage/1639d7e1f9527d6a6b7a0f2d612036af?fbclid=IwAR1cFKT7B7_EDjaGhfmneQNfOeVCleUYZBKpTkPm2DgS7lgUqazFrHoua_k\">Mr Bowen </a>both put their hand up for Shorten’s job this week, before Mr Bowen withdrew this afternoon. </p><p>Up and coming Labor frontbencher Jim Chalmers could still throw his hat into the ring. </p><p>The Queenslander will announce his decision tomorrow.  </p><p>If Mr Chalmers runs, Labor will go through an internal process to determine the next leader which could last a month as party members and Labor MPs get to vote in two separate ballots.</p><p>\n               <b>MORE POLITICS NEWS: </b>\n            </p><p channel=\"Web,Tablet\">\n               <b><a capiid=\"ed59ab56d9b2e05bb1f623f92259b503\" class=\"capi-link\">How ScoMo’s ‘miracle’ win will hit your wallet</a></b>\n            </p><p channel=\"Web,Tablet\">\n               <b><a capiid=\"264a46c00373ff0e4c78f85a2109aca2\" class=\"capi-link\">What the Coalition victory means for you</a></b>\n            </p><p channel=\"Web,Tablet\">\n               <b><a capiid=\"3fdc14a72415e65d8ff473bda9821351\" class=\"capi-link\">How Queensland helped deliver a Coalition win</a></b>\n            </p><p channel=\"Web,Tablet\">\n               <b><a capiid=\"ef90c3f157070dce44ddc20c0b3245fa\" class=\"capi-link\">Albanese vs Bowen: What you don’t know</a></b>\n            </p><p channel=\"Web,Tablet\"/><p/><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"997f584463e0e22644ffed56c3d010ed\"></a>\n            </p><p>‘Albo’ is aligned to Labor’s Left faction, while Mr Bowen and Mr Chalmers belong to Labor’s Right.</p><p>The Right was openly divided today over whether to back Mr Bowen, given he was the architect of Labor’s policy to axe tax refunds for franking credits.</p><p>The policy, which cost Labor support in key marginal electorates, is considered one of the main reasons for its stunning election loss.</p><p>The Left faction has swung behind ‘Albo’ after Tanya Plibersek - the other key Left candidate - bowed out of the race. </p><p>\n               <b>TEAM ALBO V TEAM BOWEN </b>\n            </p><p>Support for Mr Albanese and Mr Bowen mostly split on factional lines - but not entirely. </p><p>Labor giant Penny Wong backed Mr Albanese, which is unsurprising given they are both members of the party’s Left faction. </p><p>But Tony Burke and Kristina Keneally, senior figures of the NSW Right, have also indicated support for Mr Albanese.</p><p>Bill Shorten’s Victorian Right faction was understood to be backing Mr Bowen before he withdrew.</p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"48291458c1e9e4848d9f5c059614382f\"></a>\n            </p><p>\n               <b>WHO IS ON LABOR’S RIGHT AND LEFT?</b>\n            </p><p>Most Labor MPs are members of either the Right or the Left faction of the wider Australian Labor Party, with only a few unaligned. </p><p>The Right, the more socially conservative faction, is currently dominant.</p><p>Most former party leaders, including Bill Shorten, have come from this faction. </p><p>Julia Gillard was an exception but she had the backing of the Right faction. </p><p>There are also sub-factions of the Left and Right in each state and territory, which won’t necessarily back the same person for the leadership. </p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"eac910e4da05571be64b3fc73721ae6d\"></a>\n            </p><p>Here’s how the current Shadow cabinet members are aligned: </p><p>\n               <b>THE LEFT FACTION</b>\n            </p><p>\n               <b/>\n            </p><p channel=\"Web,Tablet\">\n               <a capiid=\"705a5892864ae00435c168f60cbebaa7\" class=\"capi-webframe\">NED-0646-shadow-ministers-left</a>\n            </p><p/><p/><p>\n               <b>THE RIGHT FACTION</b>\n            </p><p>\n               <b/>\n            </p><p channel=\"Web,Tablet\">\n               <a capiid=\"a3b7836f032957bb8b53e972f549561d\" class=\"capi-webframe\">NED-0646-shadow-ministers-right</a>\n            </p><p/><p/><p/><p>\n               <b>WHY WON’T TANYA PLIBERSEK RUN?</b>\n            </p><p>As deputy Labor leader, Tanya Plibersek would have been a natural successor to Bill Shorten. </p><p>But she confirmed on Monday she wouldn’t be running against Anthony Albanese. </p><p>Both are members of the Left faction, so it would have split the vote between them if they each ran for the leadership. </p><p>She was also part of the central leadership team which led Labor to a loss, while Mr Albanese was more on the fringe as Shadow Infrastructure Minister. </p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"d5801c91e2b6540594655aee1b649f0c\"></a>\n            </p><p>Ms Plibersek cited family reasons for her decision not to run. </p><p>In a statement on Monday she noted she had support from across the party to be elected leader but said “now is not my time”. </p><p>“At this point, I cannot reconcile the important responsibilities I have to my family with the additional responsibilities of the Labor leadership,” Ms Plibersek said. </p><p>“I know some people will be disappointed with this decision. </p><p>“I intend to continue as deputy leader until the leadership is determined. </p><p>“At that point I will I serve in whatever capacity my colleagues best think can help Labor return to government.” </p><p>\n               <b>PENNY WONG’S WARNING FOR BILL SHORTEN</b>\n            </p><p>Penny Wong sent a thinly veiled caution to the outgoing Labor leader today not to get involved in the process to elect his successor. </p><p>It comes after reports Mr Shorten has been “actively lobbying” colleagues to ensure someone runs against Mr Albanese.</p><p>Their rivalry comes from the last leadership contest in 2013 after Labor lost government.</p><p>Mr Shorten and Mr Albanese both ran for the top job.</p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"c96a9079aca8734271335f00b2547b69\"></a>\n            </p><p>Mr Albanese won the popular vote of ALP party base but Mr Shorten won more support from the Labor caucus. </p><p>The two ballots are weighted equally when Labor elects a new leader but the caucus vote got Mr Shorten across the line. </p><p>Asked if Mr Shorten was lobbying for someone to run against Mr Albanese, Senator Wong said: “I would be surprised if that were occurring.” </p><p>“I’d be surprised because it’s not consistent with the role he now has and I’d be surprised because it would potentially undermine the very unity he has been part of developing and building in Opposition,” she said. </p><p>\n               <b>WHAT HAPPENS NEXT?</b>\n            </p><p>If more than one candidate emerges for the leadership, nominations for a leadership ballot must be held first and then Labor’s party base will get to vote.</p><p>That took two weeks in the 2013 contest. </p><p>Labor MPs will then get their vote. </p><p>The two ballots will be evenly weighted to determine the next leader. </p>"
+        },
+        "extendedHeadline": {
+            "default": "Labor’s battle to replace Bill Shorten: What’s really going on"
+        },
+        "schemaVersion": "v3.0"
+    }
+}

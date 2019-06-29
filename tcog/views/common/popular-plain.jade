@@ -1,0 +1,16 @@
+include ./_popular-common.jade
+
+div(class='module most-popular ' + moduleClasses)
+    if (popularHeading)
+        div.module-header
+            h3.heading= popularHeading
+    div.module-content
+        ol
+            - for (var i = 0; i < results.length; i++)
+                - var lipos     = 'lipos-' + (i + 1);
+                - var lirpos    = 'lirpos-' + (results.length - i);
+                li(class = "#{lipos} #{lirpos}")
+                    a(href='#{results[i].domainLinks[0].link}')= (results[i].title||"").trim()
+
+if data.isLegacy
+    // tcog: legacy redirect 

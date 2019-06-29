@@ -1,0 +1,8 @@
+dist
+node_modules
+
+# Exclude yarn.log files
+yarn-error.log
+
+# Exclude database dump
+dump.rdb

@@ -1,0 +1,248 @@
+{
+    "totalHits": 2018265,
+    "offset": 0,
+    "pageSize": 3,
+    "results": [
+        {
+            "contentType": "NEWS_STORY",
+            "id": {
+                "value": "baac72074659989f8860dac05ac432b7",
+                "link": "https://cdn.newsapi.com.au/sit/content/v2/baac72074659989f8860dac05ac432b7"
+            },
+            "originId": "DailyTelegraph-350734",
+            "origin": "WORDPRESS",
+            "channel": "NONE",
+            "title": "Man hit by car on Pacific Motorway M1 at Oxenford",
+            "altTitle": "",
+            "subtitle": "Man hit by car on Pacific Motorway M1 at Oxenford",
+            "description": "LANES have been closed and traffic is banked up for more than two kilometres after man was hit by a vehicle travelling on the M1 near Oxenford this morning.\n\n",
+            "link": "https://cdn.newsapi.com.au/sit/link/baac72074659989f8860dac05ac432b7?domain=goldcoastbulletinsit.com.au",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "The Daily Telegraph",
+            "creditedSource": "Gold Coast Bulletin",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-07-06T01:20:40.000Z",
+            "dateLive": "2018-07-06T01:20:40.000Z",
+            "customDate": "2018-07-06T01:13:56.000Z",
+            "dateCreated": "2018-07-06T01:20:42.806Z",
+            "status": "ACTIVE",
+            "thumbnailImage": {
+                "contentType": "IMAGE",
+                "id": {
+                    "value": "9a642bee3c5f64234a06e5049d9f114f",
+                    "link": "https://cdn.newsapi.com.au/sit/image/v1/9a642bee3c5f64234a06e5049d9f114f"
+                },
+                "originId": "DailyTelegraph-350609-spp_thumbnail",
+                "origin": "WORDPRESS",
+                "title": "Test",
+                "description": "Test",
+                "link": "https://cdn.newsapi.com.au/sit/image/v1/9a642bee3c5f64234a06e5049d9f114f",
+                "paidStatus": "NON_PREMIUM",
+                "originalSource": "DailyTelegraph",
+                "creditedSource": "DailyTelegraph",
+                "version": "PUBLISHED",
+                "dateUpdated": "2018-07-06T01:20:40.000Z",
+                "dateLive": "2018-07-06T01:20:40.000Z",
+                "dateCreated": "2018-07-05T06:42:57.000Z",
+                "status": "ACTIVE",
+                "related": [],
+                "domainLinks": [],
+                "categories": [],
+                "keywords": [],
+                "authors": [],
+                "domains": [],
+                "locationGeoPoints": [],
+                "userOriginUpdated": "wordpress",
+                "systemOriginUpdated": "WORDPRESS",
+                "domainOriginUpdated": "DailyTelegraph",
+                "urlTitle": "test",
+                "format": "png",
+                "width": 100,
+                "height": 75,
+                "imageName": "Sample-png-image-100kb",
+                "imageType": "THUMBNAIL",
+                "sourceImageId": "DailyTelegraph-350609"
+            },
+            "related": [],
+            "domainLinks": [
+                {
+                    "name": "goldcoastbulletinsit.com.au",
+                    "link": "https://cdn.newsapi.com.au/sit/link/baac72074659989f8860dac05ac432b7?domain=goldcoastbulletinsit.com.au"
+                },
+                {
+                    "name": "goldcoastbulletin.com.au",
+                    "link": "https://www.goldcoastbulletinsit.com.au/lifestyle/man-hit-by-car-on-pacific-motorway-m1-at-oxenford/news-story/baac72074659989f8860dac05ac432b7"
+                }
+            ],
+            "primaryCategory": {
+                "value": "/display/goldcoastbulletin.com.au/Web/Gold Coast Bulletin/Lifestyle/Travel GoldCoast Features/",
+                "link": "https://cdn.newsapi.com.au/sit/category/v2/display/goldcoastbulletin.com.au/Web/Gold%20Coast%20Bulletin/Lifestyle/Travel%20GoldCoast%20Features/",
+                "id": "1226927103045",
+                "isDominant": true
+            },
+            "categories": [
+                {
+                    "value": "/display/goldcoastbulletin.com.au/Web/Gold Coast Bulletin/Lifestyle/Travel GoldCoast Features/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/display/goldcoastbulletin.com.au/Web/Gold%20Coast%20Bulletin/Lifestyle/Travel%20GoldCoast%20Features/",
+                    "id": "1226927103045",
+                    "isDominant": true
+                },
+                {
+                    "value": "/keyword/newscorpaustralia.com/NSW/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/keyword/newscorpaustralia.com/NSW/"
+                },
+                {
+                    "value": "/rating/newscorpaustralia.com/G/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/rating/newscorpaustralia.com/G/"
+                },
+                {
+                    "value": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Lifestyle/Travel GoldCoast Features/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/display/goldcoastbulletin.com.au/Gold%20Coast%20Bulletin/Lifestyle/Travel%20GoldCoast%20Features/",
+                    "id": "1226927106310",
+                    "isSyndicated": true
+                }
+            ],
+            "keywords": [
+                "NSW"
+            ],
+            "authors": [],
+            "domains": [
+                "goldcoastbulletin.com.au"
+            ],
+            "locationGeoPoints": [],
+            "socialTitle": "Man hit by car on Pacific Motorway M1 at Oxenford",
+            "seoHeadline": "Man hit by car on Pacific Motorway M1 at Oxenford",
+            "userOriginUpdated": "wordpress",
+            "systemOriginUpdated": "WORDPRESS",
+            "domainOriginUpdated": "DailyTelegraph",
+            "urlTitle": "man-hit-by-car-on-pacific-motorway-m1-at-oxenford",
+            "revision": 1,
+            "standFirst": "LANES have been closed and traffic is banked up for more than two kilometres after man was hit by a vehicle travelling on the M1 near Oxenford this morning.\n\n",
+            "kicker": "GCB",
+            "altKicker": "",
+            "byline": "",
+            "commentsAllowed": false,
+            "commentsTotal": 0,
+            "commentsShown": false,
+            "authorProfileIds": [],
+            "bylineNames": [],
+            "bylineTitles": [],
+            "bulletList": [],
+            "topics": [],
+            "liveCoverage": {
+                "iframeSrc": "false",
+                "status": "disable"
+            }
+        },
+        {
+            "contentType": "NEWS_STORY",
+            "id": {
+                "value": "d04e5fb88e99e5b1cb9cae341ddcc5a6",
+                "link": "https://cdn.newsapi.com.au/sit/content/v2/d04e5fb88e99e5b1cb9cae341ddcc5a6"
+            },
+            "originId": "monthly",
+            "origin": "CAINER",
+            "title": "HOROSCOPES BY JONATHAN CAINER",
+            "subtitle": "300618",
+            "description": "Jonathan Cainer monthly horoscopes",
+            "originalSource": "Jonathan_Cainer",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-07-06T01:16:11.812Z",
+            "dateLive": "2018-07-06T01:16:11.812Z",
+            "dateCreated": "2018-07-06T01:16:11.812Z",
+            "status": "ACTIVE",
+            "related": [],
+            "domainLinks": [],
+            "primaryCategory": {
+                "value": "/display/cainer.com/horoscopes/monthly/",
+                "link": "https://cdn.newsapi.com.au/sit/category/v2/display/cainer.com/horoscopes/monthly/"
+            },
+            "categories": [
+                {
+                    "value": "/display/cainer.com/horoscopes/monthly/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/display/cainer.com/horoscopes/monthly/"
+                },
+                {
+                    "value": "/display/cainer.com/horoscopes/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/display/cainer.com/horoscopes/"
+                }
+            ],
+            "keywords": [
+                "cainer",
+                "horoscope",
+                "monthly"
+            ],
+            "authors": [
+                "Jonathan Cainer"
+            ],
+            "domains": [],
+            "locationGeoPoints": [],
+            "urlTitle": "300618",
+            "revision": 10730,
+            "standFirst": "As July begins, although the World Cup is in full swing, my focus is drawn to teams of a different nature. Just days before it is partially eclipsed, the Sun is in Cancer, completing the final, in a series, of Water Grand Trines involving Jupiter (in watery Scorpio) and Neptune (also in a water sign, Pisces). Meanwhile, Venus, Saturn and Uranus are uniting in their own Grand Trine of Earth signs. But these formations aren't in competition. And towards the end of the month a total lunar eclipse, conjunct Mars, suggests we may have to change our perception of winning. There can be victory through harmony.\n\n",
+            "commentsTotal": 0,
+            "authorProfileIds": [],
+            "bylineNames": [],
+            "bylineTitles": [],
+            "bulletList": [],
+            "topics": []
+        },
+        {
+            "contentType": "NEWS_STORY",
+            "id": {
+                "value": "621c068e25a49ea0498c35a127ef764d",
+                "link": "https://cdn.newsapi.com.au/sit/content/v2/621c068e25a49ea0498c35a127ef764d"
+            },
+            "originId": "monthly-pisces",
+            "origin": "CAINER",
+            "title": "Pisces",
+            "subtitle": "Feb 20 - Mar 20",
+            "description": "PISCES (Feb 20 - Mar 20)",
+            "originalSource": "Jonathan_Cainer",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-07-06T01:16:11.811Z",
+            "dateLive": "2018-07-06T01:16:11.811Z",
+            "dateCreated": "2018-07-06T01:16:11.811Z",
+            "status": "ACTIVE",
+            "related": [],
+            "domainLinks": [],
+            "primaryCategory": {
+                "value": "/display/cainer.com/horoscopes/monthly/pisces/",
+                "link": "https://cdn.newsapi.com.au/sit/category/v2/display/cainer.com/horoscopes/monthly/pisces/"
+            },
+            "categories": [
+                {
+                    "value": "/display/cainer.com/horoscopes/monthly/pisces/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/display/cainer.com/horoscopes/monthly/pisces/"
+                },
+                {
+                    "value": "/display/cainer.com/horoscopes/",
+                    "link": "https://cdn.newsapi.com.au/sit/category/v2/display/cainer.com/horoscopes/"
+                }
+            ],
+            "keywords": [
+                "pisces",
+                "cainer",
+                "horoscope",
+                "monthly"
+            ],
+            "authors": [
+                "Jonathan Cainer"
+            ],
+            "domains": [],
+            "locationGeoPoints": [],
+            "urlTitle": "feb-20-mar-20",
+            "revision": 10730,
+            "standFirst": "Your July Monthly Forecast:  Have you ever been lost and started down one path, only to backtrack and take another... then wonder if the first path was the right one all along? When you can't find your way, you can ask for directions, look for road signs or open up Google Maps. In other areas of life, though, the answer isn't always as easy to find. As your ruler Jupiter turns direct this month remember that second-guessing will get you nowhere fast. As Venus moves opposite your sign, just take one step forward. Then another. You'll be amazed where you end up.\n\n",
+            "kicker": "pisces",
+            "commentsTotal": 0,
+            "authorProfileIds": [],
+            "bylineNames": [],
+            "bylineTitles": [],
+            "bulletList": [],
+            "topics": []
+        }
+    ],
+    "resultSize": 3,
+    "warnings": []
+}

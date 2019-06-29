@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+html {
+	font-size: 66.67%;
+}
+
+body {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 3em;
+	padding: 0.5em;
+	padding-left: 0.3em;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-family: "Ostrich Sans", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1:after {
+	display: inline-block;
+	content: "Event-based middleware performance management";
+	color: rgba(0,0,0,0.1);
+	height: 1em;
+	overflow: hidden;
+	padding-left: 0.3em;
+}
+
+th, td, caption {
+	text-align: left;
+	vertical-align: top;
+	-webkit-transition: background-color 250ms linear;
+	-moz-transition: background-color 250ms linear;
+	transition: background-color 250ms linear;
+}
+
+caption {
+	background-color: #FFE;
+	padding: 1em;
+}
+
+th {
+	background-color: #FFD;
+	padding: 1em;
+}
+
+td {
+	padding: 1em;
+}
+
+tr {
+	border-top: solid #AA0 1px;
+	background-color: white;
+}
+
+tbody tr:hover {
+	background-color: #EFF;
+	border-top: solid #0AA 1px;
+}
+
+tbody tr:hover + tr {
+	border-top: solid #0AA 1px;
+}
+
+tbody tr:hover th {
+	background-color: #DFF;
+}
+
+tr.slow {
+	background-color: #FEE;
+	border-top: solid #A00 1px;
+}
+
+tr.slow + tr {
+	border-top: solid #A00 1px;
+}
+
+tr.slow pre, tr.slow th {
+	background-color: #FDD;
+}
+
+table {
+	font-size: 1.2em;
+	min-width: 600px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.name {
+	min-width: 150px;
+	width: 20%;
+}
+
+.time {
+	width: 80px;
+}
+
+.data {
+	width: 80%;
+}
+
+pre {
+	word-wrap: break-word;
+}
+
+pre, ul.stack {
+	background-color: rgba(0,0,0,0.05);
+	font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+	font-size: 0.9em;
+	color: rgba(0,0,0,0.8);
+	padding: 1em;
+}
+
+hr {
+	border: none;
+	border-bottom: dashed #AAA 1px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+summary, details, details * {
+	cursor: pointer;
+	outline: none;
+}
+
+ul.stack li {
+	font-family: inherit;
+	line-height: 1.4em;
+	padding: 0.4em;
+	margin-left: 1.5em;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 1em;
+}
+
+.url {
+	display: block;
+	color: rgba(0,0,0,0.5);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}

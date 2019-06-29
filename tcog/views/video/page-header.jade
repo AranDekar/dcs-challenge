@@ -1,0 +1,14 @@
+if data.length > 0
+
+    - var nonRoot = /\//
+    - var children = data.filter(function(item){ return !item.fullTitle.match( nonRoot )})
+    nav
+
+    for item in children
+
+        - var itemLink = '/video/' + item.linkPath + '/'
+
+        - // Is the current page a descendent of this item?
+        - var itemClass = display.path && display.path.replace(/^\/+/,'').toLowerCase().indexOf(item.fullTitle.toLowerCase()) === 0 ? 'selected' : null
+
+        a(href=itemLink, class=itemClass )= item.title

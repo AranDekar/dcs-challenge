@@ -1,0 +1,1980 @@
+{
+    "results": [
+        {
+            "id": "ba4a71df01c7ad4b3f28baca1489c144",
+            "link": {
+                "self": "https://content-sit.api.news/v3/articles/ba4a71df01c7ad4b3f28baca1489c144",
+                "canonical": "https://news.com.au/finance/work/leaders/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+            },
+            "type": "article",
+            "draft": false,
+            "status": "active",
+            "locale": "en_AU",
+            "originalLocale": "en_AU",
+            "platform": {
+                "id": "19b9f24a-6015-11e7-a194-fecf0d0fa905",
+                "system": "methode",
+                "documentId": "1d65c950-092d-4420-b273-3bd6604985ea",
+                "parentId": "19b9f24a-6015-11e7-a194-fecf0d0fa905",
+                "userUpdated": "lentinir1",
+                "systemUpdated": "methode",
+                "instanceUpdated": "None",
+                "capiOrigin": "AU"
+            },
+            "date": {
+                "live": "2017-07-03T17:29:00.000Z",
+                "updated": "2017-07-03T17:47:50.000Z",
+                "custom": "2017-07-03T17:47:00.000Z",
+                "created": "2017-07-03T17:29:00.000Z",
+                "processed": "2017-07-03T17:47:54.754Z"
+            },
+            "categories": {
+                "rating": [
+                    {
+                        "id": "1073dc6b88ea2a678b643016acf6d668",
+                        "slug": "rating-g",
+                        "path": "/rating/G",
+                        "provider": "methode",
+                        "providerSource": "auto",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/1073dc6b88ea2a678b643016acf6d668"
+                        }
+                    }
+                ],
+                "keyword": [
+                    {
+                        "id": "e0eb7d40face8f70b389b2cc85bb5169",
+                        "slug": "keyword-macron",
+                        "path": "/keyword/MACRON",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/e0eb7d40face8f70b389b2cc85bb5169"
+                        }
+                    }
+                ]
+            },
+            "keywords": [
+                "MACRON"
+            ],
+            "revision": {
+                "major": 1499104070000,
+                "minor": 0
+            },
+            "rightsMetadata": {
+                "originatedSource": "News Corp Australia Network"
+            },
+            "target": {
+                "domainLink": {
+                    "heraldsun.com.au": {
+                        "link": "https://heraldsun.com.au/business/work/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "themercury.com.au": {
+                        "link": "https://themercury.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "adelaidenow.com.au": {
+                        "link": "https://adelaidenow.com.au/business/work/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "goldcoastbulletin.com.au": {
+                        "link": "https://goldcoastbulletin.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "dailytelegraph.com.au": {
+                        "link": "https://dailytelegraph.com.au/business/work/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "perthnow.com.au": {
+                        "link": "https://perthnow.com.au/business/work/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "ntnews.com.au": {
+                        "link": "https://ntnews.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "news.com.au": {
+                        "link": "https://news.com.au/finance/work/leaders/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "geelongadvertiser.com.au": {
+                        "link": "https://geelongadvertiser.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "cairnspost.com.au": {
+                        "link": "https://cairnspost.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "weeklytimesnow.com.au": {
+                        "link": "https://weeklytimesnow.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "townsvillebulletin.com.au": {
+                        "link": "https://townsvillebulletin.com.au/news/world/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    },
+                    "couriermail.com.au": {
+                        "link": "https://couriermail.com.au/business/work/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    }
+                },
+                "domains": [
+                    "heraldsun.com.au",
+                    "themercury.com.au",
+                    "goldcoastbulletin.com.au",
+                    "adelaidenow.com.au",
+                    "dailytelegraph.com.au",
+                    "perthnow.com.au",
+                    "ntnews.com.au",
+                    "news.com.au",
+                    "geelongadvertiser.com.au",
+                    "cairnspost.com.au",
+                    "weeklytimesnow.com.au",
+                    "townsvillebulletin.com.au",
+                    "couriermail.com.au"
+                ],
+                "sections": [
+                    {
+                        "id": "1226770597010",
+                        "path": "/section/main/newscorpaustralia.com/Web/NewsNetwork/Finance - syndicated/Work/Leaders",
+                        "slug": "section-main-newscorpaustraliacom-web-newsnetwork-finance-syndicated-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226770597010"
+                        }
+                    },
+                    {
+                        "id": "1226490532755",
+                        "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Network News/World",
+                        "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226490532755"
+                        }
+                    },
+                    {
+                        "id": "1226564882037",
+                        "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Network News/World/news.com.auEUROPE",
+                        "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-networknews-world-newscomaueurope",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226564882037"
+                        }
+                    },
+                    {
+                        "id": "1226544095474",
+                        "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Finance - syndicated",
+                        "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226544095474"
+                        }
+                    },
+                    {
+                        "id": "1226544451302",
+                        "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Finance - syndicated/Work",
+                        "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226544451302"
+                        }
+                    }
+                ],
+                "displays": [
+                    {
+                        "id": "1226770597167",
+                        "path": "/display/adelaidenow.com.au/Finance - syndicated/Work/Leaders",
+                        "slug": "display-adelaidenowcomau-finance-syndicated-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226770597167"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226770597164",
+                        "path": "/display/dailytelegraph.com.au/Finance - syndicated/Work/Leaders",
+                        "slug": "display-dailytelegraphcomau-finance-syndicated-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226770597164"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226770597426",
+                        "path": "/display/perthnow.com.au/Finance - syndicated/Work/Leaders",
+                        "slug": "display-perthnowcomau-finance-syndicated-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226770597426"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226770597165",
+                        "path": "/display/heraldsun.com.au/Finance - syndicated/Work/Leaders",
+                        "slug": "display-heraldsuncomau-finance-syndicated-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226770597165"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1225879997960",
+                        "path": "/display/news.com.au/Finance/Work/Leaders",
+                        "slug": "display-newscomau-finance-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1225879997960"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226770597166",
+                        "path": "/display/couriermail.com.au/Finance - syndicated/Work/Leaders",
+                        "slug": "display-couriermailcomau-finance-syndicated-work-leaders",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226770597166"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226692643468",
+                        "path": "/display/goldcoastbulletin.com.au/Network News/World",
+                        "slug": "display-goldcoastbulletincomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226692643468"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226628352350",
+                        "path": "/display/adelaidenow.com.au/Network News/World",
+                        "slug": "display-adelaidenowcomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226628352350"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226696922805",
+                        "path": "/display/ntnews.com.au/Network News/World",
+                        "slug": "display-ntnewscomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696922805"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226618422491",
+                        "path": "/display/dailytelegraph.com.au/Network News/World",
+                        "slug": "display-dailytelegraphcomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226618422491"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226618422489",
+                        "path": "/display/heraldsun.com.au/Network News/World",
+                        "slug": "display-heraldsuncomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226618422489"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226603199045",
+                        "path": "/display/perthnow.com.au/Network News/World",
+                        "slug": "display-perthnowcomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226603199045"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226696922808",
+                        "path": "/display/townsvillebulletin.com.au/Network News/World",
+                        "slug": "display-townsvillebulletincomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696922808"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696922806",
+                        "path": "/display/weeklytimesnow.com.au/Network News/World",
+                        "slug": "display-weeklytimesnowcomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696922806"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226346011383",
+                        "path": "/display/news.com.au/World News",
+                        "slug": "display-newscomau-worldnews",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226346011383"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226646735401",
+                        "path": "/display/couriermail.com.au/Network News/World",
+                        "slug": "display-couriermailcomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226646735401"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226696922804",
+                        "path": "/display/geelongadvertiser.com.au/Network News/World",
+                        "slug": "display-geelongadvertisercomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696922804"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226683748662",
+                        "path": "/display/themercury.com.au/Network News/World",
+                        "slug": "display-themercurycomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226683748662"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696922807",
+                        "path": "/display/cairnspost.com.au/Network News/World",
+                        "slug": "display-cairnspostcomau-networknews-world",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696922807"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226569896412",
+                        "path": "/display/news.com.au/World News/europe",
+                        "slug": "display-newscomau-worldnews-europe",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226569896412"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018264720",
+                        "path": "/display/goldcoastbulletin.com.au/Finance - syndicated",
+                        "slug": "display-goldcoastbulletincomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018264720"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226617455913",
+                        "path": "/display/adelaidenow.com.au/Finance - syndicated",
+                        "slug": "display-adelaidenowcomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226617455913"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018278910",
+                        "path": "/display/ntnews.com.au/Finance - syndicated",
+                        "slug": "display-ntnewscomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018278910"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226617455914",
+                        "path": "/display/dailytelegraph.com.au/Finance - syndicated",
+                        "slug": "display-dailytelegraphcomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226617455914"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226617455907",
+                        "path": "/display/heraldsun.com.au/Finance - syndicated",
+                        "slug": "display-heraldsuncomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226617455907"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226597501825",
+                        "path": "/display/perthnow.com.au/Finance - syndicated",
+                        "slug": "display-perthnowcomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226597501825"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018264718",
+                        "path": "/display/townsvillebulletin.com.au/Finance - syndicated",
+                        "slug": "display-townsvillebulletincomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018264718"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1111112062038",
+                        "path": "/display/news.com.au/Finance",
+                        "slug": "display-newscomau-finance",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1111112062038"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226637308375",
+                        "path": "/display/couriermail.com.au/Finance - syndicated",
+                        "slug": "display-couriermailcomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226637308375"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018264717",
+                        "path": "/display/geelongadvertiser.com.au/Finance - syndicated",
+                        "slug": "display-geelongadvertisercomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018264717"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226680532430",
+                        "path": "/display/themercury.com.au/Finance - syndicated",
+                        "slug": "display-themercurycomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226680532430"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018264719",
+                        "path": "/display/cairnspost.com.au/Finance - syndicated",
+                        "slug": "display-cairnspostcomau-finance-syndicated",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018264719"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018420923",
+                        "path": "/display/goldcoastbulletin.com.au/Finance - syndicated/Work",
+                        "slug": "display-goldcoastbulletincomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018420923"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226617464509",
+                        "path": "/display/adelaidenow.com.au/Finance - syndicated/Work",
+                        "slug": "display-adelaidenowcomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226617464509"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018420922",
+                        "path": "/display/ntnews.com.au/Finance - syndicated/Work",
+                        "slug": "display-ntnewscomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018420922"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226617464511",
+                        "path": "/display/dailytelegraph.com.au/Finance - syndicated/Work",
+                        "slug": "display-dailytelegraphcomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226617464511"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226617464510",
+                        "path": "/display/heraldsun.com.au/Finance - syndicated/Work",
+                        "slug": "display-heraldsuncomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226617464510"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226597503297",
+                        "path": "/display/perthnow.com.au/Finance - syndicated/Work",
+                        "slug": "display-perthnowcomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226597503297"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018420921",
+                        "path": "/display/townsvillebulletin.com.au/Finance - syndicated/Work",
+                        "slug": "display-townsvillebulletincomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018420921"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1111112062335",
+                        "path": "/display/news.com.au/Finance/Work",
+                        "slug": "display-newscomau-finance-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1111112062335"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1226637313603",
+                        "path": "/display/couriermail.com.au/Finance - syndicated/Work",
+                        "slug": "display-couriermailcomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226637313603"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018420925",
+                        "path": "/display/geelongadvertiser.com.au/Finance - syndicated/Work",
+                        "slug": "display-geelongadvertisercomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018420925"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018420924",
+                        "path": "/display/themercury.com.au/Finance - syndicated/Work",
+                        "slug": "display-themercurycomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018420924"
+                        },
+                        "dominant": false
+                    },
+                    {
+                        "id": "1228018420926",
+                        "path": "/display/cairnspost.com.au/Finance - syndicated/Work",
+                        "slug": "display-cairnspostcomau-finance-syndicated-work",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1228018420926"
+                        },
+                        "dominant": false
+                    }
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Staff writers",
+                    "type": "editor"
+                },
+                {
+                    "name": "AFP",
+                    "type": "editor"
+                },
+                {
+                    "name": "Rosemarie Lentini",
+                    "type": "creator"
+                }
+            ],
+            "accessType": "free",
+            "channel": "none",
+            "headline": {
+                "default": "Macron assassination plot foiled"
+            },
+            "standfirst": {
+                "default": "<p>FRENCH police have thwarted a shocking plot to assassinate President Macron at a parade he’s set to attend with Donald Trump. </p>"
+            },
+            "related": {
+                "thumbnail": {
+                    "default": [
+                        "1e46b8cef31c85865f3daadb2fcff422",
+                        "8645034827af52e3b61c60e761696d65",
+                        "4929cf7677a35f4b739fd1768021cf1e",
+                        "5714a208c83904c61957ae9bbb1ee1fa",
+                        "00ec9d66aa3452b6186bfb1fc0f85900"
+                    ]
+                },
+                "primary": {
+                    "default": [
+                        "ee4ce7fd823039311a3ec20c84cf0f67",
+                        "3b31d523035fde0780564880ca3bcc5e"
+                    ]
+                }
+            },
+            "references": {
+                "1e46b8cef31c85865f3daadb2fcff422": {
+                    "id": "1e46b8cef31c85865f3daadb2fcff422",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/1e46b8cef31c85865f3daadb2fcff422",
+                        "media": "https://content-sit.api.news/v3/images/bin/1e46b8cef31c85865f3daadb2fcff422"
+                    }
+                },
+                "8645034827af52e3b61c60e761696d65": {
+                    "id": "8645034827af52e3b61c60e761696d65",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/8645034827af52e3b61c60e761696d65",
+                        "media": "https://content-sit.api.news/v3/images/bin/8645034827af52e3b61c60e761696d65"
+                    }
+                },
+                "4929cf7677a35f4b739fd1768021cf1e": {
+                    "id": "4929cf7677a35f4b739fd1768021cf1e",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/4929cf7677a35f4b739fd1768021cf1e",
+                        "media": "https://content-sit.api.news/v3/images/bin/4929cf7677a35f4b739fd1768021cf1e"
+                    }
+                },
+                "5714a208c83904c61957ae9bbb1ee1fa": {
+                    "id": "5714a208c83904c61957ae9bbb1ee1fa",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/5714a208c83904c61957ae9bbb1ee1fa",
+                        "media": "https://content-sit.api.news/v3/images/bin/5714a208c83904c61957ae9bbb1ee1fa"
+                    }
+                },
+                "4c0ff517d30593f163991f85bebbfba0": {
+                    "id": "4c0ff517d30593f163991f85bebbfba0",
+                    "type": "image",
+                    "captionOverride": "A 23-year-old man allegedly plotted to kill French President Emmanuel Macron (right) at a parade he is set to attend with US President Donald Trump (left). Picture: AP Photo/Evan Vucci, File",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/4c0ff517d30593f163991f85bebbfba0",
+                        "media": "https://content-sit.api.news/v3/images/bin/4c0ff517d30593f163991f85bebbfba0"
+                    }
+                },
+                "0ed6d3e5370798087680f79e0e5976c0": {
+                    "id": "0ed6d3e5370798087680f79e0e5976c0",
+                    "type": "image",
+                    "captionOverride": "On Bastille Day in 2002, president Jacques Chirac was the target of an assassination attempt on Paris’s Champs Elysees avenue. Picture: Supplied",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/0ed6d3e5370798087680f79e0e5976c0",
+                        "media": "https://content-sit.api.news/v3/images/bin/0ed6d3e5370798087680f79e0e5976c0"
+                    }
+                },
+                "c6b66a68246c3530077996e4d4398778": {
+                    "id": "c6b66a68246c3530077996e4d4398778",
+                    "type": "image",
+                    "captionOverride": "French President Emmanuel Macron speaks during a special congress gathering both houses of parliament in the palace of Versailles. Picture: Eric Ferferberg/Pool Photo via AP",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/c6b66a68246c3530077996e4d4398778",
+                        "media": "https://content-sit.api.news/v3/images/bin/c6b66a68246c3530077996e4d4398778"
+                    }
+                },
+                "ee4ce7fd823039311a3ec20c84cf0f67": {
+                    "id": "ee4ce7fd823039311a3ec20c84cf0f67",
+                    "type": "image",
+                    "captionOverride": "Sources say French police have foiled an extremist’s plot to kill President Emmanuel Macron. Picture: Etienne Laurent/Pool Photo via AP",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/ee4ce7fd823039311a3ec20c84cf0f67",
+                        "media": "https://content-sit.api.news/v3/images/bin/ee4ce7fd823039311a3ec20c84cf0f67"
+                    }
+                },
+                "d3b3674ac8acf0515a777f8963c7a84b": {
+                    "id": "d3b3674ac8acf0515a777f8963c7a84b",
+                    "type": "video",
+                    "captionOverride": "Macron wins parliamentary majority",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/videos/d3b3674ac8acf0515a777f8963c7a84b",
+                        "canonical": "https://news.com.au/finance/work/leaders/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    }
+                },
+                "3b31d523035fde0780564880ca3bcc5e": {
+                    "id": "3b31d523035fde0780564880ca3bcc5e",
+                    "type": "video",
+                    "captionOverride": "Macron vows to 'eradicate' woman's kidnappers",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/videos/3b31d523035fde0780564880ca3bcc5e",
+                        "canonical": "https://news.com.au/finance/work/leaders/emmanuel-macron-assassination-plot-foiled-by-french-police/news-story/ba4a71df01c7ad4b3f28baca1489c144"
+                    }
+                },
+                "00ec9d66aa3452b6186bfb1fc0f85900": {
+                    "id": "00ec9d66aa3452b6186bfb1fc0f85900",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/00ec9d66aa3452b6186bfb1fc0f85900",
+                        "media": "https://content-sit.api.news/v3/images/bin/00ec9d66aa3452b6186bfb1fc0f85900"
+                    }
+                }
+            },
+            "byline": {
+                "default": "Staff writers and AFP"
+            },
+            "kicker": {
+                "default": "Sick plan"
+            },
+            "intro": {
+                "default": "<p>A MAN has been charged with plotting to assassinate President Emmanuel Macron at France’s Bastille Day military parade which the French leader is set to attend with US President Donald Trump. </p>"
+            },
+            "seoOwner": {
+                "displayName": "news.com.au",
+                "domain": "news.com.au"
+            },
+            "seoTitle": "Emmanuel Macron assassination plot foiled by French police",
+            "commentsAllowed": {
+                "default": true
+            },
+            "body": {
+                "default": "<p>The 23-year-old is a suspected far-right extremist who told investigators he wanted to kill Mr Macron at the July 14 national day parade in Paris, a judicial source close to the investigation said. </p><p>He said he also wanted to attack “Muslims, Jews, blacks, homosexuals,” the source added.</p><p>\n               <a class=\"capi-image\" capiId=\"4c0ff517d30593f163991f85bebbfba0\"></a>\n            </p><p>Police arrested the man at his home on Wednesday in the northwest Paris suburb of Argenteuil after being alerted by users of an internet chatroom where the suspect allegedly said he wanted to buy a firearm. </p><p>Three kitchen knives were found in his vehicle and analysis of his computer found that he had conducted internet searches as part of his plot, the source said. </p><p>Mr Macron, France’s youngest president at 39, invited Mr Trump as his guest of honour for the July 14 parade which commemorates the storming of the Bastille prison in 1789 — the start of the French Revolution and a turning point in world history. </p><p>The two men have radically different political views and interests, but Mr Macron appears intent on trying to build a relationship with the US president and has warned against efforts to isolate him at a meeting of G20 nations this weekend. </p><p>The July 14 assassination plot recalls the plot of <i>The Day of the Jackal</i>, a book by spy writer Frederick Forsyth in which a hitman attempts to kill former French president Charles de Gaulle, the target of numerous real-life plots. </p><p>On Bastille Day in 2002, president Jacques Chirac was the target of an assassination attempt on Paris’s Champs Elysees avenue.</p><p>\n               <a class=\"capi-image\" capiId=\"0ed6d3e5370798087680f79e0e5976c0\"></a>\n            </p><p>The news comes as Mr Macron on Monday promised a “profound transformation” of French politics, proposing to slash by a third the number of MPs, and telling politicians he would call a referendum if they do not agree. </p><p>In his first address to members of the National Assembly and Senate since his election in May, Mr Macron delivered a US-style state of the nation speech in the Versailles palace, the former seat of French kings, saying the country must change. </p><p>“Until now, we were too often on the wrong track,” he said. “We preferred procedures to results, rules to initiative, a society where you live off inherited wealth, to a just society.” </p><p>He confirmed a plan to implement reform of France’s jaded political system, changes first raised during campaigning. </p><p>That would include shrinking the number of politicians in both houses of parliament — 577 in the lower house National Assembly and 348 in the Senate — by a third, saying it would have “positive effects on the general quality of parliamentary work”. </p><p>Mr Macron also pledged to introduce a degree of proportional representation into France’s winner-takes-all electoral system. <a class=\"capi-image\" capiId=\"c6b66a68246c3530077996e4d4398778\"></a>\n            </p><p>The move, long demanded by small parties such as the far-right National Front, would ensure “all tendencies are fairly represented”, he said. </p><p>The centrist president also warned the newly-elected politicians against triumphalism in the face of the “gravity of the circumstances” both in France, which is grappling with a stagnant economy, and in Europe which had “lost its way”. </p><p>“The building of Europe has been weakened by the spread of bureaucracy and by the growing scepticism that comes from that,” Mr Macron said. “The last 10 years have been cruel for Europe. We have managed crises but we have lost our way,” he said, adding that France would help drive a revival of the European idea of “social justice”. </p><p>\n               <a capiid=\"d3b3674ac8acf0515a777f8963c7a84b\" class=\"capi-video\">Macron wins parliamentary majority</a>\n            </p><p/><p/>"
+            },
+            "extendedHeadline": {
+                "default": "Emmanuel Macron assassination plot foiled by French police"
+            },
+            "schemaVersion": "v3.0"
+        },
+        {
+            "id": "05bc658b33a0ded6af338f48b2ad90bc",
+            "link": {
+                "self": "https://content-sit.api.news/v3/articles/05bc658b33a0ded6af338f48b2ad90bc"
+            },
+            "type": "article",
+            "draft": false,
+            "status": "active",
+            "locale": "en_AU",
+            "originalLocale": "en_AU",
+            "platform": {
+                "id": "e21cad9a-5fd4-11e7-a194-fecf0d0fa905",
+                "system": "methode",
+                "documentId": "7a2b72e4-f76a-4e87-a4d1-df83ce53a561",
+                "parentId": "22201124-5f9a-11e7-a01f-80ed8cf7a2bd",
+                "userUpdated": "system",
+                "instanceUpdated": "CourierMail",
+                "capiOrigin": "AU"
+            },
+            "date": {
+                "live": "2017-07-03T02:48:00.000Z",
+                "updated": "2017-07-03T18:44:52.000Z",
+                "custom": "2017-07-03T02:48:00.000Z",
+                "created": "2017-07-03T02:48:46.000Z",
+                "processed": "2017-07-04T03:29:56.692Z"
+            },
+            "categories": {
+                "tone": [
+                    {
+                        "id": "f550ac12ee8a06314e9a8ad554f50c24",
+                        "slug": "tone-positive",
+                        "path": "/tone/positive",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/f550ac12ee8a06314e9a8ad554f50c24"
+                        }
+                    }
+                ],
+                "person": [
+                    {
+                        "id": "ce62462c19267cfd42670ffbb23ce70b",
+                        "slug": "person-kevinrudd",
+                        "path": "/person/Kevin Rudd",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/ce62462c19267cfd42670ffbb23ce70b"
+                        }
+                    },
+                    {
+                        "id": "c5714886b3d15e2946023d39b45d1980",
+                        "slug": "person-johnhoward",
+                        "path": "/person/John Howard",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/c5714886b3d15e2946023d39b45d1980"
+                        }
+                    },
+                    {
+                        "id": "5eb3fd0e6ee8baceffd2eb02f5351014",
+                        "slug": "person-tonyabbott",
+                        "path": "/person/Tony Abbott",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/5eb3fd0e6ee8baceffd2eb02f5351014"
+                        }
+                    },
+                    {
+                        "id": "68e760af0d7c0eac110482488f7f83e3",
+                        "slug": "person-nickxenophon",
+                        "path": "/person/Nick Xenophon",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/68e760af0d7c0eac110482488f7f83e3"
+                        }
+                    },
+                    {
+                        "id": "95585b60fc55f2d3e0900b768c9c0d09",
+                        "slug": "person-meglees",
+                        "path": "/person/Meg Lees",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/95585b60fc55f2d3e0900b768c9c0d09"
+                        }
+                    },
+                    {
+                        "id": "83a5a6a4d16ea38ff78bb6d3456cc9e8",
+                        "slug": "person-leerhiannon",
+                        "path": "/person/Lee Rhiannon",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/83a5a6a4d16ea38ff78bb6d3456cc9e8"
+                        }
+                    }
+                ],
+                "rating": [
+                    {
+                        "id": "1073dc6b88ea2a678b643016acf6d668",
+                        "slug": "rating-g",
+                        "path": "/rating/G",
+                        "provider": "methode",
+                        "providerSource": "auto",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/1073dc6b88ea2a678b643016acf6d668"
+                        }
+                    }
+                ],
+                "location": [
+                    {
+                        "id": "d069a35f3531fae8840790f1f297c1c5",
+                        "slug": "location-oceania-nosubcontinent-australiaandnewzealand-australia-nostate-nosuburb-nosublocation",
+                        "path": "/location/Oceania/NOSUBCONTINENT/Australia and New Zealand/Australia/NOSTATE/NOSUBURB/NOSUBLOCATION",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "confidence": 76,
+                        "relevancy": 47,
+                        "frequency": 1,
+                        "classification": "auto",
+                        "continent": "Oceania",
+                        "country": "Australia",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/d069a35f3531fae8840790f1f297c1c5"
+                        }
+                    }
+                ],
+                "keyword": [
+                    {
+                        "id": "7e37a5511a94da9fd9e183dd8b8c201c",
+                        "slug": "keyword-australianpolitics",
+                        "path": "/keyword/Australian politics",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/7e37a5511a94da9fd9e183dd8b8c201c"
+                        }
+                    },
+                    {
+                        "id": "0de8e4c50116be1bbef95b1b6d7d0878",
+                        "slug": "keyword-arcanebeltwaypolitics",
+                        "path": "/keyword/arcane beltway politics",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/0de8e4c50116be1bbef95b1b6d7d0878"
+                        }
+                    },
+                    {
+                        "id": "fefaeae5eb218f8c0587e3f384914473",
+                        "slug": "keyword-esotericpreferenceflows",
+                        "path": "/keyword/esoteric preference flows",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/fefaeae5eb218f8c0587e3f384914473"
+                        }
+                    },
+                    {
+                        "id": "909b6649f0ce349897722f21e9ac7405",
+                        "slug": "keyword-greenhouseemissions",
+                        "path": "/keyword/greenhouse emissions",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/909b6649f0ce349897722f21e9ac7405"
+                        }
+                    },
+                    {
+                        "id": "cccef7227c67bda994216bc8ca0a6cf1",
+                        "slug": "keyword-fringe-dwellingminorityparty",
+                        "path": "/keyword/fringe-dwelling minority party",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/cccef7227c67bda994216bc8ca0a6cf1"
+                        }
+                    },
+                    {
+                        "id": "ccb8459707aef7a8ee06bf00545ead3f",
+                        "slug": "keyword-battlelines",
+                        "path": "/keyword/battle lines",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/ccb8459707aef7a8ee06bf00545ead3f"
+                        }
+                    },
+                    {
+                        "id": "f4e5dc21dcd8828a37b0b24d47f19072",
+                        "slug": "keyword-carbonprice",
+                        "path": "/keyword/carbon price",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/f4e5dc21dcd8828a37b0b24d47f19072"
+                        }
+                    },
+                    {
+                        "id": "3ab197f73c61059ee324135290348084",
+                        "slug": "keyword-policyplatforms",
+                        "path": "/keyword/policy platforms",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/3ab197f73c61059ee324135290348084"
+                        }
+                    },
+                    {
+                        "id": "5699a096cdd9c6ed082082539bb2259a",
+                        "slug": "keyword-policyruns",
+                        "path": "/keyword/policy runs",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/5699a096cdd9c6ed082082539bb2259a"
+                        }
+                    },
+                    {
+                        "id": "b1f676a688315c96ae8e3bd16bb33b3f",
+                        "slug": "keyword-climatechange",
+                        "path": "/keyword/climate change",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/b1f676a688315c96ae8e3bd16bb33b3f"
+                        }
+                    },
+                    {
+                        "id": "c2707e8d2de6350a34095100f7c744b2",
+                        "slug": "keyword-electioncommitment",
+                        "path": "/keyword/election commitment",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/c2707e8d2de6350a34095100f7c744b2"
+                        }
+                    },
+                    {
+                        "id": "dcda690e1319f809a0f34c9eb3c23eee",
+                        "slug": "keyword-marriageequality",
+                        "path": "/keyword/marriage equality",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/dcda690e1319f809a0f34c9eb3c23eee"
+                        }
+                    },
+                    {
+                        "id": "a5526a62518a45c4290ab8ab2a7d317c",
+                        "slug": "keyword-extraordinarymeasure",
+                        "path": "/keyword/extraordinary measure",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/a5526a62518a45c4290ab8ab2a7d317c"
+                        }
+                    },
+                    {
+                        "id": "3cfea1b134b672d46d9a0853b0780eb7",
+                        "slug": "keyword-historylesson",
+                        "path": "/keyword/history lesson",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/3cfea1b134b672d46d9a0853b0780eb7"
+                        }
+                    },
+                    {
+                        "id": "db243d02836a54fd2f9b054619d652d1",
+                        "slug": "keyword-roommeetings",
+                        "path": "/keyword/room meetings",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/db243d02836a54fd2f9b054619d652d1"
+                        }
+                    },
+                    {
+                        "id": "86667cf896058d655f8c25b998ff7c97",
+                        "slug": "keyword-refugeerights",
+                        "path": "/keyword/refugee rights",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/86667cf896058d655f8c25b998ff7c97"
+                        }
+                    },
+                    {
+                        "id": "924c8461cc537bb5d398f754bedce967",
+                        "slug": "keyword-schoolfunding",
+                        "path": "/keyword/school funding",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/924c8461cc537bb5d398f754bedce967"
+                        }
+                    },
+                    {
+                        "id": "3e7143aa94ae212d5e0d39ce59a83076",
+                        "slug": "keyword-democraticpower",
+                        "path": "/keyword/democratic power",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/3e7143aa94ae212d5e0d39ce59a83076"
+                        }
+                    },
+                    {
+                        "id": "7880872236235f2b0ce01d3385a9f3fc",
+                        "slug": "keyword-sectariansquabble",
+                        "path": "/keyword/sectarian squabble",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/7880872236235f2b0ce01d3385a9f3fc"
+                        }
+                    },
+                    {
+                        "id": "860e7ef1d0fe359522b5c1615f9424d4",
+                        "slug": "keyword-compromisedeal",
+                        "path": "/keyword/compromise deal",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/860e7ef1d0fe359522b5c1615f9424d4"
+                        }
+                    },
+                    {
+                        "id": "fd70c9b539a88ed35a2a44f4be27d8bb",
+                        "slug": "keyword-coresections",
+                        "path": "/keyword/core sections",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/fd70c9b539a88ed35a2a44f4be27d8bb"
+                        }
+                    },
+                    {
+                        "id": "d32ac2f1605b4f337caf1d3a0c4bafc9",
+                        "slug": "keyword-politicalfringes",
+                        "path": "/keyword/political fringes",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/d32ac2f1605b4f337caf1d3a0c4bafc9"
+                        }
+                    },
+                    {
+                        "id": "706086ec029ae509d1291d7d978275bb",
+                        "slug": "keyword-nationalparliament",
+                        "path": "/keyword/national parliament",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/706086ec029ae509d1291d7d978275bb"
+                        }
+                    },
+                    {
+                        "id": "3a6b96d8eb9b4176780365665a944f76",
+                        "slug": "keyword-australia",
+                        "path": "/keyword/Australia",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/3a6b96d8eb9b4176780365665a944f76"
+                        }
+                    },
+                    {
+                        "id": "c2eee5feb6c5eaea547014d4920f81fa",
+                        "slug": "keyword-australiaandnewzealand",
+                        "path": "/keyword/Australia and New Zealand",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/c2eee5feb6c5eaea547014d4920f81fa"
+                        }
+                    },
+                    {
+                        "id": "425c33cdd2a028a57e4edabf7d8515b1",
+                        "slug": "keyword-oceania",
+                        "path": "/keyword/Oceania",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/425c33cdd2a028a57e4edabf7d8515b1"
+                        }
+                    }
+                ]
+            },
+            "keywords": [
+                "marriage equality",
+                "John Howard",
+                "room meetings",
+                "democratic power",
+                "Oceania",
+                "school funding",
+                "battle lines",
+                "Kevin Rudd",
+                "history lesson",
+                "greenhouse emissions",
+                "carbon price",
+                "national parliament",
+                "arcane beltway politics",
+                "policy platforms",
+                "Nick Xenophon",
+                "core sections",
+                "climate change",
+                "Lee Rhiannon",
+                "extraordinary measure",
+                "Meg Lees",
+                "Australia and New Zealand",
+                "policy runs",
+                "esoteric preference flows",
+                "Australian politics",
+                "election commitment",
+                "Tony Abbott",
+                "sectarian squabble",
+                "Australia",
+                "political fringes",
+                "fringe-dwelling minority party",
+                "compromise deal",
+                "refugee rights"
+            ],
+            "revision": {
+                "major": 1499107492000,
+                "minor": 0
+            },
+            "rightsMetadata": {
+                "originatedSource": "The Courier-Mail"
+            },
+            "target": {
+                "domains": [
+                    "couriermail.com.au"
+                ],
+                "sections": [
+                    {
+                        "id": "",
+                        "path": "/section/main/couriermail.com.au/Tablet/Opinion",
+                        "slug": "section-main-couriermailcomau-tablet-opinion",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections"
+                        }
+                    }
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Paul Syvret",
+                    "type": "creator"
+                }
+            ],
+            "accessType": "premium",
+            "subscriptionSummary": {
+                "default": "EDITORIAL: If the Greens harbour any desire to remain relevant, and to make a contribution to the national interest, it is about time they learned that successful politics is all about the art of compromise."
+            },
+            "channel": "tablet",
+            "headline": {
+                "default": "Greens’ sanctimonious idealism repels voters"
+            },
+            "related": {
+                "primary": {
+                    "default": [
+                        "3c93c15fd4d94d8d8b0d7bb8b8e95bfc"
+                    ]
+                },
+                "optional": {
+                    "default": [
+                        "517cd1e2de38b7f1292c41ede3398313",
+                        "43704752237f25bd5dcf6444fc914f9b"
+                    ]
+                }
+            },
+            "references": {
+                "3c93c15fd4d94d8d8b0d7bb8b8e95bfc": {
+                    "id": "3c93c15fd4d94d8d8b0d7bb8b8e95bfc",
+                    "type": "image",
+                    "captionOverride": "Greens Senator Lee Rhiannon has been stirring up trouble for the party.",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/3c93c15fd4d94d8d8b0d7bb8b8e95bfc",
+                        "media": "https://content-sit.api.news/v3/images/bin/3c93c15fd4d94d8d8b0d7bb8b8e95bfc"
+                    }
+                },
+                "517cd1e2de38b7f1292c41ede3398313": {
+                    "id": "517cd1e2de38b7f1292c41ede3398313",
+                    "type": "image",
+                    "captionOverride": "Editorial strap for column hori",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/517cd1e2de38b7f1292c41ede3398313",
+                        "media": "https://content-sit.api.news/v3/images/bin/517cd1e2de38b7f1292c41ede3398313"
+                    }
+                },
+                "43704752237f25bd5dcf6444fc914f9b": {
+                    "id": "43704752237f25bd5dcf6444fc914f9b",
+                    "type": "image",
+                    "captionOverride": "Editorial strap for column vert",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/43704752237f25bd5dcf6444fc914f9b",
+                        "media": "https://content-sit.api.news/v3/images/bin/43704752237f25bd5dcf6444fc914f9b"
+                    }
+                }
+            },
+            "intro": {
+                "default": "<p id=\"U624170480212sNC\" style=\"font-stretch:102%;\">IN AUSTRALIAN politics it is not a great distance to travel from being a third player in the national parliament to becoming a fringe-dwelling minority party. Nor is it a long way to fall from being a party which one year acts as powerbroker in the Australian Senate to one that slowly shrivels into electoral irrelevance.</p>"
+            },
+            "seoOwner": {
+                "displayName": "The Courier-Mail",
+                "domain": "couriermail.com.au"
+            },
+            "commentsAllowed": {
+                "default": false
+            },
+            "body": {
+                "default": "<p>While many people blame the demise of the Australian Democrats on former leader Meg Lees and a decision to negotiate a deal on the GST with then prime minister John Howard in 1999, it was arguably the ensuing years of bitter internal division that lead to the party’s ultimate demise. The Democrats were deregistered as a political party in 2008.</p><p id=\"U624170480212u6H\" style=\"font-stretch:100%;\">Some pragmatic negotiations over the GST – which achieved exemptions for fresh food, health and education – could be seen as honouring the party’s then recent election commitment to work with the government of the ­<br/>day, yet it became a catalyst for internecine warfare.</p><p>This is a history lesson that the Australian Greens should heed closely as the recriminations and sniping over NSW Senator Lee Rhiannon continue in the wake of her expulsion from party room meetings. That quite extraordinary measure was taken after Senator Rhiannon broke ranks with other Greens MPs to publicly oppose a compromise deal allowing the Government’s “Gonski 2.0” school funding package to pass the Senate.</p><p>Since then, the battle lines have been drawn, with Senator Rhiannon describing herself as “roadkill” in a wider agenda aimed at undermining <br/>the democratic power of the NSW wing of the party.</p><p>This sectarian squabble is  just the sort of arcane politics that turn voters off in droves, regardless of their feelings about core Green policy platforms such as climate change, marriage equality or refugee rights.</p><p>In short, it is driven by narrow ideological purity, the sort of holier-than-thou politics which saw the Greens block the passage of then prime minister Kevin Rudd’s Emissions Trading Scheme in 2009. Ultimately, that short-term self-interest saw the ETS replaced by a carbon price that Tony Abbott swiftly repealed when in government. The end result, in other words, was the Greens’ bloody-mindedness ultimately working absolutely contrary to their stated aims.</p><p>If the Greens harbour any desire to remain relevant, and to make a contribution to the national interest, it is about time they learned that successful politics is all about the art of compromise. That means  using the numbers you have to negotiate the best possible outcome  with the government of the day, an area in which South Australian Senator Nick Xenophon has displayed considerable dexterity to date.</p><p>If the Greens wish their future to be the political fringes, then so be it; continue brawling inside a bubble at a time when a government riven by its own ugly internal tensions is desperate to get  some policy runs on the board and is prepared to deal accordingly.</p><p>Sanctimonious idealism may appeal to hard-core sections of the Greens base, but combined with factional infighting and discord it will repel voters. Accepting that sometimes half a win is better than a loss might also be a good start for the party.</p><p> </p><p><b>WHATEVER THE ELECTION DATE, TOURISM FIGHT MUST COME FIRST</b></p><p><b/></p><p>IT seems veteran boxing promoter Bob Arum knows something Queenslanders don’t: the date for the next state election. When talking about a rematch between new world champion Jeff Horn and his vanquished foe, legendary fighter Manny Pacquiao, the Las Vegas-based promoter indicated he’d been told a November election was likely. Red-faced Kate Jones, the state’s Major Events Minister, tried to laugh off Mr Arum’s insight by quickly adding “January we’re due”.</p><p>Still, it appeared the jig is up and an election in November is being pondered by the upper echelons of the Palaszczuk Government. Regardless of which side wins the next election, however, both should vow to fight to bring the rematch back. While boxing has its critics, there is no doubt that Sunday’s showdown at Suncorp Stadium was a boon for Brisbane. Almost 20,000 of the 51,000 fans that watched the fight were from interstate or overseas. </p><p>Premier Annastacia Palaszczuk, who  appeared at a press conference alongside Horn yesterday, was right when she pointed out that these kinds of events return  big on their investment. When it comes to event tourism, Queensland has  long been on the undercard while Victoria and NSW have fought in the main event. </p><p>However Sunday’s “Battle of Brisbane”, as well as the Gold Coast’s highly-successful marathon, showed appropriate government investment can generate a windfall for local economies.</p><p>Mr Arum’s insight of a November election, no doubt gleaned from his negotiations over a rematch, may yet prove folly.</p><p> After all, politics can be as fickle as the fight game.</p><p>However, a well-funded event tourism plan is a policy both sides should have whenever the Battle for Queensland begins.</p><p> </p><p><i>Responsibility for election comment is taken by Lachlan Heywood, corner of Mayne Rd &amp; Campbell St, Bowen Hills, Qld 4006. Printed and published by NEWSQUEENSLAND (ACN 009 661 778). Contact details are available at www.couriermail.com.au/help/contact-us </i></p>"
+            },
+            "extendedHeadline": {
+                "default": "Greens’ sanctimonious idealism repels voters"
+            },
+            "schemaVersion": "v3.0"
+        },
+        {
+            "id": "b9ddf95cf3ae2fcb35bb3db74be12f99",
+            "link": {
+                "self": "https://content-sit.api.news/v3/articles/b9ddf95cf3ae2fcb35bb3db74be12f99",
+                "canonical": "https://dailytelegraph.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+            },
+            "type": "article",
+            "draft": false,
+            "status": "active",
+            "locale": "en_AU",
+            "originalLocale": "en_AU",
+            "platform": {
+                "id": "c21e7fbe-601a-11e7-a01f-80ed8cf7a2bd",
+                "system": "methode",
+                "documentId": "024c3d80-1a76-4688-b84b-0bdf7822b824",
+                "parentId": "c21e7fbe-601a-11e7-a01f-80ed8cf7a2bd",
+                "userUpdated": "bakkert",
+                "systemUpdated": "methode",
+                "instanceUpdated": "None",
+                "capiOrigin": "AU"
+            },
+            "date": {
+                "live": "2017-07-03T18:54:00.000Z",
+                "updated": "2017-07-03T18:58:50.000Z",
+                "custom": "2017-07-03T18:58:00.000Z",
+                "created": "2017-07-03T18:09:30.000Z",
+                "processed": "2017-07-03T18:58:52.928Z"
+            },
+            "categories": {
+                "tone": [
+                    {
+                        "id": "27ba25a41f360880288b560e55eb6d55",
+                        "slug": "tone-neutral",
+                        "path": "/tone/neutral",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/27ba25a41f360880288b560e55eb6d55"
+                        }
+                    }
+                ],
+                "person": [
+                    {
+                        "id": "f8abc70b524186772572c02846e9bb7a",
+                        "slug": "person-tonysloan",
+                        "path": "/person/Tony Sloan",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/f8abc70b524186772572c02846e9bb7a"
+                        }
+                    },
+                    {
+                        "id": "059a3fcba5b5c43b159e91387eb664b0",
+                        "slug": "person-chrisjordan",
+                        "path": "/person/Chris Jordan",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/059a3fcba5b5c43b159e91387eb664b0"
+                        }
+                    },
+                    {
+                        "id": "a24b595b9bda680db8567ce6125f8a21",
+                        "slug": "person-kymsmith",
+                        "path": "/person/Kym Smith",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/a24b595b9bda680db8567ce6125f8a21"
+                        }
+                    },
+                    {
+                        "id": "66deb8440275d6e684326684d97477bf",
+                        "slug": "person-davidgonski",
+                        "path": "/person/David Gonski",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/66deb8440275d6e684326684d97477bf"
+                        }
+                    },
+                    {
+                        "id": "7f98b6a4a366732f0dac03e24249070a",
+                        "slug": "person-dylanrobinson",
+                        "path": "/person/Dylan Robinson",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/7f98b6a4a366732f0dac03e24249070a"
+                        }
+                    }
+                ],
+                "rating": [
+                    {
+                        "id": "1073dc6b88ea2a678b643016acf6d668",
+                        "slug": "rating-g",
+                        "path": "/rating/G",
+                        "provider": "methode",
+                        "providerSource": "auto",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/1073dc6b88ea2a678b643016acf6d668"
+                        }
+                    }
+                ],
+                "keyword": [
+                    {
+                        "id": "13c0bf5970e655353ca52162e5e9cf5d",
+                        "slug": "keyword-companytax",
+                        "path": "/keyword/company tax",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/13c0bf5970e655353ca52162e5e9cf5d"
+                        }
+                    },
+                    {
+                        "id": "a89bf3a7faacb068e58fab70a72fa9c6",
+                        "slug": "keyword-taxwindfall",
+                        "path": "/keyword/tax windfall",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/a89bf3a7faacb068e58fab70a72fa9c6"
+                        }
+                    },
+                    {
+                        "id": "75edc131ae52a9e5d447684fb5b008bb",
+                        "slug": "keyword-familyinvestmentcompanies",
+                        "path": "/keyword/family investment companies",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/75edc131ae52a9e5d447684fb5b008bb"
+                        }
+                    },
+                    {
+                        "id": "7e4b7684fb9f8abc2e93ec7a09fd0cd8",
+                        "slug": "keyword-familycompanies",
+                        "path": "/keyword/family companies",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/7e4b7684fb9f8abc2e93ec7a09fd0cd8"
+                        }
+                    },
+                    {
+                        "id": "57b04b6e47cc1aaf48db847cada31eb8",
+                        "slug": "keyword-companytaxrate",
+                        "path": "/keyword/company tax rate",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/57b04b6e47cc1aaf48db847cada31eb8"
+                        }
+                    },
+                    {
+                        "id": "90c9476abf8c13bf85695d16c1b82478",
+                        "slug": "keyword-seniortaxpartner",
+                        "path": "/keyword/senior tax partner",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/90c9476abf8c13bf85695d16c1b82478"
+                        }
+                    },
+                    {
+                        "id": "81a955cf4efef60d224c0a2a61c22d15",
+                        "slug": "keyword-passivefamily",
+                        "path": "/keyword/passive family",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/81a955cf4efef60d224c0a2a61c22d15"
+                        }
+                    },
+                    {
+                        "id": "330f8cfce182125ed48f1c883f158f4e",
+                        "slug": "keyword-australianbusinessleaders",
+                        "path": "/keyword/Australian business leaders",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/330f8cfce182125ed48f1c883f158f4e"
+                        }
+                    },
+                    {
+                        "id": "1ac3ae790d491df9aaf813147ae2ec6c",
+                        "slug": "keyword-taxationcommissioner",
+                        "path": "/keyword/Taxation Commissioner",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/1ac3ae790d491df9aaf813147ae2ec6c"
+                        }
+                    },
+                    {
+                        "id": "0afbbf84b4d8b8d693b8e82704c563b6",
+                        "slug": "keyword-passiveinvestments",
+                        "path": "/keyword/passive investments",
+                        "provider": "methode",
+                        "providerSource": "otca",
+                        "classification": "auto",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/0afbbf84b4d8b8d693b8e82704c563b6"
+                        }
+                    },
+                    {
+                        "id": "e0b2bf4746161264d40b19bbe3c7b9b0",
+                        "slug": "keyword-businessleadersdavid",
+                        "path": "/keyword/business leaders David",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/e0b2bf4746161264d40b19bbe3c7b9b0"
+                        }
+                    },
+                    {
+                        "id": "a586a66b574892d16fbf83df565d4583",
+                        "slug": "keyword-taxchange",
+                        "path": "/keyword/tax change",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/a586a66b574892d16fbf83df565d4583"
+                        }
+                    },
+                    {
+                        "id": "37469a2c767fed3de53f49892ff5a716",
+                        "slug": "keyword-taxcuts",
+                        "path": "/keyword/tax cuts",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/37469a2c767fed3de53f49892ff5a716"
+                        }
+                    },
+                    {
+                        "id": "86cb482965a5ae68b15929164e8d29dd",
+                        "slug": "keyword-taxbreak",
+                        "path": "/keyword/tax break",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/86cb482965a5ae68b15929164e8d29dd"
+                        }
+                    },
+                    {
+                        "id": "47ab189b5e60fd209250e7fb0adb654f",
+                        "slug": "keyword-familyinvestmentcompany",
+                        "path": "/keyword/family investment company",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/47ab189b5e60fd209250e7fb0adb654f"
+                        }
+                    },
+                    {
+                        "id": "179d7efbf06a20f338dfa4c29205e66b",
+                        "slug": "keyword-passivefamilycompanies",
+                        "path": "/keyword/passive family companies",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/179d7efbf06a20f338dfa4c29205e66b"
+                        }
+                    },
+                    {
+                        "id": "d1a52311cf747c3be2cfd2a3625135fd",
+                        "slug": "keyword-activetradingcompanies",
+                        "path": "/keyword/active trading companies",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/d1a52311cf747c3be2cfd2a3625135fd"
+                        }
+                    },
+                    {
+                        "id": "7c72d699edca5a82dba63169bc949940",
+                        "slug": "keyword-familycompany",
+                        "path": "/keyword/family company",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/7c72d699edca5a82dba63169bc949940"
+                        }
+                    },
+                    {
+                        "id": "cacb4e4b620c7e7161d8561b187adbc2",
+                        "slug": "keyword-companieschose",
+                        "path": "/keyword/companies chose",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/cacb4e4b620c7e7161d8561b187adbc2"
+                        }
+                    },
+                    {
+                        "id": "e8c55000ccfcff52c6cabbd335c0be08",
+                        "slug": "keyword-familybank",
+                        "path": "/keyword/family bank",
+                        "provider": "methode",
+                        "providerSource": "editor",
+                        "classification": "manual",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/categories/e8c55000ccfcff52c6cabbd335c0be08"
+                        }
+                    }
+                ]
+            },
+            "keywords": [
+                "Kym Smith",
+                "family bank",
+                "David Gonski",
+                "company tax rate",
+                "family investment company",
+                "company tax",
+                "Dylan Robinson",
+                "family company",
+                "passive investments",
+                "Taxation Commissioner",
+                "Australian business leaders",
+                "passive family companies",
+                "passive family",
+                "tax change",
+                "companies chose",
+                "active trading companies",
+                "family companies",
+                "Tony Sloan",
+                "tax windfall",
+                "tax cuts",
+                "Chris Jordan",
+                "family investment companies",
+                "senior tax partner",
+                "business leaders David",
+                "tax break"
+            ],
+            "revision": {
+                "major": 1499108330000,
+                "minor": 0
+            },
+            "rightsMetadata": {
+                "originatedSource": "News Corp Australia Network"
+            },
+            "target": {
+                "domainLink": {
+                    "heraldsun.com.au": {
+                        "link": "https://heraldsun.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "themercury.com.au": {
+                        "link": "https://themercury.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "goldcoastbulletin.com.au": {
+                        "link": "https://goldcoastbulletin.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "adelaidenow.com.au": {
+                        "link": "https://adelaidenow.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "dailytelegraph.com.au": {
+                        "link": "https://dailytelegraph.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "perthnow.com.au": {
+                        "link": "https://perthnow.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "ntnews.com.au": {
+                        "link": "https://ntnews.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "news.com.au": {
+                        "link": "https://news.com.au/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "geelongadvertiser.com.au": {
+                        "link": "https://geelongadvertiser.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "cairnspost.com.au": {
+                        "link": "https://cairnspost.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "weeklytimesnow.com.au": {
+                        "link": "https://weeklytimesnow.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "townsvillebulletin.com.au": {
+                        "link": "https://townsvillebulletin.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    },
+                    "couriermail.com.au": {
+                        "link": "https://couriermail.com.au/news/national/the-australian-tax-office-signals-massive-tax-windfall-for-the-wealthy/news-story/b9ddf95cf3ae2fcb35bb3db74be12f99"
+                    }
+                },
+                "domains": [
+                    "heraldsun.com.au",
+                    "themercury.com.au",
+                    "goldcoastbulletin.com.au",
+                    "adelaidenow.com.au",
+                    "dailytelegraph.com.au",
+                    "perthnow.com.au",
+                    "ntnews.com.au",
+                    "news.com.au",
+                    "geelongadvertiser.com.au",
+                    "cairnspost.com.au",
+                    "weeklytimesnow.com.au",
+                    "townsvillebulletin.com.au",
+                    "couriermail.com.au"
+                ],
+                "sections": [
+                    {
+                        "id": "1226490441611",
+                        "path": "/section/main/newscorpaustralia.com/Web/NewsNetwork/Network News/National",
+                        "slug": "section-main-newscorpaustraliacom-web-newsnetwork-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226490441611"
+                        }
+                    }
+                ],
+                "displays": [
+                    {
+                        "id": "1226692643376",
+                        "path": "/display/goldcoastbulletin.com.au/Network News/National",
+                        "slug": "display-goldcoastbulletincomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226692643376"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226628352059",
+                        "path": "/display/adelaidenow.com.au/Network News/National",
+                        "slug": "display-adelaidenowcomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226628352059"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696905240",
+                        "path": "/display/ntnews.com.au/Network News/National",
+                        "slug": "display-ntnewscomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696905240"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226618420664",
+                        "path": "/display/dailytelegraph.com.au/Network News/National",
+                        "slug": "display-dailytelegraphcomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226618420664"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226618420663",
+                        "path": "/display/heraldsun.com.au/Network News/National",
+                        "slug": "display-heraldsuncomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226618420663"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226596458827",
+                        "path": "/display/perthnow.com.au/Network News/National",
+                        "slug": "display-perthnowcomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226596458827"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696905243",
+                        "path": "/display/townsvillebulletin.com.au/Network News/National",
+                        "slug": "display-townsvillebulletincomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696905243"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696905239",
+                        "path": "/display/weeklytimesnow.com.au/Network News/National",
+                        "slug": "display-weeklytimesnowcomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696905239"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226312254910",
+                        "path": "/display/news.com.au/National News",
+                        "slug": "display-newscomau-nationalnews",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226312254910"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226646734598",
+                        "path": "/display/couriermail.com.au/Network News/National",
+                        "slug": "display-couriermailcomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226646734598"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696905241",
+                        "path": "/display/geelongadvertiser.com.au/Network News/National",
+                        "slug": "display-geelongadvertisercomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696905241"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226683748532",
+                        "path": "/display/themercury.com.au/Network News/National",
+                        "slug": "display-themercurycomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226683748532"
+                        },
+                        "dominant": true
+                    },
+                    {
+                        "id": "1226696905242",
+                        "path": "/display/cairnspost.com.au/Network News/National",
+                        "slug": "display-cairnspostcomau-networknews-national",
+                        "link": {
+                            "self": "https://content-sit.api.news/v3/sections/1226696905242"
+                        },
+                        "dominant": true
+                    }
+                ]
+            },
+            "authors": [
+                {
+                    "name": "The Australian",
+                    "type": "editor"
+                },
+                {
+                    "name": "Tiffany Bakker",
+                    "type": "creator"
+                }
+            ],
+            "accessType": "premium",
+            "subscriptionSummary": {
+                "default": "THE Australian Taxation Office may open the floodgates for family investment companies across the country to claim back hundreds of millions of dollars in company tax, after issuing a landmark ruling that signals a flood of future refunds."
+            },
+            "channel": "none",
+            "headline": {
+                "default": "ATO signals tax windfall for wealthy"
+            },
+            "standfirst": {
+                "default": "<p class=\"standfirst-content\">THE Australian Taxation Office has paved the way for family investment companies to claim back hundreds of millions of dollars in company tax.</p>"
+            },
+            "related": {
+                "thumbnail": {
+                    "default": [
+                        "cf8adc48104b9f82d30cdce3c1669665",
+                        "307fdb831154460537567fcdb6d2db59",
+                        "00d0218714dfa27ca4aa06fc8a5d117d",
+                        "bec13b1a20b13dbff8176b6687c1316b",
+                        "0ade4f8a02bdd7659fa80e9df618429a"
+                    ]
+                },
+                "primary": {
+                    "default": [
+                        "d60d4885f74cd1a295a14aa9ed0bb290"
+                    ]
+                }
+            },
+            "references": {
+                "cf8adc48104b9f82d30cdce3c1669665": {
+                    "id": "cf8adc48104b9f82d30cdce3c1669665",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/cf8adc48104b9f82d30cdce3c1669665",
+                        "media": "https://content-sit.api.news/v3/images/bin/cf8adc48104b9f82d30cdce3c1669665"
+                    }
+                },
+                "307fdb831154460537567fcdb6d2db59": {
+                    "id": "307fdb831154460537567fcdb6d2db59",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/307fdb831154460537567fcdb6d2db59",
+                        "media": "https://content-sit.api.news/v3/images/bin/307fdb831154460537567fcdb6d2db59"
+                    }
+                },
+                "00d0218714dfa27ca4aa06fc8a5d117d": {
+                    "id": "00d0218714dfa27ca4aa06fc8a5d117d",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/00d0218714dfa27ca4aa06fc8a5d117d",
+                        "media": "https://content-sit.api.news/v3/images/bin/00d0218714dfa27ca4aa06fc8a5d117d"
+                    }
+                },
+                "bec13b1a20b13dbff8176b6687c1316b": {
+                    "id": "bec13b1a20b13dbff8176b6687c1316b",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/bec13b1a20b13dbff8176b6687c1316b",
+                        "media": "https://content-sit.api.news/v3/images/bin/bec13b1a20b13dbff8176b6687c1316b"
+                    }
+                },
+                "bd31650f15cb585c4dad026126ea8a6d": {
+                    "id": "bd31650f15cb585c4dad026126ea8a6d",
+                    "type": "image",
+                    "captionOverride": "BDO senior tax partner Tony Sloan told The Australian the tax change was “massive.” Picture: Supplied <br/>",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/bd31650f15cb585c4dad026126ea8a6d",
+                        "media": "https://content-sit.api.news/v3/images/bin/bd31650f15cb585c4dad026126ea8a6d"
+                    }
+                },
+                "63d295d49d19d122462a413ab6558141": {
+                    "id": "63d295d49d19d122462a413ab6558141",
+                    "type": "image",
+                    "captionOverride": "The ATO’s Chris Jordan (middle) with Australian business leaders David Gonski and Elmer Funke. Picture: Dylan Robinson",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/63d295d49d19d122462a413ab6558141",
+                        "media": "https://content-sit.api.news/v3/images/bin/63d295d49d19d122462a413ab6558141"
+                    }
+                },
+                "d60d4885f74cd1a295a14aa9ed0bb290": {
+                    "id": "d60d4885f74cd1a295a14aa9ed0bb290",
+                    "type": "image",
+                    "captionOverride": "Taxation Commissioner Chris Jordan. The ATO is looking to give a tax break to family companies. Picture Kym Smith",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/d60d4885f74cd1a295a14aa9ed0bb290",
+                        "media": "https://content-sit.api.news/v3/images/bin/d60d4885f74cd1a295a14aa9ed0bb290"
+                    }
+                },
+                "0ade4f8a02bdd7659fa80e9df618429a": {
+                    "id": "0ade4f8a02bdd7659fa80e9df618429a",
+                    "type": "image",
+                    "link": {
+                        "self": "https://content-sit.api.news/v3/images/0ade4f8a02bdd7659fa80e9df618429a",
+                        "media": "https://content-sit.api.news/v3/images/bin/0ade4f8a02bdd7659fa80e9df618429a"
+                    }
+                }
+            },
+            "byline": {
+                "default": "The Australian"
+            },
+            "kicker": {
+                "default": "Tax windfall"
+            },
+            "intro": {
+                "default": "<p>THE Australian Taxation Office may open the floodgates for family investment companies across the country to claim back hundreds of millions of dollars in company tax, after issuing a landmark ruling that signals a flood of future refunds.</p>"
+            },
+            "seoOwner": {
+                "displayName": "The Daily Telegraph",
+                "domain": "dailytelegraph.com.au"
+            },
+            "seoTitle": "The Australian Tax Office signals massive tax windfall for the wealthy",
+            "socialHeadline": {
+                "default": "ATO signals tax windfall for wealthy"
+            },
+            "commentsAllowed": {
+                "default": false
+            },
+            "body": {
+                "default": "<p>The likely refunds would extend tax cuts implemented for active trading companies earning up to $25 million in income to passive family investment vehicles that are designed to warehouse, or retain, family wealth, <a href=\"http://www.theaustralian.com.au/national-affairs/treasury/ato-signals-tax-windfall-for-wealthy/news-story/8f5ee654e2c2bcdd9266ef2d611419f4\">reports The Australian.</a>\n            </p><p>In the past two years, the federal government has reduced the company tax rate for smaller companies by 2.5 per cent to its current level of 27.5 per cent. The ATO’s ruling could mean massive refunds and ongoing reductions for hundreds of thousands of passive family investment companies. For example, one warehousing $1m of taxable income per year could save $25,000 for each tax year.</p><p>\n               <a class=\"capi-image\" capiId=\"bd31650f15cb585c4dad026126ea8a6d\"></a>\n            </p><p>BDO senior tax partner Tony Sloan told <i>The Australian </i>that the change is “massive.” “Everyone is talking about it. It affects a lot of our clients,” he said.</p><p>There could, however, be issues if family companies don’t plan their affairs properly. Mr Sloan said<i/>that mum-and-dad shareholders of low-tax companies could be hit if the companies chose to distribute fully franked dividends to them.</p><p>However, he said many of those types of companies and their shareholders would benefit from the new ruling, particularly wealthy families, as their companies tended to warehouse profits “over years and decades”, and were frequently used as a form of “family bank”.</p><p>When the tax cuts were announced a few years ago, it was made clear they would only apply to companies that carried on a business. However, the ATO has taken a much more generous stance than expected for passive family companies. Its draft ruling states that “generally, where a company is established or maintained to make profit or gain for its shareholders it is likely to carry on business ... This is so even if the company only holds passive investments, and its activities consist of receiving rents or returns on its investments and distributing them to shareholders.”</p><p>\n               <a class=\"capi-image\" capiId=\"63d295d49d19d122462a413ab6558141\"></a>\n            </p><p>Sources told <i>The Australian</i> that the ATO had indicated it was working on more detailed guidance on the issue, which would be published “very soon”. “The ATO is aware there is a lot of interest in this topic,” the source said.</p><p>Mr Sloan said most family investment companies would already have filed a return for the 2016 year at the full 30 per cent company tax rate. He is advising these entities to consider seeking a refund for the 2016 financial year and to review the position for the 2017 financial year. “Even for my own family company, which has a range of passive investments, I filed my return in 2016 at the 30 per cent company tax rate,” Mr Sloan said. “Once the ATO issues its final guidance on this matter that clarifies that passive companies are indeed carrying on a business, I will be looking for a refund as well. I went to a meeting the other day with 10 people in the room, where this issue was discussed. Every person in the room had a family investment company.”</p><p>The tax cuts affected companies that earned up to $10m in income in 2016-17, rising to $25m this financial year.</p><p/><p>\n               <a href=\"http://www.theaustralian.com.au/national-affairs/treasury/ato-signals-tax-windfall-for-wealthy/news-story/8f5ee654e2c2bcdd9266ef2d611419f4\">This story was originally published in The Australian and is reprinted with permission.</a>\n            </p>"
+            },
+            "extendedHeadline": {
+                "default": "The Australian Tax Office signals massive tax windfall for the wealthy"
+            },
+            "schemaVersion": "v3.0"
+        }
+    ],
+    "totalHits": 388122,
+    "hits": 3,
+    "size": 3,
+    "page": 1
+}

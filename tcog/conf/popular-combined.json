@@ -1,0 +1,66 @@
+{
+    "news.com.au": {
+        "class": "most-pop-news-com-au",
+        "name": "News.com.au"
+    },
+    "heraldsun.com.au": {
+        "class": "most-pop-herald-sun",
+        "name": "The Herald Sun"
+    },
+    "dailytelegraph.com.au": {
+        "class": "most-pop-daily-telegraph",
+        "name": "The Daily Telegraph"
+    },
+    "adelaidenow.com.au": {
+        "class": "most-pop-adelaide-now",
+        "name": "The Advertiser"
+    },
+    "theaustralian.com.au": {
+        "class": "most-pop-the-australian",
+        "name": "The Australian"
+    },
+    "perthnow.com.au": {
+        "class": "most-pop-perth-now",
+        "name": "Perth Now"
+    },
+    "couriermail.com.au": {
+        "class": "most-pop-couriermail",
+        "name": "The Courier Mail"
+    },
+    "goldcoastbulletin.com.au": {
+        "class": "most-pop-gold-coast-bulletin",
+        "name": "The Gold Coast Bulletin"
+    },
+    "townsvillebulletin.com.au": {
+        "class": "most-pop-townsville-bulletin",
+        "name": "The Townsville Bulletin"
+    },
+    "cairnspost.com.au": {
+        "class": "most-pop-cairns-post",
+        "name": "The Cairns Post"
+    },
+    "ntnews.com.au": {
+        "class": "most-pop-nt-news",
+        "name": "NT News"
+    },
+    "geelongadvertiser.com.au": {
+        "class": "most-pop-geelong-advertiser",
+        "name": "The Geelong Advertiser"
+    },
+    "weeklytimesnow.com.au": {
+        "class": "most-pop-weekly-times",
+        "name": "Weekly Times Now"
+    },
+    "themercury.com.au": {
+        "class": "most-pop-mercury",
+        "name": "The Mercury"
+    },
+    "foxsports.com.au": {
+        "class": "most-pop-fox-sports",
+        "name": "Fox Sports"
+    },
+    "whimn.com.au": {
+        "class": "most-pop-whimn",
+        "name": "Whimn"
+    }    
+}

@@ -1,0 +1,215 @@
+[{
+    "input": "world/bali-prisoner-stephen-henri-lubbe-writes-letter-saying-foreign-prisoners-buy-reduced-sentences-from-indonesian-jails/{media}-fndir2ev-1227014030151",
+    "output": {
+        "slug": "bali-prisoner-stephen-henri-lubbe-writes-letter-saying-foreign-prisoners-buy-reduced-sentences-from-indonesian-jails",
+        "section": ["world"],
+        "sectionID": 1226346011383,
+        "id": "1227014030151",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014030151",
+        "uri": "/world/bali-prisoner-stephen-henri-lubbe-writes-letter-saying-foreign-prisoners-buy-reduced-sentences-from-indonesian-jails/{media}-fndir2ev-1227014030151"
+    }
+}, {
+    "input": "lifestyle/parenting/parents-in-baby-gammy-thai-surrogacy-row-break-silence/{media}-fnet08xa-1227013406177",
+    "output": {
+        "slug": "parents-in-baby-gammy-thai-surrogacy-row-break-silence",
+        "section": ["lifestyle", "parenting"],
+        "sectionID": 1226423702062,
+        "id": "1227013406177",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227013406177",
+        "uri": "/lifestyle/parenting/parents-in-baby-gammy-thai-surrogacy-row-break-silence/{media}-fnet08xa-1227013406177"
+    }
+}, {
+    "input": "travel/travel-updates/mh17-breakthrough-owner-of-volvo-truck-that-transported-missile-fears-his-life/{media}-fnizu68q-1227014149633",
+    "output": {
+        "slug": "mh17-breakthrough-owner-of-volvo-truck-that-transported-missile-fears-his-life",
+        "section": ["travel", "travel-updates"],
+        "sectionID": 1226677040666,
+        "id": "1227014149633",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014149633",
+        "uri": "/travel/travel-updates/mh17-breakthrough-owner-of-volvo-truck-that-transported-missile-fears-his-life/{media}-fnizu68q-1227014149633"
+    }
+}, {
+    "input": "world/middle-east/israel-to-withdraw-troops-from-gaza-strip/{media}-fnh81ifq-1227014186885",
+    "output": {
+        "slug": "israel-to-withdraw-troops-from-gaza-strip",
+        "section": ["world", "middle-east"],
+        "sectionID": 1226569887638,
+        "id": "1227014186885",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014186885",
+        "uri": "/world/middle-east/israel-to-withdraw-troops-from-gaza-strip/{media}-fnh81ifq-1227014186885"
+    }
+}, {
+    "input": "technology/online/google-defends-child-porn-tipoffs-to-police/{media}-fnjwmwrh-1227014134113",
+    "output": {
+        "slug": "google-defends-child-porn-tipoffs-to-police",
+        "section": ["technology", "online"],
+        "sectionID": 1226732129117,
+        "id": "1227014134113",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014134113",
+        "uri": "/technology/online/google-defends-child-porn-tipoffs-to-police/{media}-fnjwmwrh-1227014134113"
+    }
+}, {
+    "input": "entertainment/tv/ten-eyewitness-news-adelaide-newsreader-nick-butler-stumbles-through-excruciating-autocue-disaster/{media}-e6frfmyi-1227014160393",
+    "output": {
+        "slug": "ten-eyewitness-news-adelaide-newsreader-nick-butler-stumbles-through-excruciating-autocue-disaster",
+        "section": ["entertainment", "tv"],
+        "sectionID": 1111112063226,
+        "id": "1227014160393",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014160393",
+        "uri": "/entertainment/tv/ten-eyewitness-news-adelaide-newsreader-nick-butler-stumbles-through-excruciating-autocue-disaster/{media}-e6frfmyi-1227014160393"
+    }
+}, {
+    "input": "entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/{media}-e6frfmyi-1227014186666",
+    "output": {
+        "slug": "from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid",
+        "section": ["entertainment", "tv"],
+        "sectionID": 1111112063226,
+        "id": "1227014186666",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014186666",
+        "uri": "/entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/{media}-e6frfmyi-1227014186666"
+    }
+}, {
+    "input": "entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/news-story/7c5cc3668338597446e7002717ba3901",
+    "output": {
+        "slug": "from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid",
+        "section": ["entertainment", "tv"],
+        "sectionID": null,
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/news-story/7c5cc3668338597446e7002717ba3901"
+    }
+}, {
+    "input": "entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/image-gallery/7c5cc3668338597446e7002717ba3901",
+    "output": {
+        "slug": "from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid",
+        "section": ["entertainment", "tv"],
+        "sectionID": null,
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/image-gallery/7c5cc3668338597446e7002717ba3901"
+    }
+}, {
+    "input": "methode/custom/{media}-preview-47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+    "output": {
+        "description": "Methode ID with fatwire section",
+        "slug": "custom",
+        "section": ["methode"],
+        "sectionID": 56077129976,
+        "id": "47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "origin": "methode",
+        "upstreamID": "origin:methode.47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "uri": "/methode/custom/{media}-preview-47ad4bd2-5818-11e4-a9cd-a4f9913bad66"
+    }
+}, {
+    "description": "Methode ID with no section ID",
+    "input": "methode/custom/{media}-47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+    "output": {
+        "slug": "custom",
+        "section": ["methode"],
+        "id": "47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "origin": "methode",
+        "upstreamID": "origin:methode.47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "uri": "/methode/custom/{media}-47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "sectionID": null
+    }
+}, {
+    "description": "Fatwire with no section ID",
+    "input": "entertainment/tv/slug-slug-slug/{media}-1227014186666",
+    "output": {
+        "slug": "slug-slug-slug",
+        "section": ["entertainment", "tv"],
+        "id": "1227014186666",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014186666",
+        "uri": "/entertainment/tv/slug-slug-slug/{media}-1227014186666",
+        "sectionID": null
+    }
+}, {
+    "input": "47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+    "output": {
+        "description": "Bare Methode ID",
+        "id": "47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "origin": "methode",
+        "upstreamID": "origin:methode.47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "uri": "/47ad4bd2-5818-11e4-a9cd-a4f9913bad66",
+        "section": [],
+        "sectionID": null
+    }
+}, {
+    "input": "1227014186666",
+    "output": {
+        "description": "Bare Fatwire ID",
+        "id": "1227014186666",
+        "origin": "fatwire",
+        "upstreamID": "origin:fatwire.1227014186666",
+        "uri": "/1227014186666",
+        "section": [],
+        "sectionID": null
+    }
+}, {
+    "input": "7c5cc3668338597446e7002717ba3901",
+    "output": {
+        "description": "Bare CAPI ID",
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/7c5cc3668338597446e7002717ba3901",
+        "section": [],
+        "sectionID": null
+    }
+}, {
+    "description": "Bare CAPI ID single trailing slash",
+    "input": "7c5cc3668338597446e7002717ba3901/",
+    "output": {
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/7c5cc3668338597446e7002717ba3901/",
+        "section": [],
+        "sectionID": null
+    }
+}, {
+    "description": "Bare CAPI ID multiple trailing slash",
+    "input": "7c5cc3668338597446e7002717ba3901/////",
+    "output": {
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/7c5cc3668338597446e7002717ba3901",
+        "section": [],
+        "sectionID": null
+    }
+}, {
+    "input": "/foo////buzz//bar/7c5cc3668338597446e7002717ba3901",
+    "output": {
+        "description": "Bare CAPI ID multiple inline slashes slash",
+        "slug": "bar",
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/foo/buzz//bar/7c5cc3668338597446e7002717ba3901",
+        "section": ["foo", "buzz"],
+        "sectionID": null
+    }
+}, {
+    "input": "entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/{media}-e6frfmyi-7c5cc3668338597446e7002717ba3901",
+    "output": {
+        "description": "Fatwire style uri with a CAPI id",
+        "slug": "from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid",
+        "section": ["entertainment", "tv"],
+        "sectionID": 1111112063226,
+        "id": "7c5cc3668338597446e7002717ba3901",
+        "origin": "capi",
+        "upstreamID": "7c5cc3668338597446e7002717ba3901",
+        "uri": "/entertainment/tv/from-modern-family-to-game-of-thrones-how-much-do-tv-stars-get-paid/{media}-e6frfmyi-7c5cc3668338597446e7002717ba3901"
+    }
+}]

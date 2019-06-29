@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  test:
+    ports:
+      - "3000:3000"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+    environment:
+      - REDIS_PUB_SUB_HOST=redis
+      - REDIS_PUB_SUB_CHANNEL=content
+    command: yarn test
+    
+  redis:
+    build:
+      context: ../tabula/
+      dockerfile: Dockerfile.redis

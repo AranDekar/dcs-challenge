@@ -1,0 +1,323 @@
+{
+    "contentType": "VIDEO",
+    "id": {
+        "value": "76c58898da83192cb8bbb58ae47bb29e",
+        "link": "http://api.newsapi.com.au/content/v2/76c58898da83192cb8bbb58ae47bb29e"
+    },
+    "originId": "5348771529001-5727717980001",
+    "origin": "BRIGHTCOVE",
+    "title": "10 questions with Jeff Horn",
+    "subtitle": "10 questions with Jeff Horn",
+    "description": "10 questions with boxing World Champion Jeff Horn.",
+    "link": "http://cdn.newsapi.com.au/link/76c58898da83192cb8bbb58ae47bb29e?domain=theaustralian.com.au",
+    "paidStatus": "NON_PREMIUM",
+    "originalSource": "NND",
+    "version": "PUBLISHED",
+    "dateUpdated": "2018-02-08T04:18:55.000Z",
+    "dateLive": "2018-02-07T02:41:04.000Z",
+    "dateCreated": "2018-02-07T02:36:39.000Z",
+    "status": "ACTIVE",
+    "thumbnailImage": {
+        "contentType": "IMAGE",
+        "id": {
+            "value": "8c49fff22f0797dae5ec292a15a9677e",
+            "link": "http://api.newsapi.com.au/image/v1/8c49fff22f0797dae5ec292a15a9677e"
+        },
+        "originId": "5348771529001-5727717980001-thumbnail",
+        "origin": "BRIGHTCOVE",
+        "title": "10 questions with Jeff Horn",
+        "description": "10 questions with boxing World Champion Jeff Horn.",
+        "link": "http://cdn.newsapi.com.au/image/v1/8c49fff22f0797dae5ec292a15a9677e",
+        "paidStatus": "NON_PREMIUM",
+        "originalSource": "NND",
+        "version": "PUBLISHED",
+        "dateUpdated": "2018-02-08T04:18:55.000Z",
+        "dateLive": "2018-02-07T02:41:04.000Z",
+        "dateCreated": "2018-02-07T02:36:39.000Z",
+        "status": "ACTIVE",
+        "related": [],
+        "domainLinks": [],
+        "categories": [],
+        "keywords": [],
+        "authors": [],
+        "domains": [],
+        "locationGeoPoints": [],
+        "userOriginUpdated": "synchroniser",
+        "systemOriginUpdated": "BRIGHTCOVE",
+        "urlTitle": "10-questions-with-jeff-horn",
+        "revision": 6,
+        "format": "jpeg",
+        "width": 151,
+        "height": 85,
+        "imageName": "5348771529001_5727722812001_5727717980001-th.jpg",
+        "imageType": "THUMBNAIL",
+        "sourceImageId": "5348771529001-5727717980001-source"
+    },
+    "related": [
+        {
+            "contentType": "IMAGE",
+            "id": {
+                "value": "67f6106b94fb1e4c1fdc51c36b2bb815",
+                "link": "http://api.newsapi.com.au/image/v1/67f6106b94fb1e4c1fdc51c36b2bb815"
+            },
+            "originId": "5348771529001-5727717980001-poster",
+            "origin": "BRIGHTCOVE",
+            "title": "10 questions with Jeff Horn",
+            "subtitle": "10 questions with Jeff Horn",
+            "description": "10 questions with boxing World Champion Jeff Horn.",
+            "link": "http://cdn.newsapi.com.au/image/v1/67f6106b94fb1e4c1fdc51c36b2bb815",
+            "paidStatus": "NON_PREMIUM",
+            "originalSource": "NND",
+            "version": "PUBLISHED",
+            "dateUpdated": "2018-02-08T04:18:55.000Z",
+            "dateLive": "2018-02-07T02:41:04.000Z",
+            "dateCreated": "2018-02-07T02:36:39.000Z",
+            "status": "ACTIVE",
+            "referenceType": "SECONDARY",
+            "related": [],
+            "domainLinks": [],
+            "categories": [],
+            "keywords": [],
+            "authors": [],
+            "domains": [],
+            "locationGeoPoints": [],
+            "userOriginUpdated": "synchroniser",
+            "systemOriginUpdated": "BRIGHTCOVE",
+            "urlTitle": "10-questions-with-jeff-horn",
+            "revision": 6,
+            "format": "jpeg",
+            "width": 649,
+            "height": 365,
+            "imageName": "5348771529001_5727722811001_5727717980001-vs.jpg",
+            "imageType": "HERO",
+            "sourceImageId": "5348771529001-5727717980001-source"
+        }
+    ],
+    "domainLinks": [
+        {
+            "name": "theaustralian.com.au",
+            "link": "http://www.theaustralian.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "cairnspost.com.au",
+            "link": "http://www.cairnspost.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "ntnews.com.au",
+            "link": "http://www.ntnews.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "couriermail.com.au",
+            "link": "http://www.couriermail.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "goldcoastbulletin.com.au",
+            "link": "http://www.goldcoastbulletin.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "themercury.com.au",
+            "link": "http://www.themercury.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "heraldsun.com.au",
+            "link": "http://www.heraldsun.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "adelaidenow.com.au",
+            "link": "http://www.adelaidenow.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "news.com.au",
+            "link": "http://www.news.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "townsvillebulletin.com.au",
+            "link": "http://www.townsvillebulletin.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "perthnow.com.au",
+            "link": "http://www.perthnow.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "dailytelegraph.com.au",
+            "link": "http://www.dailytelegraph.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        },
+        {
+            "name": "geelongadvertiser.com.au",
+            "link": "http://www.geelongadvertiser.com.au/video/id-5348771529001-5727717980001/10-questions-with-jeff-horn"
+        }
+    ],
+    "primaryCategory": {
+        "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Sport news and galleries/",
+        "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Sport%20news%20and%20galleries/",
+        "id": "1226487037076",
+        "isDominant": true
+    },
+    "categories": [
+        {
+            "value": "/display/newscorpaustralia.com/Web/NewsNetwork/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/newscorpaustralia.com/Web/NewsNetwork/Sport%20news%20and%20galleries/",
+            "id": "1226487037076",
+            "isDominant": true
+        },
+        {
+            "value": "/display/theaustralian.com.au/Web/TheAustralian/Sport/",
+            "link": "http://api.newsapi.com.au/category/v2/display/theaustralian.com.au/Web/TheAustralian/Sport/",
+            "id": "1111112090007"
+        },
+        {
+            "value": "/display/adelaidenow.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/adelaidenow.com.au/Sport%20news%20and%20galleries/",
+            "id": "1226633804010",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/goldcoastbulletin.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/goldcoastbulletin.com.au/Sport%20news%20and%20galleries/",
+            "id": "1227960774948",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/dailytelegraph.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/dailytelegraph.com.au/Sport%20news%20and%20galleries/",
+            "id": "1226620933253",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/ntnews.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/ntnews.com.au/Sport%20news%20and%20galleries/",
+            "id": "1227960774949",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/perthnow.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/perthnow.com.au/Sport%20news%20and%20galleries/",
+            "id": "1226600307173",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/heraldsun.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/heraldsun.com.au/Sport%20news%20and%20galleries/",
+            "id": "1226621617230",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/townsvillebulletin.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/townsvillebulletin.com.au/Sport%20news%20and%20galleries/",
+            "id": "1227974998773",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/news.com.au/Sport/",
+            "link": "http://api.newsapi.com.au/category/v2/display/news.com.au/Sport/",
+            "id": "1226177573029",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/couriermail.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/couriermail.com.au/Sport%20news%20and%20galleries/",
+            "id": "1226633804011",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/themercury.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/themercury.com.au/Sport%20news%20and%20galleries/",
+            "id": "1227796732399",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/geelongadvertiser.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/geelongadvertiser.com.au/Sport%20news%20and%20galleries/",
+            "id": "1227974998774",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/cairnspost.com.au/Sport news and galleries/",
+            "link": "http://api.newsapi.com.au/category/v2/display/cairnspost.com.au/Sport%20news%20and%20galleries/",
+            "id": "1227974993877",
+            "isSyndicated": true
+        },
+        {
+            "value": "/display/theaustralian.com.au/Sport/",
+            "link": "http://api.newsapi.com.au/category/v2/display/theaustralian.com.au/Sport/",
+            "id": "1111112090007",
+            "isSyndicated": true
+        }
+    ],
+    "keywords": [],
+    "authors": [
+        "Madeline Whiting"
+    ],
+    "domains": [
+        "theaustralian.com.au",
+        "ntnews.com.au",
+        "cairnspost.com.au",
+        "goldcoastbulletin.com.au",
+        "couriermail.com.au",
+        "adelaidenow.com.au",
+        "heraldsun.com.au",
+        "themercury.com.au",
+        "news.com.au",
+        "perthnow.com.au",
+        "townsvillebulletin.com.au",
+        "dailytelegraph.com.au",
+        "geelongadvertiser.com.au"
+    ],
+    "references": [
+        {
+            "id": {
+                "value": "67f6106b94fb1e4c1fdc51c36b2bb815",
+                "link": "http://api.newsapi.com.au/content/v2/67f6106b94fb1e4c1fdc51c36b2bb815"
+            },
+            "origin": "BRIGHTCOVE",
+            "originId": "5348771529001-5727717980001-poster",
+            "contentType": "IMAGE",
+            "referenceType": "SECONDARY"
+        }
+    ],
+    "locationGeoPoints": [],
+    "userOriginUpdated": "synchroniser",
+    "systemOriginUpdated": "BRIGHTCOVE",
+    "urlTitle": "10-questions-with-jeff-horn",
+    "revision": 8,
+    "videoFiles": [],
+    "images": [
+        {
+            "contentType": "IMAGE",
+            "title": "10 questions with Jeff Horn",
+            "description": "10 questions with boxing World Champion Jeff Horn.",
+            "link": "http://cdn.newsapi.com.au/image/v1/8c49fff22f0797dae5ec292a15a9677e",
+            "version": "PUBLISHED",
+            "format": "jpeg",
+            "width": 151,
+            "height": 85,
+            "imageName": "5348771529001_5727722812001_5727717980001-th.jpg",
+            "imageType": "THUMBNAIL"
+        },
+        {
+            "contentType": "IMAGE",
+            "title": "10 questions with Jeff Horn",
+            "description": "10 questions with boxing World Champion Jeff Horn.",
+            "link": "http://cdn.newsapi.com.au/image/v1/67f6106b94fb1e4c1fdc51c36b2bb815",
+            "version": "PUBLISHED",
+            "format": "jpeg",
+            "width": 649,
+            "height": 365,
+            "imageName": "5348771529001_5727722811001_5727717980001-vs.jpg",
+            "imageType": "HERO"
+        },
+        {
+            "contentType": "IMAGE",
+            "title": "10 questions with Jeff Horn",
+            "description": "10 questions with boxing World Champion Jeff Horn.",
+            "version": "PUBLISHED",
+            "format": "jpeg",
+            "width": 649,
+            "height": 365,
+            "imageName": "5348771529001_5727722811001_5727717980001-vs.jpg",
+            "imageType": "SOURCE"
+        }
+    ],
+    "ooyalaId": "5348771529001-5727717980001",
+    "duration": 151402
+}

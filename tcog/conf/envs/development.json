@@ -1,0 +1,56 @@
+{
+  "gzip": false,
+  "opsgenieApiKey": "e2aa043a-98c7-4a23-92ce-f1e9132c16b1",
+  "tcogHost": {
+    "external": "localhost:3000",
+    "pixel": "localhost:3000"
+  },
+  "logLevel": "debug",
+  "capiV2CDN": "http://cdn.newsapi.com.au",
+  "api": {
+    "template": "http://dev.resources.newscdn.com.au/cs",
+    "resource": {
+      "cs": "http://dev.resources.newscdn.com.au/cs",
+      "deck": "https://s3-ap-southeast-2.amazonaws.com/news-deck",
+      "nmdata": {
+        "url": "http://prod.marketdata.digprod.cp1.news.com.au/nmdata",
+        "contentType": "application/json"
+      },
+      "mozo": "http://stat.mozo.com.au",
+      "whistleout": "https://r3.whistleout.com.au",
+      "perthNow": "https://content.perthnow.com.au/publication/popular",
+      "firestore": {
+        "url": "https://firestore.googleapis.com",
+        "contentType": "application/json"
+      }
+    }
+  },
+  "capiV3API": "https://content-sit.api.news",
+  "capiV3APIKey": "wy745368rhtznnrprnqzp5dt",
+  "capiV3BackupAPIKey": "vypycn3st9t49haf8mce927y",
+  "capiV2API": "http://api.newsapi.com.au/dev",
+  "foxsportsAPI": "http://api-staging.stats.foxsports.com.au",
+  "foxsportsPulseAPI": "https://awsapi.foxsportspulse.com",
+  "foxsportsApiKey": "becbf7f4-8ca5-4ba0-b399-693ac5941456",
+  "archiveComments": {
+    "url": "https://31aumpg9nk.execute-api.ap-southeast-2.amazonaws.com/prod",
+    "apiKey": "qepDSYltuN2JjSUrtRPBr1a4gVliGdHf2iuf92iC"
+  },
+  "fatwireAPI": "http://{{ res.locals.query.domain }}/cs/Satellite",
+  "sppAPI": "http://{{ res.locals.config.domain }}/spp-api/",
+  "chartbeatAPI": "http://api.chartbeat.com",
+  "capiV2APIArticleKey": "7ukztsc3p3hgaxnduw7m8zc7",
+  "v2BackupKey": "ba6cy5fuujqhrjp4a3ewdgyd",
+  "vidoraAPI": "http://api.vidora.com",
+  "vidoraApiKey": "heraldsun.2F8773CE626E38E3517E704E87B6D52D",
+  "newsgraph": "http://newsgraph.dcs1.digprod.cp1.news.com.au",
+  "newrelic": {
+    "enabled": false,
+    "name": "TCOG",
+    "license_key": "7c4af0aea6fcfa24be2d46f30b118c6daeedf956",
+    "logging": {
+      "level": "info",
+      "enabled": false
+    }
+  }
+}

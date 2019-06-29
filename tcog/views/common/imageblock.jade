@@ -1,0 +1,38 @@
+extends ../layouts/page.jade
+
+block content
+    for item, idx in data.results
+        include _content-item-header
+            block content-header
+                -var imageClass = "image-" + (display.imagewidth || 316) + "w" + (display.imageheight || 237) + "h"
+
+                div(class="image-block " + imageClass)
+                    .image-frame: a.image-link(href=item.link)
+                        if item.relatedMap && item.relatedMap.image
+                            -var image = item.relatedMap.image[display.imagewidth || 316];
+                            if image
+                                img(src=image.link
+                                    alt=(image.description||"").trim()
+                                    height=image.height
+                                    width=image.width)
+                -var premium = (item.paidStatus === "PREMIUM") ? "prm prm-story " : "";
+                div(class=premium + "story-block sbpos-#{idx} sbrpos-#{data.results.length - idx}", id="#{item.id}")
+                    h4.heading
+                        if display.kicker !== false && item.kicker
+                            span.kicker= (item.kicker||"").trim()
+
+                        a(href=item.link, class=premium)= (item.title||"").trim()
+
+                    if (display.standfirst !== false && item.standFirst)
+                        p.standfirst
+                            if (display.byline !== false && item.byline)
+                                span.article-info
+                                    if (display.timestamp)
+                                        span.timestamp
+                                            time(datetime=item.dateLive)= moment(item.dateLive).format(display.dateformat || "dddd, D MMMM ")
+
+                                    em.byline= (item.byline||"").trim()
+                            span=(item.standFirst||"").trim()
+
+                    -// Storyblock footer must be inside storyblock
+                    include _storyblock-footer

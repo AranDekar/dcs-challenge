@@ -1,0 +1,45 @@
+{
+    "gzip": false,
+    "tcogHost": {
+      "external": "localhost:3000",
+      "pixel": "localhost:3000"
+    },
+    "logLevel": "debug",
+    "capiV2CDN": "http://internal-dcs-s-loadb-b79o9js8ymj0-828455336.ap-southeast-2.elb.amazonaws.com/http://cdn.newsapi.com.au/dev",
+    "api": {
+      "template": "http://dev.resources.newscdn.com.au/cs",
+      "resource": {
+        "cs": "http://dev.resources.newscdn.com.au/cs",
+        "deck": "https://s3-ap-southeast-2.amazonaws.com/news-deck",
+        "nmdata": {
+          "url": "http://prod.marketdata.digprod.cp1.news.com.au/nmdata",
+          "contentType": "application/json"
+        },
+        "mozo": "http://stat.mozo.com.au",
+        "whistleout": "https://r3.whistleout.com.au"
+      }
+    },
+    "capiV2API": "http://internal-dcs-s-loadb-b79o9js8ymj0-828455336.ap-southeast-2.elb.amazonaws.com/http://api.newsapi.com.au/dev",
+    "foxsportsAPI": "http://api-staging.stats.foxsports.com.au",
+    "foxsportsPulseAPI": "https://awsapi.foxsportspulse.com",
+    "archiveComments": {
+      "url": "https://31aumpg9nk.execute-api.ap-southeast-2.amazonaws.com/prod",
+      "capiV2APIKey": "qepDSYltuN2JjSUrtRPBr1a4gVliGdHf2iuf92iC"
+    },
+    "fatwireAPI": "http://{{ res.locals.query.domain }}/cs/Satellite",
+    "sppAPI": "http://{{ res.locals.config.domain }}/spp-api/",
+    "chartbeatAPI": "http://api.chartbeat.com",
+    "capiV2APIArticleKey": "7ukztsc3p3hgaxnduw7m8zc7",
+    "vidoraAPI": "http://api.vidora.com",
+    "vidoraApiKey": "heraldsun.2F8773CE626E38E3517E704E87B6D52D",
+    "newrelic": {
+      "enabled": false,
+      "name": "TCOG",
+      "license_key": "7c4af0aea6fcfa24be2d46f30b118c6daeedf956",
+      "logging": {
+        "level": "info",
+        "enabled": false
+      }
+    }
+  }
+  

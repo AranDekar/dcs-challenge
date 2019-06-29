@@ -1,0 +1,29 @@
+{
+  "api.version": "v1",
+  "source": {
+    "sourceType": "LocalFile",
+    "name": "tcog",
+    "hostName": "%HOSTNAME",
+    "pathExpression": "/home/ec2-user/app/current/logs/*.json",
+    "category": "%PRODUCT-%NODE_ENV",
+    "useAutolineMatching": false,
+    "multilineProcessingEnabled": true,
+    "automaticDateParsing": true,
+    "defaultDateFormat": "dd/MMM/yyyy HH:mm:ss"
+  },
+  "filters": [{
+    "filterType": "Exclude",
+    "name": "AbusiveCacheItemMissing",
+    "regexp": ".*Cache item could not be flagged.*"
+  },
+  {
+    "filterType": "Exclude",
+    "name": "AbusiveExpressResponse",
+    "regexp": ".*Circular.*"
+  },
+  {
+    "filterType": "Exclude",
+    "name": "AbusiveCAPIArticle",
+    "regexp": ".*NEWS_STORY.*"
+  }]
+}

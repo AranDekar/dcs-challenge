@@ -1,0 +1,12 @@
+mixin paragraph_image(image)
+    -var formattedDate = moment(image.dateLive).format(display.dateformat || 'H:mm A');
+
+    figure
+        img(alt=    image.title,
+            height= image.height,
+            width=  image.width,
+            id=     image.id,
+            src=    image.link + "?api_key=zw4msefggf9wdvqswdfuqnr5")
+        figcaption
+            time(datetime)=   formattedDate
+            span.description= image.description

@@ -1,0 +1,1173 @@
+{
+    "content": {
+        "id": "86f0a4cda1c57ca41ae232369b5b2b13",
+        "link": {
+            "self": "https://content.api.news/v3/articles/86f0a4cda1c57ca41ae232369b5b2b13",
+            "canonical": "https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+        },
+        "type": "article",
+        "draft": false,
+        "status": "active",
+        "locale": "en_AU",
+        "originalLocale": "en_AU",
+        "platform": {
+            "id": "841569c2-78eb-11e8-a87f-d6284da931f3",
+            "instance": "meth03",
+            "system": "methode",
+            "documentId": "398dce2b-7112-47a1-925f-a79dbc96b7f7",
+            "parentId": "841569c2-78eb-11e8-a87f-d6284da931f3",
+            "userUpdated": "westthorpt",
+            "systemUpdated": "methode",
+            "instanceUpdated": "None",
+            "capiOrigin": "AU"
+        },
+        "date": {
+            "live": "2018-06-26T14:00:00.000Z",
+            "updated": "2018-06-27T07:47:45.000Z",
+            "custom": "2018-06-26T14:00:00.000Z",
+            "created": "2018-06-26T02:49:16.000Z",
+            "processed": "2018-06-27T07:47:48.214Z"
+        },
+        "categories": {
+            "other": [
+                {
+                    "id": "4ba9aa11d4200f2016d051b0de4609d9",
+                    "slug": "other-politics-localauthority",
+                    "path": "/other/politics/local authority",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/4ba9aa11d4200f2016d051b0de4609d9"
+                    }
+                },
+                {
+                    "id": "86d236bd787c190539369e2bc3b281d7",
+                    "slug": "other-economybusinessandfinance-constructionandproperty-designandengineering",
+                    "path": "/other/economy, business and finance/construction and property/design and engineering",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/86d236bd787c190539369e2bc3b281d7"
+                    }
+                },
+                {
+                    "id": "4621fd1c2c76dfca2a9c10712ce37b4b",
+                    "slug": "other-artscultureandentertainment-fashion-jewelry",
+                    "path": "/other/arts, culture and entertainment/fashion/jewelry",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/4621fd1c2c76dfca2a9c10712ce37b4b"
+                    }
+                }
+            ],
+            "tone": [
+                {
+                    "id": "f550ac12ee8a06314e9a8ad554f50c24",
+                    "slug": "tone-positive",
+                    "path": "/tone/positive",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/f550ac12ee8a06314e9a8ad554f50c24"
+                    }
+                }
+            ],
+            "person": [
+                {
+                    "id": "0a5780cc017b3756b1c98c190c1cdc3b",
+                    "slug": "person-donnagates",
+                    "path": "/person/Donna Gates",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 84,
+                    "relevancy": 55,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/0a5780cc017b3756b1c98c190c1cdc3b"
+                    }
+                },
+                {
+                    "id": "faa1250dc3cc0a7d159292bfa475ede5",
+                    "slug": "person-hermannvorster",
+                    "path": "/person/Hermann Vorster",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 79,
+                    "relevancy": 54,
+                    "frequency": 2,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/faa1250dc3cc0a7d159292bfa475ede5"
+                    }
+                },
+                {
+                    "id": "41a70a58405fd69bdbc9b0ceca9dafe6",
+                    "slug": "person-tomtate",
+                    "path": "/person/Tom Tate",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 66,
+                    "relevancy": 38,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/41a70a58405fd69bdbc9b0ceca9dafe6"
+                    }
+                }
+            ],
+            "rating": [
+                {
+                    "id": "ce8d3343701c29e06604299d9da7717f",
+                    "slug": "rating-g",
+                    "path": "/rating/G",
+                    "provider": "methode",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/ce8d3343701c29e06604299d9da7717f"
+                    }
+                }
+            ],
+            "organisation": [
+                {
+                    "id": "5f98c197b06c2de74522b0481b15b331",
+                    "slug": "organisation-stategovernment",
+                    "path": "/organisation/State Government",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 87,
+                    "relevancy": 40,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/5f98c197b06c2de74522b0481b15b331"
+                    }
+                },
+                {
+                    "id": "ac32c0139de93ed74e3456ec69ce414f",
+                    "slug": "organisation-goldcoastqueenslandcouncil",
+                    "path": "/organisation/Gold Coast, Queensland Council",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 82,
+                    "relevancy": 55,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/ac32c0139de93ed74e3456ec69ce414f"
+                    }
+                }
+            ],
+            "location": [
+                {
+                    "id": "05a0671a59922ba569f074a57b175172",
+                    "slug": "location-america-northamerica-northernamerica-unitedstatesofamerica-newyork-newyork-nosublocation",
+                    "path": "/location/America/North America/Northern America/United States of America/New York/New York/NOSUBLOCATION",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 89,
+                    "relevancy": 39,
+                    "frequency": 1,
+                    "geoPoint": {
+                        "lat": 40.71417,
+                        "lon": -74.00611
+                    },
+                    "classification": "auto",
+                    "continent": "America",
+                    "country": "United States of America",
+                    "state": "New York",
+                    "suburb": "New York",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/05a0671a59922ba569f074a57b175172"
+                    }
+                },
+                {
+                    "id": "38751420b5e936786d381a77991f9337",
+                    "slug": "location-oceania-nosubcontinent-australiaandnewzealand-australia-queensland-goldcoast-nosublocation",
+                    "path": "/location/Oceania/NOSUBCONTINENT/Australia and New Zealand/Australia/Queensland/Gold Coast/NOSUBLOCATION",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "confidence": 89,
+                    "relevancy": 89,
+                    "frequency": 8,
+                    "classification": "auto",
+                    "continent": "Oceania",
+                    "country": "Australia",
+                    "state": "Queensland",
+                    "suburb": "Gold Coast",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/38751420b5e936786d381a77991f9337"
+                    }
+                }
+            ],
+            "keyword": [
+                {
+                    "id": "21511b2ce113940cba1bc85c74880ad9",
+                    "slug": "keyword-crownjewels",
+                    "path": "/keyword/crown jewels",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 97,
+                    "frequency": 4,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/21511b2ce113940cba1bc85c74880ad9"
+                    }
+                },
+                {
+                    "id": "fe01aef585fefc54cb2d924ef9929bcd",
+                    "slug": "keyword-centralpark",
+                    "path": "/keyword/central park",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 95,
+                    "frequency": 3,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/fe01aef585fefc54cb2d924ef9929bcd"
+                    }
+                },
+                {
+                    "id": "8694e1eb56e06e496e274738a130b624",
+                    "slug": "keyword-goldenage",
+                    "path": "/keyword/Golden Age",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 94,
+                    "frequency": 3,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/8694e1eb56e06e496e274738a130b624"
+                    }
+                },
+                {
+                    "id": "4b4973547426f4fdacb2d0fc4606fd16",
+                    "slug": "keyword-citycouncil",
+                    "path": "/keyword/City Council",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 93,
+                    "frequency": 2,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/4b4973547426f4fdacb2d0fc4606fd16"
+                    }
+                },
+                {
+                    "id": "723a40742ac3faf0c799cd9e53fe41cb",
+                    "slug": "keyword-constructionworks",
+                    "path": "/keyword/construction works",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 91,
+                    "frequency": 2,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/723a40742ac3faf0c799cd9e53fe41cb"
+                    }
+                },
+                {
+                    "id": "18a2bf7ceef2c70150373b613babcc4e",
+                    "slug": "keyword-greenspace",
+                    "path": "/keyword/green space",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 90,
+                    "frequency": 2,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/18a2bf7ceef2c70150373b613babcc4e"
+                    }
+                },
+                {
+                    "id": "f2fb541ae987c4d6436085b7e25f1fb3",
+                    "slug": "keyword-greenheart",
+                    "path": "/keyword/green heart",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 89,
+                    "frequency": 2,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/f2fb541ae987c4d6436085b7e25f1fb3"
+                    }
+                },
+                {
+                    "id": "94c95b468d71fa8eb46091f3de968cd5",
+                    "slug": "keyword-goldcoastcity",
+                    "path": "/keyword/Gold Coast City",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 88,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/94c95b468d71fa8eb46091f3de968cd5"
+                    }
+                },
+                {
+                    "id": "20ce0455286c7e12bdae07f671b2fe62",
+                    "slug": "keyword-coastcitycouncil",
+                    "path": "/keyword/Coast City Council",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 86,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/20ce0455286c7e12bdae07f671b2fe62"
+                    }
+                },
+                {
+                    "id": "d64e2e6fae10b8a7b6972362b5a85241",
+                    "slug": "keyword-goldcoastbulletin",
+                    "path": "/keyword/Gold Coast Bulletin",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 85,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/d64e2e6fae10b8a7b6972362b5a85241"
+                    }
+                },
+                {
+                    "id": "95af8276ea246bb3ba4799cc6220a456",
+                    "slug": "keyword-areacouncillor",
+                    "path": "/keyword/area councillor",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 82,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/95af8276ea246bb3ba4799cc6220a456"
+                    }
+                },
+                {
+                    "id": "abf45bf6f00050e936ebd566ffb4b3df",
+                    "slug": "keyword-goldenagecampaign",
+                    "path": "/keyword/Golden Age campaign",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 81,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/abf45bf6f00050e936ebd566ffb4b3df"
+                    }
+                },
+                {
+                    "id": "11d9704ee1d61efda7bb6f3af5f19fc0",
+                    "slug": "keyword-restareas",
+                    "path": "/keyword/rest areas",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 80,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/11d9704ee1d61efda7bb6f3af5f19fc0"
+                    }
+                },
+                {
+                    "id": "30c290998e4f53dc0d08717916f719fa",
+                    "slug": "keyword-councilbudgetpapers",
+                    "path": "/keyword/Council budget papers",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 79,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/30c290998e4f53dc0d08717916f719fa"
+                    }
+                },
+                {
+                    "id": "1bc8dc2f82193b00ac777e64beb809bc",
+                    "slug": "keyword-councilplans",
+                    "path": "/keyword/council plans",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 78,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/1bc8dc2f82193b00ac777e64beb809bc"
+                    }
+                },
+                {
+                    "id": "cd98af6bc5ebe6e68a56db19a3256d67",
+                    "slug": "keyword-councillorhermann",
+                    "path": "/keyword/Councillor Hermann",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 76,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/cd98af6bc5ebe6e68a56db19a3256d67"
+                    }
+                },
+                {
+                    "id": "3de0565bb258fa83e924ec8e907bb9c5",
+                    "slug": "keyword-villagegreen",
+                    "path": "/keyword/village green",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 75,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/3de0565bb258fa83e924ec8e907bb9c5"
+                    }
+                },
+                {
+                    "id": "d8fc1bc4cb3d8758551cd17542d0d805",
+                    "slug": "keyword-cityparkland",
+                    "path": "/keyword/city parkland",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 73,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/d8fc1bc4cb3d8758551cd17542d0d805"
+                    }
+                },
+                {
+                    "id": "1a1938bf3eea1e032934b2aa4e0d4c21",
+                    "slug": "keyword-cityhall",
+                    "path": "/keyword/city hall",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 72,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/1a1938bf3eea1e032934b2aa4e0d4c21"
+                    }
+                },
+                {
+                    "id": "829b42ce03c9eda7b1d313084a37b7a6",
+                    "slug": "keyword-performancestage",
+                    "path": "/keyword/performance stage",
+                    "provider": "methode",
+                    "providerSource": "otca",
+                    "relevancy": 71,
+                    "frequency": 1,
+                    "classification": "auto",
+                    "link": {
+                        "self": "https://content.api.news/v3/categories/829b42ce03c9eda7b1d313084a37b7a6"
+                    }
+                }
+            ]
+        },
+        "keywords": [
+            "Hermann Vorster",
+            "United States of America",
+            "Council budget papers",
+            "performance stage",
+            "Golden Age",
+            "green space",
+            "City Council",
+            "Tom Tate",
+            "North America",
+            "Oceania",
+            "area councillor",
+            "Gold Coast Bulletin",
+            "Councillor Hermann",
+            "America",
+            "council plans",
+            "city hall",
+            "village green",
+            "State Government",
+            "New York",
+            "Gold Coast",
+            "Australia and New Zealand",
+            "city parkland",
+            "green heart",
+            "Gold Coast City",
+            "Gold Coast, Queensland Council",
+            "rest areas",
+            "Donna Gates",
+            "Northern America",
+            "central park",
+            "crown jewels",
+            "Coast City Council",
+            "Australia",
+            "Golden Age campaign",
+            "construction works",
+            "Queensland"
+        ],
+        "revision": {
+            "major": 1530085665000,
+            "minor": 0
+        },
+        "rightsMetadata": {
+            "originatedSource": "Gold Coast Bulletin"
+        },
+        "target": {
+            "domainLink": {
+                "goldcoastbulletin.com.au": {
+                    "link": "https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/special-features/goldenage",
+                    "adTarget": "NEWS.SPECIAL-FEATURES.GOLDENAGE",
+                    "caption": "Golden Age",
+                    "metered": false
+                },
+                "couriermail.com.au": {
+                    "link": "https://www.couriermail.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.couriermail.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "perthnow.com.au": {
+                    "link": "https://www.perthnow.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.perthnow.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "dailytelegraph.com.au": {
+                    "link": "https://www.dailytelegraph.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.dailytelegraph.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "themercury.com.au": {
+                    "link": "https://www.themercury.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.themercury.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "adelaidenow.com.au": {
+                    "link": "https://www.adelaidenow.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.adelaidenow.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "heraldsun.com.au": {
+                    "link": "https://www.heraldsun.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.heraldsun.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "cairnspost.com.au": {
+                    "link": "https://www.cairnspost.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.cairnspost.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "townsvillebulletin.com.au": {
+                    "link": "https://www.townsvillebulletin.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.townsvillebulletin.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "ntnews.com.au": {
+                    "link": "https://www.ntnews.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.ntnews.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                },
+                "geelongadvertiser.com.au": {
+                    "link": "https://www.geelongadvertiser.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "dynamicLink": "https://www.geelongadvertiser.com.au/news/national/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13",
+                    "route": "news/national",
+                    "adTarget": "NEWS.NATIONAL",
+                    "caption": "Gold Coast",
+                    "metered": true
+                }
+            },
+            "domains": [
+                "geelongadvertiser.com.au",
+                "heraldsun.com.au",
+                "themercury.com.au",
+                "goldcoastbulletin.com.au",
+                "adelaidenow.com.au",
+                "dailytelegraph.com.au",
+                "perthnow.com.au",
+                "cairnspost.com.au",
+                "townsvillebulletin.com.au",
+                "ntnews.com.au",
+                "couriermail.com.au"
+            ],
+            "sections": [
+                {
+                    "id": "4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e",
+                    "path": "/section/main/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Special Features/Golden Age",
+                    "slug": "section-main-newscorpaustraliacom-web-newsnetwork-goldcoastbulletin-specialfeatures-goldenage",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/4e2f5bbd-6e82-4a4a-8d3d-4aab11f34e6e"
+                    }
+                },
+                {
+                    "id": "1226692594381",
+                    "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Top News",
+                    "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-goldcoastbulletin-topnews",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1226692594381"
+                    }
+                },
+                {
+                    "id": "1226692593992",
+                    "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1226692593992"
+                    }
+                },
+                {
+                    "id": "1226697578704",
+                    "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/GB Business News",
+                    "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-goldcoastbulletin-gbbusinessnews",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1226697578704"
+                    }
+                },
+                {
+                    "id": "1227751164173",
+                    "path": "/section/aux/newscorpaustralia.com/Web/NewsNetwork/Gold Coast Bulletin/Council",
+                    "slug": "section-aux-newscorpaustraliacom-web-newsnetwork-goldcoastbulletin-council",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1227751164173"
+                    }
+                }
+            ],
+            "displays": [
+                {
+                    "id": "dd2b1d88-939f-43d9-8c1c-b20913a2f0e3",
+                    "path": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Special Features/Golden Age",
+                    "slug": "display-goldcoastbulletincomau-goldcoastbulletin-specialfeatures-goldenage",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/dd2b1d88-939f-43d9-8c1c-b20913a2f0e3"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226552",
+                    "path": "/display/couriermail.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-couriermailcomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226552"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226553",
+                    "path": "/display/perthnow.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-perthnowcomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226553"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226554",
+                    "path": "/display/dailytelegraph.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-dailytelegraphcomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226554"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226555",
+                    "path": "/display/themercury.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-themercurycomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226555"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226556",
+                    "path": "/display/adelaidenow.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-adelaidenowcomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226556"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226557",
+                    "path": "/display/heraldsun.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-heraldsuncomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226557"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226842",
+                    "path": "/display/cairnspost.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-cairnspostcomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226842"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226843",
+                    "path": "/display/townsvillebulletin.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-townsvillebulletincomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226843"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226844",
+                    "path": "/display/ntnews.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-ntnewscomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226844"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1228018226845",
+                    "path": "/display/geelongadvertiser.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-geelongadvertisercomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1228018226845"
+                    },
+                    "dominant": true
+                },
+                {
+                    "id": "1226692640333",
+                    "path": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Top News",
+                    "slug": "display-goldcoastbulletincomau-goldcoastbulletin-topnews",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1226692640333"
+                    },
+                    "dominant": false
+                },
+                {
+                    "id": "1226692639493",
+                    "path": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Gold Coast News and Galleries",
+                    "slug": "display-goldcoastbulletincomau-goldcoastbulletin-goldcoastnewsandgalleries",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1226692639493"
+                    },
+                    "dominant": false
+                },
+                {
+                    "id": "1226697578858",
+                    "path": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/GB Business News",
+                    "slug": "display-goldcoastbulletincomau-goldcoastbulletin-gbbusinessnews",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1226697578858"
+                    },
+                    "dominant": false
+                },
+                {
+                    "id": "1227751167321",
+                    "path": "/display/goldcoastbulletin.com.au/Gold Coast Bulletin/Council",
+                    "slug": "display-goldcoastbulletincomau-goldcoastbulletin-council",
+                    "link": {
+                        "self": "https://content.api.news/v3/sections/1227751167321"
+                    },
+                    "dominant": false
+                }
+            ]
+        },
+        "authors": [
+            {
+                "name": "Andrew Potts"
+            },
+            {
+                "name": "ANDREW POTTS"
+            }
+        ],
+        "accessType": "premium",
+        "subscriptionSummary": {
+            "default": "THE $15 million first stage of a city parkland, which will become the Gold Coast's ‘crown jewels’, will begin construction this year. And there are plans for it to become even larger."
+        },
+        "channel": "none",
+        "autoTranslate": false,
+        "headline": {
+            "default": "First look at Coast’s $15m ‘crown jewels’ central park"
+        },
+        "standfirst": {
+            "default": "<p class=\"standfirst-content\">THE $15 million first stage of a city parkland, which will become the Gold Coast’s ‘crown jewels’, will begin construction this year. And there are plans for it to become even larger.</p>"
+        },
+        "related": {
+            "thumbnail": {
+                "default": [
+                    "7d919cd8c4e98d58d8697dbbe0aa292f",
+                    "deeb9e39982eb89bb7faa2fa2145c78e",
+                    "6d04426fac5d12e6cc19a482ccc035dc",
+                    "cdca9e3ea876825f68303f850e0ec4bf",
+                    "deb385d033fa1652287b4ba1e958e662",
+                    "d3eababde3c1d8435d4d79d00bcad3c2"
+                ]
+            },
+            "primary": {
+                "default": [
+                    "d425b8f76b2cc9c5bfec76f963133d80"
+                ]
+            }
+        },
+        "references": {
+            "7d919cd8c4e98d58d8697dbbe0aa292f": {
+                "id": "7d919cd8c4e98d58d8697dbbe0aa292f",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-7a673b52ad6ce5f70a979d25de34a19a",
+                    "system": "methode"
+                },
+                "width": 100,
+                "height": 75,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Thumbnail",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "d3eababde3c1d8435d4d79d00bcad3c2",
+                    "21:9": "deb385d033fa1652287b4ba1e958e662",
+                    "3:4": "6d04426fac5d12e6cc19a482ccc035dc",
+                    "4:3": "deeb9e39982eb89bb7faa2fa2145c78e"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/7d919cd8c4e98d58d8697dbbe0aa292f",
+                    "media": "https://content.api.news/v3/images/bin/7d919cd8c4e98d58d8697dbbe0aa292f"
+                }
+            },
+            "deeb9e39982eb89bb7faa2fa2145c78e": {
+                "id": "deeb9e39982eb89bb7faa2fa2145c78e",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-dd3bab75b9855cef8631ad1baf11e33a",
+                    "system": "methode"
+                },
+                "width": 1024,
+                "height": 768,
+                "aspectRatio": "4:3",
+                "cropName": "4:3-Landscape",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "d3eababde3c1d8435d4d79d00bcad3c2",
+                    "21:9": "deb385d033fa1652287b4ba1e958e662",
+                    "3:4": "6d04426fac5d12e6cc19a482ccc035dc",
+                    "4:3": "7d919cd8c4e98d58d8697dbbe0aa292f"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/deeb9e39982eb89bb7faa2fa2145c78e",
+                    "media": "https://content.api.news/v3/images/bin/deeb9e39982eb89bb7faa2fa2145c78e"
+                }
+            },
+            "6d04426fac5d12e6cc19a482ccc035dc": {
+                "id": "6d04426fac5d12e6cc19a482ccc035dc",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-8edce1e88ae4b400ba84b2bd1aea1af6",
+                    "system": "methode"
+                },
+                "width": 768,
+                "height": 1024,
+                "aspectRatio": "3:4",
+                "cropName": "3:4-Portrait",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "d3eababde3c1d8435d4d79d00bcad3c2",
+                    "21:9": "deb385d033fa1652287b4ba1e958e662",
+                    "4:3": "7d919cd8c4e98d58d8697dbbe0aa292f"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/6d04426fac5d12e6cc19a482ccc035dc",
+                    "media": "https://content.api.news/v3/images/bin/6d04426fac5d12e6cc19a482ccc035dc"
+                }
+            },
+            "cdca9e3ea876825f68303f850e0ec4bf": {
+                "id": "cdca9e3ea876825f68303f850e0ec4bf",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-fe76c96366508485817c747a74312e73",
+                    "system": "methode"
+                },
+                "width": 1280,
+                "height": 720,
+                "aspectRatio": "16:9",
+                "cropName": "16:9-Landscape",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "d3eababde3c1d8435d4d79d00bcad3c2",
+                    "21:9": "deb385d033fa1652287b4ba1e958e662",
+                    "3:4": "6d04426fac5d12e6cc19a482ccc035dc",
+                    "4:3": "7d919cd8c4e98d58d8697dbbe0aa292f"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/cdca9e3ea876825f68303f850e0ec4bf",
+                    "media": "https://content.api.news/v3/images/bin/cdca9e3ea876825f68303f850e0ec4bf"
+                }
+            },
+            "deb385d033fa1652287b4ba1e958e662": {
+                "id": "deb385d033fa1652287b4ba1e958e662",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-2dce5d22c3c92705acde9229206ad68d",
+                    "system": "methode"
+                },
+                "width": 1900,
+                "height": 815,
+                "aspectRatio": "21:9",
+                "cropName": "21:9-Landscape",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "d3eababde3c1d8435d4d79d00bcad3c2",
+                    "3:4": "6d04426fac5d12e6cc19a482ccc035dc",
+                    "4:3": "7d919cd8c4e98d58d8697dbbe0aa292f"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/deb385d033fa1652287b4ba1e958e662",
+                    "media": "https://content.api.news/v3/images/bin/deb385d033fa1652287b4ba1e958e662"
+                }
+            },
+            "d3eababde3c1d8435d4d79d00bcad3c2": {
+                "id": "d3eababde3c1d8435d4d79d00bcad3c2",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-db4869b9960537c016517ab328dc2421",
+                    "system": "methode"
+                },
+                "width": 149,
+                "height": 86,
+                "aspectRatio": "16:9",
+                "cropName": "16:9-Thumbnail",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "cdca9e3ea876825f68303f850e0ec4bf",
+                    "21:9": "deb385d033fa1652287b4ba1e958e662",
+                    "3:4": "6d04426fac5d12e6cc19a482ccc035dc",
+                    "4:3": "7d919cd8c4e98d58d8697dbbe0aa292f"
+                },
+                "mimeType": "image/jpeg",
+                "link": {
+                    "self": "https://content.api.news/v3/images/d3eababde3c1d8435d4d79d00bcad3c2",
+                    "media": "https://content.api.news/v3/images/bin/d3eababde3c1d8435d4d79d00bcad3c2"
+                }
+            },
+            "d425b8f76b2cc9c5bfec76f963133d80": {
+                "id": "d425b8f76b2cc9c5bfec76f963133d80",
+                "type": "video",
+                "rightsMetadata": {
+                    "originatedSource": "GoldCoastBulletin"
+                },
+                "platform": {
+                    "id": "5348771529001-5802412668001",
+                    "system": "brightcove"
+                },
+                "captionOverride": "The Gold Coast's new parklands",
+                "link": {
+                    "self": "https://content.api.news/v3/videos/d425b8f76b2cc9c5bfec76f963133d80",
+                    "canonical": "https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+                }
+            },
+            "506ac1c758815fa03a37e6155fac3b93": {
+                "id": "506ac1c758815fa03a37e6155fac3b93",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Corp Australia"
+                },
+                "platform": {
+                    "id": "crop-1245366d875134285d08f2604f554229",
+                    "system": "methode"
+                },
+                "width": 650,
+                "height": 366,
+                "aspectRatio": "16:9",
+                "cropName": "MajorEvent650x366",
+                "altText": "QLD_GCB_NEWS_COUNCIL_5APR16(2)",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Councillor Hermann Vorster. Photo: Jerad Williams",
+                "link": {
+                    "self": "https://content.api.news/v3/images/506ac1c758815fa03a37e6155fac3b93",
+                    "media": "https://content.api.news/v3/images/bin/506ac1c758815fa03a37e6155fac3b93"
+                }
+            },
+            "ffdeb34d56e9a758eb98a846c40046f9": {
+                "id": "ffdeb34d56e9a758eb98a846c40046f9",
+                "type": "video",
+                "rightsMetadata": {
+                    "originatedSource": "GoldCoastBulletin"
+                },
+                "platform": {
+                    "id": "5348771529001-5793203398001",
+                    "system": "brightcove"
+                },
+                "captionOverride": "Gold Coast Bulletin's Golden Age campaign",
+                "link": {
+                    "self": "https://content.api.news/v3/videos/ffdeb34d56e9a758eb98a846c40046f9",
+                    "canonical": "https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-gold-coasts-city-council-to-break-ground-on-15m-robina-city-parklands-this-year/news-story/86f0a4cda1c57ca41ae232369b5b2b13"
+                }
+            },
+            "ba15bf82ec17cb527fbfb8684a81d554": {
+                "id": "ba15bf82ec17cb527fbfb8684a81d554",
+                "type": "custom",
+                "subtype": "promo",
+                "platform": {
+                    "id": "4b28faa4-6fa7-11e8-b7c5-fb1feabf8b47",
+                    "system": "methode"
+                },
+                "headline": {
+                    "default": "Golden Age"
+                },
+                "dataModel": {
+                    "displayStyle": "Promo image (linked image only)"
+                },
+                "related": {
+                    "primary": {
+                        "default": [
+                            "a7a5dbf8f50c744e5603ff55b6b6a7fa"
+                        ]
+                    }
+                },
+                "references": {
+                    "a7a5dbf8f50c744e5603ff55b6b6a7fa": {
+                        "id": "a7a5dbf8f50c744e5603ff55b6b6a7fa",
+                        "type": "image",
+                        "rightsMetadata": {
+                            "originatedSource": "Gold Coast Bulletin"
+                        },
+                        "platform": {
+                            "id": "crop-b0501a8d7b52fb47790e33a4152813a3",
+                            "system": "methode"
+                        },
+                        "width": 650,
+                        "height": 138,
+                        "cropName": "CustomAsset",
+                        "altText": "Brought to you by. Photo: Supplied",
+                        "mimeType": "image/jpeg",
+                        "link": {
+                            "self": "https://content.api.news/v3/images/a7a5dbf8f50c744e5603ff55b6b6a7fa",
+                            "media": "https://content.api.news/v3/images/bin/a7a5dbf8f50c744e5603ff55b6b6a7fa"
+                        }
+                    }
+                },
+                "captionOverride": "Golden Age",
+                "link": {
+                    "self": "https://content.api.news/v3/customs/ba15bf82ec17cb527fbfb8684a81d554"
+                }
+            },
+            "cddeb4c239f95464f04cc9445c51af2c": {
+                "id": "cddeb4c239f95464f04cc9445c51af2c",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "Supplied"
+                },
+                "platform": {
+                    "id": "crop-5298ea9a3ff90d80e361ccc723a18b7a",
+                    "system": "methode"
+                },
+                "width": 650,
+                "height": 366,
+                "aspectRatio": "16:9",
+                "cropName": "MajorEvent650x366",
+                "mimeType": "image/jpeg",
+                "captionOverride": "Artist Impression of Robina City Parklands. Supplied by: Gold Coast City Council",
+                "link": {
+                    "self": "https://content.api.news/v3/images/cddeb4c239f95464f04cc9445c51af2c",
+                    "media": "https://content.api.news/v3/images/bin/cddeb4c239f95464f04cc9445c51af2c"
+                }
+            },
+            "7e54539216f3458cb3545a0b9bd1cbf1": {
+                "id": "7e54539216f3458cb3545a0b9bd1cbf1",
+                "type": "image",
+                "rightsMetadata": {
+                    "originatedSource": "News Limited"
+                },
+                "platform": {
+                    "id": "crop-ef8b7f93e345ff0e2bca8c91154fd337",
+                    "system": "methode"
+                },
+                "width": 650,
+                "height": 366,
+                "aspectRatio": "16:9",
+                "cropName": "MajorEvent650x366",
+                "altText": "Aerial photos of Skilled Park and the Robina train station.",
+                "altAspectRatio": {
+                    "16:9": "d3eababde3c1d8435d4d79d00bcad3c2",
+                    "21:9": "deb385d033fa1652287b4ba1e958e662",
+                    "3:4": "6d04426fac5d12e6cc19a482ccc035dc",
+                    "4:3": "7d919cd8c4e98d58d8697dbbe0aa292f"
+                },
+                "mimeType": "image/jpeg",
+                "captionOverride": "The parklands will be created next to Cbus Super Stadium",
+                "link": {
+                    "self": "https://content.api.news/v3/images/7e54539216f3458cb3545a0b9bd1cbf1",
+                    "media": "https://content.api.news/v3/images/bin/7e54539216f3458cb3545a0b9bd1cbf1"
+                }
+            }
+        },
+        "byline": {
+            "default": "ANDREW POTTS"
+        },
+        "kicker": {
+            "default": "Golden Age"
+        },
+        "intro": {
+            "default": "<p>A GIANT ‘Gold Coast central park’ to rival those in the nation’s capitals will begin construction this year as part of a $15 million revamp of a long-unused site.</p>"
+        },
+        "seoOwner": {
+            "displayName": "Gold Coast Bulletin",
+            "domain": "goldcoastbulletin.com.au"
+        },
+        "seoTitle": "Golden Age: Gold Coast’s City Council to break ground on $15m Robina City Parklands this year",
+        "commentsAllowed": {
+            "default": true
+        },
+        "body": {
+            "default": "<p>The Robina Parklands will be built next to CBUS Super Stadium across 17ha of flooplain land that was once known as the city’s “green heart”.</p><p>Council budget papers reveal city hall put $1.5 million towards design and construction works, which will begin later this year, with a further $200,000 to be spent developing “a master plan for the Gold Coast Central Park in the heart of the city”. </p><p>\n               <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-mayor-tom-tate-proposes-the-spit-be-renamed-and-become-gold-coasts-central-park/news-story/3a45871e456cdb4a0354fed492408827\">GOLDEN AGE: THE SPIT COULD BE COAST’S CENTRAL PARK</a>\n            </p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"cddeb4c239f95464f04cc9445c51af2c\"></a>\n            </p><p>\n               <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-southern-gold-coast-light-rail-link-will-transform-palm-beach-and-elanora-and-bring-more-people-to-the-area/news-story/f26222aff463d353553adcfbe201da65\">GOLDEN AGE: HOW HEAVY RAIL WILL TRANSFORM COAST’S SOUTH</a>\n            </p><p>Acting Mayor Donna Gates said the new park would have features which would appeal to people from all walks of life.</p><p>“We are not only preserving green space, we are unlocking it through walking trails, viewing platforms and interpretative signage so the city’s 13 million visitors and 580,000 locals can get out there and experience nature,” she said.</p><p>“We are a city in love with our green space and the City Plan ensures at least 51 per cent of our city’s footprint is forever preserved as open space, for all to enjoy.</p><p>“We already have 2300 parks and around 13,000 hectares of green space and this development will add a unique experience to the mix.”</p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"7e54539216f3458cb3545a0b9bd1cbf1\"></a>\n            </p><p>According to council plans the parklands would feature:</p><p>* A village green and performance stage where concerts could be held with a capacity for 5000 people.</p><p>* A picnic lawn and two adventure playgrounds.</p><p>* Recreation walking trails, with rest areas.</p><p>* Kayak launches into Mudgeeraba Creek</p><p>* Multiple fishing nodes around the edges of the parkland.</p><p>* A multi-use structure with a cafe and community facilities.</p><p>Construction works will begin within a year, with council already having spent $1 million on planning and early works.</p><p>\n               <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/golden-age-where-the-gold-coasts-light-rail-will-go-next-with-south-west-and-north-links-planned/news-story/c35e96b06a3247f33e9a5d4681f4aaee\">GOLDEN AGE: WHERE LIGHT RAIL WILL GO NEXT</a>\n            </p><p channel=\"Web,Tablet\">\n               <a class=\"capi-image\" capiid=\"506ac1c758815fa03a37e6155fac3b93\"></a>\n            </p><p channel=\"Web,Tablet\">\n               <a capiid=\"ba15bf82ec17cb527fbfb8684a81d554\" class=\"capi-promo\">Golden Age</a>\n            </p><p>And there could be more stages to come of what Council lifestyle boss and area councillor Hermann Vorster said would become the central Gold Coast’s “crown jewels”.</p><p>“Residents in the centre of the Gold Coast have been envious of the multi-hundred million dollars of investment on the Glitter Strip and they say they want similar standards of amenity closer to their own homes,” he said.</p><p>“This will be the crown jewels of the suburban Gold Coast and will be a place that locals can choose to go if they’re not going to the beach.</p><p>\n               <a href=\"https://www.goldcoastbulletin.com.au/news/special-features/goldenage/how-the-trams-can-move-fast-to-the-border-as-transport-plan-emerges-for-gold-coast/news-story/fa1443919ac487b3ad72e402456883ad\">GOLDEN AGE: HOW TRAMS WILL GET TO THE BORDER FASTER</a>\n            </p><p>\n               <a capiid=\"ffdeb34d56e9a758eb98a846c40046f9\" class=\"capi-video\">Gold Coast Bulletin's Golden Age campaign</a>\n            </p><p>“This will bring quality space to ratepayers and will mean that no matter where you live you will have access to great facilities where kids can play and you can enjoy the fresh air.”</p><p>Cr Vorster said he expected the project to take traffic off the M1 and other roads by providing a venue for people to spend their leisure time at without having to drive significant distances.</p><p>It is understood the council also hopes to negotiate with the State Government to obtain fill from the $500 million M1 upgrade for use in the creation of the parklands.</p><p>\n               <a href=\"http://www.goldcoastbulletin.com.au/subscribe/news/1/?utm_medium=editorial&amp;int_source=placement&amp;int_campaign=acq_fy18q4_hotoffer&amp;int_content=various&amp;sourceCode=GCWEB_EDL1086\">GET FULL DIGITAL ACCESS FOR 50C A DAY</a>\n            </p><p>The fill would be used to raise the level of the site in order to prevent future flooding.</p><p>The parklands will be surrounded by major new residential developments, including the under construction $170 million Vue development, as well as the $1.5 billion Breakwater mini-city.</p><p>News of the Robina project comes just days after Mayor Tom Tate announced his own vision for The Spit as the Gold Coast’s answer to New York City’s Central Park.</p><p/><p/>"
+        },
+        "extendedHeadline": {
+            "default": "Golden Age: Gold Coast’s City Council to break ground on $15m Robina City Parklands this year"
+        },
+        "schemaVersion": "v3.0"
+    }
+}

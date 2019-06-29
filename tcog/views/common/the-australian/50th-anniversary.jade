@@ -1,0 +1,45 @@
+for item, idx in data.results
+    .group.interactive-parallax.interactive-section.screen-two-column.alternate.alternate-parallax.center-display.full-screen
+        .group-content
+            .item
+                .module.inner-content
+                    .module-header: h3.heading= item.kicker
+
+                    .module-content
+                        .content-item.item-1
+                            if (item.primaryImage)
+                                .promo-block: .promo-image
+                                    img(
+                                        data-src=  item.primaryImage.link
+                                        width=     item.primaryImage.width
+                                        height=    item.primaryImage.height
+                                        alt=       item.primaryImage.description
+                                    )
+
+                        .content-item.item-2
+                            .promo-block
+
+                                if (item.title)
+                                    .promo-heading: h4.heading!= item.title.trim()
+
+
+                                if (item.body)
+                                    .promo-inner
+                                        if (item.standFirst)
+                                            p.quote!= item.standFirst
+                                        p!= item.body
+
+                    .module-footer
+                        ul
+                            if (item.gallery)
+                                li.footer-gallery
+                                    a(  href="#gallery",
+                                        data-images= item.gallery.join(","))
+                                        | Launch gallery
+
+
+                            if (item.video)
+                                li.footer-video
+                                    a(  href="#video",
+                                        data-video-id=item.video.originId)
+                                        | Launch video

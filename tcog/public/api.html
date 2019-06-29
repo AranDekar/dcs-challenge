@@ -1,0 +1,801 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>TCOG API</title><link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"><link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Inconsolata|Raleway:200"><style>/* Highlight.js Theme Tomorrow */
+.hljs-comment,.hljs-title{color:#8e908c}.hljs-variable,.hljs-attribute,.hljs-tag,.hljs-regexp,.ruby .hljs-constant,.xml .hljs-tag .hljs-title,.xml .hljs-pi,.xml .hljs-doctype,.html .hljs-doctype,.css .hljs-id,.css .hljs-class,.css .hljs-pseudo{color:#c82829}.hljs-number,.hljs-preprocessor,.hljs-pragma,.hljs-built_in,.hljs-literal,.hljs-params,.hljs-constant{color:#f5871f}.ruby .hljs-class .hljs-title,.css .hljs-rules .hljs-attribute{color:#eab700}.hljs-string,.hljs-value,.hljs-inheritance,.hljs-header,.ruby .hljs-symbol,.xml .hljs-cdata{color:#718c00}.css .hljs-hexcolor{color:#3e999f}.hljs-function,.python .hljs-decorator,.python .hljs-title,.ruby .hljs-function .hljs-title,.ruby .hljs-title .hljs-keyword,.perl .hljs-sub,.javascript .hljs-title,.coffeescript .hljs-title{color:#4271ae}.hljs-keyword,.javascript .hljs-function{color:#8959a8}.hljs{display:block;background:white;color:#4d4d4c;padding:.5em}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .javascript,.xml .vbscript,.xml .css,.xml .hljs-cdata{opacity:.5}</style><style>body,
+h4,
+h5 {
+  font-family: 'Roboto' sans-serif !important;
+}
+h1,
+h2,
+h3,
+.aglio {
+  font-family: 'Raleway' sans-serif !important;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  display: none;
+}
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a,
+h5:hover a {
+  display: inline;
+}
+code {
+  color: #444;
+  background-color: #ddd;
+  font-family: 'Inconsolata' monospace !important;
+}
+a[data-target] {
+  cursor: pointer;
+}
+h4 {
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.back-to-top {
+  position: fixed;
+  z-index: 1;
+  bottom: 0px;
+  right: 24px;
+  padding: 4px 8px;
+  background-color: #eee;
+  text-decoration: none !important;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel {
+  overflow: hidden;
+}
+.panel-heading code {
+  color: #c7254e;
+  background-color: transparent;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.panel-heading h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+a.list-group-item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+a.list-group-item.heading {
+  background-color: #f5f5f5;
+}
+.list-group-item.collapse {
+  display: none;
+}
+.list-group-item.collapse.in {
+  display: block;
+}
+#nav {
+  margin-top: 38px;
+  min-width: 255px;
+  top: 0;
+  bottom: 0;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  overflow-y: auto;
+}
+@media (max-width: 1199px) {
+  #nav {
+    min-width: 212px;
+  }
+}
+</style></head><body><a href="#top" class="text-muted back-to-top"><i class="fa fa-toggle-up"></i>&nbsp;Back to top</a><div class="container"><div class="row"><div class="col-md-3"><nav id="nav" class="hidden-sm hidden-xs affix nav"><div class="list-group"><a href="#content-api-1-to-1-mappings" class="list-group-item heading">Content API 1 to 1 Mappings</a><a href="#content-api-1-to-1-mappings-search" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search</a><a href="#content-api-1-to-1-mappings-retrieve" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Retrieve</a><a href="#content-api-1-to-1-mappings-retrieve-collection" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Retrieve Collection</a></div><div class="list-group"><a href="#config-api-mapping" class="list-group-item heading">Config API Mapping</a><a href="#config-api-mapping-config" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Config</a></div><div class="list-group"><a href="#tcog-components" class="list-group-item heading">TCOG Components</a><a href="#tcog-components-popular-combined" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Popular Combined</a><a href="#tcog-components-content-metadata" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Content Metadata</a><a href="#tcog-components-article-component" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Article Component</a></div><div class="list-group"><a href="#deprecated-content-urls" class="list-group-item heading">Deprecated Content URLs</a><a href="#deprecated-content-urls-search-1" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search 1</a><a href="#deprecated-content-urls-search-2" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Search 2</a><a href="#deprecated-content-urls-retrieve-collection-2" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Retrieve Collection 2</a></div><div class="list-group"><a href="#deprecated-config-urls" class="list-group-item heading">Deprecated Config URLs</a><a href="#deprecated-config-urls-config-2" class="list-group-item"><i class="fa fa-arrow-circle-down"></i>&nbsp;Config 2</a></div><p style="text-align: center"><a href="http://tcog.news.com.au">http://tcog.news.com.au</a></p></nav></div><div class="col-md-9"><div><header><div class="page-header"><h1 id="top">TCOG API</h1></div></header><div class="description"><blockquote>
+<p>“More than meets the eye.”</p>
+</blockquote>
+<p><a href="http://tcog.news.com.au/">TCOG</a> is a transformation tier for consuming various content sources and delivering templates.</p>
+<h2 id="url-organisation">URL Organisation</h2>
+<p>URLs are split into two types - 1 to 1 Mappings with an existing API and TCOG components written to solve more specialised problems.</p>
+<p>Currently there are 1 to 1 Mappings to the Content and Config API. To learn more about these APIs access the IO Docs at <a href="http://developer.news.com.au/">http://developer.news.com.au/</a>.</p>
+<h3 id="1-to-1-mappings-url-structure">1 to 1 Mappings URL Structure</h3>
+<p>“1 to 1” Mappings mimick the URLs of the API they are modelled after, except they are preceded by a URI part indicating who owns the URL.</p>
+<p>For example <code>http://tcog.news.com.au/news/content/v1/?t_product=tcog</code> mirrors the call to <code>http://cdn.newsapi.com.au/content/v1/?api_key=XYZ123</code> except that it has a name for the owner of the URL.</p>
+<p>This is a foresight for when we need TCOG to sit before other APIs.</p>
+<p>TCOG passes on every URI parameter, except those prefixed with <code>t_product</code>, to the downstream endpoint.</p>
+<h3 id="product-identifiers">Product Identifiers</h3>
+<p>TCOG URLs use a <code>t_product</code> URI parameter. TCOG internally keeps a configuration key-value store that is used to look up required data for the service TCOG is calling. In the context of using the Content API, <code>t_product=tcog</code> will mean that TCOG can look up the Content API and Image API keys configured for the tcog product that are required by the downstream API.</p>
+<p>The product also specifies who should be contacted if an error occurs. Notifications are conveyed via <a href="http://www.opsgenie.com/">Opsgenie</a>.</p>
+<p>The first step toward using TCOG is to arrange to have a TCOG Product Identifer created. See <a href="http://wiki.news.com.au/display/FE/Setting+up+a+product">http://wiki.news.com.au/display/FE/Setting+up+a+product</a>.</p>
+<h3 id="tcog-components">TCOG Components</h3>
+<p>Components live under the /component/ namespace in the URI. They also require a <code>t_product</code> identifier.</p>
+<p>Components are customised endpoints that solve specific problems not met by downstream APIs.</p>
+<h3 id="uri-parameters">URI Parameters</h3>
+<p>TCOG uses any URI parameter that begins with the <code>t_</code>, <code>tc_</code> and <code>td_</code> prefixes. These parameters are removed from the downstream request to the API TCOG fronts. Any other URI parameter will be passed along.</p>
+<ul>
+<li><code>t_</code> - top level tcog options</li>
+<li><code>tc_</code> - signifies anything to do with a config</li>
+<li><code>td_</code> signifies anything to do with display overrides</li>
+</ul>
+<p>TCOG has a variety of URI parameters that operate to produce various effects suchs as:</p>
+<ul>
+<li>toggling on specific parts of templates (whether to show a title, a standfirst, etc.)</li>
+<li>indicating which template to use (the <code>t_template</code> parameter)</li>
+<li>which css classes or pieces of text to use (all text is sanitized before appearing in a template)</li>
+</ul>
+<p>Unless overridden by <code>t_template</code> the default template is usually ‘extended’.</p>
+<p>General layout templates:</p>
+<ul>
+<li>extended</li>
+<li>compact - breaking news</li>
+<li>compact-ol - plain ordered list of news</li>
+<li>compact-ul - plain unordered list of news</li>
+<li>imageblock - regular thumbnail view</li>
+</ul>
+<p>Footer templates:</p>
+<ul>
+<li>popular-combined-footer</li>
+<li>popular-footer</li>
+<li>popular-headline</li>
+<li>popular-plain</li>
+</ul>
+<p>Header templates:</p>
+<ul>
+<li>metadata - builds header information such as title, meta, links and Javascript variables.</li>
+</ul>
+<p>Customised templates for specific purposes can be produced. For example, one was made for The Australian’s 50th.</p>
+<h3 id="deprecated-parameters">Deprecated Parameters</h3>
+<p>TCOG has deprecated earlier <code>display:</code> style variables (the colon character isn’t legal for URI Parameters). TCOG URLs holding these URI parameters will still function, however.</p>
+</div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="content-api-1-to-1-mappings">Content API 1 to 1 Mappings&nbsp;<a href="#content-api-1-to-1-mappings"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="content-api-1-to-1-mappings-search">Search&nbsp;<a href="#content-api-1-to-1-mappings-search"><i class="fa fa-link"></i></a></h4><p>TCOG endpoint fronting Content API’s generic search.</p>
+<section id="content-api-1-to-1-mappings-search-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">GET Notes</span></div><div style="float:left"><a href="#content-api-1-to-1-mappings-search-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/news/content/v1/{?t_product, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/news/content/v1/?t_product=tcog
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>extended</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#47b078420dad64c51c72d7ac1bbc78ac" class="pull-right">Toggle</a></li><li id="47b078420dad64c51c72d7ac1bbc78ac" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module "</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-0 cirpos-58"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"93e41fc57339ce7656cc9274e7871065"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-0 sbrpos-58"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>Steve 'Blocker' Roach on Tigers young guns, Benji return<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-1 cirpos-57"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"87516ba239ec241c35b6e9fa5680fe66"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-1 sbrpos-57"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>House blaze<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... omitting most of the HTML --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-56 cirpos-2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-56 sbrpos-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-57 cirpos-1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-57 sbrpos-1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section><h4 id="content-api-1-to-1-mappings-retrieve">Retrieve&nbsp;<a href="#content-api-1-to-1-mappings-retrieve"><i class="fa fa-link"></i></a></h4><p>TCOG call to Content API /content/v1/:id. Except for the id parameter, this call is identical to the search function above.</p>
+<section id="content-api-1-to-1-mappings-retrieve-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#content-api-1-to-1-mappings-retrieve-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/news/content/v1/:id/{?t_product, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/news/content/v1/17d8cb2f5077fc8284cb3e6464769c8d?t_product=tcog
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>extended</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#9726b5eaabddf4a7d6e598d70ec2bb17" class="pull-right">Toggle</a></li><li id="9726b5eaabddf4a7d6e598d70ec2bb17" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module "</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-0 cirpos-58"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"93e41fc57339ce7656cc9274e7871065"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-0 sbrpos-58"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>Steve 'Blocker' Roach on Tigers young guns, Benji return<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-1 cirpos-57"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"87516ba239ec241c35b6e9fa5680fe66"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-1 sbrpos-57"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>House blaze<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... omitting for brevity --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-56 cirpos-2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-56 sbrpos-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-57 cirpos-1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-57 sbrpos-1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section><h4 id="content-api-1-to-1-mappings-retrieve-collection">Retrieve Collection&nbsp;<a href="#content-api-1-to-1-mappings-retrieve-collection"><i class="fa fa-link"></i></a></h4><p>TCOG call to Content API /content/v1/collection/:id.</p>
+<section id="content-api-1-to-1-mappings-retrieve-collection-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#content-api-1-to-1-mappings-retrieve-collection-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/news/content/v1/collection/:id/{?t_product, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/content/v1/collection/892fcb0f9febf97319ba00e400ae5e5e?t_product=tcog&amp;pageSize=20&amp;offset=0
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>extended</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#ff4af6e0460123aa19be7a57da339905" class="pull-right">Toggle</a></li><li id="ff4af6e0460123aa19be7a57da339905" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module module-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-0</span> <span class="hljs-attribute">cirpos-20</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-0</span> <span class="hljs-attribute">sbrpos-20</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">b76d439ac71170e1d207bd24295fea80</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>Politics<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">bob-hawke</span>/<span class="hljs-attribute">story-fnnk86em-1226977948953</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5012dbb9e10f745cdf2a849c87023f03"</span>&gt;</span>Bob
+        Hawke<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">bob-hawke</span>/<span class="hljs-attribute">story-fnnk86em-1226977948953</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5012dbb9e10f745cdf2a849c87023f03"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Bob Hawke in 1991."</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226977949068</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Robert James Lee Hawke had a streak of
+        larrikinism that endeared him to many Australians<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-1</span> <span class="hljs-attribute">cirpos-19</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-1</span> <span class="hljs-attribute">sbrpos-19</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">167e9ed3bbf82302679356e51ea99b24</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>Media<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">rupert-murdoch</span>/<span class="hljs-attribute">story-fnnk86em-1226978165444</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5e38819e55d2e391886832be59cd4235"</span>&gt;</span>Rupert
+        Murdoch<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">rupert-murdoch</span>/<span class="hljs-attribute">story-fnnk86em-1226978165444</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5e38819e55d2e391886832be59cd4235"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Rupert Murdoch photographed in the 1970’s."</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226978165873</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Tycoon From Down Under Takes On The
+        World.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- ... omitting for brevity --&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-18</span> <span class="hljs-attribute">cirpos-2</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-18</span> <span class="hljs-attribute">sbrpos-2</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">f4783a15b558d27d1fef81784a477b3a</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>The
+        Innovators<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">ian-frazer</span>/<span class="hljs-attribute">story-fnnk86em-1226982045562</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">3798a79eafb62d2a59f4fff1fc15cc42"</span>&gt;</span>Ian
+        Frazer<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">ian-frazer</span>/<span class="hljs-attribute">story-fnnk86em-1226982045562</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">3798a79eafb62d2a59f4fff1fc15cc42"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Ian Frazer"</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226982045107</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>God’s gift to women<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-19</span> <span class="hljs-attribute">cirpos-1</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-19</span> <span class="hljs-attribute">sbrpos-1</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">4d57e1bb4787f7fe019bd428965acbdd</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">lang-hancock-gina-rinehart</span>/<span class="hljs-attribute">story-fnnk86em-1226982002225</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">c79a9f82b29d77514d4cb8f8c470e12c"</span>&gt;</span>Lang
+        Hancock &amp;amp; Gina Rinehart<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">lang-hancock-gina-rinehart</span>/<span class="hljs-attribute">story-fnnk86em-1226982002225</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">c79a9f82b29d77514d4cb8f8c470e12c"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Hancock, left, with Gina and her first husband, Greg Hayward, who changed his surname fro"</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226982003974</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>All real wealth is in the ground, and
+        societies become prosperous only by exploiting that
+        wealth<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="config-api-mapping">Config API Mapping&nbsp;<a href="#config-api-mapping"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>This behaviour is a 1 to 1 mapping to the Content API.</p>
+<h4 id="config-api-mapping-config">Config&nbsp;<a href="#config-api-mapping-config"><i class="fa fa-link"></i></a></h4><p>A mapping to the Config API. Arbitrary JSON can be stored here, mostly for use in the HEAD element of a HTML document.</p>
+<p>Note, this query is silent by default. You must specify which parts of the JSON clause you wish to see by toggling on the boolean. For example, <code>&amp;tc_vars=true</code> would mean that the <code>metadata</code> template would output Javascript variables.</p>
+<p>Speak to a TCOG team member for more information.</p>
+<section id="config-api-mapping-config-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#config-api-mapping-config-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/news/config/conf{?t_product, tc_key, tc_title, tc_meta, tc_link, tc_vars, tc_getvar, tc_primary_bound, tc_style}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/metadata/?t_product=capability&amp;tc_key=capability.newslocal&amp;tc_vars=true&amp;tc_meta=true&amp;t_link=true&amp;tc_subkey=mosman-daily&amp;t_title=true
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>tc_key</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>capability.newslocal</span></span><p>The identifier for the top level of JSON held in the Config API</p>
+</dd><dt>tc_title</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display the title</p>
+</dd><dt>tc_meta</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display meta information</p>
+</dd><dt>tc_link</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display links</p>
+</dd><dt>tc_vars</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display Javascript variables</p>
+</dd><dt>tc_getvar</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display unescaped raw output of a Javascript variable</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#83436d50c7032f514e562fa680e1f5bb" class="pull-right">Toggle</a></li><li id="83436d50c7032f514e562fa680e1f5bb" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Mosman Daily | Local Community News NSW |
+    dailytelegraph.com.au<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+    "<span class="hljs-attribute">Read</span> <span class="hljs-attribute">the</span> <span class="hljs-attribute">latest</span> <span class="hljs-attribute">news</span> <span class="hljs-attribute">from</span> <span class="hljs-attribute">the</span> <span class="hljs-attribute">Mosman</span> <span class="hljs-attribute">Daily</span> <span class="hljs-attribute">and</span> <span class="hljs-attribute">many</span> <span class="hljs-attribute">more</span> <span class="hljs-attribute">Sydney</span> <span class="hljs-attribute">Local</span> <span class="hljs-attribute">Newspapers</span> <span class="hljs-attribute">online</span>"
+    <span class="hljs-attribute">name</span>=<span class="hljs-value">"description"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+    "<span class="hljs-attribute">Mosman</span> <span class="hljs-attribute">Daily</span>, <span class="hljs-attribute">NewsLocal</span> <span class="hljs-attribute">Newspapers</span>, <span class="hljs-attribute">Local</span> <span class="hljs-attribute">Community</span> <span class="hljs-attribute">News</span>, <span class="hljs-attribute">NSW</span> <span class="hljs-attribute">News</span>, <span class="hljs-attribute">NewsLocal</span>, <span class="hljs-attribute">News</span>, <span class="hljs-attribute">Mosman</span>, <span class="hljs-attribute">Daily</span>"
+    <span class="hljs-attribute">name</span>=<span class="hljs-value">"keywords"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"100002324295212"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"summary"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"twitter:card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"@dailytelegraph"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"twitter:site"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"@dailytelegraph"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"twitter:site:id"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.dailytelegraph.com.au/newslocal/mosman-daily/"</span> <span class="hljs-attribute">rel</span>=
+    "<span class="hljs-attribute">canonical</span>"&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">var</span> overridePageSection = <span class="hljs-string">"LOCAL.MANLY-DAILY"</span>;<span class="hljs-keyword">var</span> customFacebook = <span class="hljs-string">"/mosmandaily"</span>;<span class="hljs-keyword">var</span> customTwitter = <span class="hljs-string">"MosmanDaily"</span>;<span class="hljs-keyword">var</span> customTwitterId = <span class="hljs-string">"472162894797221888"</span>;<span class="hljs-keyword">var</span> customEventRegion = <span class="hljs-string">"NSW North Shore"</span>;<span class="hljs-keyword">var</span> overridePageTitle = <span class="hljs-string">"Mosman News"</span>;<span class="hljs-keyword">var</span> localBodyClass = <span class="hljs-string">"mosman-daily"</span>;
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="tcog-components">TCOG Components&nbsp;<a href="#tcog-components"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>TCOG Components are specialised endpoints that handle more complicated scenarios.</p>
+<h4 id="tcog-components-popular-combined">Popular Combined&nbsp;<a href="#tcog-components-popular-combined"><i class="fa fa-link"></i></a></h4><p>Allows for a footer list featuring a list of popular news for a primary masthead along with secondary ones.</p>
+<p>Popular news lists appear in the order of domains specified by <code>t_domain</code>. The number of articles in the primary is customizable by <code>t_primary_bound</code>. The secondary lists each have a maximum length of 5.</p>
+<section id="tcog-components-popular-combined-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#tcog-components-popular-combined-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/component/popular-combined/{?t_product, t_domain, td_primary_bound, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/component/popular-combined?t_product=tcog&amp;t_domain=dailytelegraph.com.au,news.com.au,theaustralian.com.au&amp;t_primaryBound=12
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_domain</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>domain=dailytelegraph.com.au,news.com.au,theaustralian.com.au</span></span><p>The list of domains to combine for the popular lists. The first domain’s length is controlled by <code>t_primary_bound</code></p>
+</dd><dt>td_primary_bound</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>Number of articles to show in the primary masthead list.</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>popular-combined-footer</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#b9845c859890e7490724ad3cb7435653" class="pull-right">Toggle</a></li><li id="b9845c859890e7490724ad3cb7435653" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module module-content content-item most-popular-articles"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"ci-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span>Today's Most Popular Articles<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"most-pop-item most-pop-major most-pop-daily-telegraph"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mpi-header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://dailytelegraph.com.au"</span>&gt;</span>The
+            Daily Telegraph<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">news</span>/<span class="hljs-attribute">the-face-of-future-sydney-forms-the-worlds-greatest-waterfront-is-taking-shape-as-barangaroo-rises</span>/<span class="hljs-attribute">story-fnii5s3y-1227005013213</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">4e45ee5f31e5cc7ddcdad2ed3a3c3741"</span>&gt;</span>
+                The face of future Sydney forms<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">news</span>/<span class="hljs-attribute">nsw</span>/<span class="hljs-attribute">tears-and-tragedy-as-boy-6-hit-and-killed-by-car-in-hurstville</span>/<span class="hljs-attribute">story-fni0cx12-1227004892186</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">ec0df7c4453c9013edf5ae6dcd321177"</span>&gt;</span>
+                We begged for safer parking: Dead boy’s teacher claims<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">news</span>/<span class="hljs-attribute">national</span>/<span class="hljs-attribute">phil-kearns-says-the-supremacy-of-scots-college-is-dreadful-for-rugby-after-1010-drubbing-of-newington-colleg</span>/<span class="hljs-attribute">story-fnii5s40-1227003526800</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">6dcdfc6f976cbc3a2ea6c6031fdd3b06"</span>&gt;</span>
+                Scots supremacy ‘dreadful’, says Kearns<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">news</span>/<span class="hljs-attribute">asylum-seeker-case-collapses-due-to-the-governments-move-to-bring-them-to-the-mainland</span>/<span class="hljs-attribute">story-fnii5s41-1227004945972</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">ca2247d7aef86b3172d09213ca50a8cf"</span>&gt;</span>
+                Asylum seeker case collapses in court<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">sport</span>/<span class="hljs-attribute">nrl</span>/<span class="hljs-attribute">wests-tigers-coach-mick-potter-and-captain-robbie-farah-in-damage-control</span>/<span class="hljs-attribute">story-fni3gpyw-1227004949620</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">2c1702677780d41ec6cf62f467c37a55"</span>&gt;</span>
+                Tigers in damage control over pot shots<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">sport</span>/<span class="hljs-attribute">nrl</span>/<span class="hljs-attribute">south-sydney-rabbitohs-stars-sam-burgess-and-john-sutton-injured-in-win-over-canberra</span>/<span class="hljs-attribute">story-fniabjd2-1227004638426</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">f043d0e0f2643ec3464c71839d89a7e1"</span>&gt;</span>
+                Win soured with Burgess, Sutton injured<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">sport</span>/<span class="hljs-attribute">nrl</span>/<span class="hljs-attribute">gorden-tallis-says-he-wont-cop-being-called-a-liar-by-wests-tigers-skipper-robbie-farah</span>/<span class="hljs-attribute">story-fniabr47-1227004888395</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">bb5cd95e4c61b1e014fcacb0e190ad7b"</span>&gt;</span>
+                No one calls me a liar, says Gordie<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">news</span>/<span class="hljs-attribute">nsw</span>/<span class="hljs-attribute">disgraced-former-speaker-peter-slipper-faces-five-years-jail-for-dishonesty-sentencing-will-occur-on-september-22</span>/<span class="hljs-attribute">story-fni0cx12-1227004945412</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">f4634cec38f5416a613f49b3dea3d79"</span>&gt;</span>
+                Slipper’s $157k-a-year pension could go<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">national</span>/<span class="hljs-attribute">nsw-act</span>/<span class="hljs-attribute">now-that-was-a-sunset-sydneys-cloth-of-gold-was-simply-special</span>/<span class="hljs-attribute">story-fnii5s3x-1227004740149</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">73da352e2322979e6bfcc4d2f5e252e1"</span>&gt;</span>
+                Now, that was a sunset!<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">sport</span>/<span class="hljs-attribute">nrl</span>/<span class="hljs-attribute">gorden-talliss-feud-with-robbie-farah-makes-sense-for-man-who-sees-life-in-black-and-white</span>/<span class="hljs-attribute">story-fniabkse-1227004774088</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">ec75eeb2ab9173bd6301ebb65479d030"</span>&gt;</span>
+                Tallis known for shooting from the hip<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">travel</span>/<span class="hljs-attribute">travel-news</span>/<span class="hljs-attribute">qantas-pilots-fear-missiles-over-iraq-but-costly-diversions-over-wartorn-country-rejected</span>/<span class="hljs-attribute">story-fnjjv9zj-1227004993711</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">a07a268609acfec431099af36a4f647f"</span>&gt;</span>
+                Qantas pilots fear missiles over Iraq<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.dailytelegraph.com.au</span>/<span class="hljs-attribute">news</span>/<span class="hljs-attribute">marrickvilles-post-cafe-damaged-by-fire-for-second-time-in-12-months</span>/<span class="hljs-attribute">story-fnii5s3z-1227005140730</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">9c49af24b0ef9b3b51f1db7b0036f494"</span>&gt;</span>
+                Sydney cafe blaze a case of déjà vu<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"most-pop-item most-pop-standard most-pop-news-com-au"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mpi-header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+            "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">news.com.au</span>"&gt;</span>News.com.au<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.news.com.au</span>/<span class="hljs-attribute">entertainment</span>/<span class="hljs-attribute">television</span>/<span class="hljs-attribute">masterchef-secrets-what-you-didnt-know-about-tens-cooking-show</span>/<span class="hljs-attribute">story-fni0cjvk-1227004773312</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">da59e276540f70ee4a1826b717c8096a"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>The truth behind the scenes at
+                Masterchef<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.news.com.au</span>/<span class="hljs-attribute">travel</span>/<span class="hljs-attribute">travel-news</span>/<span class="hljs-attribute">delta-pilots-rant-at-air-traffic-controller-at-atlanta-airport-audio-leaked</span>/<span class="hljs-attribute">story-fni0biep-1227005262968</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">7e415fec5636c2ac651c3de67996e599"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>Pilot’s hissy fit at air traffic
+                control<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.news.com.au</span>/<span class="hljs-attribute">technology</span>/<span class="hljs-attribute">illegal-downloading-in-governments-sights-as-online-copyright-infringement-discussion-paper-takes-aim-at-consumers-isps</span>/<span class="hljs-attribute">story-fnjwnvrz-1227004467973</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">73543fae862df5503c56858004a4d444"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>The end of the free download?<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.news.com.au</span>/<span class="hljs-attribute">more-sports</span>/<span class="hljs-attribute">sabina-altynbekova-the-kazakhstan-volleyballer-too-beautiful-for-sport</span>/<span class="hljs-attribute">story-e6frf56c-1227005448136</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">c1d9cf9f1ff97497512a097e4b44c733"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>The girl too beautiful for
+                sport<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.news.com.au</span>/<span class="hljs-attribute">lifestyle</span>/<span class="hljs-attribute">cannibals-creepiest-modernday-human-flesh-eaters</span>/<span class="hljs-attribute">story-fnixw28e-1227005018460</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">321106ed792472245f328a1588d600b2"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>The creepiest modern-day
+                cannibals<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"most-pop-more-link"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://news.com.au"</span>&gt;</span>View
+        News.com.au<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"most-pop-item most-pop-standard most-pop-the-australian"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"mpi-header"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">h5</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://theaustralian.com.au"</span>&gt;</span>The
+            Australian<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">ol</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">national-affairs</span>/<span class="hljs-attribute">policy</span>/<span class="hljs-attribute">scott-morrison-says-any-claim-of-asylum-from-india-would-be-absurd</span>/<span class="hljs-attribute">story-fn9hm1gu-1227003955714</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">c5ff7b66f2e4c82c210213b4e8c533ac"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>Claim of asylum from India
+                ‘absurd’<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">national-affairs</span>/<span class="hljs-attribute">policy</span>/<span class="hljs-attribute">search-and-work-to-keep-the-dole</span>/<span class="hljs-attribute">story-fn59noo3-1227003575905</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">30b9d0c890fb07766e13ba5244070e35"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>Search and work to keep dole<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">opinion</span>/<span class="hljs-attribute">columnists</span>/<span class="hljs-attribute">greenhouse-follies-must-end</span>/<span class="hljs-attribute">story-fn7078da-1227003409569</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">88a3e49eeca5142f155f0adf2f93bc"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>Greenhouse follies must end<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">national-affairs</span>/<span class="hljs-attribute">policy</span>/<span class="hljs-attribute">coalition-hunt-for-union-links</span>/<span class="hljs-attribute">story-fn59noo3-1227003574122</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">833b9110dea2e8a379dfe356083316a2"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>Coalition hunt for union
+                links<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+                "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">national-affairs</span>/<span class="hljs-attribute">peter-slipper-found-guilty-of-dishonestly-using-taxi-vouchers</span>/<span class="hljs-attribute">story-fn59niix-1227004701129</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">1ba10c2b380298b096202198334fec28"</span>
+                <span class="hljs-attribute">rel</span>=<span class="hljs-value">"track-mostpopfooter"</span>&gt;</span>Slipper guilty of taxi fraud<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">ol</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"most-pop-more-link"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">theaustralian.com.au</span>"&gt;</span>View The Australian<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section><h4 id="tcog-components-content-metadata">Content Metadata&nbsp;<a href="#tcog-components-content-metadata"><i class="fa fa-link"></i></a></h4><p>Combines metadata from the Config API and Content API to produce output for a HTML Head section.</p>
+<section id="tcog-components-content-metadata-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#tcog-components-content-metadata-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/component/content-metadata/{?t_product, tc_key, tc_title, tc_meta, tc_link, tc_vars, tc_getvar}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/content-metadata/17d8cb2f5077fc8284cb3e6464769c8d?t_product=tcog&amp;tc_key=capability.newslocal&amp;tc_vars=true&amp;tc_meta=true&amp;tc_link=true&amp;tc_subkey=mosman-daily&amp;tc_title=true
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>tc_key</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>capability.newslocal</span></span><p>The identifier for the top level of JSON held in the Config API</p>
+</dd><dt>tc_title</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display the title</p>
+</dd><dt>tc_meta</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display meta information</p>
+</dd><dt>tc_link</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display links</p>
+</dd><dt>tc_vars</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display Javascript variables</p>
+</dd><dt>tc_getvar</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display unescaped raw output of a Javascript variable</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#766103bc4d10225ddcb53af36cb4c8b7" class="pull-right">Toggle</a></li><li id="766103bc4d10225ddcb53af36cb4c8b7" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Gillard saw early end for her leadership<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"Julia Gillard ‘knew leadership would come to early end’"</span>
+<span class="hljs-attribute">name</span>=<span class="hljs-value">"description"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+"<span class="hljs-attribute">Bob</span> <span class="hljs-attribute">Hawke</span>, <span class="hljs-attribute">Bill</span> <span class="hljs-attribute">Shorten</span>, <span class="hljs-attribute">caucus</span> <span class="hljs-attribute">ballot</span>, <span class="hljs-attribute">labor</span> <span class="hljs-attribute">government</span>, <span class="hljs-attribute">leadership</span> <span class="hljs-attribute">team</span>, <span class="hljs-attribute">prime</span> <span class="hljs-attribute">minister</span>, <span class="hljs-attribute">industry</span> <span class="hljs-attribute">minister</span>, <span class="hljs-attribute">time</span> <span class="hljs-attribute">loyalist</span>, <span class="hljs-attribute">Kevin</span> <span class="hljs-attribute">Rudd</span>, <span class="hljs-attribute">Wayne</span> <span class="hljs-attribute">Maxwell</span> <span class="hljs-attribute">Swan</span>, <span class="hljs-attribute">Penny</span> <span class="hljs-attribute">Wong</span>, <span class="hljs-attribute">Julia</span> <span class="hljs-attribute">Gillard</span>, <span class="hljs-attribute">Simon</span> <span class="hljs-attribute">King</span>, <span class="hljs-attribute">Anthony</span> <span class="hljs-attribute">Albanese</span>, <span class="hljs-attribute">cabinet</span> <span class="hljs-attribute">minister</span>, <span class="hljs-attribute">contentious</span> <span class="hljs-attribute">leadership</span>, <span class="hljs-attribute">fierce</span> <span class="hljs-attribute">passion</span>, <span class="hljs-attribute">right</span> <span class="hljs-attribute">person</span>, <span class="hljs-attribute">Sydney</span>, <span class="hljs-attribute">New</span> <span class="hljs-attribute">South</span> <span class="hljs-attribute">Wales</span>, <span class="hljs-attribute">Australia</span>, <span class="hljs-attribute">Tony</span> <span class="hljs-attribute">Abbott</span>, <span class="hljs-attribute">Gregory</span> <span class="hljs-attribute">Ivan</span> <span class="hljs-attribute">Combet</span>"
+<span class="hljs-attribute">name</span>=<span class="hljs-value">"keywords"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"Gillard saw early end for her leadership"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"Julia Gillard ‘knew leadership would come to early end’"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+"<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">national-affairs</span>/<span class="hljs-attribute">politics-news</span>/<span class="hljs-attribute">julia-gillard-knew-leadership-would-come-to-early-end</span>/<span class="hljs-attribute">story-fn59nqld-1227005698763</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">77926b2173a04b4ee0414d977f0b342"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+"<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">foxsports</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1227005698449</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=
+"<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">national-affairs</span>/<span class="hljs-attribute">politics-news</span>/<span class="hljs-attribute">julia-gillard-knew-leadership-would-come-to-early-end</span>/<span class="hljs-attribute">story-fn59nqld-1227005698763</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">77926b2173a04b4ee0414d977f0b342"</span>
+<span class="hljs-attribute">rel</span>=<span class="hljs-value">"canonical"</span>&gt;</span>
+</code></pre></li></ul></section><h4 id="tcog-components-article-component">Article Component&nbsp;<a href="#tcog-components-article-component"><i class="fa fa-link"></i></a></h4><p>Renders an article page based on an input fatwire slug (for example, world/bali-prisoner-stephen-henri-lubbe-writes-letter-saying-foreign-prisoners-buy-reduced-sentences-from-indonesian-jails/story-fndir2ev-1227014030151)</p>
+<section id="tcog-components-article-component-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#tcog-components-article-component-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/component/article/{**fatwireSlug}{?t_product, t_template}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/component/article/world/bali-prisoner-stephen-henri-lubbe-writes-letter-saying-foreign-prisoners-buy-reduced-sentences-from-indonesian-jails/story-fndir2ev-1227014030151?t_product=tcog
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>article</span></span><p>Specify an optional alternate template</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#f8688d377d74199bfb4a4aba10c6c053" class="pull-right">Toggle</a></li><li id="f8688d377d74199bfb4a4aba10c6c053" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code>&lt;main&gt;
+    &lt;header&gt;
+        &lt;span class=<span class="hljs-string">"kicker"</span>&gt;Corruption claims&lt;/span&gt;
+        &lt;h1&gt;
+            Bali prisoner Stephen Henri Lubbe writes letter
+            saying foreign prisoners buy reduced sentences <span class="hljs-built_in">from</span>
+            Indonesian jails
+        &lt;/h1&gt;
+        &lt;p class=<span class="hljs-string">"intro"</span>&gt;
+            EXPLOSIVE <span class="hljs-built_in">new</span> claims <span class="hljs-operator">of</span> corruption <span class="hljs-operator">within</span> Indonesia’s
+            legal <span class="hljs-keyword">system</span> have been exposed <span class="hljs-keyword">by</span> <span class="hljs-operator">a</span> foreign prisoner who
+            says he was offered <span class="hljs-operator">a</span> more lenient sentence <span class="hljs-keyword">for</span> $US30,<span class="hljs-number">000.</span>
+        &lt;/p&gt;
+    &lt;/header&gt;
+    &lt;article&gt;
+        &lt;p&gt;
+            South African Stephen Henri Lubbe was this week sentenced
+            <span class="hljs-built_in">to</span> <span class="hljs-number">15</span> years’ jail <span class="hljs-operator">in</span> Bali <span class="hljs-keyword">for</span> drug smuggling, but said he
+            would have received far less had he coughed up <span class="hljs-operator">the</span> cash.
+        &lt;/p&gt;
+        &lt;p&gt;
+            In <span class="hljs-operator">a</span> disturbing <span class="hljs-operator">and</span> dangerously frank <span class="hljs-constant">two</span>-page letter
+            obtained <span class="hljs-keyword">by</span> News Corp, Lubbe claims “lucky foreigners”
+            <span class="hljs-built_in">from</span> wealthy backgrounds are exchanging <span class="hljs-keyword">as</span> much <span class="hljs-keyword">as</span> $US120,<span class="hljs-number">000</span>
+            <span class="hljs-keyword">for</span> reduced sentences.
+        &lt;/p&gt;
+        ...
+    &lt;/article&gt;
+&lt;/main&gt;
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="deprecated-content-urls">Deprecated Content URLs&nbsp;<a href="#deprecated-content-urls"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>The TCOG URLs below are deprecated versions of the above. They are functionally the same as their formal counterparts.</p>
+<h1 id="group-search-deprecated-">Group Search (Deprecated)</h1>
+<p>These behaviours are a 1 to 1 mapping to the Content API.</p>
+<h4 id="deprecated-content-urls-search-1">Search 1&nbsp;<a href="#deprecated-content-urls-search-1"><i class="fa fa-link"></i></a></h4><p>TCOG call to Content API /content/v1 …</p>
+<section id="deprecated-content-urls-search-1-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">GET Notes</span></div><div style="float:left"><a href="#deprecated-content-urls-search-1-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/search/{?t_product, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-no-highlight">http://tcog.news.com.au/search/?t_product=tcog
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>extended</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#18d0b733fafdda900599994d9e6cc909" class="pull-right">Toggle</a></li><li id="18d0b733fafdda900599994d9e6cc909" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module "</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-0 cirpos-58"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"93e41fc57339ce7656cc9274e7871065"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-0 sbrpos-58"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>Steve 'Blocker' Roach on Tigers young guns, Benji return<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-1 cirpos-57"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"87516ba239ec241c35b6e9fa5680fe66"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-1 sbrpos-57"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>House blaze<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... omitting most of the HTML --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-56 cirpos-2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-56 sbrpos-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-57 cirpos-1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-57 sbrpos-1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section><h4 id="deprecated-content-urls-search-2">Search 2&nbsp;<a href="#deprecated-content-urls-search-2"><i class="fa fa-link"></i></a></h4><p>TCOG call to Content API /content/v1 …</p>
+<section id="deprecated-content-urls-search-2-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">GET Notes</span></div><div style="float:left"><a href="#deprecated-content-urls-search-2-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/common/search/:template/:format{?t_product, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-no-highlight">http://tcog.news.com.au//common/search/abc/extended/?t_product=tcog
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>extended</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#1156d2b691943170d0672ea59c4da97c" class="pull-right">Toggle</a></li><li id="1156d2b691943170d0672ea59c4da97c" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module "</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-0 cirpos-58"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"93e41fc57339ce7656cc9274e7871065"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-0 sbrpos-58"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>Steve 'Blocker' Roach on Tigers young guns, Benji return<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-1 cirpos-57"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"87516ba239ec241c35b6e9fa5680fe66"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-1 sbrpos-57"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>House blaze<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- ... omitting most of the HTML --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-56 cirpos-2"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-56 sbrpos-2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"content-item cipos-57 cirpos-1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"2bc192a2da64f72bed3396057a42b98a"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"story-block sbpos-57 sbrpos-1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span>&gt;</span>'I never doped'<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section><h4 id="deprecated-content-urls-retrieve-collection-2">Retrieve Collection 2&nbsp;<a href="#deprecated-content-urls-retrieve-collection-2"><i class="fa fa-link"></i></a></h4><p>TCOG call to Content API /content/v1/collection/:id.</p>
+<section id="deprecated-content-urls-retrieve-collection-2-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#deprecated-content-urls-retrieve-collection-2-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/collection/:id/{?t_product, t_template, td_module_header, td_timestamp, td_dateformat, td_standfirst, td_byline, td_date_header, td_kicker, td_thumbnail, td_imagewidth, td_imageheight}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/collection/892fcb0f9febf97319ba00e400ae5e5e?t_product=tcog&amp;pageSize=20&amp;offset=0
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>t_template</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>compact</span></span><p>Defaults to <code>extended</code> … Template required to render output</p>
+<p><strong>Choices:&nbsp;</strong><code>compact</code>&nbsp;<code>compact-ol</code>&nbsp;<code>compact-ul</code>&nbsp;<code>extended</code>&nbsp;<code>imageblock</code>&nbsp;<code>popular-combined-footer</code>&nbsp;<code>popular-footer</code>&nbsp;<code>popular-headline</code>&nbsp;<code>popular-plain</code>&nbsp;</p></dd><dt>td_module_header</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_module_header=Business+and+Finance</span></span><p>text that defines the header for the placement (for instance, Business and Finance).</p>
+</dd><dt>td_timestamp</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>t_timestamp=false</span></span><p>whether the timestamp is visible on each story block.</p>
+</dd><dt>td_dateformat</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>H:mm A or dddd, D MMMM</span></span>&nbsp;<p>A <a href="http://momentjs.com/docs/#/displaying/">moment.js format pattern</a> for dates. Defaults to <code>H:mm A</code> for the <code>extended</code> template and <code>dddd, D MMMM</code> for <code>imageblock</code>.</p>
+</dd><dt>td_standfirst</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether the standfirst is visible on each story block.</p>
+</dd><dt>td_byline</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>the byline is visible on each story block. Note that the byline being visible is dependent on <code>t_standfirst=true</code>.</p>
+</dd><dt>td_kicker</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the kicker is visible on each story block.</p>
+</dd><dt>td_date_header</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>whether to display a date header for items returned. Note that the date header is not duplicated so the content effectively appears grouped by date</p>
+</dd><dt>td_thumbnail</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>true</span></span>&nbsp;<p>whether the thumbnail is visible on each story block.</p>
+</dd><dt>td_imagewidth</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the width (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd><dt>td_imageheight</dt><dd><code>number</code>&nbsp;<span>(optional)</span>&nbsp;<p>positive number describing the height (in pixels) that a story-block image will be displayed. <em>Only works for the imageblock template</em>.</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#8c545139a5d8c42230a819c4f14ce3bd" class="pull-right">Toggle</a></li><li id="8c545139a5d8c42230a819c4f14ce3bd" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"module module-content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-0</span> <span class="hljs-attribute">cirpos-20</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-0</span> <span class="hljs-attribute">sbrpos-20</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">b76d439ac71170e1d207bd24295fea80</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>Politics<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">bob-hawke</span>/<span class="hljs-attribute">story-fnnk86em-1226977948953</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5012dbb9e10f745cdf2a849c87023f03"</span>&gt;</span>Bob
+        Hawke<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">bob-hawke</span>/<span class="hljs-attribute">story-fnnk86em-1226977948953</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5012dbb9e10f745cdf2a849c87023f03"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Bob Hawke in 1991."</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226977949068</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Robert James Lee Hawke had a streak of
+        larrikinism that endeared him to many Australians<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-1</span> <span class="hljs-attribute">cirpos-19</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-1</span> <span class="hljs-attribute">sbrpos-19</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">167e9ed3bbf82302679356e51ea99b24</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>Media<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">rupert-murdoch</span>/<span class="hljs-attribute">story-fnnk86em-1226978165444</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5e38819e55d2e391886832be59cd4235"</span>&gt;</span>Rupert
+        Murdoch<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">rupert-murdoch</span>/<span class="hljs-attribute">story-fnnk86em-1226978165444</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">5e38819e55d2e391886832be59cd4235"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Rupert Murdoch photographed in the 1970’s."</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226978165873</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Tycoon From Down Under Takes On The
+        World.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- ... omitting for brevity --&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-18</span> <span class="hljs-attribute">cirpos-2</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-18</span> <span class="hljs-attribute">sbrpos-2</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">f4783a15b558d27d1fef81784a477b3a</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>The
+        Innovators<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">ian-frazer</span>/<span class="hljs-attribute">story-fnnk86em-1226982045562</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">3798a79eafb62d2a59f4fff1fc15cc42"</span>&gt;</span>Ian
+        Frazer<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">ian-frazer</span>/<span class="hljs-attribute">story-fnnk86em-1226982045562</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">3798a79eafb62d2a59f4fff1fc15cc42"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Ian Frazer"</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226982045107</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>God’s gift to women<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=
+    "<span class="hljs-attribute">content-item</span> <span class="hljs-attribute">cipos-19</span> <span class="hljs-attribute">cirpos-1</span> <span class="hljs-attribute">story-block</span> <span class="hljs-attribute">sbpos-19</span> <span class="hljs-attribute">sbrpos-1</span>" <span class="hljs-attribute">id</span>=
+    "<span class="hljs-attribute">4d57e1bb4787f7fe019bd428965acbdd</span>"&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">h4</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"heading"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"kicker"</span>&gt;</span>Business<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">lang-hancock-gina-rinehart</span>/<span class="hljs-attribute">story-fnnk86em-1226982002225</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">c79a9f82b29d77514d4cb8f8c470e12c"</span>&gt;</span>Lang
+        Hancock &amp;amp; Gina Rinehart<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumb-link"</span> <span class="hljs-attribute">href</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">www.theaustralian.com.au</span>/<span class="hljs-attribute">50th-birthday</span>/<span class="hljs-attribute">top-50-most-influential</span>/<span class="hljs-attribute">lang-hancock-gina-rinehart</span>/<span class="hljs-attribute">story-fnnk86em-1226982002225</span>?<span class="hljs-attribute">sv</span>=<span class="hljs-value">c79a9f82b29d77514d4cb8f8c470e12c"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Hancock, left, with Gina and her first husband, Greg Hayward, who changed his surname fro"</span>
+        <span class="hljs-attribute">class</span>=<span class="hljs-value">"thumbnail"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"75"</span> <span class="hljs-attribute">src</span>=
+        "<span class="hljs-attribute">http:</span>//<span class="hljs-attribute">api.news.com.au</span>/<span class="hljs-attribute">content</span>/<span class="hljs-attribute">1.0</span>/<span class="hljs-attribute">theaustralian</span>/<span class="hljs-attribute">images</span>/<span class="hljs-attribute">1226982003974</span>?<span class="hljs-attribute">format</span>=<span class="hljs-value">jpg"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"standfirst"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>All real wealth is in the ground, and
+        societies become prosperous only by exploiting that
+        wealth<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="deprecated-config-urls">Deprecated Config URLs&nbsp;<a href="#deprecated-config-urls"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><h4 id="deprecated-config-urls-config-2">Config 2&nbsp;<a href="#deprecated-config-urls-config-2"><i class="fa fa-link"></i></a></h4><p>Deprecated version of <a href="./api.html#config-api-mapping-config-get">Config GET</a></p>
+<section id="deprecated-config-urls-config-2-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Get Notes</span></div><div style="float:left"><a href="#deprecated-config-urls-config-2-get" class="btn btn-xs btn-primary">GET</a></div><div style="overflow:hidden"><code>/metadata/{?t_product, tc_key, tc_title, tc_meta, tc_link, tc_vars, tc_getvar}</code></div></div><div class="panel-body"><pre><code class="lang-http">http://tcog.news.com.au/metadata/?t_product=capability&amp;tc_key=capability.newslocal&amp;tc_vars=true&amp;tc_meta=true&amp;tc_link=true&amp;tc_subkey=mosman-daily&amp;tc_title=true
+</code></pre>
+</div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>t_product</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>tcog</span></span><p>Product identifiers reference tcog mappings to various API Keys and human contacts for product level notifications</p>
+</dd><dt>tc_key</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>capability.newslocal</span></span><p>The identifier for the top level of JSON held in the Config API</p>
+</dd><dt>tc_title</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display the title</p>
+</dd><dt>tc_meta</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display meta information</p>
+</dd><dt>tc_link</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display links</p>
+</dd><dt>tc_vars</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display Javascript variables</p>
+</dd><dt>tc_getvar</dt><dd><code>boolean</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-info default"><strong>Default:&nbsp;</strong><span>false</span></span>&nbsp;<p>Display unescaped raw output of a Javascript variable</p>
+</dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#5ae94802224c016ae048bd050ba0cf0b" class="pull-right">Toggle</a></li><li id="5ae94802224c016ae048bd050ba0cf0b" class="list-group-item panel-collapse collapse"><div class="description"></div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">text/html</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Mosman Daily | Local Community News NSW |
+    dailytelegraph.com.au<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+    "<span class="hljs-attribute">Read</span> <span class="hljs-attribute">the</span> <span class="hljs-attribute">latest</span> <span class="hljs-attribute">news</span> <span class="hljs-attribute">from</span> <span class="hljs-attribute">the</span> <span class="hljs-attribute">Mosman</span> <span class="hljs-attribute">Daily</span> <span class="hljs-attribute">and</span> <span class="hljs-attribute">many</span> <span class="hljs-attribute">more</span> <span class="hljs-attribute">Sydney</span> <span class="hljs-attribute">Local</span> <span class="hljs-attribute">Newspapers</span> <span class="hljs-attribute">online</span>"
+    <span class="hljs-attribute">name</span>=<span class="hljs-value">"description"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=
+    "<span class="hljs-attribute">Mosman</span> <span class="hljs-attribute">Daily</span>, <span class="hljs-attribute">NewsLocal</span> <span class="hljs-attribute">Newspapers</span>, <span class="hljs-attribute">Local</span> <span class="hljs-attribute">Community</span> <span class="hljs-attribute">News</span>, <span class="hljs-attribute">NSW</span> <span class="hljs-attribute">News</span>, <span class="hljs-attribute">NewsLocal</span>, <span class="hljs-attribute">News</span>, <span class="hljs-attribute">Mosman</span>, <span class="hljs-attribute">Daily</span>"
+    <span class="hljs-attribute">name</span>=<span class="hljs-value">"keywords"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"100002324295212"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"summary"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"twitter:card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"@dailytelegraph"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"twitter:site"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"@dailytelegraph"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"twitter:site:id"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://www.dailytelegraph.com.au/newslocal/mosman-daily/"</span> <span class="hljs-attribute">rel</span>=
+    "<span class="hljs-attribute">canonical</span>"&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">var</span> overridePageSection = <span class="hljs-string">"LOCAL.MANLY-DAILY"</span>;<span class="hljs-keyword">var</span> customFacebook = <span class="hljs-string">"/mosmandaily"</span>;<span class="hljs-keyword">var</span> customTwitter = <span class="hljs-string">"MosmanDaily"</span>;<span class="hljs-keyword">var</span> customTwitterId = <span class="hljs-string">"472162894797221888"</span>;<span class="hljs-keyword">var</span> customEventRegion = <span class="hljs-string">"NSW North Shore"</span>;<span class="hljs-keyword">var</span> overridePageTitle = <span class="hljs-string">"Mosman News"</span>;<span class="hljs-keyword">var</span> localBodyClass = <span class="hljs-string">"mosman-daily"</span>;
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+</code></pre></li></ul></section></div></div></div></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 12 Aug 2014</p><div id="localFile" style="display: none; position: absolute; top: 0; left: 0; width: 100%; color: white; background: red; font-size: 150%; text-align: center; padding: 1em;">This page may not display correctly when opened as a local file. Instead, view it from a web server.
+
+</div></body><script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script><script>(function() {
+  if (location.protocol === 'file:') {
+    document.getElementById('localFile').style.display = 'block';
+  }
+
+}).call(this);
+</script><script>(function() {
+  $('table').addClass('table');
+
+}).call(this);
+</script></html>

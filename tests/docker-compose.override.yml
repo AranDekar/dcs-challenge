@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  tcog:
+    ports:
+      - 3000:3000
+    build:
+      context: ./tcog/
+    environment:
+     - NODE_ENV=integration
+    depends_on:
+      - redis
+      - tabula
+    command: node run.js
+
+  redis:
+    ports:
+      -  6379:6379
+    image: redis
+    environment:
+     - RDB_FILE=integration-dump.rdb
+    volumes:
+      - ./tests/test/data/conf:/usr/local/etc/redis
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+
+  test:
+    build:
+      context: ./tests/
+    depends_on:
+      - redis
+      - tabula
+      - tcog

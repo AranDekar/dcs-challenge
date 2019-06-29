@@ -1,0 +1,15 @@
+-// Include a text fragment
+mixin esi(path)
+    esi:include(src!= "https://" + host + path.replace(/\s/g, '+'), onerror="continue")
+
+-// Include a fragment which also needs to be interpretted as ESI
+mixin esiDca(path)
+    esi:include(src!= "https://" + host + path.replace(/\s/g, '+'), dca="esi", onerror="continue")
+
+-// Do not include the standard onerror attribute, let it relay the 404 from the content api if one exists
+mixin esiDcaTry(path)
+    esi:include(src!= "https://" + host + path.replace(/\s/g, '+'), dca="esi")
+
+-// Return an esi tag which is resolved as though the fragment was not found.
+mixin esi404()
+    esi:vars="$set_response_code(404)"

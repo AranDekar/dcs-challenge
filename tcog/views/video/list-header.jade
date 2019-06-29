@@ -1,0 +1,35 @@
+//- rendered by index.jade
+//- data = integrated video categories data
+
+if data.length > 0
+
+    - var path, ref, regParent
+
+    //- Format the td_path parameter
+    //- And construct a regular expression to match the category
+    - path = display.path
+    - path = path && path.toLowerCase().replace(/^[/]|[/]$/g, '').replace(/[\W-]/g, '.')
+
+    //- e.g. td_path=/News/Politics/
+    //- Becomes a regular expression like /^news.politics$/
+    //- Which can match strings like "News/Politics"
+    - reg = path && new RegExp('^' + path + '$', 'i')
+
+    //- Match a direct child, e.g. /^news.politics\/[^/]+[/]?$/ will match both 'News/Politics/QLD' and 'News/Politics/NSW'
+    - regParent = new RegExp('^' + ( path ? path + '[/]' : '' ) + '[^/]+[/]?$', 'i')
+
+    - var match = data.find(function (item) { return item.fullTitle.match(reg) })
+
+    .group-header.vms-group-header(class= match && match.cssClass ? ("group-header-" + match.cssClass ) : '' )
+        h2.heading
+            if display.title
+                = display.title
+            else if match
+                a(href!='/video/' + match.linkPath + '/')= match.title
+
+        - var children = data.filter(function(item){ return item.fullTitle.match(regParent) })
+
+        ul.more-links.tier-1(tabindex=-1, class= (children.length > 6 ? "more-links-hub": ""))
+            for item in children
+                li
+                    a(href='/video/' + ( display.root ? display.root + '/' : '') + item.linkPath + '/')= item.title

@@ -1,0 +1,101 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Template For Floating DNS record",
+    "Parameters": {
+        "Release": {
+            "Description": "Unique release identifier for the assets to avoid collision.",
+            "Type": "String"
+        },
+        "HostedZone": {
+            "Default": "builds.digdev.cp1.news.com.au",
+            "Description": "Route53 hosted zone for builds.",
+            "Type": "String"
+        },
+        "MasterHostedZone": {
+            "Default": "digdev.cp1.news.com.au",
+            "Description": "Route53 master hosted zone.",
+            "Type": "String"
+        },
+        "NetworkSecurityEnv" : {
+            "Type" : "String",
+            "Description" : "Network Security Environment"
+        },
+        "Application" : {
+            "Type":"String",
+            "Description" : "The name of the application"
+        },
+        "NodeENV" : {
+            "Type":"String",
+            "Description" : "Tcog Environment"
+        }
+    },
+    "Resources": {
+        "Route53DNSRecord": {
+            "Properties": {
+                "Comment": "Floating DNS Record",
+                "HostedZoneName": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            {
+                                "Ref": "MasterHostedZone"
+                            },
+                            "."
+                        ]
+                    ]
+                },
+                "Name": {
+                    "Fn::Join": [
+                        "",
+                        [
+                            {
+                                "Ref": "NodeENV"
+                            },
+                            ".core.",
+                            {
+                                "Ref": "MasterHostedZone"
+                            },
+                            "."
+                        ]
+                    ]
+                },
+                "ResourceRecords": [
+                    {
+                      "Fn::Join": [
+                          "",
+                          [
+                              {
+                                  "Ref": "NetworkSecurityEnv"
+                              },
+                              "-",
+                              {
+                                  "Ref": "Release"
+                              },
+                              ".",
+                              {
+                                  "Ref": "Application"
+                              },
+                              ".",
+                              {
+                                  "Ref" : "HostedZone"
+                              },
+                              "."
+                          ]
+                      ]
+                    }
+                ],
+                "TTL": "60",
+                "Type": "CNAME"
+            },
+            "Type": "AWS::Route53::RecordSet"
+        }
+    },
+    "Outputs": {
+      "FloatingDNS": {
+        "Description": "The floating DNS.",
+        "Value": {
+          "Ref": "Route53DNSRecord"
+        }
+      }
+    }
+}

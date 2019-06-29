@@ -1,0 +1,41 @@
+extends ../layouts/page.jade
+
+block content
+
+    - var collection = data.results || [];
+
+    .content-item.most-popular-articles
+        -var popularHeading = display.moduleHeader
+
+        if (popularHeading)
+            .ci-header: h4.heading= popularHeading
+        else
+            .ci-header: h4.heading Today's Most Popular Articles
+
+        -var primaryDomain = collection && collection[0] && collection[0].domains[0]
+        -var primaryBound  = display.primaryBound || 10
+
+        for item, idx in collection
+            -var mastheadDomain = item.domains[0];
+            -var mastheadLink   = "http://" + mastheadDomain;
+            -var mastheadClass  = masthead[mastheadDomain].class
+            -var mastheadName   = masthead[mastheadDomain].name
+            -var isPrimary      = mastheadDomain == primaryDomain
+            -var mostPopDetail  = (isPrimary ? ' most-pop-major ' : ' most-pop-standard ')
+
+            div(class='most-pop-item' + mostPopDetail + mastheadClass)
+                .mpi-header
+                    h5.heading
+                        a(href=mastheadLink)= mastheadName 
+                -// Index is zero, so this is a pop-major type list.
+                if (isPrimary)
+                    ol: for story, storyIdx in item.related.slice(0, primaryBound)
+                        li: a(href=story.domainLinks[0].link)= (story.title||"").trim()
+
+                -// Index is not zero, so this is a pop-standard type list.
+                if (!isPrimary)
+                    ol: for story, storyIdx in item.related.slice(0,5)
+                        li: a(href=story.domainLinks[0].link rel="track-mostpopfooter")= story.title.trim()
+
+                    p.most-pop-more-link
+                        a(href=mastheadLink) View #{mastheadName}

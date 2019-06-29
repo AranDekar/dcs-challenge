@@ -2,9 +2,9 @@
 
 DCS is a refactored services architecture of a monolith called TCOG, which now runs as a large service in the stack.
 
-TCOG is still the primary service, with all other services built around it considered to be supportive services. 
+TCOG is still the primary service, with all other services built around it considered to be supportive services.
 
-This introduction is deliberately brief. It shares several challenges that will let us identify the ability for a 3rd party Node team to take over the project in maintenance mode. 
+This introduction is deliberately brief. It shares several challenges that will let us identify the ability for a 3rd party Node team to take over the project in maintenance mode.
 
 ## TCOG
 
@@ -22,9 +22,9 @@ The article page should not need further refactoring and will not be part of the
 
 In addition, a number of endpoints also expose other APIs for use. Examples of other APIs are integrations with:
 
-* Vidora, for personalised content recommendations for our users.
-* FoxsportsPulse, to access various pieces of sport data.
-* Wordpress Plus, to load templates or pieces of JSON to use within TCOG templates.
+- Vidora, for personalised content recommendations for our users.
+- FoxsportsPulse, to access various pieces of sport data.
+- Wordpress Plus, to load templates or pieces of JSON to use within TCOG templates.
 
 TCOG's templates are, generally, written in Jade (now called Pug) and compiled into Javascript that is serialsed as JSON and stored on s3. In more recent years, some front end teams were using other approaches which would be compiled and transported as the same artifact. Some of these compiled and serialised templates can reach large sizes. TCOG will pull these down in flight and maintain an internal cache of them.
 
@@ -32,35 +32,47 @@ TCOG URLs take a number of important URI parameters, prefixed with `t_`, `td_` (
 
 The two most important `t_` parameters are:
 
-* `t_product` - which identifies the name of a product (e.g. t_product=HeraldSun). TCOG has a JSON file internally that maps API keys to products, so TCOG links can be used to hide API keys from being exposed in HTML source, otherwise opening the API key up to external abuse.
-* `t_template` - which identifies the template loaded from s3 or internally, (e.g. t_template=t_template=s3/chronicle-templaterouterbeta/index). A small amount of legacy templates remain internally in TCOG.
+- `t_product` - which identifies the name of a product (e.g. t_product=HeraldSun). TCOG has a JSON file internally that maps API keys to products, so TCOG links can be used to hide API keys from being exposed in HTML source, otherwise opening the API key up to external abuse.
+- `t_template` - which identifies the template loaded from s3 or internally, (e.g. t_template=t_template=s3/chronicle-templaterouterbeta/index). A small amount of legacy templates remain internally in TCOG.
 
 There are two further important aspects to point out about TCOG, before sharing the challenges.
 
 ### Caching
+
 TCOG is used heavily and is surrounded by caching layers. The original monolith had an in memory cache layer (running with around 40 to 60 nodes in one cluster, each with their RAM based copy of rendered content) and a distributed layer with Redis as a centralised database. Additionally, Akamai functioned above all of this to enable high scalability.
 
 The refactored DCS version has abstracted the in memory layer to use Varnish instead. The Redis based layer has been rewritten into Tabula. Akamai logic remains the same and is mostly managed by our ops team.
 
 ### Eventing - Cache Invalidation
+
 An important concept in Newscorp is "Legal Kill". It is really another way of saying "cache invalidation". DCS subscribes to an SQS queue that is maintained by the Content API team. When a legal kill occurs an event is sent through that is picked up the CAPI Events Adapter service in DCS. This is then sent to Tabula and to Varnish to invalidate the cache.
 
 ### Proxying
 
 Additionally, a fair bit of reverse proxy work occurs at our WAF layer.
 
-
 ### Challenge One - Upgrade Node for the TCOG Service
 
-Using the existing Node version 8.12.0 in tcog/.nvmrc, run the unit tests and ensure they all pass. 
+Using the existing Node version 8.12.0 in tcog/.nvmrc, run the unit tests and ensure they all pass.
 
 `yarn test:unit`
 
-Upgrade the Node version to v10.6.0. 
+Upgrade the Node version to v10.6.0.
 
 Expect to see node-gyp breakages, etc.. You will need to identify how to work through this until only one unit test breaks after the upgraded version. Once this is done, you should be able to figure out how to make all the unit tests pass.
 
 Please describe each command line step it takes to achieve this (in your terminal). You do not need to share how you came up with the answer, although we may ask you to talk us through this in a subsequent interview.
+
+#### STEPS:
+
+1. Ran `nvm install` & `nvm use` to use the version in .nvmrc
+2. Run `yarn test:unit` => one test failed
+3. Import `conf` module from the root to access node version
+4. Change the unit test to conditionally run the `expect` based on the node version
+5. Update the node version in .nvmrc => 10.6.0
+6. Run `nvm install` & `nvm use`
+7. I didn't get any issues with node-gyp, maybe because I had fixed some issues before on my machine with node-gyp for other projects and those fixes (that I don't remember now :)) had fixed this as well
+8. Run yarn test again and check that condition makes the unit test happy in this version as well
 
 ### Challenge Two - Fixing a docker-compose file
 
@@ -102,27 +114,25 @@ Importantly, note the middleware chain at the end of the file:
 
 Your endpoint should use the `product` and `templateHandler('default')` middlewares. The `product` middleware ensures only trusted users can call the TCOG endpoint. The `templateHandler` knows how to load templates.
 
-
 The Fibonacci Challenge.
 
-The endpoint should take a position of the Fibonacci sequence and return the correct number in the sequences position. 
+The endpoint should take a position of the Fibonacci sequence and return the correct number in the sequences position.
 
 For example, you might test that given these inputs, you get these outputs:
 
 INPUT | OUTPUT
-0     |  0
-3     |  1
-5     |  3
-7     |  8
-9     | 21
+0 | 0
+3 | 1
+5 | 3
+7 | 8
+9 | 21
 
 The output should be expressed in a JSON package. For example:
 
 {
-    "position": 3,
-    "number": 1
+"position": 3,
+"number": 1
 }
-
 
 Once you have completed this endpoint, could you please send it the codebase back explaining how to use it? We will test it at the docker-compose level.
 

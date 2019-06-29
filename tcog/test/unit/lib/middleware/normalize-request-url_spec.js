@@ -1,4 +1,5 @@
 var middlewarePath = './../../../../lib/middleware/normalize-request-url',
+    conf = require('../../../../conf'),
     implementation = require(middlewarePath + '_implementation'),
     nurl = require('url'),
     expect = require('chai').expect;
@@ -55,7 +56,7 @@ describe('#/lib/middleware/normalize-request-url', function() {
                             'correct response body provided for bad request'
                         ).to.equal(
                             'Ambigious parameter usage: use either x-tcog-headers ' +
-                            'or query params, not both'
+                                'or query params, not both'
                         );
 
                         done();
@@ -87,7 +88,7 @@ describe('#/lib/middleware/normalize-request-url', function() {
                             'correct response body provided for bad request'
                         ).to.equal(
                             'Ambigious parameter usage: use either x-tcog-headers ' +
-                            'or query params, not both'
+                                'or query params, not both'
                         );
 
                         done();
@@ -106,7 +107,7 @@ describe('#/lib/middleware/normalize-request-url', function() {
                 req = {
                     url: '/foo/bar?param=value',
                     headers: {
-                        'foo': 'product'
+                        foo: 'product'
                     }
                 };
 
@@ -167,7 +168,9 @@ describe('#/lib/middleware/normalize-request-url', function() {
                 var url = nurl.parse(req.url, true);
                 expect(url.query['t_product']).to.equal('product');
                 expect(url.query['t_template']).to.equal('template');
-                expect(url.search).to.equal('?param=value&t_product=product&t_template=template');
+                expect(url.search).to.equal(
+                    '?param=value&t_product=product&t_template=template'
+                );
                 done();
             });
         });
@@ -179,7 +182,7 @@ describe('#/lib/middleware/normalize-request-url', function() {
                 req = {
                     url: '/foo/bar',
                     headers: {
-                        'foo': 'product'
+                        foo: 'product'
                     }
                 };
 
@@ -190,7 +193,11 @@ describe('#/lib/middleware/normalize-request-url', function() {
 
                 // note, when running with node 10.x url.search is null
                 // when with 8.11.x it returns an empty string
-                expect(url.search).to.equal(null);
+                if (conf.nodeVersion.match(/8.12.0/)) {
+                    expect(url.search).to.equal('');
+                } else {
+                    expect(url.search).to.equal(null);
+                }
                 done();
             });
         });
@@ -243,7 +250,9 @@ describe('#/lib/middleware/normalize-request-url', function() {
                 var url = nurl.parse(req.url, true);
                 expect(url.query['t_product']).to.equal('product');
                 expect(url.query['t_template']).to.equal('template');
-                expect(url.search).to.equal('?t_product=product&t_template=template');
+                expect(url.search).to.equal(
+                    '?t_product=product&t_template=template'
+                );
                 done();
             });
         });

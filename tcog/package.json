@@ -72,7 +72,7 @@
     "argv": "0.0.2",
     "chai": "3.5.0",
     "colors": "1.1.2",
-    "csv-parse": "^2.2.0",
+    "csv-parse": "^4.6.5",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.2.0",

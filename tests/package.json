@@ -42,7 +42,7 @@
   "dependencies": {
     "async": "^2.6.0",
     "ioredis": "^3.2.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "ramda": "^0.25.0",
     "request": "^2.83.0",
     "ts-node": "^3.3.0"

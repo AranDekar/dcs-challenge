@@ -24,7 +24,7 @@
   },
   "author": "James Moriarty",
   "dependencies": {
-    "aws-sdk": "^2.117.0",
+    "aws-sdk": "^2.814.0",
     "dcs-logger": "http://stash.news.com.au/scm/dcs/dcs-logger.git#439ebe65c63566fdf46f7214127709ad189b6612",
     "forever": "^0.15.3",
     "ioredis": "^3.1.4",

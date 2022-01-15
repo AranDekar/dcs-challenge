@@ -73,7 +73,7 @@
     "mocha": "^3.5.3",
     "nock": "^9.2.5",
     "nodemon": "^1.11.0",
-    "shelljs": "^0.7.7",
+    "shelljs": "^0.8.5",
     "supertest": "^2.0.1",
     "ts-node": "^3.3.0",
     "tslint": "^5.0.0",

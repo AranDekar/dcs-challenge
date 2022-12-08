@@ -28,7 +28,7 @@
     "cors": "^2.8.4",
     "dcs-logger": "http://stash.news.com.au/scm/dcs/dcs-logger.git#439ebe65c63566fdf46f7214127709ad189b6612",
     "debug": "^3.1.0",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "express-graphql": "newscorpaus/express-graphql#d0177e86d3c8061f3af257d7d92b5ceb0c43646a",
     "forever": "^0.15.3",
     "graphql": "^0.11.7",
